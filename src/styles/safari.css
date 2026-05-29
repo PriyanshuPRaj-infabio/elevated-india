@@ -1,0 +1,1180 @@
+/* ========================================================
+   ELEVATED INDIA — LUXURY SAFARI ITINERARY STYLES
+   safari.css — Layout, Glassmorphism, Map, Timelines, Mobile
+   ======================================================== */
+
+/* ── Atmosphere Layer ── */
+.safari-atmosphere {
+  position: relative;
+  background-color: var(--ivory);
+  background-image: 
+    radial-gradient(at 10% 20%, rgba(242, 232, 212, 0.4) 0px, transparent 50%),
+    radial-gradient(at 90% 80%, rgba(221, 213, 200, 0.3) 0px, transparent 50%);
+  overflow: clip;
+}
+
+.safari-noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3联%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.015'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 10;
+}
+
+.safari-shadow-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  pointer-events: none;
+  background: 
+    radial-gradient(circle at 80% 20%, rgba(45, 74, 62, 0.04) 0%, transparent 60%),
+    radial-gradient(circle at 10% 70%, rgba(184, 150, 74, 0.03) 0%, transparent 50%);
+  z-index: 1;
+}
+
+/* ── Split Layout ── */
+.safari-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 1760px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  gap: var(--space-8);
+}
+
+.safari-map-panel {
+  width: 45%;
+  height: calc(100vh - var(--nav-height) - 24px);
+  position: sticky;
+  top: calc(var(--nav-height) + 12px);
+  z-index: 5;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(184, 150, 74, 0.2);
+  box-shadow: var(--shadow-lg);
+  background-color: var(--charcoal);
+  align-self: flex-start;
+}
+
+.safari-content-panel {
+  width: 55%;
+  padding-bottom: var(--space-20);
+  position: relative;
+}
+
+/* ── Map Styles ── */
+.safari-mapbox-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.mapboxgl-canvas {
+  outline: none;
+}
+
+/* Custom pulsing marker for map */
+/* Zero-dimension container to act as a perfect coordinate anchor */
+.safari-marker-container {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none; /* Let pointer events pass through container */
+}
+
+/* The actual dot */
+.safari-marker-dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background-color: var(--charcoal);
+  border-radius: 50%;
+  border: 2px solid var(--ivory);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  /* Translate by exactly -50% to center the dot on the 0,0 anchor */
+  transform: translate(-50%, -50%);
+  transition: background-color 0.4s var(--ease-out), transform 0.4s var(--ease-out);
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.safari-marker-container.active .safari-marker-dot {
+  background-color: var(--gold);
+  transform: translate(-50%, -50%) scale(1.25);
+}
+
+/* The pulse ring */
+.safari-marker-pulse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--gold);
+  border-radius: 50%;
+  /* Center the 18px ring on the 0,0 anchor (-9px, -9px) */
+  transform: translate(-50%, -50%);
+  animation: pulse-ring 2.2s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.safari-marker-container.active .safari-marker-pulse {
+  animation-duration: 1.5s;
+}
+
+/* Custom text labels next to Mapbox marker nodes (A&K style labels) */
+.safari-marker-label {
+  position: absolute;
+  top: 0;
+  left: 14px; 
+  transform: translateY(-50%);
+  white-space: nowrap;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: var(--charcoal);
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 3px 6px;
+  border-radius: 2px;
+  border: 1px solid rgba(184, 150, 74, 0.25);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  pointer-events: none;
+  transition: all 0.3s var(--ease-out);
+}
+
+.safari-marker-container.active .safari-marker-label {
+  font-weight: 700;
+  border-color: var(--gold);
+  color: var(--gold);
+  left: 16px;
+}
+
+@keyframes pulse-ring {
+  0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; }
+  50% { opacity: 0.7; }
+  100% { transform: translate(-50%, -50%) scale(1.5); opacity: 0; }
+}
+
+/* ── Fallback SVG Map ── */
+.safari-vector-map {
+  width: 100%;
+  height: 100%;
+  background: #F7F3EE; /* Light cream editorial background */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.safari-vector-map-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.15;
+  filter: grayscale(1) contrast(1.2);
+  mix-blend-mode: overlay;
+}
+
+.safari-vector-svg {
+  width: 100%;
+  height: 100%;
+  transition: transform 1.2s var(--ease-out);
+}
+
+.safari-vector-contour {
+  fill: none;
+  stroke: rgba(184, 150, 74, 0.05);
+  stroke-width: 1;
+}
+
+.safari-vector-boundary {
+  fill: none;
+  stroke: rgba(45, 74, 62, 0.4);
+  stroke-width: 1.5;
+  stroke-dasharray: 4 3;
+}
+
+.safari-vector-path-under {
+  fill: none;
+  stroke: rgba(232, 213, 168, 0.1);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.safari-vector-path-active {
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-dasharray: 8 6;
+  animation: dash-animation 20s linear infinite;
+}
+
+@keyframes dash-animation {
+  to { stroke-dashoffset: -200; }
+}
+
+/* ── Timeline Scroll Bar ── */
+.safari-timeline-axis {
+  position: absolute;
+  left: var(--space-4);
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(184, 150, 74, 0.15);
+  z-index: 2;
+  transform: translateX(-50%);
+}
+
+.safari-timeline-progress {
+  position: absolute;
+  left: var(--space-4);
+  top: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--gold), var(--gold-light));
+  z-index: 3;
+  transform: translateX(-50%);
+  transform-origin: top;
+  transition: height 0.1s linear;
+}
+
+/* ── Day Editorial Cards ── */
+.safari-day-card {
+  position: relative;
+  margin-bottom: var(--space-20);
+  padding: var(--space-10) var(--space-10) var(--space-10) var(--space-12);
+  background: #FCFAF7; /* Solid warm ivory white for maximum text readability */
+  border-radius: 8px;
+  border: 1px solid rgba(184, 150, 74, 0.15);
+  box-shadow: var(--shadow-md);
+  transition: opacity 0.5s var(--ease-out), border-color 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
+  z-index: 4;
+}
+
+.safari-day-card.inactive {
+  opacity: 0.85; /* Keep cards and text fully visible and readable at all times */
+  border-color: rgba(184, 150, 74, 0.15);
+  box-shadow: var(--shadow-sm);
+}
+
+.safari-day-card:not(.inactive) {
+  border-color: var(--gold); /* Clear golden border highlight for the active day */
+  box-shadow: var(--shadow-lg);
+  background: var(--white); /* Crisp pure white for active focal card */
+}
+
+.safari-day-card:hover {
+  border-color: var(--gold);
+  box-shadow: var(--shadow-lg);
+}
+
+.safari-day-dot {
+  position: absolute;
+  left: var(--space-4);
+  top: calc(var(--space-10) + 12px);
+  width: 9px;
+  height: 9px;
+  background: var(--stone-dark);
+  border-radius: 50%;
+  border: 2px solid var(--ivory);
+  z-index: 5;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.4s, scale 0.4s, border-color 0.4s;
+}
+
+.safari-day-card:not(.inactive) .safari-day-dot {
+  background: var(--gold);
+  border-color: var(--ivory);
+  scale: 1.35;
+  box-shadow: 0 0 8px rgba(184, 150, 74, 0.6);
+}
+
+/* Day Number & Header */
+.safari-day-meta {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: var(--space-2);
+}
+
+.safari-day-title {
+  font-family: var(--font-serif);
+  font-size: var(--text-3xl);
+  font-weight: 400;
+  color: var(--charcoal);
+  line-height: 1.2;
+  margin-bottom: var(--space-4);
+}
+
+.safari-day-narrative {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--charcoal-light);
+  margin-bottom: var(--space-6);
+}
+
+/* Luxury Grid Spec */
+.safari-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+  padding: var(--space-5) 0;
+  border-top: 1px solid rgba(184, 150, 74, 0.1);
+  border-bottom: 1px solid rgba(184, 150, 74, 0.1);
+}
+
+.safari-detail-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.safari-detail-label {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  margin-bottom: var(--space-1);
+}
+
+.safari-detail-value {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--charcoal);
+}
+
+/* Premium Gallery Slider */
+.safari-gallery {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: var(--space-6);
+  border: 1px solid rgba(184, 150, 74, 0.1);
+}
+
+.safari-gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 8s var(--ease-out);
+}
+
+.safari-day-card:not(.inactive) .safari-gallery-img:hover {
+  transform: scale(1.05);
+}
+
+.safari-gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+  padding: var(--space-4);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  letter-spacing: 0.03em;
+  font-weight: 300;
+}
+
+/* Expandable Details Accordion */
+.safari-accordion-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  border-bottom: 1px solid rgba(184, 150, 74, 0.1);
+  transition: color 0.3s;
+}
+
+.safari-accordion-trigger:hover {
+  color: var(--gold);
+}
+
+.safari-accordion-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s var(--ease-in-out), padding 0.4s;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  color: var(--charcoal-light);
+}
+
+.safari-accordion-content.open {
+  max-height: 500px;
+  padding: var(--space-4) 0;
+}
+
+/* Expert Note Card */
+.safari-expert-note {
+  background: rgba(184, 150, 74, 0.05);
+  border-left: 2px solid var(--gold);
+  padding: var(--space-4);
+  border-radius: 0 4px 4px 0;
+  margin-top: var(--space-4);
+}
+
+.safari-expert-header {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-1);
+}
+
+.safari-expert-body {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: var(--text-base);
+  color: var(--charcoal-mid);
+}
+
+/* Wildlife Tags */
+.safari-wildlife-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.safari-wildlife-tag {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  padding: var(--space-1) var(--space-3);
+  background: var(--stone);
+  color: var(--charcoal-light);
+  border-radius: 20px;
+  border: 1px solid rgba(184, 150, 74, 0.1);
+  transition: background-color 0.3s, color 0.3s, scale 0.3s;
+}
+
+.safari-wildlife-tag:hover {
+  background: var(--gold);
+  color: var(--ivory);
+  scale: 1.05;
+}
+
+/* ── Lodges & Camps Section ── */
+.safari-lodge-card {
+  background: var(--stone);
+  border: 1px solid rgba(184, 150, 74, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.4s var(--ease-out), box-shadow 0.4s;
+}
+
+.safari-lodge-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.safari-lodge-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.safari-lodge-content {
+  padding: var(--space-6);
+}
+
+.safari-lodge-title {
+  font-family: var(--font-serif);
+  font-size: var(--text-xl);
+  color: var(--charcoal);
+  margin-bottom: var(--space-2);
+}
+
+.safari-lodge-desc {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--charcoal-light);
+  line-height: 1.6;
+}
+
+/* ── Wildlife Grid ── */
+.safari-animal-card {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid rgba(184, 150, 74, 0.15);
+}
+
+.safari-animal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out);
+}
+
+.safari-animal-card:hover .safari-animal-img {
+  transform: scale(1.05);
+}
+
+.safari-animal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(10, 10, 10, 0.8) 0%, rgba(10, 10, 10, 0.2) 60%, transparent 100%);
+  z-index: 2;
+}
+
+.safari-animal-info {
+  position: absolute;
+  bottom: var(--space-6);
+  left: var(--space-6);
+  right: var(--space-6);
+  z-index: 3;
+}
+
+.safari-animal-title {
+  font-family: var(--font-serif);
+  font-size: var(--text-xl);
+  color: var(--ivory);
+  margin-bottom: var(--space-1);
+}
+
+.safari-animal-subtitle {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ── Expert Guide ── */
+.safari-guide-container {
+  display: flex;
+  background: rgba(184, 150, 74, 0.03);
+  border: 1px solid rgba(184, 150, 74, 0.1);
+  padding: var(--space-8);
+  border-radius: 6px;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.safari-guide-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold);
+  flex-shrink: 0;
+}
+
+.safari-guide-name {
+  font-family: var(--font-serif);
+  font-size: var(--text-xl);
+  color: var(--charcoal);
+  margin-bottom: var(--space-1);
+}
+
+.safari-guide-role {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-3);
+  display: block;
+}
+
+/* ── Mobile Layout ── */
+@media (max-width: 1024px) {
+  .safari-container {
+    flex-direction: column;
+    padding: 0 var(--space-5);
+    gap: var(--space-6);
+  }
+
+  .safari-map-panel {
+    display: none; /* Desktop map hidden on mobile, replaced by Day Mini Maps */
+  }
+
+  .safari-content-panel {
+    width: 100%;
+  }
+
+  .safari-timeline-axis,
+  .safari-timeline-progress {
+    left: var(--space-2);
+  }
+
+  .safari-day-dot {
+    left: var(--space-2);
+  }
+
+  .safari-day-card {
+    padding: var(--space-6) var(--space-6) var(--space-6) var(--space-8);
+    margin-bottom: var(--space-12);
+  }
+
+  .safari-day-card.inactive {
+    opacity: 1; /* Keep readable on mobile without scroll tracking */
+    transform: none;
+  }
+
+  .safari-details-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .safari-guide-container {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-6);
+  }
+}
+
+/* Mini Map styles specifically for mobile inline displays */
+.safari-mini-map {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(184, 150, 74, 0.15);
+  margin-bottom: var(--space-5);
+  display: none; /* Show only on mobile viewport */
+}
+
+@media (max-width: 1024px) {
+  .safari-mini-map {
+    display: block;
+  }
+}
+
+/* ── Overview Stats Grid ── */
+.safari-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.safari-stat-card {
+  border: 1px solid rgba(184, 150, 74, 0.15);
+  padding: var(--space-5);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  text-align: center;
+}
+
+.safari-stat-label {
+  color: var(--gold);
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  display: block;
+  margin-bottom: var(--space-2);
+}
+
+.safari-stat-value {
+  font-family: var(--font-serif);
+  color: var(--charcoal);
+  font-size: var(--text-lg);
+  margin: 0;
+  line-height: 1.35;
+}
+
+/* ── Gallery Navigation ── */
+.safari-gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: var(--space-3);
+  right: var(--space-3);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.safari-gallery-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: var(--ivory);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: auto;
+  font-size: var(--text-lg);
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  line-height: 1;
+}
+
+.safari-gallery-btn:hover {
+  background: var(--gold);
+  color: var(--white);
+  transform: scale(1.05);
+}
+
+/* ── Species Spotter checklist ── */
+.safari-checklist-label {
+  color: var(--gold);
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  display: block;
+  margin-bottom: var(--space-2);
+}
+
+@media (max-width: 1024px) {
+  .safari-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .safari-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Abercrombie & Kent Sticky Sub-Navigation ── */
+.safari-sub-nav {
+  position: sticky;
+  top: 80px; /* Aligns below the main header nav */
+  background: rgba(247, 243, 238, 0.96); /* Ivory background */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(184, 150, 74, 0.15);
+  z-index: 45;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.safari-sub-nav-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-8);
+  display: flex;
+  justify-content: center;
+  gap: var(--space-8);
+  height: 52px;
+  align-items: center;
+}
+
+.safari-sub-nav-link {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--charcoal-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.safari-sub-nav-link:hover {
+  color: var(--gold);
+}
+
+.safari-sub-nav-link.active {
+  color: var(--charcoal);
+  font-weight: 600;
+}
+
+.safari-sub-nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--gold);
+}
+
+/* ── Location Metadata Tags ── */
+.safari-location-tag {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--charcoal-light);
+  background-color: rgba(0, 0, 0, 0.04);
+  padding: 4px 10px;
+  border-radius: 2px;
+  margin-bottom: var(--space-3);
+  margin-top: var(--space-1);
+}
+
+/* Day title serif text styling */
+.safari-day-title {
+  font-family: var(--font-serif);
+  font-size: var(--text-2xl);
+  color: var(--charcoal);
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: var(--space-4);
+  border-bottom: 1px solid rgba(184, 150, 74, 0.1);
+  padding-bottom: var(--space-3);
+}
+
+/* ── Day Card Asymmetric Layout ── */
+.safari-day-body-wrapper {
+  display: flex;
+  gap: var(--space-8);
+  align-items: flex-start;
+  margin-top: var(--space-4);
+  width: 100%;
+}
+
+.safari-day-text-col {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.safari-day-image-col {
+  width: 40%;
+  flex-shrink: 0;
+}
+
+.safari-day-narrative {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: 1.75;
+  color: var(--charcoal); /* Maximum contrast for easy reading */
+  font-weight: 400;       /* Standout readable weight */
+  margin-bottom: var(--space-6);
+}
+
+/* Details specs grid (Lodging and Meals details) */
+.safari-details-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  border-top: 1px dashed rgba(184, 150, 74, 0.2);
+  padding-top: var(--space-5);
+  margin-top: auto;
+}
+
+.safari-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.safari-detail-label {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #8A6B29; /* Slightly darker gold for readability */
+}
+
+.safari-detail-value-link {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--charcoal);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transition: color 0.2s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.safari-detail-value-link:hover {
+  color: var(--gold);
+}
+
+.safari-detail-value-meals {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--charcoal); /* High contrast dark color */
+}
+
+/* ── Sticky Booking Bottom Bar ── */
+.safari-sticky-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  background-color: rgba(247, 243, 238, 0.96); /* Ivory background overlay */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1.5px solid var(--gold);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-8);
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.05);
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.safari-sticky-bar.visible {
+  transform: translateY(0);
+}
+
+.safari-sticky-info {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.safari-sticky-duration {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--charcoal);
+}
+
+.safari-sticky-price {
+  font-family: var(--font-serif);
+  font-size: var(--text-md);
+  color: var(--gold);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+/* ── Horizontal Itinerary Timeline ── */
+.safari-horizontal-timeline-wrapper {
+  background: var(--stone);
+  border-bottom: 1px solid rgba(184, 150, 74, 0.15);
+  padding: var(--space-8) var(--space-8);
+  position: sticky;
+  top: 132px; /* 80px subnav top + 52px subnav height */
+  z-index: 44;
+  overflow-x: auto;
+  scrollbar-width: none;
+  transition: top 0.3s ease;
+}
+
+.safari-horizontal-timeline-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.safari-horizontal-timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  max-width: 1100px;
+  min-width: 800px; /* Force scroll on small screens */
+  margin: 0 auto;
+}
+
+.safari-horizontal-timeline-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(184, 150, 74, 0.25);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.safari-horizontal-timeline-progress {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 2px;
+  background: var(--gold);
+  transform: translateY(-50%);
+  z-index: 2;
+  transition: width 0.4s var(--ease-out);
+}
+
+.safari-timeline-node {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  width: 160px;
+}
+
+.timeline-node-location {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--charcoal);
+  margin-bottom: var(--space-4);
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.timeline-node-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--stone);
+  border: 2px solid rgba(184, 150, 74, 0.5);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.safari-timeline-node.active .timeline-node-dot {
+  border-color: var(--gold);
+}
+
+.safari-timeline-node.current .timeline-node-dot {
+  background: var(--gold);
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(184, 150, 74, 0.2);
+}
+
+.safari-timeline-node.current .timeline-node-location,
+.safari-timeline-node.active .timeline-node-location {
+  color: var(--gold);
+}
+
+.timeline-node-day {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  color: var(--charcoal-light);
+  margin-top: var(--space-4);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+.safari-timeline-node.current .timeline-node-day {
+  color: var(--charcoal);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .safari-day-body-wrapper {
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+  .safari-day-text-col {
+    width: 100%;
+  }
+  .safari-day-image-col {
+    width: 100%;
+  }
+  .safari-sub-nav {
+    top: 70px;
+  }
+  .safari-sub-nav-container {
+    gap: var(--space-4);
+    height: 44px;
+    padding: 0 var(--space-4);
+  }
+  .safari-sub-nav-link {
+    font-size: 9px;
+    letter-spacing: 0.1em;
+  }
+  .safari-sticky-bar {
+    padding: 0 var(--space-4);
+    height: 64px;
+  }
+  .safari-sticky-duration {
+    font-size: 11px;
+  }
+  .safari-sticky-price {
+    font-size: 12px;
+  }
+}
+
+/* ── Main Nav Hide Behavior ── */
+#main-nav {
+  transition: transform 0.4s var(--ease-out),
+              background var(--duration-base) var(--ease-out),
+              box-shadow var(--duration-base) var(--ease-out),
+              backdrop-filter var(--duration-base) var(--ease-out) !important;
+}
+
+body.main-nav-hidden #main-nav {
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+body.main-nav-hidden .safari-sub-nav {
+  top: 0 !important;
+}
+
+body.main-nav-hidden .safari-horizontal-timeline-wrapper {
+  top: 52px !important;
+}
+
+@media (max-width: 768px) {
+  .safari-horizontal-timeline-wrapper {
+    top: 114px; /* 70px subnav top + 44px subnav height */
+  }
+  body.main-nav-hidden .safari-horizontal-timeline-wrapper {
+    top: 44px !important;
+  }
+}
+
+
+

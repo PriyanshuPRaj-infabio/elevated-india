@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Begin Your Journey — Elevated India</title>
+  <meta name="description" content="Start your private travel inquiry with Elevated India. A discreet, personal conversation is the beginning of every bespoke journey we design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <style>
+    /* Contact page specifics */
+    .contact-page-bg {
+      background: var(--ivory);
+      min-height: 100vh;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: calc(100vh - var(--nav-height));
+      align-items: stretch;
+    }
+    .contact-image-panel {
+      position: relative;
+      overflow: hidden;
+    }
+    .contact-image-panel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .contact-image-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(10,8,5,0.45), transparent 60%);
+    }
+    .contact-form-panel {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: var(--space-20) var(--space-12);
+      background: var(--ivory);
+    }
+    .form-success {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: var(--space-6);
+      padding: var(--space-10);
+    }
+    .form-success-icon {
+      width: 64px;
+      height: 64px;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-6);
+    }
+    .form-error {
+      font-family: var(--font-sans);
+      font-size: var(--text-xs);
+      color: var(--maroon);
+      margin-top: var(--space-1);
+      display: none;
+    }
+    .divider-or {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      margin: var(--space-6) 0;
+      color: var(--charcoal-light);
+      font-family: var(--font-sans);
+      font-size: var(--text-xs);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .divider-or::before,
+    .divider-or::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--stone-dark);
+    }
+    .callback-box {
+      background: var(--stone);
+      padding: var(--space-8);
+      margin-top: var(--space-6);
+    }
+    @media (max-width: 1024px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .contact-image-panel {
+        display: none;
+      }
+      .contact-form-panel {
+        padding: var(--space-10) var(--space-6);
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body class="page-contact contact-page-bg">
+
+  <!-- Navigation -->
+  <nav class="nav scrolled" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Elevated India Home">
+        <span class="nav-logo-name" style="color: var(--charcoal);">Elevated India</span>
+        <span class="nav-logo-tagline">Private Travel House</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="journeys.html" class="nav-link" style="color: var(--charcoal-light);">Journeys</a></li>
+        <li><a href="experiences.html" class="nav-link" style="color: var(--charcoal-light);">Experiences</a></li>
+        <li><a href="destinations.html" class="nav-link" style="color: var(--charcoal-light);">Destinations</a></li>
+        <li><a href="concierge.html" class="nav-link" style="color: var(--charcoal-light);">Concierge</a></li>
+        <li><a href="about.html" class="nav-link" style="color: var(--charcoal-light);">About</a></li>
+        <li><a href="journal.html" class="nav-link" style="color: var(--charcoal-light);">Journal</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Begin Your Journey</a>
+      <button class="nav-burger" id="nav-burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="journeys.html" class="nav-mobile-link">Journeys</a>
+    <a href="experiences.html" class="nav-mobile-link">Experiences</a>
+    <a href="destinations.html" class="nav-mobile-link">Destinations</a>
+    <a href="concierge.html" class="nav-mobile-link">Concierge</a>
+    <a href="about.html" class="nav-mobile-link">About</a>
+    <a href="journal.html" class="nav-mobile-link">Journal</a>
+    <a href="contact.html" class="nav-mobile-cta">Begin Your Journey</a>
+  </div>
+
+  <!-- Main Contact Layout -->
+  <main style="padding-top: var(--nav-height);">
+    <div class="contact-grid">
+
+      <!-- Left: Image Panel -->
+      <div class="contact-image-panel" aria-hidden="true">
+        <img
+          src="images/palace_dining_1776272561908.png"
+          alt="Private palace dining"
+        />
+        <div class="contact-image-overlay"></div>
+        <div style="position: absolute; bottom: var(--space-12); left: var(--space-10); right: var(--space-10); z-index: 2;">
+          <p style="font-family: var(--font-serif); font-size: var(--text-xl); font-style: italic; color: var(--ivory); line-height: 1.55; margin-bottom: var(--space-5);">"Every exceptional journey begins not with a booking — but with a conversation."</p>
+          <span style="font-family: var(--font-sans); font-size: var(--text-xs); letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold);">— Elevated India</span>
+        </div>
+      </div>
+
+      <!-- Right: Form Panel -->
+      <div class="contact-form-panel">
+        <div style="max-width: 540px; width: 100%;">
+
+          <!-- Header -->
+          <span class="t-section-label fade-up">Private Inquiry</span>
+          <span class="gold-line gold-line-left fade-up delay-1"></span>
+          <h1 class="t-headline fade-up delay-2" style="margin-bottom: var(--space-3);">Begin Your Journey</h1>
+          <p class="t-body fade-up delay-3" style="margin-bottom: var(--space-10);">Share a little about your vision for India and a member of our curatorial team will respond personally — typically within one working day.</p>
+
+          <!-- Success State -->
+          <div id="form-success" class="form-success" role="alert">
+            <div class="form-success-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M6 14l5 5L22 9" stroke="#B8964A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <h2 style="font-family: var(--font-serif); font-size: var(--text-2xl); color: var(--charcoal); margin-bottom: var(--space-3);">Your Inquiry Has Been Received</h2>
+              <p class="t-body">A member of our team will respond to you personally within one working day. We look forward to designing something extraordinary together.</p>
+            </div>
+          </div>
+
+          <!-- Inquiry Form -->
+          <form id="inquiry-form" novalidate aria-label="Travel inquiry form" class="fade-up delay-4">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="f-name">Full Name <span style="color: var(--maroon);">*</span></label>
+                <input type="text" id="f-name" name="name" class="form-input" required placeholder="Your full name" autocomplete="name" />
+                <span class="form-error" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-email">Email Address <span style="color: var(--maroon);">*</span></label>
+                <input type="email" id="f-email" name="email" class="form-input" required placeholder="your@email.com" autocomplete="email" />
+                <span class="form-error" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="f-interest">Travel Interest / Occasion <span style="color: var(--maroon);">*</span></label>
+              <select id="f-interest" name="travel_interest" class="form-select" required aria-label="Travel interest">
+                <option value="" disabled selected>Please select</option>
+                <option value="honeymoon">Honeymoon or Anniversary</option>
+                <option value="royal-heritage">Royal Heritage &amp; Palace Journeys</option>
+                <option value="wildlife">Wildlife &amp; Safari</option>
+                <option value="spiritual">Spiritual &amp; Transformational</option>
+                <option value="wellness">Wellness &amp; Restoration</option>
+                <option value="culture">Art, Craft &amp; Cultural Immersion</option>
+                <option value="family">Family or Multi-Generational</option>
+                <option value="celebration">Private Celebration or Event</option>
+                <option value="gastronomy">Gastronomy &amp; Culinary</option>
+                <option value="bespoke">Fully Bespoke (I have a vision)</option>
+              </select>
+              <span class="form-error" role="alert"></span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="f-window">Preferred Travel Window</label>
+                <input type="text" id="f-window" name="travel_window" class="form-input" placeholder="e.g. October 2025, Winter" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-guests">Number of Guests</label>
+                <select id="f-guests" name="guests" class="form-select" aria-label="Number of guests">
+                  <option value="" disabled selected>Select</option>
+                  <option value="2">2 Guests</option>
+                  <option value="3-4">3–4 Guests</option>
+                  <option value="5-8">5–8 Guests</option>
+                  <option value="9+">9 or more</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="f-accommodation">Accommodation Expectations</label>
+              <select id="f-accommodation" name="accommodation" class="form-select" aria-label="Accommodation preferences">
+                <option value="" disabled selected>Select preference</option>
+                <option value="ultra-luxury">Ultra-luxury (Private palace suites, top-tier properties only)</option>
+                <option value="luxury">Luxury (Leading luxury hotels and heritage properties)</option>
+                <option value="boutique">Boutique Heritage (Intimate, authentic, character-rich)</option>
+                <option value="mixed">Mixed — comfort over brand recognition</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="f-notes">Your Vision for This Journey</label>
+              <textarea id="f-notes" name="notes" class="form-textarea" rows="4" placeholder="Share what you are imagining — experiences, feelings, occasions, or simply what draws you to India right now. There are no wrong answers here."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold btn-arrow" style="width: 100%; justify-content: center;" id="inquiry-submit-btn">
+              Request a Private Itinerary
+            </button>
+
+          </form>
+
+          <!-- Divider -->
+          <div class="divider-or fade-up" style="margin-top: var(--space-8);">or</div>
+
+          <!-- WhatsApp & Callback -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);" class="fade-up delay-1">
+            <a
+              href="https://wa.me/919999999999?text=Hello%20Elevated%20India%2C%20I%20would%20like%20to%20begin%20designing%20a%20bespoke%20journey."
+              class="btn btn-outline-gold"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="justify-content: center;"
+              id="wa-contact-btn"
+            >
+              WhatsApp Us
+            </a>
+            <a href="mailto:hello@elevatedindia.com" class="btn btn-outline-gold" style="justify-content: center;" id="email-contact-btn">
+              Email Directly
+            </a>
+          </div>
+
+          <!-- Contact Details -->
+          <div style="margin-top: var(--space-10); padding-top: var(--space-8); border-top: 1px solid var(--stone-dark);" class="fade-up delay-2">
+            <div class="contact-detail">
+              <span class="contact-detail-label">Email</span>
+              <a href="mailto:hello@elevatedindia.com" class="contact-detail-value">hello@elevatedindia.com</a>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-detail-label">WhatsApp</span>
+              <a href="tel:+919999999999" class="contact-detail-value">+91 99999 99999</a>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-detail-label">Response</span>
+              <span class="contact-detail-value">Within one working day, by a real person</span>
+            </div>
+          </div>
+
+          <!-- Callback Box -->
+          <div class="callback-box fade-up delay-3">
+            <p class="t-section-label" style="margin-bottom: var(--space-3);">Prefer a callback?</p>
+            <p class="t-body" style="margin-bottom: var(--space-5); font-size: var(--text-sm);">Leave your number and a convenient time. We will call you — on your terms.</p>
+            <form id="callback-form" novalidate>
+              <div class="form-row" style="margin-bottom: var(--space-4);">
+                <div class="form-group" style="margin-bottom: 0;">
+                  <input type="text" id="cb-name" name="cb_name" class="form-input" placeholder="Your name" />
+                </div>
+                <div class="form-group" style="margin-bottom: 0;">
+                  <input type="tel" id="cb-phone" name="cb_phone" class="form-input" required placeholder="+1 (555) 000-0000" autocomplete="tel" />
+                </div>
+              </div>
+              <button type="submit" class="btn btn-dark" style="width: 100%; justify-content: center;" id="callback-submit-btn">Request a Callback</button>
+            </form>
+          </div>
+
+          <!-- Privacy Note -->
+          <p style="font-family: var(--font-sans); font-size: var(--text-xs); color: var(--charcoal-light); margin-top: var(--space-6); line-height: 1.6;" class="fade-up delay-4">
+            Your details are held in complete confidence. We do not share, sell, or distribute any personal information. Your privacy is our first obligation.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div><p class="footer-brand-name">Elevated India</p><span class="footer-brand-tag">Private Travel House</span><p class="footer-brand-desc">A curator of India's rarest luxury experiences for discerning global travellers.</p><div class="footer-social"><a href="#" class="footer-social-link" aria-label="Instagram">Ig</a><a href="#" class="footer-social-link" aria-label="LinkedIn">in</a></div></div>
+        <div><p class="footer-col-title">Journeys</p><ul class="footer-col-links"><li><a href="journeys.html" class="footer-col-link">All Journeys</a></li><li><a href="journeys.html" class="footer-col-link">Maharaja Circuit</a></li></ul></div>
+        <div><p class="footer-col-title">Explore</p><ul class="footer-col-links"><li><a href="experiences.html" class="footer-col-link">Experiences</a></li><li><a href="destinations.html" class="footer-col-link">Destinations</a></li><li><a href="concierge.html" class="footer-col-link">How It Works</a></li></ul></div>
+        <div><p class="footer-col-title">Contact</p><ul class="footer-col-links"><li><a href="mailto:hello@elevatedindia.com" class="footer-col-link">hello@elevatedindia.com</a></li><li><a href="tel:+919999999999" class="footer-col-link">+91 99999 99999</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p class="footer-copy">&copy; 2025 Elevated India. All rights reserved.</p><div class="footer-bottom-links"><a href="#" class="footer-col-link" style="font-size: var(--text-xs);">Privacy Policy</a></div></div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+  <script src="js/inquiry.js"></script>
+</body>
+</html>
