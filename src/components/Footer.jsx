@@ -8,8 +8,13 @@ export default function Footer() {
         <div className="footer-top">
           {/* Brand */}
           <div>
-            <p className="footer-brand-name">Elevated India</p>
-            <span className="footer-brand-tag">Private Travel House</span>
+            <Link href="/" style={{ display: 'inline-block', marginBottom: '24px' }}>
+              <img
+                src="/logo-dark.png"
+                alt="Elevated India"
+                style={{ height: '54px', width: 'auto', display: 'block' }}
+              />
+            </Link>
             <p className="footer-brand-desc">
               A curator of India's rarest luxury experiences for discerning
               global travellers. Every journey is bespoke, discreet, and deeply
@@ -81,42 +86,40 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="footer-bottom flex justify-between items-end w-full">
+        <div className="footer-bottom">
           <p className="footer-copy">
             &copy; {new Date().getFullYear()} Elevated India. All rights reserved.
           </p>
 
-          <div className="flex flex-col items-end gap-4">
-            {/* POWERED BY */}
-            <div className="flex items-center gap-3 rounded-full border border-white/20 bg-white/5 px-3 py-1.5 transition-colors hover:bg-white/10 shrink-0">
-              <a
-                href="https://fabulousmedia.in/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center opacity-90 hover:opacity-100 transition-opacity"
-                aria-label="FabulousMedia"
-              >
-                <img
-                  src="/fabulous-logo.png"
-                  alt="FabulousMedia"
-                  style={{ height: '14px', width: 'auto', display: 'block' }}
-                />
-              </a>
-              <span style={{ width: '1px', height: '14px', backgroundColor: 'rgba(255, 255, 255, 0.3)' }} />
-              <a
-                href="https://gocommercially.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center opacity-90 hover:opacity-100 transition-opacity"
-                aria-label="GoCommercially"
-              >
-                <img
-                  src="/go_tm logo white.png"
-                  alt="GoCommercially"
-                  style={{ height: '14px', width: 'auto', display: 'block' }}
-                />
-              </a>
-            </div>
+          {/* POWERED BY */}
+          <div className="site-credits">
+            <a
+              href="https://fabulousmedia.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="FabulousMedia"
+              style={{ display: 'flex', alignItems: 'center' }}
+            >
+              <img
+                src="/fabulous-logo.png"
+                alt="FabulousMedia"
+                className="site-credits-logo"
+              />
+            </a>
+            <span className="site-credits-sep" />
+            <a
+              href="https://gocommercially.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GoCommercially"
+              style={{ display: 'flex', alignItems: 'center' }}
+            >
+              <img
+                src="/go_tm logo white.png"
+                alt="GoCommercially"
+                className="site-credits-logo"
+              />
+            </a>
           </div>
         </div>
       </div>

@@ -2,9 +2,12 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { motion } from 'framer-motion';
 import LottieScroll from '@/components/LottieScroll';
 import useGsapAnimations from '@/hooks/useGsapAnimations';
 import HeroVideoSlider from '@/components/HeroVideoSlider';
+import { JOURNEYS } from '@/data/journeysData';
 
 // Counter component for animated statistics
 function StatCounter({ target, suffix = '', duration = 1600 }) {
@@ -43,7 +46,7 @@ function StatCounter({ target, suffix = '', duration = 1600 }) {
 }
 
 export default function HomePage() {
-
+  const router = useRouter();
   useGsapAnimations();
 
   return (
@@ -248,58 +251,64 @@ export default function HomePage() {
           <div className="journeys-grid" role="list">
             {[
               {
-                title: 'The Maharaja Circuit Reimagined',
-                label: 'Rajasthan · 12–15 Days',
-                excerpt: 'A curated movement through Rajasthan\'s most storied palaces — not as a tourist, but as a private guest. Private access to heritage estates, exclusive dinners, and cultural immersions unavailable to public itineraries.',
-                meta: 'Private · Bespoke · Cultural Access',
-                img: '/images/rajasthan_palace_exterior_1776272664878.png',
-                alt: 'Rajasthan palace at twilight',
+                title: 'The Wild Heart of India (Tiger Safari)',
+                label: 'Central India Reserves · 8–10 Days',
+                excerpt: "Private safari vehicles, exclusive jungle lodges, and expert naturalists in Kanha and Bandhavgarh — India's last great wild places, accessed with rare privilege.",
+                meta: 'Wildlife · Luxury Lodges · Map Integration',
+                img: '/images/25-bandhavgarhnationalpark1.jpg',
+                alt: 'Tiger in jungle',
+                href: '/experiences/safari',
               },
               {
-                title: 'Palaces, Sand & Silence',
-                label: 'Thar Desert · 7–10 Days',
-                excerpt: 'From sandstone fortresses to private desert camps beneath an ocean of stars — a journey that moves between grandeur and solitude with effortless grace.',
-                meta: 'Romance · Heritage · Private Camp',
-                img: '/images/desert_camp_night_1776272499120.png',
-                alt: 'Luxury desert camp under starlit sky',
+                title: 'Palace on Wheels / Train',
+                label: 'Rajasthan & Nepal · 16 Days',
+                excerpt: "A legendary heritage rail odyssey through royal Rajasthan, extended into Nepal's wild sanctuaries.",
+                meta: 'Heritage Train · Private Safaris · Taj Wilderness',
+                img: JOURNEYS['palace-on-wheels'].heroImage,
+                alt: 'Vintage luxury train through Rajasthan',
+                href: '/journeys/palace-on-wheels',
               },
               {
-                title: 'Sacred India: Ritual & Reflection',
-                label: 'Varanasi · Rishikesh · 8–12 Days',
-                excerpt: 'An intimate passage through India\'s most profound spiritual landscapes. Dawn on the Ganges, private meetings with scholars and monks, silence in ancient temple courtyards.',
-                meta: 'Spiritual · Cultural · Meditative',
-                img: '/images/varanasi_ghats_1776272579374.png',
-                alt: 'Varanasi at dawn from the Ganges',
+                title: 'Maharaja Express / Train',
+                label: 'Northern & Central India · 15 Days',
+                excerpt: "A majestic rail passage across Northern & Central India's royal capitals in peerless luxury.",
+                meta: 'Presidential Suites · Water Oasis · Ganges Aarti',
+                img: JOURNEYS['maharaja-express'].heroImage,
+                alt: 'Maharajas Express Train',
+                href: '/journeys/maharaja-express',
               },
               {
-                title: 'The Grand Indian Honeymoon',
-                label: 'Kerala · 10–14 Days',
-                excerpt: 'From private palace suites in Rajasthan to your own houseboat drifting through the emerald backwaters of Kerala — crafted entirely around two people and their story.',
-                meta: 'Romance · Luxury · Complete Privacy',
-                img: '/images/kerala_backwaters_1776272518771.png',
-                alt: 'Private houseboat on Kerala backwaters',
+                title: 'Golden Triangle with Kathmandu',
+                label: 'North India & Nepal · 12 Days',
+                excerpt: "A majestic journey across Northern India's imperial capitals & Nepal's sacred valleys.",
+                meta: 'Imperial Cities · Heritage Dargah · Himalayan Valleys',
+                img: JOURNEYS['golden-triangle-kathmandu'].heroImage,
+                alt: 'Golden Triangle with Kathmandu',
+                href: '/journeys/golden-triangle-kathmandu',
               },
             ].map((journey) => (
-              <article
-                key={journey.title}
-                className="journey-card gsap-fade-in"
-                role="listitem"
-              >
-                <img
-                  src={journey.img}
-                  alt={journey.alt}
-                  className="journey-card-image"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <div className="journey-card-overlay"></div>
-                <div className="journey-card-content">
-                  <span className="journey-card-label">{journey.label}</span>
-                  <h3 className="journey-card-title">{journey.title}</h3>
-                  <p className="journey-card-excerpt">{journey.excerpt}</p>
-                  <span className="journey-card-meta">{journey.meta}</span>
-                </div>
-              </article>
+              <Link href={journey.href} key={journey.title} style={{ display: 'contents' }}>
+                <article
+                  className="journey-card gsap-fade-in"
+                  role="listitem"
+                  style={{ cursor: 'pointer' }}
+                >
+                  <img
+                    src={journey.img}
+                    alt={journey.alt}
+                    className="journey-card-image"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div className="journey-card-overlay"></div>
+                  <div className="journey-card-content">
+                    <span className="journey-card-label">{journey.label}</span>
+                    <h3 className="journey-card-title">{journey.title}</h3>
+                    <p className="journey-card-excerpt">{journey.excerpt}</p>
+                    <span className="journey-card-meta">{journey.meta}</span>
+                  </div>
+                </article>
+              </Link>
             ))}
           </div>
 

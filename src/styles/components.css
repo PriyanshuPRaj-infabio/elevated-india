@@ -57,9 +57,25 @@
 /* Logo */
 .nav-logo {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
+  align-items: center;
   text-decoration: none;
+}
+
+.nav-logo-img {
+  height: 60px;
+  width: auto;
+  display: block;
+  transition: transform 0.3s var(--ease-out), filter 0.3s var(--ease-out);
+}
+
+.nav-logo-img:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .nav-logo-img {
+    height: 38px !important;
+  }
 }
 
 .logo {
@@ -852,6 +868,44 @@
   font-size: var(--text-xs);
   color: rgba(247, 243, 238, 0.35);
 }
+
+/* Site Credits Pill styling to match reference exactly */
+.site-credits {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 4px 8px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.site-credits:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.site-credits-logo {
+  height: 9px !important;
+  width: auto !important;
+  display: block;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.site-credits:hover .site-credits-logo {
+  opacity: 1;
+}
+
+.site-credits-sep {
+  width: 1px;
+  height: 11px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
 
 .footer-bottom-links {
   display: flex;

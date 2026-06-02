@@ -1,169 +1,202 @@
 "use client";
 
-import React from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { motion } from 'framer-motion';
-import useGsapAnimations from '@/hooks/useGsapAnimations';
+import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
+import useGsapAnimations from "@/hooks/useGsapAnimations";
+import { JOURNEYS } from "@/data/journeysData";
+import HeroVideoSlider from "@/components/HeroVideoSlider";
+import LottieScroll from "@/components/LottieScroll";
 
 export default function JourneysPage() {
   const router = useRouter();
   useGsapAnimations();
 
-  const featuredJourneys = [
+  const allJourneys = [
     {
-      title: 'The Maharaja Circuit Reimagined',
-      label: 'Rajasthan · 12–15 Days · Private',
-      excerpt: 'Palace estates in Jodhpur, Jaisalmer and Bundi. Private collections, family archives, exclusive dining within royal courtyards after hours. This is Rajasthan accessed by invitation, not ticket.',
-      img: '/images/rajasthan_palace_exterior_1776272664878.png',
-      alt: 'Rajasthan palace',
+      title: JOURNEYS["palace-on-wheels"].title,
+      durationText: "16 DAYS",
+      badges: [{ text: "PRIVATE READY-TO-BOOK", type: "white" }, { text: "OFFER", type: "offer" }],
+      itineraryList: "Delhi - Jaipur - Sawai Madhopur - Chittorgarh - Udaipur - Jaisalmer - Jodhpur - Bharatpur - Agra - Delhi",
+      img: JOURNEYS["palace-on-wheels"].heroImage,
+      alt: JOURNEYS["palace-on-wheels"].title,
+      href: "/journeys/palace-on-wheels",
     },
     {
-      title: 'Palaces, Sand & Silence',
-      label: 'Thar Desert · 7–10 Days · Romantic',
-      excerpt: 'From amber-lit sandstone cities to a private camp beneath the Milky Way. A journey that moves from cultural saturation to profound desert stillness with perfect natural rhythm.',
-      img: '/images/desert_camp_night_1776272499120.png',
-      alt: 'Desert camp at night',
-    },
-  ];
-
-  const standardJourneys = [
-    {
-      title: 'Sacred India: Ritual & Reflection',
-      label: 'Varanasi · Rishikesh · 8–12 Days',
-      excerpt: 'Dawn on the Ganges, meetings with scholars, silence in ancient courtyards. India\'s most profound landscape, privately navigated.',
-      img: '/images/varanasi_ghats_1776272579374.png',
-      alt: 'Varanasi ghats at dawn',
+      title: JOURNEYS["maharaja-express"].title,
+      durationText: "15 DAYS",
+      badges: [{ text: "SMALL GROUP JOURNEYS", type: "white" }, { text: "OFFER", type: "offer" }],
+      itineraryList: "Delhi - Jodhpur - Nimaj Oasis - Jaipur - Agra - Khajuraho - Varanasi",
+      img: JOURNEYS["maharaja-express"].heroImage,
+      alt: JOURNEYS["maharaja-express"].title,
+      href: "/journeys/maharaja-express",
     },
     {
-      title: 'The Grand Indian Honeymoon',
-      label: 'Kerala · 10–14 Days · Romance',
-      excerpt: 'Your own private houseboat on the backwaters. Spice plantation estates. Ayurvedic rituals by candlelight. Entirely composed for two.',
-      img: '/images/kerala_backwaters_1776272518771.png',
-      alt: 'Kerala houseboat',
+      title: JOURNEYS["golden-triangle-kathmandu"].title,
+      durationText: "12 DAYS",
+      badges: [{ text: "PRIVATE READY-TO-BOOK", type: "white" }, { text: "NEW", type: "new" }],
+      itineraryList: "Delhi - Agra - Jaipur - Delhi - Kathmandu Valley",
+      img: JOURNEYS["golden-triangle-kathmandu"].heroImage,
+      alt: JOURNEYS["golden-triangle-kathmandu"].title,
+      href: "/journeys/golden-triangle-kathmandu",
     },
     {
-      title: 'The Wild Heart of India',
-      label: 'Central India · 7–10 Days · Wildlife',
-      excerpt: 'Private safari vehicles, exclusive jungle lodges, and expert naturalists in Kanha and Bandhavgarh — India\'s last great wild places, accessed with rare privilege.',
-      img: '/images/tiger_safari_1776272603448.png',
-      alt: 'Tiger in jungle',
-      href: '/experiences/safari',
+      title: JOURNEYS["lgbtq-tour"].title,
+      durationText: "16 DAYS",
+      badges: [{ text: "INCLUSIVE LUXURY", type: "white" }, { text: "NEW", type: "new" }],
+      itineraryList: "Delhi - Agra - Aman Bagh - Jaipur - Deogarh - Udaipur - Ahmedabad - Vadodara - Rajpipla - Vadodara - Ahmedabad",
+      img: JOURNEYS["lgbtq-tour"].heroImage,
+      alt: JOURNEYS["lgbtq-tour"].title,
+      href: "/journeys/lgbtq-tour",
     },
     {
-      title: 'India\'s Highest Horizons',
-      label: 'Himalayas · 10–14 Days · Spiritual',
-      excerpt: 'Ladakh\'s ancient monasteries, Spiti\'s remote valleys, private mountain retreats. A journey to the edge of the world — and within.',
-      img: '/images/himalayan_monastery_1776272544257.png',
-      alt: 'Himalayan monastery',
+      title: JOURNEYS["culinary-tour-13"].title,
+      durationText: "13 DAYS",
+      badges: [{ text: "CULINARY EXPEDITION", type: "white" }, { text: "NEW", type: "new" }],
+      itineraryList: "Delhi - Agra - Lucknow - Varanasi - Jaipur - Kolkata",
+      img: JOURNEYS["culinary-tour-13"].heroImage,
+      alt: JOURNEYS["culinary-tour-13"].title,
+      href: "/journeys/culinary-tour-13",
     },
     {
-      title: 'India for Families: Depth & Delight',
-      label: 'Pan-India · 21 Days · Families',
-      excerpt: 'Curated for multi-generational families — balancing wonder and comfort, discovery and rest, grand heritage and living culture at every stage.',
-      img: '/images/palace_interior_1776272621551.png',
-      alt: 'Palace interior',
+      title: JOURNEYS["culinary-tour-16"].title,
+      durationText: "16 DAYS",
+      badges: [{ text: "CULINARY ODYSSEY", type: "white" }, { text: "NEW", type: "new" }],
+      itineraryList: "Delhi - Agra - Jaipur - Mumbai - Hyderabad - Cochin",
+      img: JOURNEYS["culinary-tour-16"].heroImage,
+      alt: JOURNEYS["culinary-tour-16"].title,
+      href: "/journeys/culinary-tour-16",
+    },
+    {
+      title: JOURNEYS["kerala-culture-11"].title,
+      durationText: "11 DAYS",
+      badges: [{ text: "CULTURE & HERITAGE", type: "white" }, { text: "NEW", type: "new" }],
+      itineraryList: "Mumbai - Cochin - Alleppey - Kumarakom - Munnar - Cochin",
+      img: JOURNEYS["kerala-culture-11"].heroImage,
+      alt: JOURNEYS["kerala-culture-11"].title,
+      href: "/journeys/kerala-culture-11",
+    },
+    {
+      title: JOURNEYS["kerala-culture-beach-13"].title,
+      durationText: "13 DAYS",
+      badges: [{ text: "CULTURE & BEACH", type: "white" }, { text: "NEW", type: "new" }],
+      itineraryList: "Mumbai - Cochin - Munnar - Alleppey - Marari - Cochin",
+      img: JOURNEYS["kerala-culture-beach-13"].heroImage,
+      alt: JOURNEYS["kerala-culture-beach-13"].title,
+      href: "/journeys/kerala-culture-beach-13",
+    },
+    {
+      title: JOURNEYS["goa-kerala-culture-10"].title,
+      durationText: "10 DAYS",
+      badges: [{ text: "GOA & KERALA", type: "white" }, { text: "NEW", type: "new" }],
+      itineraryList: "Mumbai - Goa - Cochin - Kumarakom - Cochin",
+      img: JOURNEYS["goa-kerala-culture-10"].heroImage,
+      alt: JOURNEYS["goa-kerala-culture-10"].title,
+      href: "/journeys/goa-kerala-culture-10",
+    },
+    {
+      title: "The Wild Heart of India (Tiger Safari)",
+      durationText: "8-10 DAYS",
+      badges: [{ text: "WILDLIFE EXPEDITION", type: "white" }, { text: "NEW", type: "new" }],
+      itineraryList: "Delhi - Kanha National Park - Bandhavgarh National Park - Delhi",
+      img: "/images/25-bandhavgarhnationalpark1.jpg",
+      alt: "Tiger in jungle",
+      href: "/experiences/safari",
+    },
+    {
+      title: JOURNEYS["temple-tour"].title,
+      durationText: "12 DAYS",
+      badges: [{ text: "PRIVATE READY-TO-BOOK", type: "white" }],
+      itineraryList: "Chennai - Mahabalipuram - Pondicherry - Tanjore - Madurai - Periyar - Kumarakom - Cochin",
+      img: JOURNEYS["temple-tour"].heroImage,
+      alt: JOURNEYS["temple-tour"].title,
+      href: "/journeys/temple-tour",
+    },
+    {
+      title: JOURNEYS["metro-cities-culture"].title,
+      durationText: "12 DAYS",
+      badges: [{ text: "SMALL GROUP JOURNEYS", type: "white" }],
+      itineraryList: "Kolkata - Varanasi - Delhi - Jaipur - Mumbai",
+      img: JOURNEYS["metro-cities-culture"].heroImage,
+      alt: JOURNEYS["metro-cities-culture"].title,
+      href: "/journeys/metro-cities-culture",
     },
   ];
 
   return (
     <main className="page-journeys">
-      {/* Page Hero */}
-      <header className="page-hero" id="page-hero">
-        <img
-          src="/images/journeys_hero_1776334755097.png"
-          alt="Vintage luxury train through Rajasthan"
-          className="page-hero-image"
-          fetchPriority="high"
-        />
-        <div className="page-hero-overlay"></div>
-        <div className="page-hero-content container">
-          <span className="page-hero-label">Flagship Itineraries</span>
-          <h1 className="page-hero-title">Journeys of Rare Distinction</h1>
-          <p className="page-hero-sub">Narrative-led. Never packaged. Always entirely your own.</p>
+      {/* Hero Section */}
+      <section className="hero" id="hero" aria-label="Hero" style={{ position: 'relative', overflow: 'hidden' }}>
+        <HeroVideoSlider />
+
+        <div className="hero-scroll-hint" aria-hidden="true" style={{ zIndex: 3 }}>
+          <span>Scroll</span>
+          <div style={{ marginTop: '8px' }}>
+            <LottieScroll />
+          </div>
         </div>
-      </header>
+      </section>
 
       {/* Intro */}
-      <section className="section-sm section-champagne" style={{ borderBottom: '1px solid var(--stone-dark)' }}>
-        <div className="container-narrow" style={{ textAlign: 'center' }}>
+      <section className="section-sm section-champagne" style={{ borderBottom: "1px solid var(--stone-dark)" }}>
+        <div className="container-narrow" style={{ textAlign: "center" }}>
           <p className="t-section-label gsap-fade-up">How We Think About Journeys</p>
           <span className="gold-line"></span>
-          <p className="t-subheadline gsap-fade-up" style={{ color: 'var(--charcoal)', maxWidth: '640px', margin: '0 auto', transitionDelay: '150ms' }}>
+          <p className="t-subheadline gsap-fade-up" style={{ color: "var(--charcoal)", maxWidth: "640px", margin: "0 auto", transitionDelay: "150ms" }}>
             These are not fixed itineraries. They are compositions — starting points from which your journey will be individually shaped around your travel dates, preferences, and pace.
           </p>
         </div>
       </section>
 
-      {/* Featured Journeys */}
-      <section className="section" id="featured-journeys" aria-label="Featured journeys">
+      {/* Journeys Catalog Grid */}
+      <section className="section" id="journeys-catalog" aria-label="Journeys catalog" style={{ background: "var(--white)" }}>
         <div className="container">
-          <div className="journeys-featured gsap-fade-in" style={{ marginBottom: 'var(--space-2)' }}>
-            {featuredJourneys.map((journey) => (
+          <div className="journeys-grid-catalog gsap-fade-in">
+            {allJourneys.map((journey) => (
               <motion.article
                 key={journey.title}
-                className="journey-card"
-                whileHover={{ scale: 1.015 }}
-                transition={{ duration: 0.4, ease: 'easeOut' }}
+                className="luxury-journey-card"
+                whileHover={{ y: -6 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+                onClick={() => router.push(journey.href)}
               >
-                <img
-                  src={journey.img}
-                  alt={journey.alt}
-                  className="journey-card-image"
-                  style={{ aspectRatio: '16 / 10' }}
-                  loading="lazy"
-                />
-                <div className="journey-card-overlay"></div>
-                <div className="journey-card-content">
-                  <span className="journey-card-label">{journey.label}</span>
-                  <h2 className="journey-card-title" style={{ fontSize: 'clamp(1.5rem, 3vw, 2.25rem)' }}>
-                    {journey.title}
-                  </h2>
-                  <p className="journey-card-excerpt">{journey.excerpt}</p>
-                  <Link href="/contact" className="text-link" style={{ color: 'var(--gold-light)' }}>
-                    Request This Journey
-                  </Link>
-                </div>
-              </motion.article>
-            ))}
-          </div>
-
-          <div className="journeys-list gsap-fade-in" style={{ transitionDelay: '300ms' }}>
-            {standardJourneys.map((journey) => (
-              <motion.article
-                key={journey.title}
-                className="journey-card"
-                whileHover={{ scale: 1.015 }}
-                transition={{ duration: 0.4, ease: 'easeOut' }}
-                onClick={(e) => {
-                  if (e.target.closest('a')) return;
-                  if (journey.href) {
-                    router.push(journey.href);
-                  }
-                }}
-                style={{ cursor: journey.href ? 'pointer' : 'default' }}
-              >
-                <img
-                  src={journey.img}
-                  alt={journey.alt}
-                  className="journey-card-image"
-                  loading="lazy"
-                />
-                <div className="journey-card-overlay"></div>
-                <div className="journey-card-content">
-                  <span className="journey-card-label">{journey.label}</span>
-                  <h3 className="journey-card-title">{journey.title}</h3>
-                  <p className="journey-card-excerpt">{journey.excerpt}</p>
-                  <div style={{ display: 'flex', gap: 'var(--space-6)', flexWrap: 'wrap' }}>
-                    {journey.href && (
-                      <Link href={journey.href} className="text-link" style={{ color: 'var(--gold-light)' }}>
-                        Explore Expedition
-                      </Link>
-                    )}
-                    <Link href="/contact" className="text-link" style={{ color: 'var(--gold-light)' }}>
-                      Request This Journey
-                    </Link>
+                {/* Image Section */}
+                <div className="luxury-card-image-wrapper">
+                  <img
+                    src={journey.img}
+                    alt={journey.alt}
+                    className="luxury-card-image"
+                    loading="lazy"
+                  />
+                  <div className="luxury-card-badges">
+                    {journey.badges.map((badge, idx) => (
+                      <span key={idx} className={`luxury-badge luxury-badge-${badge.type}`}>
+                        {badge.text}
+                      </span>
+                    ))}
                   </div>
+                </div>
+
+                {/* Body Content */}
+                <div className="luxury-card-body">
+                  <h3 className="luxury-card-title">{journey.title}</h3>
+
+                  <div className="luxury-card-duration">
+                    {journey.durationText}
+                  </div>
+
+                  <div className="luxury-card-itinerary">
+                    <span className="luxury-itinerary-heading">ITINERARY</span>
+                    <p className="luxury-itinerary-list">{journey.itineraryList}</p>
+                  </div>
+                </div>
+
+                {/* Footer Section */}
+                <div className="luxury-card-footer">
+                  <button className="luxury-card-btn">
+                    View Journey
+                  </button>
                 </div>
               </motion.article>
             ))}
@@ -173,16 +206,16 @@ export default function JourneysPage() {
 
       {/* Bespoke Note */}
       <section className="section section-champagne" id="bespoke-note">
-        <div className="container-narrow" style={{ textAlign: 'center' }}>
+        <div className="container-narrow" style={{ textAlign: "center" }}>
           <span className="t-section-label gsap-fade-up">Not Seeing Your Vision?</span>
           <span className="gold-line"></span>
-          <h2 className="t-headline gsap-fade-up" style={{ transitionDelay: '150ms' }}>
+          <h2 className="t-headline gsap-fade-up" style={{ transitionDelay: "150ms" }}>
             Every Journey Can Be Created From Scratch
           </h2>
-          <p className="t-body gsap-fade-up" style={{ maxWidth: '580px', margin: 'var(--space-4) auto var(--space-10)', transitionDelay: '300ms' }}>
+          <p className="t-body gsap-fade-up" style={{ maxWidth: "580px", margin: "var(--space-4) auto var(--space-10)", transitionDelay: "300ms" }}>
             These journeys are starting points — frameworks, not formulas. Tell us what India means to you and we will design something that has never existed before.
           </p>
-          <Link href="/contact" className="btn btn-dark btn-arrow gsap-fade-up" id="bespoke-inquiry-btn" style={{ transitionDelay: '450ms' }}>
+          <Link href="/contact" className="btn btn-dark btn-arrow gsap-fade-up" id="bespoke-inquiry-btn" style={{ transitionDelay: "450ms" }}>
             Design My Journey
           </Link>
         </div>

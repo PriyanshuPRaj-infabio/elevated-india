@@ -9,47 +9,58 @@
 /* ── Design Tokens ── */
 :root {
   /* Colors */
-  --ivory:          #F7F3EE;
-  --stone:          #EDE8E0;
-  --stone-dark:     #DDD5C8;
-  --charcoal:       #1C1C1C;
-  --charcoal-mid:   #2E2E2E;
+  --ivory: #F7F3EE;
+  --stone: #EDE8E0;
+  --stone-dark: #DDD5C8;
+  --charcoal: #1C1C1C;
+  --charcoal-mid: #2E2E2E;
   --charcoal-light: #5A5A5A;
-  --gold:           #B8964A;
-  --gold-light:     #D4AF72;
-  --gold-pale:      #E8D5A8;
-  --champagne:      #F2E8D4;
-  --forest:         #2D4A3E;
-  --maroon:         #5C1A2A;
-  --indigo:         #2C3456;
-  --white:          #FFFFFF;
-  --black:          #0A0A0A;
+  --gold: #B8964A;
+  --gold-light: #D4AF72;
+  --gold-pale: #E8D5A8;
+  --champagne: #F2E8D4;
+  --forest: #2D4A3E;
+  --maroon: #5C1A2A;
+  --indigo: #2C3456;
+  --white: #FFFFFF;
+  --black: #0A0A0A;
 
   /* Typography */
-  --font-serif:  'Cormorant Garamond', 'Georgia', serif;
-  --font-sans:   'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Cormorant Garamond', 'Georgia', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
   /* Font Sizes */
-  --text-xs:     0.6875rem;   /* 11px */
-  --text-sm:     0.8125rem;   /* 13px */
-  --text-base:   0.9375rem;   /* 15px */
-  --text-md:     1.0625rem;   /* 17px */
-  --text-lg:     1.25rem;     /* 20px */
-  --text-xl:     1.5rem;      /* 24px */
-  --text-2xl:    2rem;        /* 32px */
-  --text-3xl:    2.625rem;    /* 42px */
-  --text-4xl:    3.5rem;      /* 56px */
-  --text-5xl:    4.5rem;      /* 72px */
-  --text-6xl:    6rem;        /* 96px */
+  --text-xs: 0.6875rem;
+  /* 11px */
+  --text-sm: 0.8125rem;
+  /* 13px */
+  --text-base: 0.9375rem;
+  /* 15px */
+  --text-md: 1.0625rem;
+  /* 17px */
+  --text-lg: 1.25rem;
+  /* 20px */
+  --text-xl: 1.5rem;
+  /* 24px */
+  --text-2xl: 2rem;
+  /* 32px */
+  --text-3xl: 2.625rem;
+  /* 42px */
+  --text-4xl: 3.5rem;
+  /* 56px */
+  --text-5xl: 4.5rem;
+  /* 72px */
+  --text-6xl: 6rem;
+  /* 96px */
 
   /* Spacing */
-  --space-1:  0.25rem;
-  --space-2:  0.5rem;
-  --space-3:  0.75rem;
-  --space-4:  1rem;
-  --space-5:  1.25rem;
-  --space-6:  1.5rem;
-  --space-8:  2rem;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
   --space-10: 2.5rem;
   --space-12: 3rem;
   --space-16: 4rem;
@@ -58,26 +69,28 @@
   --space-32: 8rem;
 
   /* Layout */
-  --max-width:    1320px;
-  --nav-height:   88px;
+  --max-width: 1320px;
+  --nav-height: 88px;
 
   /* Transitions */
-  --ease-out:     cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-in-out:  cubic-bezier(0.4, 0, 0.2, 1);
-  --duration-fast:   200ms;
-  --duration-base:   400ms;
-  --duration-slow:   700ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 200ms;
+  --duration-base: 400ms;
+  --duration-slow: 700ms;
   --duration-slower: 1100ms;
 
   /* Shadows */
-  --shadow-sm:  0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-  --shadow-md:  0 4px 16px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.05);
-  --shadow-lg:  0 16px 48px rgba(0,0,0,0.12), 0 6px 16px rgba(0,0,0,0.08);
-  --shadow-xl:  0 32px 72px rgba(0,0,0,0.18), 0 12px 28px rgba(0,0,0,0.10);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.12), 0 6px 16px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 32px 72px rgba(0, 0, 0, 0.18), 0 12px 28px rgba(0, 0, 0, 0.10);
 }
 
 /* ── Reset ── */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -119,7 +132,8 @@ button {
   background: none;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -234,9 +248,23 @@ ul, ol {
 }
 
 /* ── Grid Utilities ── */
-.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-8); }
-.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-8); }
-.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-8); }
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-8);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-8);
+}
 
 /* ── Gold Divider ── */
 .gold-line {
@@ -256,7 +284,7 @@ ul, ol {
   opacity: 0;
   transform: translateY(28px);
   transition: opacity var(--duration-slower) var(--ease-out),
-              transform var(--duration-slower) var(--ease-out);
+    transform var(--duration-slower) var(--ease-out);
 }
 
 .fade-up.visible {
@@ -273,26 +301,73 @@ ul, ol {
   opacity: 1;
 }
 
-.delay-1 { transition-delay: 150ms; }
-.delay-2 { transition-delay: 300ms; }
-.delay-3 { transition-delay: 450ms; }
-.delay-4 { transition-delay: 600ms; }
-.delay-5 { transition-delay: 750ms; }
-.delay-6 { transition-delay: 900ms; }
+.delay-1 {
+  transition-delay: 150ms;
+}
+
+.delay-2 {
+  transition-delay: 300ms;
+}
+
+.delay-3 {
+  transition-delay: 450ms;
+}
+
+.delay-4 {
+  transition-delay: 600ms;
+}
+
+.delay-5 {
+  transition-delay: 750ms;
+}
+
+.delay-6 {
+  transition-delay: 900ms;
+}
 
 /* ── Flex Utilities ── */
-.flex { display: flex; }
-.flex-center { display: flex; align-items: center; justify-content: center; }
-.flex-between { display: flex; align-items: center; justify-content: space-between; }
-.flex-col { display: flex; flex-direction: column; }
-.gap-4 { gap: var(--space-4); }
-.gap-6 { gap: var(--space-6); }
-.gap-8 { gap: var(--space-8); }
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-4 {
+  gap: var(--space-4);
+}
+
+.gap-6 {
+  gap: var(--space-6);
+}
+
+.gap-8 {
+  gap: var(--space-8);
+}
 
 /* ── Responsive ── */
 @media (max-width: 1024px) {
-  .grid-4 { grid-template-columns: repeat(2, 1fr); }
-  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {

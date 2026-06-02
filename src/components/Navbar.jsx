@@ -76,9 +76,13 @@ export default function Navbar() {
         aria-label="Main navigation"
       >
         <div className="nav-inner">
-          <Link href="/" className="nav-logo" aria-label="Elevated India Home">
-            <span className="nav-logo-name">Elevated India</span>
-            <span className="nav-logo-tagline">Private Travel House</span>
+          <Link href="/" className="nav-logo" aria-label="Elevated India Home" style={{ display: 'flex', alignItems: 'center' }}>
+            <img 
+              src={isScrolled ? "/logo-light.png" : "/logo-dark.png"} 
+              alt="Elevated India" 
+              style={{ width: 'auto', display: 'block' }}
+              className="nav-logo-img"
+            />
           </Link>
 
           <ul className="nav-links" role="list">
