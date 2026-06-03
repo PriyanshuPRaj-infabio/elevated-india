@@ -1,38 +1,38 @@
 // Coordinate registry for all cities and stops in India and Nepal
 export const LOCATIONS = {
-  delhi:          { name: "Delhi",          coords: [77.2090, 28.6139] },
-  agra:           { name: "Agra",           coords: [78.0081, 27.1767] },
-  jaipur:         { name: "Jaipur",         coords: [75.7873, 26.9124] },
-  kathmandu:      { name: "Kathmandu",      coords: [85.3240, 27.7172] },
-  chitwan:        { name: "Chitwan",        coords: [84.4284, 27.5317] },
-  pokhara:        { name: "Pokhara",        coords: [83.9856, 28.2096] },
-  jodhpur:        { name: "Jodhpur",        coords: [73.0243, 26.2389] },
-  nimaj:          { name: "Nimaj",          coords: [74.0768, 26.3023] },
-  jhansi:         { name: "Jhansi",         coords: [78.5685, 25.4484] },
-  khajuraho:      { name: "Khajuraho",      coords: [79.9199, 24.8318] },
-  varanasi:       { name: "Varanasi",       coords: [82.9739, 25.3176] },
-  chennai:        { name: "Chennai",        coords: [80.2707, 13.0827] },
-  mahabalipuram:  { name: "Mahabalipuram",  coords: [80.1724, 12.6269] },
-  pondicherry:    { name: "Pondicherry",    coords: [79.8083, 11.9416] },
-  tanjore:        { name: "Tanjore",        coords: [79.1378, 10.7870] },
-  madurai:        { name: "Madurai",        coords: [78.1198, 9.9252] },
-  periyar:        { name: "Periyar",        coords: [77.1685, 9.6105] },
-  kumarakom:      { name: "Kumarakom",      coords: [76.4312, 9.5936] },
-  cochin:         { name: "Cochin",         coords: [76.2673, 9.9312] },
-  kolkata:        { name: "Kolkata",        coords: [88.3639, 22.5726] },
-  mumbai:         { name: "Mumbai",         coords: [72.8777, 19.0760] },
-  amanbagh:       { name: "Amanbagh",       coords: [76.3533, 27.2796] },
-  deogarh:        { name: "Deogarh",        coords: [73.9056, 25.5342] },
-  udaipur:        { name: "Udaipur",        coords: [73.7125, 24.5854] },
-  ahmedabad:      { name: "Ahmedabad",      coords: [72.5714, 23.0225] },
-  vadodara:       { name: "Vadodara",       coords: [73.1812, 22.3072] },
-  rajpipla:       { name: "Rajpipla",       coords: [73.5042, 21.7876] },
-  lucknow:        { name: "Lucknow",        coords: [80.9462, 26.8467] },
-  hyderabad:      { name: "Hyderabad",      coords: [78.4867, 17.3850] },
-  alleppey:       { name: "Alleppey",       coords: [76.3388, 9.4981] },
-  munnar:         { name: "Munnar",         coords: [77.0595, 10.0889] },
-  marari:         { name: "Marari Beach",   coords: [76.2974, 9.6006] },
-  goa:            { name: "Goa",            coords: [73.8278, 15.2993] }
+  delhi: { name: "Delhi", coords: [77.2090, 28.6139] },
+  agra: { name: "Agra", coords: [78.0081, 27.1767] },
+  jaipur: { name: "Jaipur", coords: [75.7873, 26.9124] },
+  kathmandu: { name: "Kathmandu", coords: [85.3240, 27.7172] },
+  chitwan: { name: "Chitwan", coords: [84.4284, 27.5317] },
+  pokhara: { name: "Pokhara", coords: [83.9856, 28.2096] },
+  jodhpur: { name: "Jodhpur", coords: [73.0243, 26.2389] },
+  nimaj: { name: "Nimaj", coords: [74.0768, 26.3023] },
+  jhansi: { name: "Jhansi", coords: [78.5685, 25.4484] },
+  khajuraho: { name: "Khajuraho", coords: [79.9199, 24.8318] },
+  varanasi: { name: "Varanasi", coords: [82.9739, 25.3176] },
+  chennai: { name: "Chennai", coords: [80.2707, 13.0827] },
+  mahabalipuram: { name: "Mahabalipuram", coords: [80.1724, 12.6269] },
+  pondicherry: { name: "Pondicherry", coords: [79.8083, 11.9416] },
+  tanjore: { name: "Tanjore", coords: [79.1378, 10.7870] },
+  madurai: { name: "Madurai", coords: [78.1198, 9.9252] },
+  periyar: { name: "Periyar", coords: [77.1685, 9.6105] },
+  kumarakom: { name: "Kumarakom", coords: [76.4312, 9.5936] },
+  cochin: { name: "Cochin", coords: [76.2673, 9.9312] },
+  kolkata: { name: "Kolkata", coords: [88.3639, 22.5726] },
+  mumbai: { name: "Mumbai", coords: [72.8777, 19.0760] },
+  amanbagh: { name: "Amanbagh", coords: [76.3533, 27.2796] },
+  deogarh: { name: "Deogarh", coords: [73.9056, 25.5342] },
+  udaipur: { name: "Udaipur", coords: [73.7125, 24.5854] },
+  ahmedabad: { name: "Ahmedabad", coords: [72.5714, 23.0225] },
+  vadodara: { name: "Vadodara", coords: [73.1812, 22.3072] },
+  rajpipla: { name: "Rajpipla", coords: [73.5042, 21.7876] },
+  lucknow: { name: "Lucknow", coords: [80.9462, 26.8467] },
+  hyderabad: { name: "Hyderabad", coords: [78.4867, 17.3850] },
+  alleppey: { name: "Alleppey", coords: [76.3388, 9.4981] },
+  munnar: { name: "Munnar", coords: [77.0595, 10.0889] },
+  marari: { name: "Marari Beach", coords: [76.2974, 9.6006] },
+  goa: { name: "Goa", coords: [73.8278, 15.2993] }
 };
 
 export const JOURNEYS = {
@@ -330,12 +330,12 @@ export const JOURNEYS = {
       {
         title: "Meghauli Serai (Taj Safari) Chitwan",
         desc: "A luxurious wilderness lodge situated along the Rapti River, featuring custom private plunge pools and scenic views of the grasslands.",
-        image: "/images/wildlife.jpg"
+        image: "/images/Meghauli Serai (Taj Safari) Chitwan.jpg"
       },
       {
         title: "Dwarika's Hotel Kathmandu",
         desc: "A magnificent heritage property designed around courtyard architectural restoration and authentic Newari craftsmanship.",
-        image: "/images/palace_interior_1776272621551.png"
+        image: "/images/Dwarika's Hotel Kathmandu.jpeg"
       }
     ],
     itinerary: [
@@ -514,7 +514,7 @@ export const JOURNEYS = {
           dining: "Traditional Newari lunch, fireside dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/art&culture.jpg", caption: "Ornate temples and stupas in Patan Durbar Square" }],
+        images: [{ url: "/images/patan durbar square.webp", caption: "Ornate temples and stupas in Patan Durbar Square" }],
         expertNote: "Patan is renowned for its fine metalwork. You will see artisans hammering copper and bronze in narrow streets.",
         highlights: ["Patan Durbar Square", "Swayambhunath", "Ancient Newari Craft"],
         revealedRouteKeys: ["delhi", "agra", "jaipur", "kathmandu"]
@@ -532,7 +532,7 @@ export const JOURNEYS = {
           dining: "Organic farm-to-table lunch, bush dinner under lanterns",
           transport: "Private air-conditioned SUV"
         },
-        images: [{ url: "/images/wildlife.jpg", caption: "Meghauli Serai on the banks of Rapti River" }],
+        images: [{ url: "/images/rapti river.jpg", caption: "Meghauli Serai on the banks of Rapti River" }],
         expertNote: "Chitwan is a subtropical forest. The climate is warm and humid, home to the Greater One-horned Rhinoceros.",
         highlights: ["Scenic Foothill Drive", "River Cruise Sunset", "Safari Lodge Arrival"],
         revealedRouteKeys: ["delhi", "agra", "jaipur", "kathmandu", "chitwan"]
@@ -550,7 +550,7 @@ export const JOURNEYS = {
           dining: "Jungle breakfast picnic, gourmet local lunch",
           transport: "Safari open 4x4 jeep & wooden canoe"
         },
-        images: [{ url: "/images/wildlife.jpg", caption: "A Greater One-horned Rhinoceros in the tall grasslands of Chitwan" }],
+        images: [{ url: "/images/Rhino-chitwan.jpg", caption: "A Greater One-horned Rhinoceros in the tall grasslands of Chitwan" }],
         expertNote: "Chitwan has successfully conserved the rhino. Look closely in the marshy wetlands for their prehistoric profiles.",
         highlights: ["Rhino Tracking Safari", "Grassland Rickshaw Tour", "Gharial Crocodile Spotting"],
         revealedRouteKeys: ["delhi", "agra", "jaipur", "kathmandu", "chitwan"]
@@ -568,7 +568,7 @@ export const JOURNEYS = {
           dining: "Fresh organic lake-view dinner",
           transport: "Private luxury SUV & boat"
         },
-        images: [{ url: "/images/himalayan_monastery_1776272544257.png", caption: "Fewa Lake reflecting the snowy peaks of Pokhara" }],
+        images: [{ url: "/images/fewa lake-pokhara.webp", caption: "Fewa Lake reflecting the snowy peaks of Pokhara" }],
         expertNote: "Pokhara is much lower in elevation than Kathmandu. The subtropical climate is filled with banana trees and orchids.",
         highlights: ["Fewa Lake Boat Cruise", "Annapurna Reflection Views", "Boutique Mountain Stay"],
         revealedRouteKeys: ["delhi", "agra", "jaipur", "kathmandu", "chitwan", "pokhara"]
@@ -586,7 +586,7 @@ export const JOURNEYS = {
           dining: "Mountain lodge lunch, private chef's dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/himalayan_monastery_1776272544257.png", caption: "Sunrise over the Annapurna Mountain range" }],
+        images: [{ url: "/images/sunrise-over-annapurna-mountain-range.jpeg", caption: "Sunrise over the Annapurna Mountain range" }],
         expertNote: "Sarangkot offers one of the closest and clearest views of mountains exceeding 8,000 meters in height.",
         highlights: ["Sarangkot Sunrise", "World Peace Pagoda", "Davi's Falls Cave"],
         revealedRouteKeys: ["delhi", "agra", "jaipur", "kathmandu", "chitwan", "pokhara"]
@@ -604,7 +604,7 @@ export const JOURNEYS = {
           dining: "Nepalese fine dining farewell dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/palace_interior_1776272621551.png", caption: "Traditional woodcarvings and courtyards of Dwarika's" }],
+        images: [{ url: "/images/dwarikas_elisehassey.jpg", caption: "Traditional woodcarvings and courtyards of Dwarika's" }],
         expertNote: "Use this final afternoon to shop for traditional Thangka paintings or fine pashmina shawls in Patan.",
         highlights: ["Scenic Highway Return", "Traditional Farewell Ceremony"],
         revealedRouteKeys: ["delhi", "agra", "jaipur", "kathmandu", "chitwan", "pokhara", "kathmandu"]
@@ -622,7 +622,7 @@ export const JOURNEYS = {
           dining: "Lodge breakfast",
           transport: "Private luxury SUV transfer"
         },
-        images: [{ url: "/images/journeys_hero_1776334755097.png", caption: "Departing Kathmandu Valley" }],
+        images: [{ url: "/images/MountEverestScenic.jpg", caption: "Departing Kathmandu Valley" }],
         expertNote: "Check in early to secure a seat on the left side of the aircraft for views of the Everest range on your flight out.",
         highlights: ["VIP Airport Exit", "Everest Range Views"],
         revealedRouteKeys: ["delhi", "agra", "jaipur", "kathmandu", "chitwan", "pokhara", "kathmandu"]
@@ -717,7 +717,7 @@ export const JOURNEYS = {
           dining: "Gourmet dinner in Rang Mahal restaurant car",
           transport: "Maharajas' Express Luxury Train"
         },
-        images: [{ url: "/images/maharaja express.jpeg"}],
+        images: [{ url: "/images/maharaja express.jpeg" }],
         expertNote: "This train has been repeatedly voted the world's leading luxury train. Enjoy the bespoke bar cart tonight.",
         highlights: ["Red Carpet Reception", "Luxury Train Suites", "Rang Mahal Dining"],
         revealedRouteKeys: ["delhi"]
@@ -965,22 +965,22 @@ export const JOURNEYS = {
       {
         title: "Svatma Tanjore",
         desc: "A beautifully restored century-old boutique mansion celebrating classical Tamil art, architecture, and vegetarian culinary heritage.",
-        image: "/images/palace_interior_1776272621551.png"
+        image: "/images/svatma-tanjore.png"
       },
       {
         title: "Taj Fisherman's Cove Mahabalipuram",
         desc: "Built on the ramparts of an 18th-century Dutch fort, offering private villas nestled along the Bay of Bengal.",
-        image: "/images/art&culture.jpg"
+        image: "/images/fishermans-cove.png"
       },
       {
         title: "Kumarakom Lake Resort",
         desc: "Acclaimed heritage lakefront villas featuring private pools, built from actual reassembled 150-year-old traditional Keralan homesteads.",
-        image: "/images/ayurveda_wellness_1776272638098.png"
+        image: "/images/kumarakom-lake-resort.jpg"
       },
       {
         title: "Brunton Boatyard Cochin",
         desc: "A harbor-front hotel steeped in Victorian-era shipping merchant history, offering views of the Cochin channels.",
-        image: "/images/final_cta_bg.png"
+        image: "/images/brunton-boatyard.jpg"
       }
     ],
     itinerary: [
@@ -997,7 +997,7 @@ export const JOURNEYS = {
           dining: "Traditional South Indian feast at Raintree",
           transport: "Private luxury SUV transfer"
         },
-        images: [{ url: "/images/palace_interior_1776272621551.png", caption: "Welcome to Chennai's legendary heritage hotel" }],
+        images: [{ url: "/images/taj-connemara.png", caption: "Welcome to Chennai's legendary heritage hotel" }],
         expertNote: "Chennai is the capital of Tamil Nadu, a region of ancient Dravidian culture that remains completely distinct from Northern India.",
         highlights: ["VIP Airport Service", "Dravidian Heritage Curation"],
         revealedRouteKeys: ["chennai"]
@@ -1015,7 +1015,7 @@ export const JOURNEYS = {
           dining: "Seafood lunch on the beach, coastal dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/art&culture.jpg", caption: "The ancient Shore Temples of Mahabalipuram" }],
+        images: [{ url: "/images/mahabalipuram-shore-temple.png", caption: "The ancient Shore Temples of Mahabalipuram" }],
         expertNote: "The Shore Temples were carved in the 8th century under the Pallava dynasty. They have stood against the ocean wind and tides for over 1,200 years.",
         highlights: ["Shore Temples", "Five Rathas Monoliths", "Private Beachfront Villa"],
         revealedRouteKeys: ["chennai", "mahabalipuram"]
@@ -1033,7 +1033,7 @@ export const JOURNEYS = {
           dining: "South Indian filter-coffee breakfast, private garden dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/about_hero_1776334848582.png", caption: "Detailed bas-relief stone carvings of elephants and gods" }],
+        images: [{ url: "/images/arjuna-penance.png", caption: "Detailed bas-relief stone carvings of elephants and gods" }],
         expertNote: "Arjuna's Penance is 96 feet long and 43 feet high. It represents the descent of the Ganges River to earth.",
         highlights: ["Arjuna's Penance Relief", "Krishna's Butterball", "Traditional Stone Sculpting"],
         revealedRouteKeys: ["chennai", "mahabalipuram"]
@@ -1051,7 +1051,7 @@ export const JOURNEYS = {
           dining: "French-Creole lunch, rooftop seafood dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/palace_dining_1776272561908.png", caption: "Warm yellow arches and colonial dining in Pondicherry" }],
+        images: [{ url: "/images/pondicherry-french-quarter.png", caption: "Warm yellow arches and colonial dining in Pondicherry" }],
         expertNote: "Pondicherry was a French colony until 1954. The French influence remains strong in the local architecture, cuisine, and police uniforms.",
         highlights: ["French Quarter Walk", "Creole Gastronomy Curation", "Rooftop Sea Views"],
         revealedRouteKeys: ["chennai", "mahabalipuram", "pondicherry"]
@@ -1069,7 +1069,7 @@ export const JOURNEYS = {
           dining: "Organic farm-to-table lunch, French bistro dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/ayurveda_wellness_1776272638098.png", caption: "The golden Matrimandir sphere at Auroville" }],
+        images: [{ url: "/images/auroville-matrimandir.png", caption: "The golden Matrimandir sphere at Auroville" }],
         expertNote: "Matrimandir is a silent dome designed for meditation. The interior features a giant crystal ball lit by a single ray of sunlight from the roof.",
         highlights: ["Auroville Matrimandir", "Sri Aurobindo Ashram", "Organic Farm Tour"],
         revealedRouteKeys: ["chennai", "mahabalipuram", "pondicherry"]
@@ -1087,7 +1087,7 @@ export const JOURNEYS = {
           dining: "Pure vegetarian Chidambaram feast",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/palace_interior_1776272621551.png", caption: "Heritage restoration courtyards at Svatma Tanjore" }],
+        images: [{ url: "/images/svatma-tanjore.png", caption: "Heritage restoration courtyards at Svatma Tanjore" }],
         expertNote: "Tanjore is the cradle of classical South Indian music and painting. The local hotel features restored 100-year-old villas.",
         highlights: ["Kaveri Delta Drive", "Classical Veena Concert", "Heritage Villa Stay"],
         revealedRouteKeys: ["chennai", "mahabalipuram", "pondicherry", "tanjore"]
@@ -1105,7 +1105,7 @@ export const JOURNEYS = {
           dining: "Temple-recipe lunch, traditional dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/art&culture.jpg", caption: "The massive stone cupola of Brihadisvara Temple" }],
+        images: [{ url: "/images/brihadisvara-temple.png", caption: "The massive stone cupola of Brihadisvara Temple" }],
         expertNote: "The temple tower is 216 feet high. The monolithic stone cupola on the top weighs 80 tons—how they moved it there in 1010 AD remains a mystery.",
         highlights: ["Brihadisvara Temple", "Chola Bronze Casting Workshop", "Tanjore Painting Masterclass"],
         revealedRouteKeys: ["chennai", "mahabalipuram", "pondicherry", "tanjore"]
@@ -1123,7 +1123,7 @@ export const JOURNEYS = {
           dining: "Traditional Madurai street-food inspired gourmet dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/dashashwamedh-ghat-evening-ganga-aarti.jpg", caption: "Evening fire ceremonies inside the temple corridors" }],
+        images: [{ url: "/images/meenakshi-temple-ceremony.png", caption: "Evening fire ceremonies inside the temple corridors" }],
         expertNote: "Meenakshi Temple is the heart of Madurai. The evening ceremony sees the image of Lord Shiva being carried to the chamber of Goddess Meenakshi.",
         highlights: ["Meenakshi Temple Evening Chants", "Heritage Villa stay", "Gopuram Tower Sunset"],
         revealedRouteKeys: ["chennai", "mahabalipuram", "pondicherry", "tanjore", "madurai"]
@@ -1141,7 +1141,7 @@ export const JOURNEYS = {
           dining: "Traditional banana leaf lunch, garden bistro dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/palace_interior_1776272621551.png", caption: "The monumental columns of Tirumalai Nayakkar Palace" }],
+        images: [{ url: "/images/nayakkar-palace.png", caption: "The monumental columns of Tirumalai Nayakkar Palace" }],
         expertNote: "Tirumalai Nayakkar Palace features massive white stucco pillars designed by Italian architects in 1636.",
         highlights: ["Hall of 1000 Pillars", "Sacred Lotus Tank", "Nayakkar Palace Columns"],
         revealedRouteKeys: ["chennai", "mahabalipuram", "pondicherry", "tanjore", "madurai"]
@@ -1159,7 +1159,7 @@ export const JOURNEYS = {
           dining: "Spiced farm lunch, tribal cooking demonstration",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/wildlife.jpg", caption: "Lush green spice plantation paths in Periyar hills" }],
+        images: [{ url: "/images/periyar-spice-plantation.png", caption: "Lush green spice plantation paths in Periyar hills" }],
         expertNote: "Periyar is 3,000 feet above sea level. Black pepper, cardamom, cinnamon, and nutmeg grow wild in these hill forests.",
         highlights: ["Western Ghats Scenic Drive", "Spice Plantation Walk", "Eco-friendly Village Stay"],
         revealedRouteKeys: ["chennai", "mahabalipuram", "pondicherry", "tanjore", "madurai", "periyar"]
@@ -1177,7 +1177,7 @@ export const JOURNEYS = {
           dining: "Hill lodge picnic breakfast, local fish curry dinner",
           transport: "Private charter boat & walking"
         },
-        images: [{ url: "/images/wildlife.jpg", caption: "Wild elephants bathing in Lake Periyar" }],
+        images: [{ url: "/images/lake-periyar-elephants.png", caption: "Wild elephants bathing in Lake Periyar" }],
         expertNote: "Lake Periyar is an artificial reservoir created in 1895. Submerged tree stumps still rise from the water, providing perches for kingfishers.",
         highlights: ["Lake Periyar Boat Safari", "Rainforest Trekking", "Traditional Ayurvedic Massage"],
         revealedRouteKeys: ["chennai", "mahabalipuram", "pondicherry", "tanjore", "madurai", "periyar"]
@@ -1231,7 +1231,7 @@ export const JOURNEYS = {
           dining: "Anglo-Indian port lunch, seafood grill dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/final_cta_bg.png", caption: "Fort Cochin harbor and Chinese fishing nets at dusk" }],
+        images: [{ url: "/images/Chinese-Fishing-Nets-in-Kochi.avif", caption: "Fort Cochin harbor and Chinese fishing nets at dusk" }],
         expertNote: "Cochin was the center of the Indian spice trade for centuries, influenced by Jewish, Christian, Portuguese, Dutch, and British settlers.",
         highlights: ["Fort Cochin Walk", "Chinese Fishing Nets", "Malabar Harbor Views"],
         revealedRouteKeys: ["chennai", "mahabalipuram", "pondicherry", "tanjore", "madurai", "periyar", "kumarakom", "cochin"]
@@ -1249,7 +1249,7 @@ export const JOURNEYS = {
           dining: "Traditional Keralan lunch, farewell harbour-front dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/art&culture.jpg", caption: "Traditional Kathakali dancer applying colorful face makeup" }],
+        images: [{ url: "/images/kathakali-makeup.png", caption: "Traditional Kathakali dancer applying colorful face makeup" }],
         expertNote: "Kathakali dancers spend hours painting their faces with natural colors. The dance relies on complex eye movements and hand gestures.",
         highlights: ["Paradesi Synagogue", "Mattancherry Palace Murals", "Private Kathakali Performance"],
         revealedRouteKeys: ["chennai", "mahabalipuram", "pondicherry", "tanjore", "madurai", "periyar", "kumarakom", "cochin"]
@@ -1267,7 +1267,7 @@ export const JOURNEYS = {
           dining: "Harbour-side breakfast",
           transport: "Private luxury SUV transfer"
         },
-        images: [{ url: "/images/journeys_hero_1776334755097.png", caption: "Departure flight out of Cochin Airport" }],
+        images: [{ url: "/images/cochin_airport.jpg", caption: "Departure flight out of Cochin Airport" }],
         expertNote: "Cochin airport is the world's first fully solar-powered airport. Carry home the scent of cardamom and sandalwood.",
         highlights: ["VIP Airport Exit", "Malabar Coast Memories"],
         revealedRouteKeys: ["chennai", "mahabalipuram", "pondicherry", "tanjore", "madurai", "periyar", "kumarakom", "cochin"]
@@ -1562,17 +1562,17 @@ export const JOURNEYS = {
       {
         title: "Amanbagh, Ajabgarh Valley",
         desc: "A contemporary sanctuary styled like a Mughal palace, set in a peaceful desert oasis.",
-        image: "/images/palace.jpg"
+        image: "/images/Amanbagh, India - Main Building, Pool View-3.jpg"
       },
       {
         title: "Taj Lake Palace, Udaipur",
         desc: "The floating marble palace of your dreams in the center of Lake Pichola.",
-        image: "/images/hero_palace_lake_1776272480532.png"
+        image: "/images/taj-lake-palace-udaipur.jpeg"
       },
       {
         title: "Deogarh Mahal, Rajasthan",
         desc: "A stunning fort palace built on a hilltop, offering rich local art and warm hospitality.",
-        image: "/images/rajasthan_palace_exterior_1776272664878.png"
+        image: "/images/deogarh-mahal.webp"
       }
     ],
     itinerary: [
@@ -1661,7 +1661,7 @@ export const JOURNEYS = {
           dining: "Organic garden-to-table dining",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/palace.jpg", caption: "The pink sandstone domes of Amanbagh" }],
+        images: [{ url: "/images/Amanbagh, India - Main Building, Pool View-3.jpg", caption: "The pink sandstone domes of Amanbagh" }],
         expertNote: "Amanbagh lies on the site of a former royal hunting lodge in the Ajabgarh Valley.",
         highlights: ["Haveli Suite Luxury", "Aravalli Valley Views"],
         revealedRouteKeys: ["delhi", "agra", "amanbagh"]
@@ -1679,7 +1679,7 @@ export const JOURNEYS = {
           dining: "Traditional Rajasthani courtyard lunch, private poolside dinner",
           transport: "Open-top safari jeep"
         },
-        images: [{ url: "/images/palace.jpg", caption: "Sunset temple blessing in the hills of Ajabgarh" }],
+        images: [{ url: "/images/ajabgarh-fort.jpg", caption: "Hills of Ajabgarh" }],
         expertNote: "Bhangarh is famously known as India's most haunted fort ruins, dating back to the 17th century.",
         highlights: ["Bhangarh Haunted Ruins", "Sunset Temple Puja"],
         revealedRouteKeys: ["delhi", "agra", "amanbagh"]
@@ -1715,7 +1715,7 @@ export const JOURNEYS = {
           dining: "Palace lawn lunch, courtyard dining under the stars",
           transport: "Private explorer SUV"
         },
-        images: [{ url: "/images/palace.jpg", caption: "The pink-painted stone facades of the Hawa Mahal" }],
+        images: [{ url: "/images/hawamahal.jpg", caption: "The pink-painted stone facades of the Hawa Mahal" }],
         expertNote: "Jantar Mantar is a UNESCO World Heritage site featuring the world's largest stone sundial.",
         highlights: ["City Palace Private Tour", "Hawa Mahal Wind Facade"],
         revealedRouteKeys: ["delhi", "agra", "amanbagh", "jaipur"]
@@ -1733,7 +1733,7 @@ export const JOURNEYS = {
           dining: "Traditional Mewari family dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/rajasthan_palace_exterior_1776272664878.png", caption: "Deogarh Mahal towering over the rural landscape" }],
+        images: [{ url: "/images/deogarh-mahal.webp", caption: "Deogarh Mahal" }],
         expertNote: "Deogarh is famous for its miniature school of painting, which is proudly displayed in the palace.",
         highlights: ["Deogarh Hilltop Fort", "Mewari Painting Curation"],
         revealedRouteKeys: ["delhi", "agra", "amanbagh", "jaipur", "deogarh"]
@@ -1751,7 +1751,7 @@ export const JOURNEYS = {
           dining: "Gourmet picnic lunch, rooftop heritage buffet",
           transport: "Rural heritage rail coach & SUV"
         },
-        images: [{ url: "/images/wildlife.jpg", caption: "Scenic countryside rail journey through the Rajasthan hills" }],
+        images: [{ url: "/images/rail-journey-rajasthan.jpg", caption: "Scenic countryside rail journey through the Rajasthan hills" }],
         expertNote: "This single-track meter gauge railway cuts through beautiful mountain gorges and local villages.",
         highlights: ["Rural Meter Gauge Rail", "Lakeside Sunset Picnic"],
         revealedRouteKeys: ["delhi", "agra", "amanbagh", "jaipur", "deogarh"]
@@ -1769,7 +1769,7 @@ export const JOURNEYS = {
           dining: "Lakeside Mewari dinner",
           transport: "Private SUV & motor boat"
         },
-        images: [{ url: "/images/hero_palace_lake_1776272480532.png", caption: "Taj Lake Palace floating on Lake Pichola" }],
+        images: [{ url: "/images/taj-lake-palace-udaipur.jpeg", caption: "Taj Lake Palace floating on Lake Pichola" }],
         expertNote: "Taj Lake Palace is a white marble wonder that was built in 1746 as a summer palace for the royal dynasty.",
         highlights: ["Taj Lake Palace Stay", "Lake Pichola Boat Cruise"],
         revealedRouteKeys: ["delhi", "agra", "amanbagh", "jaipur", "deogarh", "udaipur"]
@@ -1787,7 +1787,7 @@ export const JOURNEYS = {
           dining: "Garden lunch, royal terrace dinner at Neel Kamal",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/palace.jpg", caption: "Intricate mosaic courtyards of the Udaipur City Palace" }],
+        images: [{ url: "/images/courtyards-udaipur-city-palace.jpg", caption: "Intricate mosaic courtyards of the Udaipur City Palace" }],
         expertNote: "Saheliyon-ki-Bari features beautiful marble fountains, pools, and lotus ponds built for royal ladies.",
         highlights: ["Udaipur City Palace", "Lotus Fountains Walk"],
         revealedRouteKeys: ["delhi", "agra", "amanbagh", "jaipur", "deogarh", "udaipur"]
@@ -1805,7 +1805,7 @@ export const JOURNEYS = {
           dining: "Traditional Gujarati Thali feast",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/art&culture.jpg", caption: "The incredible underground architecture of Adalaj Stepwell" }],
+        images: [{ url: "/images/adalaj-stepwll.jpg", caption: "The incredible underground architecture of Adalaj Stepwell" }],
         expertNote: "Adalaj Stepwell is a five-story deep underground architectural wonder built in 1498.",
         highlights: ["Adalaj Stepwell", "Gujarati Thali Experience"],
         revealedRouteKeys: ["delhi", "agra", "amanbagh", "jaipur", "deogarh", "udaipur", "ahmedabad"]
@@ -1823,7 +1823,7 @@ export const JOURNEYS = {
           dining: "Royal heritage lunch, contemporary organic dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/palace_interior_1776272621551.png", caption: "The massive Lukshmi Vilas Palace facade" }],
+        images: [{ url: "/images/lukshmi-vilas-palace.webp", caption: "The massive Lukshmi Vilas Palace facade" }],
         expertNote: "Lukshmi Vilas Palace features a grand Indo-Saracenic style built in 1890 with Italian marble floorings.",
         highlights: ["Lukshmi Vilas Palace", "Royal Heritage Homestay"],
         revealedRouteKeys: ["delhi", "agra", "amanbagh", "jaipur", "deogarh", "udaipur", "ahmedabad", "vadodara"]
@@ -1841,7 +1841,7 @@ export const JOURNEYS = {
           dining: "Royal organic lunch at Hanumanteshwar, farewell celebration dinner in Vadodara",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/art&culture.jpg", caption: "The quiet royal courtyards of the Rajpipla estate" }],
+        images: [{ url: "/images/rajpipla.jpg", caption: "The quiet royal courtyards of the Rajpipla estate" }],
         expertNote: "Prince Manvendra's trust is creating a safe haven for LGBTQ+ travelers and community members in India.",
         highlights: ["Royal Prince Audience", "Hanumanteshwar Estate Tour"],
         revealedRouteKeys: ["delhi", "agra", "amanbagh", "jaipur", "deogarh", "udaipur", "ahmedabad", "vadodara", "rajpipla"]
@@ -1859,7 +1859,7 @@ export const JOURNEYS = {
           dining: "Lodge breakfast",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/journeys_hero_1776334755097.png", caption: "Farewell to India" }],
+        images: [{ url: "/images/ahmedabad-airport.avif", caption: "Ahmedabad International Airport" }],
         expertNote: "Check in early to secure lounge access prior to your long-haul flight.",
         highlights: ["VIP Airport Exit"],
         revealedRouteKeys: ["delhi", "agra", "amanbagh", "jaipur", "deogarh", "udaipur", "ahmedabad", "vadodara", "rajpipla", "ahmedabad"]
@@ -1894,17 +1894,17 @@ export const JOURNEYS = {
       {
         title: "Taj Mahal Lucknow",
         desc: "A beautiful hotel situated in the heart of the city of Nawabs, known for royal hospitality.",
-        image: "/images/palace.jpg"
+        image: "/images/taj-mahal-lucknow.jpg"
       },
       {
         title: "Taj Nadesar Palace, Varanasi",
         desc: "A sanctuary of peace surrounded by marigold fields and sacred mango orchards.",
-        image: "/images/rajasthan_palace_exterior_1776272664878.png"
+        image: "/images/Taj_Nadesar_Palace.webp"
       },
       {
         title: "The Oberoi Grand Kolkata",
         desc: "The Grand Dame of Kolkata, offering heritage suites and prime colonial architecture.",
-        image: "/images/palace_interior_1776272621551.png"
+        image: "/images/the-oberoi-grand-kolkata.avif"
       }
     ],
     itinerary: [
@@ -1921,7 +1921,7 @@ export const JOURNEYS = {
           dining: "Mughlai welcome dinner at Spice Route",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/the-imperial-newdelhi.webp", caption: "The heritage courtyards of The Imperial" }],
+        images: [{ url: "/images/the-imperial-newdelhi.webp", caption: "The Imperial Hotel, Delhi" }],
         expertNote: "Take this afternoon to rest before diving into the spice markets of Old Delhi tomorrow.",
         highlights: ["VIP Airport Meet", "Spice Masterclass Welcome"],
         revealedRouteKeys: ["delhi"]
@@ -1939,7 +1939,7 @@ export const JOURNEYS = {
           dining: "Historic street food lunch, contemporary Indian tasting menu at Varq",
           transport: "Private SUV & bicycle rickshaw"
         },
-        images: [{ url: "/images/qutub minar.webp", caption: "Heaps of colorful spices at Khari Baoli market" }],
+        images: [{ url: "/images/Khari-baoli.webp", caption: "Heaps of colorful spices at Khari Baoli market" }],
         expertNote: "Khari Baoli is Asia's largest wholesale spice market, operating since the 17th century.",
         highlights: ["Khari Baoli Spice Walk", "Chandni Chowk Street Food"],
         revealedRouteKeys: ["delhi"]
@@ -1957,7 +1957,7 @@ export const JOURNEYS = {
           dining: "Mughalai dinner at Esphahan",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/The Oberoi Amarvilas.jpg", caption: "The Taj Mahal reflecting in the afternoon light" }],
+        images: [{ url: "/images/The Oberoi Amarvilas.jpg", caption: "The Oberoi Amarvilas, Agra" }],
         expertNote: "Esphahan is renowned for its slow-cooked lentils and traditional tandoori dishes, accompanied by live sitar music.",
         highlights: ["Taj Mahal Sunset Walk", "Traditional Petha Tasting"],
         revealedRouteKeys: ["delhi", "agra"]
@@ -1975,7 +1975,7 @@ export const JOURNEYS = {
           dining: "Mughal kitchen tasting lunch, international fine dining dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/taj-mahal.webp", caption: "Red sandstone ramparts of Agra Fort" }],
+        images: [{ url: "/images/agra-fort.jpeg", caption: "Red sandstone ramparts of Agra Fort" }],
         expertNote: "Agra Fort's structure contains complex water systems that were used for cooling imperial palace rooms.",
         highlights: ["Agra Fort Royal Tour", "Mughal Cooking Class"],
         revealedRouteKeys: ["delhi", "agra"]
@@ -1993,7 +1993,7 @@ export const JOURNEYS = {
           dining: "Awadhi Dum Pukht dinner at Falak Numa",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/palace.jpg", caption: "The Nawabi monuments of historic Lucknow" }],
+        images: [{ url: "/images/nawab-lucknow.webp", caption: "The Nawabi monuments of historic Lucknow" }],
         expertNote: "Awadhi cuisine is famous for the 'Dum' method of slow cooking over charcoal, creating exceptionally tender meats.",
         highlights: ["Awadhi Culinary Walk", "Galouti Kebab Tasting"],
         revealedRouteKeys: ["delhi", "agra", "lucknow"]
@@ -2011,7 +2011,7 @@ export const JOURNEYS = {
           dining: "Local Nawab home dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/palace.jpg", caption: "Ornate archways of the Bara Imambara" }],
+        images: [{ url: "/images/bara-imambara.jpg", caption: "Ornate archways of the Bara Imambara" }],
         expertNote: "Bhool Bhulaiya is a unique three-dimensional maze with over 1,000 corridors built on top of the Imambara.",
         highlights: ["Bara Imambara Labyrinth", "Nawabi Home Dining Curation"],
         revealedRouteKeys: ["delhi", "agra", "lucknow"]
@@ -2029,7 +2029,7 @@ export const JOURNEYS = {
           dining: "Temple-inspired vegetarian thali dinner",
           transport: "Private luxury SUV & boat"
         },
-        images: [{ url: "/images/rajasthan_palace_exterior_1776272664878.png", caption: "Lamps glowing at the sunset Ganga Aarti in Varanasi" }],
+        images: [{ url: "/images/ganga-aarti-at-assi-ghat.webp", caption: "Ganga Aarti in Varanasi" }],
         expertNote: "Varanasi street food features unique specialties like Tamatar Chaat and Malaiyo, which are rarely found elsewhere.",
         highlights: ["Ganga Aarti Boat Cruise", "Nadesar Palace Serenity"],
         revealedRouteKeys: ["delhi", "agra", "lucknow", "varanasi"]
@@ -2047,7 +2047,7 @@ export const JOURNEYS = {
           dining: "Kachori and Jalebi street breakfast, palace garden organic dinner",
           transport: "Private SUV & row boat"
         },
-        images: [{ url: "/images/rajasthan_palace_exterior_1776272664878.png", caption: "Row boats floating on the sacred Ganges river at dawn" }],
+        images: [{ url: "/images/boat-ride-varanasi.webp", caption: "Row boats floating on the sacred Ganges river at dawn" }],
         expertNote: "Banarasi silk sarees are famous for their gold and silver brocade work, handwoven on traditional wooden looms.",
         highlights: ["Sunrise Ganges Cruise", "Varanasi Street Food Safari"],
         revealedRouteKeys: ["delhi", "agra", "lucknow", "varanasi"]
@@ -2083,7 +2083,7 @@ export const JOURNEYS = {
           dining: "Market lunch, self-cooked royal tasting dinner",
           transport: "Private explorer SUV"
         },
-        images: [{ url: "/images/palace.jpg", caption: "Baskets of dried red chilies and local spices in Jaipur bazaar" }],
+        images: [{ url: "/images/40443496-chilli-red-dried-pepper-on-indian-jaipur-market-rajasthan-india-close-up-spices-background.jpg", caption: "Baskets of dried red chilies and local spices in Jaipur bazaar" }],
         expertNote: "Jaipur's local markets are filled with fresh turmeric roots and handmade papadums during the season.",
         highlights: ["Jaipur Spice Market Tour", "Royal Cooking Masterclass"],
         revealedRouteKeys: ["delhi", "agra", "lucknow", "varanasi", "jaipur"]
@@ -2101,7 +2101,7 @@ export const JOURNEYS = {
           dining: "Traditional Bengali lunch (Maach-Bhaat), dinner at Kewpie's",
           transport: "Private SUV & domestic flight"
         },
-        images: [{ url: "/images/palace_interior_1776272621551.png", caption: "The elegant colonial courtyards of The Oberoi Grand" }],
+        images: [{ url: "/images/the-oberoi-grand-kolkata.avif", caption: "The Oberoi Grand, Kolkata" }],
         expertNote: "Bengali cuisine relies heavily on mustard oil and Panch Phoron, a five-spice blend of fennel, cumin, fenugreek, nigella, and mustard seeds.",
         highlights: ["Kolkata Sweet Curation", "Bengali Mustard Fish Dinner"],
         revealedRouteKeys: ["delhi", "agra", "lucknow", "varanasi", "jaipur", "kolkata"]
@@ -2119,7 +2119,7 @@ export const JOURNEYS = {
           dining: "Historical Cabin café lunch, private colonial estate farewell dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/art&culture.jpg", caption: "Artisans crafting clay idols in Kumartuli" }],
+        images: [{ url: "/images/artisans-clay-kumartuli.jpg", caption: "Artisans crafting clay idols in Kumartuli" }],
         expertNote: "College Street Coffee House has been a meeting place for artists, poets, and Nobel laureates for over a century.",
         highlights: ["College Street Coffee House", "Clay Sculptor Walk"],
         revealedRouteKeys: ["delhi", "agra", "lucknow", "varanasi", "jaipur", "kolkata"]
@@ -2137,7 +2137,7 @@ export const JOURNEYS = {
           dining: "Heritage breakfast",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/journeys_hero_1776334755097.png", caption: "Departing Kolkata Airport" }],
+        images: [{ url: "/images/airport.webp", caption: "Departing Kolkata Airport" }],
         expertNote: "Pack some dry Sondesh sweets in your carry-on for a delicious mid-flight snack.",
         highlights: ["VIP Airport Exit"],
         revealedRouteKeys: ["delhi", "agra", "lucknow", "varanasi", "jaipur", "kolkata"]
@@ -2172,17 +2172,17 @@ export const JOURNEYS = {
       {
         title: "The Taj Mahal Palace, Mumbai",
         desc: "The absolute landmark of Bombay overlooking the Gateway of India and Arabian Sea.",
-        image: "/images/final_cta_bg.png"
+        image: "/images/taj-mahal-palace-mumbai.jpg"
       },
       {
         title: "Taj Falaknuma Palace, Hyderabad",
         desc: "A breathtaking palace sitting 2,000 feet above the city, formerly the home of the Nizam.",
-        image: "/images/palace.jpg"
+        image: "/images/taj-falaknuma-hyderabad.jpg"
       },
       {
         title: "Brunton Boatyard, Cochin",
         desc: "A historic shipyard turned boutique hotel, offering rich coastal culinary heritage.",
-        image: "/images/kerala_backwaters_1776272518771.png"
+        image: "/images/brunton-boatyard.jpg"
       }
     ],
     itinerary: [
@@ -2199,7 +2199,7 @@ export const JOURNEYS = {
           dining: "Mughlai welcome dinner at Spice Route",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/the-imperial-newdelhi.webp", caption: "The heritage courtyards of The Imperial" }],
+        images: [{ url: "/images/the-imperial-newdelhi.webp", caption: "The Imperial, New Delhi" }],
         expertNote: "Take this afternoon to rest before diving into the spice markets of Old Delhi tomorrow.",
         highlights: ["VIP Airport Meet", "Spice Masterclass Welcome"],
         revealedRouteKeys: ["delhi"]
@@ -2217,7 +2217,7 @@ export const JOURNEYS = {
           dining: "Historic street food lunch, contemporary Indian tasting menu at Varq",
           transport: "Private SUV & bicycle rickshaw"
         },
-        images: [{ url: "/images/qutub minar.webp", caption: "Heaps of colorful spices at Khari Baoli market" }],
+        images: [{ url: "/images/Khari-baoli.webp", caption: "Heaps of colorful spices at Khari Baoli market" }],
         expertNote: "Khari Baoli is Asia's largest wholesale spice market, operating since the 17th century.",
         highlights: ["Khari Baoli Spice Walk", "Chandni Chowk Street Food"],
         revealedRouteKeys: ["delhi"]
@@ -2235,7 +2235,7 @@ export const JOURNEYS = {
           dining: "Mughalai dinner at Esphahan",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/The Oberoi Amarvilas.jpg", caption: "The Taj Mahal reflecting in the afternoon light" }],
+        images: [{ url: "/images/The Oberoi Amarvilas.jpg", caption: "The Oberoi Amarvilas, Agra" }],
         expertNote: "Esphahan is renowned for its slow-cooked lentils and traditional tandoori dishes, accompanied by live sitar music.",
         highlights: ["Taj Mahal Sunset Walk", "Traditional Petha Tasting"],
         revealedRouteKeys: ["delhi", "agra"]
@@ -2253,7 +2253,7 @@ export const JOURNEYS = {
           dining: "Mughal kitchen tasting lunch, international fine dining dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/taj-mahal.webp", caption: "Red sandstone ramparts of Agra Fort" }],
+        images: [{ url: "/images/agra-fort.jpeg", caption: "Red sandstone ramparts of Agra Fort" }],
         expertNote: "Agra Fort's structure contains complex water systems that were used for cooling imperial palace rooms.",
         highlights: ["Agra Fort Royal Tour", "Mughal Cooking Class"],
         revealedRouteKeys: ["delhi", "agra"]
@@ -2289,7 +2289,7 @@ export const JOURNEYS = {
           dining: "Market lunch, self-cooked royal tasting dinner",
           transport: "Private explorer SUV"
         },
-        images: [{ url: "/images/palace.jpg", caption: "Baskets of dried red chilies and local spices in Jaipur bazaar" }],
+        images: [{ url: "/images/40443496-chilli-red-dried-pepper-on-indian-jaipur-market-rajasthan-india-close-up-spices-background.jpg", caption: "Baskets of dried red chilies and local spices in Jaipur bazaar" }],
         expertNote: "Jaipur's local markets are filled with fresh turmeric roots and handmade papadums during the season.",
         highlights: ["Jaipur Spice Market Tour", "Royal Cooking Masterclass"],
         revealedRouteKeys: ["delhi", "agra", "jaipur"]
@@ -2325,7 +2325,7 @@ export const JOURNEYS = {
           dining: "Coastal seafood dinner at Trishna",
           transport: "Private SUV & domestic flight"
         },
-        images: [{ url: "/images/final_cta_bg.png", caption: "The Taj Mahal Palace Hotel overlooking the Arabian Sea" }],
+        images: [{ url: "/images/taj-mahal-palace-mumbai.jpg", caption: "The Taj Mahal Palace Hotel, Mumbai" }],
         expertNote: "Trishna is world-famous for its Butter Pepper Garlic Crab, fresh from the coast.",
         highlights: ["Taj Palace Suite Check-in", "Trishna Seafood Dinner"],
         revealedRouteKeys: ["delhi", "agra", "jaipur", "mumbai"]
@@ -2343,7 +2343,7 @@ export const JOURNEYS = {
           dining: "Parsi lunch at Britannia, contemporary Indian dinner at Masque",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/palace_interior_1776272621551.png", caption: "The historic dining rooms of South Mumbai" }],
+        images: [{ url: "/images/House-of-Daaruwala-Mumbai.webp", caption: "The historic dining rooms of South Mumbai" }],
         expertNote: "Masque is a leading progressive restaurant in India, focusing on local, seasonal ingredients.",
         highlights: ["UNESCO Heritage Walk", "Parsi Cafe Curation"],
         revealedRouteKeys: ["delhi", "agra", "jaipur", "mumbai"]
@@ -2361,7 +2361,7 @@ export const JOURNEYS = {
           dining: "Wasabi by Morimoto dining",
           transport: "Private motor boat & SUV"
         },
-        images: [{ url: "/images/art&culture.jpg", caption: "Trimurti rock-cut statue at Elephanta Caves" }],
+        images: [{ url: "/images/Elephanta_Caves_Trimurti.jpg", caption: "Trimurti rock-cut statue at Elephanta Caves" }],
         expertNote: "Morimoto's Wasabi is consistently voted as one of the best Japanese restaurants in Asia.",
         highlights: ["Elephanta Private Cruise", "Wasabi Degustation Dinner"],
         revealedRouteKeys: ["delhi", "agra", "jaipur", "mumbai"]
@@ -2379,7 +2379,7 @@ export const JOURNEYS = {
           dining: "Traditional royal Hyderabadi Biryani feast at Adaa",
           transport: "Private SUV & domestic flight"
         },
-        images: [{ url: "/images/palace.jpg", caption: "Taj Falaknuma Palace sitting grandly on the hill" }],
+        images: [{ url: "/images/taj-falaknuma-hyderabad.jpg", caption: "Taj Falaknuma Palace sitting grandly on the hill" }],
         expertNote: "Hyderabadi Biryani is uniquely slow-cooked in the 'Kachchi' style, layering raw marinated meat with partially cooked basmati rice.",
         highlights: ["Falaknuma Horse Carriage Arrival", "Nizam Royal Biryani Feast"],
         revealedRouteKeys: ["delhi", "agra", "jaipur", "mumbai", "hyderabad"]
@@ -2397,7 +2397,7 @@ export const JOURNEYS = {
           dining: "Saffron-rich Nawabi lunch, palace terrace dining",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/art&culture.jpg", caption: "The majestic four-minaret arches of Charminar" }],
+        images: [{ url: "/images/charminar.jpg", caption: "The majestic four-minaret arches of Charminar" }],
         expertNote: "Golconda Fort is famous for its advanced acoustics—a clap at the entrance can be heard clear at the highest pavilion.",
         highlights: ["Charminar Guided Walk", "Golconda Fort Acoustics"],
         revealedRouteKeys: ["delhi", "agra", "jaipur", "mumbai", "hyderabad"]
@@ -2415,7 +2415,7 @@ export const JOURNEYS = {
           dining: "Royal lunch, grand palace terrace dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/palace.jpg", caption: "The incredible library of Falaknuma Palace" }],
+        images: [{ url: "/images/falaknuma-library.webp", caption: "The incredible library of Falaknuma Palace" }],
         expertNote: "The library at Falaknuma houses one of the most comprehensive collections of the Holy Quran in the world.",
         highlights: ["Falaknuma Library Access", "Nizam High Tea Curation"],
         revealedRouteKeys: ["delhi", "agra", "jaipur", "mumbai", "hyderabad"]
@@ -2433,7 +2433,7 @@ export const JOURNEYS = {
           dining: "Kerala coastal seafood thali dinner",
           transport: "Private SUV & domestic flight"
         },
-        images: [{ url: "/images/kerala_backwaters_1776272518771.png", caption: "Chinese fishing nets on the shores of Cochin" }],
+        images: [{ url: "/images/Chinese-Fishing-Nets-in-Kochi.avif", caption: "Chinese fishing nets on the shores of Cochin" }],
         expertNote: "Cochin has been the center of the Indian spice trade for centuries, attracting Portuguese, Dutch, Jewish, and British merchants.",
         highlights: ["Chinese Fishing Nets Walk", "Malabar Seafood Dinner"],
         revealedRouteKeys: ["delhi", "agra", "jaipur", "mumbai", "hyderabad", "cochin"]
@@ -2451,7 +2451,7 @@ export const JOURNEYS = {
           dining: "Self-cooked Keralan lunch, farewell estate dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/wildlife.jpg", caption: "Sacks of black pepper and ginger in historic Mattancherry warehouse" }],
+        images: [{ url: "/images/Colonial-Warehouses-of-Fort-Kochi.png", caption: "Historic Mattancherry warehouses" }],
         expertNote: "The Paradesi Synagogue was built in 1568, featuring hand-painted Chinese porcelain floor tiles.",
         highlights: ["Mattancherry Spice Curation", "Keralan Home Cooking Class"],
         revealedRouteKeys: ["delhi", "agra", "jaipur", "mumbai", "hyderabad", "cochin"]
@@ -2469,7 +2469,7 @@ export const JOURNEYS = {
           dining: "Lodge breakfast",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/journeys_hero_1776334755097.png", caption: "Farewell to Kerala" }],
+        images: [{ url: "/images/cochin_airport.jpg", caption: "Farewell" }],
         expertNote: "Cochin airport is the world's first fully solar-powered airport.",
         highlights: ["VIP Airport Exit"],
         revealedRouteKeys: ["delhi", "agra", "jaipur", "mumbai", "hyderabad", "cochin"]
@@ -2499,17 +2499,17 @@ export const JOURNEYS = {
       {
         title: "The Taj Mahal Palace, Mumbai",
         desc: "A heritage milestone blending Art Deco sophistication with Victoria-era opulence.",
-        image: "/images/mumbai-5.jpg"
+        image: "/images/taj-mahal-palace-mumbai.jpg"
       },
       {
         title: "Brunton Boatyard, Cochin",
         desc: "A historic shipyard turned boutique hotel, offering rich coastal culinary heritage.",
-        image: "/images/cochin.jpg"
+        image: "/images/brunton-boatyard.jpg"
       },
       {
         title: "Kumarakom Lake Resort",
         desc: "A stunning collection of luxury villas bordering the serene Vembanad Lake.",
-        image: "/images/kerala_backwaters_1776272518771.png"
+        image: "/images/kumarakom-lake-resort.jpg"
       }
     ],
     itinerary: [
@@ -2526,7 +2526,7 @@ export const JOURNEYS = {
           dining: "Late evening supper overlooking the Gateway of India",
           transport: "Private luxury SUV transfer"
         },
-        images: [{ url: "/images/mumbai-5.jpg", caption: "The imposing Taj Mahal Palace overlooking the bay" }],
+        images: [{ url: "/images/taj-mahal-palace-mumbai.jpg", caption: "Taj Mahal Palace, Mumbai" }],
         expertNote: "Settle into your room and watch the small wooden boats bobbing in the harbor.",
         highlights: ["VIP Airport Service", "Oceanfront Palace Suite"],
         revealedRouteKeys: ["mumbai"]
@@ -2544,7 +2544,7 @@ export const JOURNEYS = {
           dining: "Authentic Parsi lunch at Britannia & Co., contemporary Indian dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/palace_interior_1776272621551.png", caption: "Art Deco and gothic structures of historic Bombay" }],
+        images: [{ url: "/images/Art Deco and gothic structures of historic Bombay.jpeg", caption: "Art Deco and gothic structures of historic Bombay" }],
         expertNote: "Britannia & Co. is a century-old Parsi cafe legendary for its Berry Pulav and heritage atmosphere.",
         highlights: ["UNESCO Heritage Tour", "Parsi Cafe Curation"],
         revealedRouteKeys: ["mumbai"]
@@ -2562,7 +2562,7 @@ export const JOURNEYS = {
           dining: "Gourmet seafood dinner at Trishna",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/art&culture.jpg", caption: "Dhobi Ghat, Mumbai's massive open-air heritage laundry" }],
+        images: [{ url: "/images/dhobi-ghat.jpg", caption: "Dhobi Ghat, Mumbai's massive open-air heritage laundry" }],
         expertNote: "Trishna's butter pepper garlic crab is a culinary classic of coastal Mumbai.",
         highlights: ["Dhobi Ghat Excursion", "Premium Coastal Seafood"],
         revealedRouteKeys: ["mumbai"]
@@ -2580,7 +2580,7 @@ export const JOURNEYS = {
           dining: "Kerala coastal seafood thali dinner",
           transport: "Private SUV & domestic flight"
         },
-        images: [{ url: "/images/cochin.jpg", caption: "Colonial-style harbors and shipping lanes of Fort Kochi" }],
+        images: [{ url: "/images/fort-kochi.webp", caption: "shipping lanes of Fort Kochi" }],
         expertNote: "Fort Kochi was the first European settlement in India, heavily influenced by Portuguese, Dutch, and British history.",
         highlights: ["Fort Kochi Shipping Lanes", "Kathakali Dance Theater"],
         revealedRouteKeys: ["mumbai", "cochin"]
@@ -2598,7 +2598,7 @@ export const JOURNEYS = {
           dining: "Colonial club-style lunch, Jewish heritage dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/cochin.jpg", caption: "Giant cantilevered Chinese fishing nets along the coast" }],
+        images: [{ url: "/images/Chinese-Fishing-Nets-in-Kochi.avif", caption: "Giant cantilevered Chinese fishing nets along the coast" }],
         expertNote: "The Chinese Fishing Nets have been in use here since the 14th century, introduced by traders from the court of Kublai Khan.",
         highlights: ["Paradesi Jewish Synagogue", "Chinese Fishing Nets sunset"],
         revealedRouteKeys: ["mumbai", "cochin"]
@@ -2634,7 +2634,7 @@ export const JOURNEYS = {
           dining: "Fresh pearlspot fish dinner at Ettukettu",
           transport: "Private motor boat & resort transfer"
         },
-        images: [{ url: "/images/kerala_backwaters_1776272518771.png", caption: "The tranquil canals of Kumarakom Lake Resort" }],
+        images: [{ url: "/images/kumarakom-lake-resort.jpg", caption: "Kumarakom Lake Resort" }],
         expertNote: "Ettukettu restaurant is housed in an authentic 180-year-old wooden mansion reconstructed on site.",
         highlights: ["Heritage Pool Villa Rest", "Vembanad Lake Sunset Cruise"],
         revealedRouteKeys: ["mumbai", "cochin", "alleppey", "kumarakom"]
@@ -2670,7 +2670,7 @@ export const JOURNEYS = {
           dining: "Traditional Keralan mountain estate dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/wildlife.jpg", caption: "Munnar's rolling green tea plantations stretching across the valleys" }],
+        images: [{ url: "/images/munnar-tea-plantations.jpg", caption: "Munnar's rolling green tea plantations stretching across the valleys" }],
         expertNote: "Munnar sits at an altitude of 1,600 meters above sea level and was once the summer resort of the British government in South India.",
         highlights: ["Tea Estate Bungalow Stay", "Scenic Western Ghats Drive"],
         revealedRouteKeys: ["mumbai", "cochin", "alleppey", "kumarakom", "munnar"]
@@ -2688,7 +2688,7 @@ export const JOURNEYS = {
           dining: "Hilltop estate picnic lunch, plantation farewell dinner",
           transport: "Open-top estate jeep"
         },
-        images: [{ url: "/images/wildlife.jpg", caption: "Nilgiri Tahr mountain goat on the cliffs of Munnar" }],
+        images: [{ url: "/images/Nilgiri-tahr-2.jpg", caption: "Nilgiri Tahr mountain goat of Munnar" }],
         expertNote: "Eravikulam is home to the largest surviving population of the endangered Nilgiri Tahr.",
         highlights: ["Tea Factory Tour", "Rare Wildlife Spotting"],
         revealedRouteKeys: ["mumbai", "cochin", "alleppey", "kumarakom", "munnar"]
@@ -2706,7 +2706,7 @@ export const JOURNEYS = {
           dining: "Bungalow breakfast",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/journeys_hero_1776334755097.png", caption: "Farewell to Cochin" }],
+        images: [{ url: "/images/cochin_airport.jpg", caption: "Farewell" }],
         expertNote: "Buy some fresh cardamom and pepper from Munnar's spice markets to take home.",
         highlights: ["VIP Airport Exit"],
         revealedRouteKeys: ["mumbai", "cochin", "alleppey", "kumarakom", "munnar", "cochin"]
@@ -2721,8 +2721,8 @@ export const JOURNEYS = {
     regionsVisited: "Mumbai, Cochin, Munnar, Alleppey, Marari Beach",
     accommodations: "Heritage Palaces, Mountain Estates & Beachfront Villas",
     transfer: "Domestic Flight & Chauffeured SUV",
-    heroImage: "/images/kerala_backwaters_1776272518771.png",
-    ctaBgImage: "/images/kerala_backwaters_1776272518771.png",
+    heroImage: "/images/marari.webp",
+    ctaBgImage: "/images/marari.webp",
     markerKeys: ["mumbai", "cochin", "munnar", "alleppey", "marari"],
     routeCoords: [
       LOCATIONS.mumbai.coords,
@@ -2736,17 +2736,17 @@ export const JOURNEYS = {
       {
         title: "The Taj Mahal Palace, Mumbai",
         desc: "A heritage milestone blending Art Deco sophistication with Victoria-era opulence.",
-        image: "/images/mumbai-5.jpg"
+        image: "/images/taj-mahal-palace-mumbai.jpg"
       },
       {
         title: "Windermere Estate, Munnar",
         desc: "A historic sanctuary tucked away in rolling hills and tea plantations.",
-        image: "/images/wildlife.jpg"
+        image: "/images/Windermere Estate, Munnar.webp"
       },
       {
         title: "Marari Beach Resort",
         desc: "A peaceful eco-luxury retreat situated right along the white sands of Marari.",
-        image: "/images/kerala_backwaters_1776272518771.png"
+        image: "/images/Marari Beach Resort.avif"
       }
     ],
     itinerary: [
@@ -2763,7 +2763,7 @@ export const JOURNEYS = {
           dining: "Late evening supper overlooking the Gateway of India",
           transport: "Private luxury SUV transfer"
         },
-        images: [{ url: "/images/mumbai-5.jpg", caption: "The imposing Taj Mahal Palace overlooking the bay" }],
+        images: [{ url: "/images/taj-mahal-palace-mumbai.jpg", caption: "The imposing Taj Mahal Palace overlooking the bay" }],
         expertNote: "Settle into your room and watch the small wooden boats bobbing in the harbor.",
         highlights: ["VIP Airport Service", "Oceanfront Palace Suite"],
         revealedRouteKeys: ["mumbai"]
@@ -2781,7 +2781,7 @@ export const JOURNEYS = {
           dining: "Authentic Parsi lunch at Britannia & Co., contemporary Indian dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/palace_interior_1776272621551.png", caption: "Art Deco and gothic structures of historic Bombay" }],
+        images: [{ url: "/images/Art Deco and gothic structures of historic Bombay.jpeg", caption: "Art Deco and gothic structures of historic Bombay" }],
         expertNote: "Britannia & Co. is a century-old Parsi cafe legendary for its Berry Pulav and heritage atmosphere.",
         highlights: ["UNESCO Heritage Tour", "Parsi Cafe Curation"],
         revealedRouteKeys: ["mumbai"]
@@ -2799,7 +2799,7 @@ export const JOURNEYS = {
           dining: "Gourmet seafood dinner at Trishna",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/art&culture.jpg", caption: "Dhobi Ghat, Mumbai's massive open-air heritage laundry" }],
+        images: [{ url: "/images/dhobi-ghat.jpg", caption: "Dhobi Ghat, Mumbai's massive open-air heritage laundry" }],
         expertNote: "Trishna's butter pepper garlic crab is a culinary classic of coastal Mumbai.",
         highlights: ["Dhobi Ghat Excursion", "Premium Coastal Seafood"],
         revealedRouteKeys: ["mumbai"]
@@ -2817,7 +2817,7 @@ export const JOURNEYS = {
           dining: "Kerala coastal seafood thali dinner",
           transport: "Private SUV & domestic flight"
         },
-        images: [{ url: "/images/cochin.jpg", caption: "Colonial-style harbors and shipping lanes of Fort Kochi" }],
+        images: [{ url: "/images/fort-kochi.webp", caption: "harbors and shipping lanes of Fort Kochi" }],
         expertNote: "Fort Kochi was the first European settlement in India, heavily influenced by Portuguese, Dutch, and British history.",
         highlights: ["Fort Kochi Shipping Lanes", "Kathakali Dance Theater"],
         revealedRouteKeys: ["mumbai", "cochin"]
@@ -2835,7 +2835,7 @@ export const JOURNEYS = {
           dining: "Colonial club-style lunch, Jewish heritage dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/cochin.jpg", caption: "Giant cantilevered Chinese fishing nets along the coast" }],
+        images: [{ url: "/images/Chinese-Fishing-Nets-in-Kochi.avif", caption: "Giant cantilevered Chinese fishing nets along the coast" }],
         expertNote: "The Chinese Fishing Nets have been in use here since the 14th century, introduced by traders from the court of Kublai Khan.",
         highlights: ["Paradesi Jewish Synagogue", "Chinese Fishing Nets sunset"],
         revealedRouteKeys: ["mumbai", "cochin"]
@@ -2853,7 +2853,7 @@ export const JOURNEYS = {
           dining: "Traditional Keralan mountain estate dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/wildlife.jpg", caption: "Rolling tea plantations in the misty hills of Munnar" }],
+        images: [{ url: "/images/munnar-tea-plantations.jpg", caption: "Rolling tea plantations in the misty hills of Munnar" }],
         expertNote: "Munnar's elevation makes it the perfect region for high-quality tea production.",
         highlights: ["Munnar Hill Drive", "Tea Plantation Walk"],
         revealedRouteKeys: ["mumbai", "cochin", "munnar"]
@@ -2871,7 +2871,7 @@ export const JOURNEYS = {
           dining: "Hilltop estate picnic lunch, plantation courtyard dining",
           transport: "Open-top estate jeep"
         },
-        images: [{ url: "/images/wildlife.jpg", caption: "Mountain forests of Munnar" }],
+        images: [{ url: "/images/munnar.jpeg", caption: "Mountain forests of Munnar" }],
         expertNote: "Keep an eye out for rare mountain orchids and birds during the forest trek.",
         highlights: ["Tea Processing Tour", "Private Forest Trek"],
         revealedRouteKeys: ["mumbai", "cochin", "munnar"]
@@ -2907,7 +2907,7 @@ export const JOURNEYS = {
           dining: "Keralan lunch and dinner on board",
           transport: "Heritage houseboat"
         },
-        images: [{ url: "/images/kerala_backwaters_1776272518771.png", caption: "Coconut-lined backwater canals at sunset" }],
+        images: [{ url: "/images/backwater-canal.webp", caption: "Coconut-lined backwater canals at sunset" }],
         expertNote: "Local villagers rely on coir (coconut fiber) production for their livelihoods.",
         highlights: ["Vembanad Lake Exploration", "Coir-Making Curation"],
         revealedRouteKeys: ["mumbai", "cochin", "munnar", "alleppey"]
@@ -2943,7 +2943,7 @@ export const JOURNEYS = {
           dining: "Organic garden-to-table lunch, beachfront seafood dinner",
           transport: "None (resort relaxation)"
         },
-        images: [{ url: "/images/kerala_backwaters_1776272518771.png", caption: "Private pool villas at Marari Beach Resort" }],
+        images: [{ url: "/images/pool-villa-marari.jpg", caption: "Private pool villas at Marari Beach Resort" }],
         expertNote: "The resort runs a major conservation project for local butterflies and organic farming.",
         highlights: ["Resort Organic Farm Tour", "Beachfront Yoga Class"],
         revealedRouteKeys: ["mumbai", "cochin", "munnar", "alleppey", "marari"]
@@ -2979,7 +2979,7 @@ export const JOURNEYS = {
           dining: "Resort breakfast",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/journeys_hero_1776334755097.png", caption: "Farewell to India" }],
+        images: [{ url: "/images/cochin_airport.jpg", caption: "Farewell" }],
         expertNote: "The drive from Marari to Cochin Airport takes roughly two hours depending on traffic.",
         highlights: ["VIP Airport Exit"],
         revealedRouteKeys: ["mumbai", "cochin", "munnar", "alleppey", "marari", "cochin"]
@@ -2994,8 +2994,8 @@ export const JOURNEYS = {
     regionsVisited: "Mumbai, Goa, Cochin, Kumarakom",
     accommodations: "Colonial Heritage Estates & Lagoonside Pool Villas",
     transfer: "Domestic Business Flights & Private SUV",
-    heroImage: "/images/goa_heritage_1776272683299.png",
-    ctaBgImage: "/images/goa_heritage_1776272683299.png",
+    heroImage: "/images/goa.jpeg",
+    ctaBgImage: "/images/goa.jpeg",
     markerKeys: ["mumbai", "goa", "cochin", "kumarakom"],
     routeCoords: [
       LOCATIONS.mumbai.coords,
@@ -3008,17 +3008,17 @@ export const JOURNEYS = {
       {
         title: "The Taj Mahal Palace, Mumbai",
         desc: "A heritage milestone blending Art Deco sophistication with Victoria-era opulence.",
-        image: "/images/mumbai-5.jpg"
+        image: "/images/taj-mahal-palace-mumbai.jpg"
       },
       {
         title: "Taj Exotica Resort & Spa, Goa",
         desc: "A beautiful Mediterranean-style resort overlooking the Arabian Sea shore.",
-        image: "/images/goa_heritage_1776272683299.png"
+        image: "/images/taj-exotica-goa.jpg"
       },
       {
         title: "Kumarakom Lake Resort",
         desc: "A stunning collection of luxury villas bordering the serene Vembanad Lake.",
-        image: "/images/kerala_backwaters_1776272518771.png"
+        image: "/images/kumarakom-lake-resort.jpg"
       }
     ],
     itinerary: [
@@ -3035,7 +3035,7 @@ export const JOURNEYS = {
           dining: "Late evening supper in Sea Lounge",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/mumbai-5.jpg", caption: "Chauffeured arrival at the grand Taj Mahal Palace" }],
+        images: [{ url: "/images/taj-mahal-palace-mumbai.jpg", caption: "Chauffeured arrival at the grand Taj Mahal Palace" }],
         expertNote: "Enjoy a signature colonial high tea in the Sea Lounge overlooking the harbor.",
         highlights: ["VIP Airport Meet", "Sea Lounge Curation"],
         revealedRouteKeys: ["mumbai"]
@@ -3053,7 +3053,7 @@ export const JOURNEYS = {
           dining: "Contemporary Indian lunch, coastal dinner at Trishna",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/palace_interior_1776272621551.png", caption: "The historic structures of old South Mumbai" }],
+        images: [{ url: "/images/Art Deco and gothic structures of historic Bombay.jpeg", caption: "The historic structures of old South Mumbai" }],
         expertNote: "South Mumbai holds one of the largest collections of Art Deco architecture in the world.",
         highlights: ["Colonial Architectural Walk", "Trishna Seafood Experience"],
         revealedRouteKeys: ["mumbai"]
@@ -3089,7 +3089,7 @@ export const JOURNEYS = {
           dining: "Traditional buffet lunch at spice farm, beachfront candlelit dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/goa_heritage_1776272683299.png", caption: "The historic Basilica of Bom Jesus in Old Goa" }],
+        images: [{ url: "/images/basilica-bom-jesus.png", caption: "The historic Basilica of Bom Jesus in Old Goa" }],
         expertNote: "The Basilica houses the sacred remains of St. Francis Xavier, a masterpiece of Jesuit architecture.",
         highlights: ["Old Goa UNESCO Churches", "Sahakari Spice Farm Curation"],
         revealedRouteKeys: ["mumbai", "goa"]
@@ -3107,7 +3107,7 @@ export const JOURNEYS = {
           dining: "Authentic Portuguese-Goan lunch at Horse Shoe, beachside dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/goa_heritage_1776272683299.png", caption: "The colorful lanes of the Latin Quarter Fontainhas" }],
+        images: [{ url: "/images/fontainhas-goa.png", caption: "The colorful lanes of the Latin Quarter Fontainhas" }],
         expertNote: "Fontainhas maintains its strong Portuguese heritage, where residents still speak Portuguese.",
         highlights: ["Fontainhas Latin Quarter Walk", "Heritage Portuguese Lunch"],
         revealedRouteKeys: ["mumbai", "goa"]
@@ -3143,7 +3143,7 @@ export const JOURNEYS = {
           dining: "Jewish heritage lunch, Fort Kochi fusion dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/cochin.jpg", caption: "Historic spice warehouses of Mattancherry" }],
+        images: [{ url: "/images/Colonial-Warehouses-of-Fort-Kochi.png", caption: "Historic spice warehouses of Mattancherry" }],
         expertNote: "Mattancherry's air is filled with the scent of ginger, cardamom, and black pepper.",
         highlights: ["Jewish Quarter Walk", "Spice Bazaar Exploration"],
         revealedRouteKeys: ["mumbai", "goa", "cochin"]
@@ -3161,7 +3161,7 @@ export const JOURNEYS = {
           dining: "Fresh pearlspot fish dinner at Ettukettu",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/kerala_backwaters_1776272518771.png", caption: "The tranquil canals of Kumarakom Lake Resort" }],
+        images: [{ url: "/images/kumarakom-lake-resort.jpg", caption: "The tranquil canals of Kumarakom Lake Resort" }],
         expertNote: "The villas feature open-roofed heritage bathrooms, a traditional Keralan architectural feature.",
         highlights: ["Heritage Pool Villa Stay", "Vembanad Lake Cruise"],
         revealedRouteKeys: ["mumbai", "goa", "cochin", "kumarakom"]
@@ -3197,7 +3197,7 @@ export const JOURNEYS = {
           dining: "Resort breakfast",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/journeys_hero_1776334755097.png", caption: "Farewell to India" }],
+        images: [{ url: "/images/cochin_airport.jpg", caption: "Farewell to India" }],
         expertNote: "Check in early to secure lounge access prior to your long-haul flight.",
         highlights: ["VIP Airport Exit"],
         revealedRouteKeys: ["mumbai", "goa", "cochin", "kumarakom", "cochin"]

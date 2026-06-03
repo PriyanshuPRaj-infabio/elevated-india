@@ -310,10 +310,7 @@ export default function JourneyDetailPage() {
 
       {/* Horizontal Itinerary Timeline */}
       <div className="safari-horizontal-timeline-wrapper">
-        <div
-          className="safari-horizontal-timeline"
-          style={{ minWidth: `${Math.max(1100, journey.itinerary.length * 120)}px` }}
-        >
+        <div className="safari-horizontal-timeline">
           <div className="safari-horizontal-timeline-line"></div>
           <div
             className="safari-horizontal-timeline-progress"

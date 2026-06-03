@@ -370,7 +370,7 @@
 .safari-gallery {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 3 / 2;
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: var(--space-6);
@@ -393,13 +393,14 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
-  padding: var(--space-4);
-  color: var(--white);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+  padding: var(--space-6) var(--space-4) var(--space-4);
+  color: #FFFFFF;
   font-family: var(--font-sans);
-  font-size: var(--text-xs);
-  letter-spacing: 0.03em;
-  font-weight: 300;
+  font-size: var(--text-sm);
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 /* Expandable Details Accordion */
@@ -1021,16 +1022,16 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  max-width: 1100px;
-  min-width: 800px; /* Force scroll on small screens */
+  width: 100%;
   margin: 0 auto;
+  padding: 0 var(--space-8);
 }
 
 .safari-horizontal-timeline-line {
   position: absolute;
   top: 50%;
-  left: 0;
-  right: 0;
+  left: var(--space-8);
+  right: var(--space-8);
   height: 1px;
   background: rgba(184, 150, 74, 0.25);
   transform: translateY(-50%);
@@ -1040,7 +1041,7 @@
 .safari-horizontal-timeline-progress {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: var(--space-8);
   height: 2px;
   background: var(--gold);
   transform: translateY(-50%);
@@ -1056,19 +1057,24 @@
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  width: 160px;
+  flex: 1;
+  min-width: 0;
+  padding: 0 var(--space-1);
 }
 
 .timeline-node-location {
   font-family: var(--font-sans);
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   color: var(--charcoal);
   margin-bottom: var(--space-4);
   transition: color 0.3s ease;
-  white-space: nowrap;
+  white-space: normal;
+  text-align: center;
+  max-width: 100%;
+  line-height: 1.2;
 }
 
 .timeline-node-dot {
@@ -1173,6 +1179,22 @@ body.main-nav-hidden .safari-horizontal-timeline-wrapper {
   }
   body.main-nav-hidden .safari-horizontal-timeline-wrapper {
     top: 44px !important;
+  }
+  .safari-horizontal-timeline {
+    width: auto;
+    min-width: 1000px;
+    padding: 0 var(--space-4);
+  }
+  .safari-horizontal-timeline-line {
+    left: var(--space-4);
+    right: var(--space-4);
+  }
+  .safari-horizontal-timeline-progress {
+    left: var(--space-4);
+  }
+  .safari-timeline-node {
+    flex: none;
+    width: 90px;
   }
 }
 
