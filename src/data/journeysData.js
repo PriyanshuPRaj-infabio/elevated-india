@@ -965,12 +965,12 @@ export const JOURNEYS = {
       {
         title: "Svatma Tanjore",
         desc: "A beautifully restored century-old boutique mansion celebrating classical Tamil art, architecture, and vegetarian culinary heritage.",
-        image: "/images/svatma-tanjore.png"
+        image: "/images/svatma.jpg"
       },
       {
         title: "Taj Fisherman's Cove Mahabalipuram",
         desc: "Built on the ramparts of an 18th-century Dutch fort, offering private villas nestled along the Bay of Bengal.",
-        image: "/images/fishermans-cove.png"
+        image: "/images/taj-fishermans-cove-mahabalipuram.jpg"
       },
       {
         title: "Kumarakom Lake Resort",
@@ -1297,17 +1297,17 @@ export const JOURNEYS = {
       {
         title: "The Imperial Delhi",
         desc: "A legendary landmark constructed in the 1930s, housing an incredible museum-grade collection of historical prints and art.",
-        image: "/images/palace_interior_1776272621551.png"
+        image: "/images/the-imperial-newdelhi.webp"
       },
       {
         title: "The Oberoi Grand Kolkata",
         desc: "Warmly known as the 'Grand Dame of Calcutta,' featuring neo-classical design, historic ballrooms, and tranquil palm-fringed swimming pools.",
-        image: "/images/palace_dining_1776272561908.png"
+        image: "/images/the-oberoi-grand-kolkata.avif"
       },
       {
         title: "The Taj Mahal Palace Mumbai",
         desc: "An architectural marvel positioned directly on the harbor, offering iconic sea-facing suites and over a century of legendary service.",
-        image: "/images/final_cta_bg.png"
+        image: "/images/taj-mahal-palace-mumbai.jpg"
       }
     ],
     itinerary: [
@@ -1324,7 +1324,7 @@ export const JOURNEYS = {
           dining: "Awadhi welcome dinner",
           transport: "Private luxury sedan transfer"
         },
-        images: [{ url: "/images/palace_interior_1776272621551.png", caption: "Arriving at New Delhi's landmark colonial estate" }],
+        images: [{ url: "/images/the-imperial-newdelhi.webp", caption: "Arriving in New Delhi" }],
         expertNote: "Delhi has been the capital of dynasties for a thousand years. Rest well today before your city exploration.",
         highlights: ["VIP Airport Service", "Colonial Heritage Suite"],
         revealedRouteKeys: ["delhi"]
@@ -1342,7 +1342,7 @@ export const JOURNEYS = {
           dining: "Imperial tea service, contemporary Indian dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/about_hero_1776334848582.png", caption: "The grand sandstone arches of Delhi's Mughal tombs" }],
+        images: [{ url: "/images/Humayun's_Tomb.avif", caption: "The grand sandstone arches of Delhi's Mughal tombs" }],
         expertNote: "Lutyens Delhi was constructed between 1912 and 1931, featuring massive government houses built of red and yellow sandstone.",
         highlights: ["Humayun's Tomb Tour", "Lutyens Parliament Drive", "Heritage Art Collection"],
         revealedRouteKeys: ["delhi"]
@@ -1360,7 +1360,7 @@ export const JOURNEYS = {
           dining: "Traditional Agra lunch, luxury train return tea",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/image.png", caption: "The Taj Mahal reflecting on the Yamuna river at sunset" }],
+        images: [{ url: "/images/taj-mahal-agra-uttar-pradesh-india-f.avif", caption: "The Taj Mahal reflecting on the Yamuna river at sunset" }],
         expertNote: "This day-trip provides the classic Taj Mahal visit while keeping the comfort of your Delhi hotel base.",
         highlights: ["Taj Mahal sunset private access", "Agra Fort Royal Chambers"],
         revealedRouteKeys: ["delhi", "agra"]
@@ -1378,7 +1378,7 @@ export const JOURNEYS = {
           dining: "Gourmet Awadhi lunch, private courtyard dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/art&culture.jpg", caption: "Traditional Pietra Dura marble inlay work" }],
+        images: [{ url: "/images/marble-inlay-work.webp", caption: "Traditional Pietra Dura marble inlay work" }],
         expertNote: "Pietra Dura uses semiprecious stones like lapis lazuli and jasper embedded into solid marble. Each flower petal takes days to cut.",
         highlights: ["Marble Inlay Workshop", "Royal Mughal Archives Curation"],
         revealedRouteKeys: ["delhi", "agra"]
@@ -1396,7 +1396,7 @@ export const JOURNEYS = {
           dining: "Traditional Bengali feast at Kewpie's",
           transport: "Private SUV & domestic business flight"
         },
-        images: [{ url: "/images/palace_dining_1776272561908.png", caption: "The grand Victorian hallways of The Oberoi Grand" }],
+        images: [{ url: "/images/the-oberoi-grand-kolkata.avif", caption: "The Oberoi Grand, Kolkata" }],
         expertNote: "Kolkata (formerly Calcutta) was the center of the British East India Company. The colonial architecture here is exceptionally grand.",
         highlights: ["Kolkata Arrival", "Victoria Memorial Sunrise Walk", "Traditional Bengali Dining"],
         revealedRouteKeys: ["delhi", "agra", "kolkata"]
@@ -1414,7 +1414,7 @@ export const JOURNEYS = {
           dining: "Colonial club-style lunch, contemporary Bengali dinner",
           transport: "Private SUV & heritage tram"
         },
-        images: [{ url: "/images/palace_interior_1776272621551.png", caption: "The massive marble facade of Victoria Memorial" }],
+        images: [{ url: "/images/st-paul-s-cathedral.jpg", caption: "St. Paul's Cathedral, Kolkata" }],
         expertNote: "Victoria Memorial was built between 1906 and 1921. It combines British, Mughal, and Venetian architectural elements.",
         highlights: ["Victoria Memorial Museum", "St. Paul's Cathedral", "Vintage Tram Ride"],
         revealedRouteKeys: ["delhi", "agra", "kolkata"]
@@ -1432,7 +1432,7 @@ export const JOURNEYS = {
           dining: "Literary café lunch, private estate farewell dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/art&culture.jpg", caption: "Traditional clay idol sculptors at Kumartuli" }],
+        images: [{ url: "/images/idol-sculptors-kumartuli.avif", caption: "Traditional clay idol sculptors at Kumartuli" }],
         expertNote: "Kumartuli is where generations of artisans have sculpted clay idols for the Durga Puja festival using river mud and straw.",
         highlights: ["Tagore House Museum", "Kumartuli Artisan Walk", "College Street Book Stalls"],
         revealedRouteKeys: ["delhi", "agra", "kolkata"]
@@ -1450,7 +1450,7 @@ export const JOURNEYS = {
           dining: "Dravidian lunch, coastal seafood dinner",
           transport: "Private SUV & domestic business flight"
         },
-        images: [{ url: "/images/kerala_backwaters_1776272518771.png", caption: "Sunset walk along the shore temples" }],
+        images: [{ url: "/images/Mahabalipuram_Shore_Temple.jpg", caption: "Sunset walk along the shore temples" }],
         expertNote: "Chennai is a major center of Carnatic music and Bharatanatyam dance. Settle into the warmer, sea-scented air.",
         highlights: ["Chennai Arrival", "Mahabalipuram Shore Temples sunset", "Traditional filter coffee"],
         revealedRouteKeys: ["delhi", "agra", "kolkata", "chennai"]
@@ -1468,7 +1468,7 @@ export const JOURNEYS = {
           dining: "Traditional Chettinad lunch, midnight harbor view supper",
           transport: "Private SUV & domestic business flight"
         },
-        images: [{ url: "/images/final_cta_bg.png", caption: "The Taj Mahal Palace Hotel overlooking Mumbai Harbor" }],
+        images: [{ url: "/images/The Taj Mahal Palace Hotel overlooking Mumbai Harbor.jpg", caption: "The Taj Mahal Palace Hotel overlooking Mumbai Harbor" }],
         expertNote: "The Taj Mahal Palace was built in 1903, five years before the Gateway of India. It remains the ultimate landmark of Bombay.",
         highlights: ["Fort St. George Tour", "Palace Suite Check-in", "Mumbai Harbour Sunset"],
         revealedRouteKeys: ["delhi", "agra", "kolkata", "chennai", "mumbai"]
@@ -1486,7 +1486,7 @@ export const JOURNEYS = {
           dining: "Traditional Parsi lunch at Britannia, contemporary Indian dinner",
           transport: "Private luxury SUV"
         },
-        images: [{ url: "/images/palace_interior_1776272621551.png", caption: "Grand colonial facades of South Mumbai" }],
+        images: [{ url: "/images/Mumbai-colonial-Crawford_Market.jpg", caption: "Grand colonial facades of South Mumbai" }],
         expertNote: "Mumbai has the second largest collection of Art Deco buildings in the world after Miami. Look at the buildings along Marine Drive.",
         highlights: ["Gateway of India", "UNESCO Art Deco Heritage Walk", "Parsi Cafe Curation"],
         revealedRouteKeys: ["delhi", "agra", "kolkata", "chennai", "mumbai"]
@@ -1504,7 +1504,7 @@ export const JOURNEYS = {
           dining: "Seafood lunch at Trishna, farewell garden dinner",
           transport: "Private charter boat & SUV"
         },
-        images: [{ url: "/images/art&culture.jpg", caption: "Ancient rock-cut Trimurti sculpture at Elephanta Caves" }],
+        images: [{ url: "/images/Elephanta_Caves_Trimurti.jpg", caption: "Ancient rock-cut Trimurti sculpture at Elephanta Caves" }],
         expertNote: "The central Trimurti sculpture at Elephanta represents Lord Shiva as Creator, Preserver, and Destroyer—a masterpiece of Indian art.",
         highlights: ["Elephanta Caves Private Cruise", "Kala Ghoda Art Galleries", "Farewell Dinner at Wasabi"],
         revealedRouteKeys: ["delhi", "agra", "kolkata", "chennai", "mumbai"]
@@ -1522,7 +1522,7 @@ export const JOURNEYS = {
           dining: "Sea-view breakfast",
           transport: "Private luxury SUV transfer"
         },
-        images: [{ url: "/images/journeys_hero_1776334755097.png", caption: "Departing Mumbai Airport" }],
+        images: [{ url: "/images/mumbai-airport.jpg", caption: "Departing Mumbai Airport" }],
         expertNote: "Mumbai's T2 terminal is itself an architectural marvel, featuring a massive ceiling inspired by peacock feathers.",
         highlights: ["VIP Airport Exit", "Arabian Sea Farewells"],
         revealedRouteKeys: ["delhi", "agra", "kolkata", "chennai", "mumbai"]
