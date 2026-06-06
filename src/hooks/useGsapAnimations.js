@@ -1,52 +1,34 @@
 import { useEffect } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 export default function useGsapAnimations() {
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    const animatedElements = Array.from(
+      document.querySelectorAll('.gsap-fade-up, .gsap-fade-in')
+    );
 
-    const fadeUps = gsap.utils.toArray('.gsap-fade-up');
-    fadeUps.forEach((el) => {
-      gsap.fromTo(el,
-        { opacity: 0, y: 20 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.8,
-          ease: 'power2.out',
-          scrollTrigger: {
-            trigger: el,
-            start: 'top 93%',
-            toggleActions: 'play none none none',
-            once: true,
-          }
-        }
-      );
-    });
+    if (!animatedElements.length) return undefined;
 
-    const fadeInElements = gsap.utils.toArray('.gsap-fade-in');
-    fadeInElements.forEach((el) => {
-      gsap.fromTo(el,
-        { opacity: 0 },
-        {
-          opacity: 1,
-          duration: 0.9,
-          ease: 'power1.out',
-          scrollTrigger: {
-            trigger: el,
-            start: 'top 93%',
-            toggleActions: 'play none none none',
-            once: true,
-          }
-        }
-      );
-    });
+    if (!('IntersectionObserver' in window)) {
+      animatedElements.forEach((el) => el.classList.add('is-visible'));
+      return undefined;
+    }
 
-    ScrollTrigger.refresh();
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      },
+      {
+        rootMargin: '0px 0px -7% 0px',
+        threshold: 0.01,
+      }
+    );
 
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
+    animatedElements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
   }, []);
 }

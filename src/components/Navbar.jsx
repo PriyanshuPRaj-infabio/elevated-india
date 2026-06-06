@@ -213,7 +213,7 @@ export default function Navbar() {
           {/* Centered Logo */}
           <Link href="/" className="nav-logo" aria-label="Elevated India Home" style={{ display: 'flex', alignItems: 'center' }}>
             <img 
-              src="/Elevated India Logo (1).png"
+              src="/logo-nav.png"
               alt="Elevated India" 
               style={{ width: 'auto', display: 'block' }}
               className="nav-logo-img"
@@ -371,6 +371,8 @@ export default function Navbar() {
                             src={submenus[activeSubmenu].featured.image} 
                             alt={submenus[activeSubmenu].featured.title} 
                             className="nav-drawer-featured-image"
+                            loading="lazy"
+                            decoding="async"
                           />
                         </div>
                         <div className="nav-drawer-featured-content">

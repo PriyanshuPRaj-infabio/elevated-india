@@ -1446,7 +1446,21 @@
 .gsap-fade-up,
 .gsap-fade-in {
   opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 650ms var(--ease-out),
+    transform 650ms var(--ease-out);
   will-change: opacity, transform;
+}
+
+.gsap-fade-in {
+  transform: none;
+}
+
+.gsap-fade-up.is-visible,
+.gsap-fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ── DROPDOWN EXTRA CONTENT (CTA & SOCIALS) ── */

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef, useCallback } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
 const slides = [
@@ -41,7 +41,6 @@ const slides = [
 export default function HeroVideoSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isReducedMotion, setIsReducedMotion] = useState(false);
-  const [firstVideoReady, setFirstVideoReady] = useState(false);
   const videoRefs = useRef([]);
 
   useEffect(() => {
@@ -74,18 +73,13 @@ export default function HeroVideoSlider() {
     });
   }, [currentIndex]);
 
-  const handleFirstCanPlay = useCallback(() => {
-    setFirstVideoReady(true);
-  }, []);
-
   return (
     <div className="hero-video-container">
       {/* Background Videos — all mounted, visibility toggled via CSS opacity */}
       <div className="hero-media-wrapper">
         {slides.map((slide, index) => {
           const isActive = index === currentIndex;
-          // First video: eager load. Others: load only after first is ready.
-          const shouldLoad = index === 0 || firstVideoReady;
+          const shouldLoad = index === currentIndex;
 
           return (
             <div
@@ -112,8 +106,7 @@ export default function HeroVideoSlider() {
                       muted
                       loop
                       playsInline
-                      preload={index === 0 ? "auto" : "metadata"}
-                      onCanPlay={index === 0 ? handleFirstCanPlay : undefined}
+                      preload={index === 0 ? "auto" : "none"}
                       className="hero-video is-loaded"
                       style={{ opacity: 1 }}
                     />

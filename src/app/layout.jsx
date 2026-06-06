@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import SmoothScroll from '../components/SmoothScroll';
 import '../styles/main.css';
 import '../styles/components.css';
 import '../styles/pages.css';
@@ -23,11 +22,9 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <SmoothScroll>
-          <Navbar />
-          {children}
-          <Footer />
-        </SmoothScroll>
+        <Navbar />
+        {children}
+        <Footer />
         
         {/* WhatsApp Float Button */}
         <a
