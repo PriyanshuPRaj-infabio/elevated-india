@@ -32,7 +32,15 @@ export const LOCATIONS = {
   alleppey: { name: "Alleppey", coords: [76.3388, 9.4981] },
   munnar: { name: "Munnar", coords: [77.0595, 10.0889] },
   marari: { name: "Marari Beach", coords: [76.2974, 9.6006] },
-  goa: { name: "Goa", coords: [73.8278, 15.2993] }
+  goa: { name: "Goa", coords: [73.8278, 15.2993] },
+  ranthambore: { name: "Ranthambore", coords: [76.3700, 25.8696] },
+  shahpurabagh: { name: "Shahpura Bagh", coords: [74.9317, 25.6306] },
+  jaisalmer: { name: "Jaisalmer", coords: [70.9169, 26.9157] },
+  mihirgarh: { name: "Mihir Garh", coords: [73.0617, 26.0719] },
+  jawai: { name: "Jawai", coords: [73.1678, 25.1058] },
+  pushkar: { name: "Pushkar", coords: [74.5554, 26.4892] },
+  amritsar: { name: "Amritsar", coords: [74.8723, 31.6340] },
+  kovalam: { name: "Kovalam Beach", coords: [76.9906, 8.4020] }
 };
 
 export const JOURNEYS = {
@@ -2477,242 +2485,398 @@ export const JOURNEYS = {
     ]
   },
   "kerala-culture-11": {
-    id: "kerala-culture-11",
-    title: "Malabar Passage: Mumbai to Kerala Backwaters",
-    subtitle: "A premium 11-day cultural odyssey from the energetic shores of Mumbai to the emerald backwaters and mist-shrouded hills of Munnar.",
-    duration: "11 Days / 10 Nights",
-    regionsVisited: "Mumbai, Cochin, Alleppey, Kumarakom, Munnar",
-    accommodations: "Heritage Palaces, Luxury Houseboats, and Hill Retreats",
-    transfer: "Domestic Flight & Chauffeured SUV",
-    heroImage: "/images/cochin.jpg",
-    ctaBgImage: "/images/cochin.jpg",
-    markerKeys: ["mumbai", "cochin", "alleppey", "kumarakom", "munnar"],
-    routeCoords: [
-      LOCATIONS.mumbai.coords,
-      LOCATIONS.cochin.coords,
-      LOCATIONS.alleppey.coords,
-      LOCATIONS.kumarakom.coords,
-      LOCATIONS.munnar.coords,
-      LOCATIONS.cochin.coords
+  "id": "kerala-culture-11",
+  "title": "Malabar Passage: Mumbai to Kerala Backwaters",
+  "subtitle": "A premium 11-day cultural odyssey from the energetic shores of Mumbai to the emerald backwaters and mist-shrouded hills of Munnar.",
+  "duration": "11 Days / 10 Nights",
+  "regionsVisited": "Mumbai, Cochin, Alleppey, Kumarakom, Munnar",
+  "accommodations": "Heritage Palaces, Luxury Houseboats, and Hill Retreats",
+  "transfer": "Domestic Flight & Chauffeured SUV",
+  "heroImage": "/images/backwater-canal.webp",
+  "ctaBgImage": "/images/kerala_backwaters_1776272518771.png",
+  "markerKeys": [
+    "mumbai",
+    "cochin",
+    "alleppey",
+    "kumarakom",
+    "munnar"
+  ],
+  "routeCoords": [
+    [
+      72.8777,
+      19.076
     ],
-    accommodationsList: [
-      {
-        title: "The Taj Mahal Palace, Mumbai",
-        desc: "A heritage milestone blending Art Deco sophistication with Victoria-era opulence.",
-        image: "/images/taj-mahal-palace-mumbai.jpg"
-      },
-      {
-        title: "Brunton Boatyard, Cochin",
-        desc: "A historic shipyard turned boutique hotel, offering rich coastal culinary heritage.",
-        image: "/images/brunton-boatyard.jpg"
-      },
-      {
-        title: "Kumarakom Lake Resort",
-        desc: "A stunning collection of luxury villas bordering the serene Vembanad Lake.",
-        image: "/images/kumarakom-lake-resort.jpg"
-      }
+    [
+      76.2673,
+      9.9312
     ],
-    itinerary: [
-      {
-        day: 1,
-        location: "Mumbai",
-        locationKey: "mumbai",
-        meta: "Arrive in Mumbai",
-        title: "Arrive in Mumbai",
-        narrative: "Arrive at Mumbai International Airport where your private host escorts you through fast-track customs. Transfer to your iconic palace hotel overlooking the Arabian Sea.",
-        details: {
-          accommodation: "The Taj Mahal Palace Mumbai (Sea Facing Palace Suite)",
-          experiences: "Fast-track airport escort, private harbor welcome orientation",
-          dining: "Late evening supper overlooking the Gateway of India",
-          transport: "Private luxury SUV transfer"
-        },
-        images: [{ url: "/images/taj-mahal-palace-mumbai.jpg", caption: "Taj Mahal Palace, Mumbai" }],
-        expertNote: "Settle into your room and watch the small wooden boats bobbing in the harbor.",
-        highlights: ["VIP Airport Service", "Oceanfront Palace Suite"],
-        revealedRouteKeys: ["mumbai"]
-      },
-      {
-        day: 2,
-        location: "Mumbai",
-        locationKey: "mumbai",
-        meta: "Mumbai",
-        title: "Fort & Art Deco Heritage",
-        narrative: "Explore the UNESCO Victorian and Art Deco buildings of South Mumbai. Visit the Gateway of India and the bustling Crawford Market.",
-        details: {
-          accommodation: "The Taj Mahal Palace Mumbai",
-          experiences: "Colonial heritage walking tour, Crawford Market market trail",
-          dining: "Authentic Parsi lunch at Britannia & Co., contemporary Indian dinner",
-          transport: "Private luxury SUV"
-        },
-        images: [{ url: "/images/Art Deco and gothic structures of historic Bombay.jpeg", caption: "Art Deco and gothic structures of historic Bombay" }],
-        expertNote: "Britannia & Co. is a century-old Parsi cafe legendary for its Berry Pulav and heritage atmosphere.",
-        highlights: ["UNESCO Heritage Tour", "Parsi Cafe Curation"],
-        revealedRouteKeys: ["mumbai"]
-      },
-      {
-        day: 3,
-        location: "Mumbai",
-        locationKey: "mumbai",
-        meta: "Mumbai",
-        title: "Dharabi Curation & Dhobi Ghat",
-        narrative: "Gain a deeper understanding of Mumbai's local life with visits to Dhobi Ghat (the open-air laundry) and local cottage industries.",
-        details: {
-          accommodation: "The Taj Mahal Palace Mumbai",
-          experiences: "Dhobi Ghat photography tour, local cottage industries walk",
-          dining: "Gourmet seafood dinner at Trishna",
-          transport: "Private luxury SUV"
-        },
-        images: [{ url: "/images/dhobi-ghat.jpg", caption: "Dhobi Ghat, Mumbai's massive open-air heritage laundry" }],
-        expertNote: "Trishna's butter pepper garlic crab is a culinary classic of coastal Mumbai.",
-        highlights: ["Dhobi Ghat Excursion", "Premium Coastal Seafood"],
-        revealedRouteKeys: ["mumbai"]
-      },
-      {
-        day: 4,
-        location: "Cochin",
-        locationKey: "cochin",
-        meta: "Mumbai - Cochin",
-        title: "Fly to Cochin",
-        narrative: "Board a domestic flight to Cochin in Kerala. Check into your boutique shipyard hotel. In the evening, watch a traditional Kathakali dance performance.",
-        details: {
-          accommodation: "Brunton Boatyard (Sea Facing Suite)",
-          experiences: "Kathakali dance theater entry, harbor sunset walk",
-          dining: "Kerala coastal seafood thali dinner",
-          transport: "Private SUV & domestic flight"
-        },
-        images: [{ url: "/images/fort-kochi.webp", caption: "shipping lanes of Fort Kochi" }],
-        expertNote: "Fort Kochi was the first European settlement in India, heavily influenced by Portuguese, Dutch, and British history.",
-        highlights: ["Fort Kochi Shipping Lanes", "Kathakali Dance Theater"],
-        revealedRouteKeys: ["mumbai", "cochin"]
-      },
-      {
-        day: 5,
-        location: "Cochin",
-        locationKey: "cochin",
-        meta: "Cochin",
-        title: "Colonial Harbors & Chinese Nets",
-        narrative: "Discover Fort Kochi's Jewish Synagogue, Dutch Palace, and the iconic Chinese Fishing Nets along the seaside promenade.",
-        details: {
-          accommodation: "Brunton Boatyard",
-          experiences: "Jewish Synagogue visit, Dutch Palace tour, Chinese fishing net demonstration",
-          dining: "Colonial club-style lunch, Jewish heritage dinner",
-          transport: "Private luxury SUV"
-        },
-        images: [{ url: "/images/Chinese-Fishing-Nets-in-Kochi.avif", caption: "Giant cantilevered Chinese fishing nets along the coast" }],
-        expertNote: "The Chinese Fishing Nets have been in use here since the 14th century, introduced by traders from the court of Kublai Khan.",
-        highlights: ["Paradesi Jewish Synagogue", "Chinese Fishing Nets sunset"],
-        revealedRouteKeys: ["mumbai", "cochin"]
-      },
-      {
-        day: 6,
-        location: "Alleppey",
-        locationKey: "alleppey",
-        meta: "Cochin - Alleppey",
-        title: "Boarding the Houseboat",
-        narrative: "Drive to Alleppey (Alappuzha) and board a private heritage thatched houseboat. Spend the day floating through narrow backwater canals.",
-        details: {
-          accommodation: "Spice Coast Cruises Houseboat (Private Luxury Cabin)",
-          experiences: "Private backwater canal cruise, village walking stop",
-          dining: "Keralan meals prepared on board by your personal chef",
-          transport: "Private luxury SUV & heritage houseboat"
-        },
-        images: [{ url: "/images/kerala_backwaters_1776272518771.png", caption: "Cruising in a traditional wooden Kettuvallam houseboat" }],
-        expertNote: "The houseboats are converted from cargo boats called Kettuvallams, made without a single nail using coir ropes.",
-        highlights: ["Private Houseboat Cruise", "Authentic Backwater Meals"],
-        revealedRouteKeys: ["mumbai", "cochin", "alleppey"]
-      },
-      {
-        day: 7,
-        location: "Kumarakom",
-        locationKey: "kumarakom",
-        meta: "Alleppey - Kumarakom",
-        title: "Lakeside Haven",
-        narrative: "Disembark your houseboat at Kumarakom Lake Resort. Spend a relaxing afternoon walking along the resort's private canals.",
-        details: {
-          accommodation: "Kumarakom Lake Resort (Heritage Pool Villa)",
-          experiences: "Resort orientation, evening sunset cruise on Vembanad Lake",
-          dining: "Fresh pearlspot fish dinner at Ettukettu",
-          transport: "Private motor boat & resort transfer"
-        },
-        images: [{ url: "/images/kumarakom-lake-resort.jpg", caption: "Kumarakom Lake Resort" }],
-        expertNote: "Ettukettu restaurant is housed in an authentic 180-year-old wooden mansion reconstructed on site.",
-        highlights: ["Heritage Pool Villa Rest", "Vembanad Lake Sunset Cruise"],
-        revealedRouteKeys: ["mumbai", "cochin", "alleppey", "kumarakom"]
-      },
-      {
-        day: 8,
-        location: "Kumarakom",
-        locationKey: "kumarakom",
-        meta: "Kumarakom",
-        title: "Bird Sanctuary & Ayurveda",
-        narrative: "Embark on an early morning bird walk in Kumarakom Sanctuary, followed by a rejuvenating ayurvedic massage at the resort spa.",
-        details: {
-          accommodation: "Kumarakom Lake Resort",
-          experiences: "Kumarakom Bird Sanctuary tour, 90-minute private Abhyanga Ayurvedic therapy",
-          dining: "Lakeside tea and snack curation, local organic dinner",
-          transport: "Private resort boat & SUV"
-        },
-        images: [{ url: "/images/ayurveda_wellness_1776272638098.png", caption: "Ayurvedic wellness oils and herbal therapy sessions" }],
-        expertNote: "Abhyanga is an ancient full-body massage using warm medicated herb oils to balance body energies.",
-        highlights: ["Bird Sanctuary Tour", "Full-Body Ayurvedic Therapy"],
-        revealedRouteKeys: ["mumbai", "cochin", "alleppey", "kumarakom"]
-      },
-      {
-        day: 9,
-        location: "Munnar",
-        locationKey: "munnar",
-        meta: "Kumarakom - Munnar",
-        title: "Up to the Tea Estates",
-        narrative: "Drive up into the mist-shrouded Western Ghats to Munnar. Check into your heritage tea estate bungalow and enjoy the cooler mountain air.",
-        details: {
-          accommodation: "Windermere Estate Munnar (Estate Room)",
-          experiences: "Scenic mountain drive, tea plantation estate walk",
-          dining: "Traditional Keralan mountain estate dinner",
-          transport: "Private luxury SUV"
-        },
-        images: [{ url: "/images/munnar-tea-plantations.jpg", caption: "Munnar's rolling green tea plantations stretching across the valleys" }],
-        expertNote: "Munnar sits at an altitude of 1,600 meters above sea level and was once the summer resort of the British government in South India.",
-        highlights: ["Tea Estate Bungalow Stay", "Scenic Western Ghats Drive"],
-        revealedRouteKeys: ["mumbai", "cochin", "alleppey", "kumarakom", "munnar"]
-      },
-      {
-        day: 10,
-        location: "Munnar",
-        locationKey: "munnar",
-        meta: "Munnar",
-        title: "Tea Processing & Eravikulam",
-        narrative: "Visit a working tea factory to see how tea is processed, and explore Eravikulam National Park, home to the rare Nilgiri Tahr.",
-        details: {
-          accommodation: "Windermere Estate Munnar",
-          experiences: "Tea factory guided tour, Eravikulam National Park wildlife tour",
-          dining: "Hilltop estate picnic lunch, plantation farewell dinner",
-          transport: "Open-top estate jeep"
-        },
-        images: [{ url: "/images/Nilgiri-tahr-2.jpg", caption: "Nilgiri Tahr mountain goat of Munnar" }],
-        expertNote: "Eravikulam is home to the largest surviving population of the endangered Nilgiri Tahr.",
-        highlights: ["Tea Factory Tour", "Rare Wildlife Spotting"],
-        revealedRouteKeys: ["mumbai", "cochin", "alleppey", "kumarakom", "munnar"]
-      },
-      {
-        day: 11,
-        location: "Cochin",
-        locationKey: "cochin",
-        meta: "Munnar - Cochin airport",
-        title: "Departure",
-        narrative: "Drive down from Munnar to Cochin International Airport for your departure flight home.",
-        details: {
-          accommodation: "VIP Departure Lounge",
-          experiences: "Airport departure transfer",
-          dining: "Bungalow breakfast",
-          transport: "Private luxury SUV"
-        },
-        images: [{ url: "/images/cochin_airport.jpg", caption: "Farewell" }],
-        expertNote: "Buy some fresh cardamom and pepper from Munnar's spice markets to take home.",
-        highlights: ["VIP Airport Exit"],
-        revealedRouteKeys: ["mumbai", "cochin", "alleppey", "kumarakom", "munnar", "cochin"]
-      }
+    [
+      76.3388,
+      9.4981
+    ],
+    [
+      76.4312,
+      9.5936
+    ],
+    [
+      77.0595,
+      10.0889
+    ],
+    [
+      76.2673,
+      9.9312
     ]
-  },
+  ],
+  "accommodationsList": [
+    {
+      "title": "The Taj Mahal Palace, Mumbai",
+      "desc": "A heritage milestone blending Art Deco sophistication with Victoria-era opulence.",
+      "image": "/images/taj-mahal-palace-mumbai.jpg"
+    },
+    {
+      "title": "Brunton Boatyard, Cochin",
+      "desc": "A historic shipyard turned boutique hotel, offering rich coastal culinary heritage.",
+      "image": "/images/brunton-boatyard.jpg"
+    },
+    {
+      "title": "Kumarakom Lake Resort",
+      "desc": "A stunning collection of luxury villas bordering the serene Vembanad Lake.",
+      "image": "/images/kumarakom-lake-resort.jpg"
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "location": "Mumbai",
+      "locationKey": "mumbai",
+      "meta": "Arrive in Mumbai",
+      "title": "Arrive in Mumbai",
+      "narrative": "Arrive at Mumbai International Airport where your private host escorts you through fast-track customs. Transfer to your iconic palace hotel overlooking the Arabian Sea.",
+      "details": {
+        "accommodation": "The Taj Mahal Palace Mumbai (Sea Facing Palace Suite)",
+        "experiences": "Fast-track airport escort, private harbor welcome orientation",
+        "dining": "Late evening supper overlooking the Gateway of India",
+        "transport": "Private luxury SUV transfer"
+      },
+      "images": [
+        {
+          "url": "/images/taj-mahal-palace-mumbai.jpg",
+          "caption": "Taj Mahal Palace, Mumbai"
+        }
+      ],
+      "expertNote": "Settle into your room and watch the small wooden boats bobbing in the harbor.",
+      "highlights": [
+        "VIP Airport Service",
+        "Oceanfront Palace Suite"
+      ],
+      "revealedRouteKeys": [
+        "mumbai"
+      ]
+    },
+    {
+      "day": 2,
+      "location": "Mumbai",
+      "locationKey": "mumbai",
+      "meta": "Mumbai",
+      "title": "Fort & Art Deco Heritage",
+      "narrative": "Explore the UNESCO Victorian and Art Deco buildings of South Mumbai. Visit the Gateway of India and the bustling Crawford Market.",
+      "details": {
+        "accommodation": "The Taj Mahal Palace Mumbai",
+        "experiences": "Colonial heritage walking tour, Crawford Market market trail",
+        "dining": "Authentic Parsi lunch at Britannia & Co., contemporary Indian dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Art Deco and gothic structures of historic Bombay.jpeg",
+          "caption": "Art Deco and gothic structures of historic Bombay"
+        }
+      ],
+      "expertNote": "Britannia & Co. is a century-old Parsi cafe legendary for its Berry Pulav and heritage atmosphere.",
+      "highlights": [
+        "UNESCO Heritage Tour",
+        "Parsi Cafe Curation"
+      ],
+      "revealedRouteKeys": [
+        "mumbai"
+      ]
+    },
+    {
+      "day": 3,
+      "location": "Mumbai",
+      "locationKey": "mumbai",
+      "meta": "Mumbai",
+      "title": "Dharabi Curation & Dhobi Ghat",
+      "narrative": "Gain a deeper understanding of Mumbai's local life with visits to Dhobi Ghat (the open-air laundry) and local cottage industries.",
+      "details": {
+        "accommodation": "The Taj Mahal Palace Mumbai",
+        "experiences": "Dhobi Ghat photography tour, local cottage industries walk",
+        "dining": "Gourmet seafood dinner at Trishna",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/dhobi-ghat.jpg",
+          "caption": "Dhobi Ghat, Mumbai's massive open-air heritage laundry"
+        }
+      ],
+      "expertNote": "Trishna's butter pepper garlic crab is a culinary classic of coastal Mumbai.",
+      "highlights": [
+        "Dhobi Ghat Excursion",
+        "Premium Coastal Seafood"
+      ],
+      "revealedRouteKeys": [
+        "mumbai"
+      ]
+    },
+    {
+      "day": 4,
+      "location": "Cochin",
+      "locationKey": "cochin",
+      "meta": "Mumbai - Cochin",
+      "title": "Fly to Cochin",
+      "narrative": "Board a domestic flight to Cochin in Kerala. Check into your boutique shipyard hotel. In the evening, watch a traditional Kathakali dance performance.",
+      "details": {
+        "accommodation": "Brunton Boatyard (Sea Facing Suite)",
+        "experiences": "Kathakali dance theater entry, harbor sunset walk",
+        "dining": "Kerala coastal seafood thali dinner",
+        "transport": "Private SUV & domestic flight"
+      },
+      "images": [
+        {
+          "url": "/images/fort-kochi.webp",
+          "caption": "shipping lanes of Fort Kochi"
+        }
+      ],
+      "expertNote": "Fort Kochi was the first European settlement in India, heavily influenced by Portuguese, Dutch, and British history.",
+      "highlights": [
+        "Fort Kochi Shipping Lanes",
+        "Kathakali Dance Theater"
+      ],
+      "revealedRouteKeys": [
+        "mumbai",
+        "cochin"
+      ]
+    },
+    {
+      "day": 5,
+      "location": "Cochin",
+      "locationKey": "cochin",
+      "meta": "Cochin",
+      "title": "Colonial Harbors & Chinese Nets",
+      "narrative": "Discover Fort Kochi's Jewish Synagogue, Dutch Palace, and the iconic Chinese Fishing Nets along the seaside promenade.",
+      "details": {
+        "accommodation": "Brunton Boatyard",
+        "experiences": "Jewish Synagogue visit, Dutch Palace tour, Chinese fishing net demonstration",
+        "dining": "Colonial club-style lunch, Jewish heritage dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Chinese-Fishing-Nets-in-Kochi.avif",
+          "caption": "Giant cantilevered Chinese fishing nets along the coast"
+        }
+      ],
+      "expertNote": "The Chinese Fishing Nets have been in use here since the 14th century, introduced by traders from the court of Kublai Khan.",
+      "highlights": [
+        "Paradesi Jewish Synagogue",
+        "Chinese Fishing Nets sunset"
+      ],
+      "revealedRouteKeys": [
+        "mumbai",
+        "cochin"
+      ]
+    },
+    {
+      "day": 6,
+      "location": "Alleppey",
+      "locationKey": "alleppey",
+      "meta": "Cochin - Alleppey",
+      "title": "Boarding the Houseboat",
+      "narrative": "Drive to Alleppey (Alappuzha) and board a private heritage thatched houseboat. Spend the day floating through narrow backwater canals.",
+      "details": {
+        "accommodation": "Spice Coast Cruises Houseboat (Private Luxury Cabin)",
+        "experiences": "Private backwater canal cruise, village walking stop",
+        "dining": "Keralan meals prepared on board by your personal chef",
+        "transport": "Private luxury SUV & heritage houseboat"
+      },
+      "images": [
+        {
+          "url": "/images/kerala_backwaters_1776272518771.png",
+          "caption": "Cruising in a traditional wooden Kettuvallam houseboat"
+        }
+      ],
+      "expertNote": "The houseboats are converted from cargo boats called Kettuvallams, made without a single nail using coir ropes.",
+      "highlights": [
+        "Private Houseboat Cruise",
+        "Authentic Backwater Meals"
+      ],
+      "revealedRouteKeys": [
+        "mumbai",
+        "cochin",
+        "alleppey"
+      ]
+    },
+    {
+      "day": 7,
+      "location": "Kumarakom",
+      "locationKey": "kumarakom",
+      "meta": "Alleppey - Kumarakom",
+      "title": "Lakeside Haven",
+      "narrative": "Disembark your houseboat at Kumarakom Lake Resort. Spend a relaxing afternoon walking along the resort's private canals.",
+      "details": {
+        "accommodation": "Kumarakom Lake Resort (Heritage Pool Villa)",
+        "experiences": "Resort orientation, evening sunset cruise on Vembanad Lake",
+        "dining": "Fresh pearlspot fish dinner at Ettukettu",
+        "transport": "Private motor boat & resort transfer"
+      },
+      "images": [
+        {
+          "url": "/images/kumarakom-lake-resort.jpg",
+          "caption": "Kumarakom Lake Resort"
+        }
+      ],
+      "expertNote": "Ettukettu restaurant is housed in an authentic 180-year-old wooden mansion reconstructed on site.",
+      "highlights": [
+        "Heritage Pool Villa Rest",
+        "Vembanad Lake Sunset Cruise"
+      ],
+      "revealedRouteKeys": [
+        "mumbai",
+        "cochin",
+        "alleppey",
+        "kumarakom"
+      ]
+    },
+    {
+      "day": 8,
+      "location": "Kumarakom",
+      "locationKey": "kumarakom",
+      "meta": "Kumarakom",
+      "title": "Bird Sanctuary & Ayurveda",
+      "narrative": "Embark on an early morning bird walk in Kumarakom Sanctuary, followed by a rejuvenating ayurvedic massage at the resort spa.",
+      "details": {
+        "accommodation": "Kumarakom Lake Resort",
+        "experiences": "Kumarakom Bird Sanctuary tour, 90-minute private Abhyanga Ayurvedic therapy",
+        "dining": "Lakeside tea and snack curation, local organic dinner",
+        "transport": "Private resort boat & SUV"
+      },
+      "images": [
+        {
+          "url": "/images/ayurveda_wellness_1776272638098.png",
+          "caption": "Ayurvedic wellness oils and herbal therapy sessions"
+        }
+      ],
+      "expertNote": "Abhyanga is an ancient full-body massage using warm medicated herb oils to balance body energies.",
+      "highlights": [
+        "Bird Sanctuary Tour",
+        "Full-Body Ayurvedic Therapy"
+      ],
+      "revealedRouteKeys": [
+        "mumbai",
+        "cochin",
+        "alleppey",
+        "kumarakom"
+      ]
+    },
+    {
+      "day": 9,
+      "location": "Munnar",
+      "locationKey": "munnar",
+      "meta": "Kumarakom - Munnar",
+      "title": "Up to the Tea Estates",
+      "narrative": "Drive up into the mist-shrouded Western Ghats to Munnar. Check into your heritage tea estate bungalow and enjoy the cooler mountain air.",
+      "details": {
+        "accommodation": "Windermere Estate Munnar (Estate Room)",
+        "experiences": "Scenic mountain drive, tea plantation estate walk",
+        "dining": "Traditional Keralan mountain estate dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/munnar-tea-plantations.jpg",
+          "caption": "Munnar's rolling green tea plantations stretching across the valleys"
+        }
+      ],
+      "expertNote": "Munnar sits at an altitude of 1,600 meters above sea level and was once the summer resort of the British government in South India.",
+      "highlights": [
+        "Tea Estate Bungalow Stay",
+        "Scenic Western Ghats Drive"
+      ],
+      "revealedRouteKeys": [
+        "mumbai",
+        "cochin",
+        "alleppey",
+        "kumarakom",
+        "munnar"
+      ]
+    },
+    {
+      "day": 10,
+      "location": "Munnar",
+      "locationKey": "munnar",
+      "meta": "Munnar",
+      "title": "Tea Processing & Eravikulam",
+      "narrative": "Visit a working tea factory to see how tea is processed, and explore Eravikulam National Park, home to the rare Nilgiri Tahr.",
+      "details": {
+        "accommodation": "Windermere Estate Munnar",
+        "experiences": "Tea factory guided tour, Eravikulam National Park wildlife tour",
+        "dining": "Hilltop estate picnic lunch, plantation farewell dinner",
+        "transport": "Open-top estate jeep"
+      },
+      "images": [
+        {
+          "url": "/images/Nilgiri-tahr-2.jpg",
+          "caption": "Nilgiri Tahr mountain goat of Munnar"
+        }
+      ],
+      "expertNote": "Eravikulam is home to the largest surviving population of the endangered Nilgiri Tahr.",
+      "highlights": [
+        "Tea Factory Tour",
+        "Rare Wildlife Spotting"
+      ],
+      "revealedRouteKeys": [
+        "mumbai",
+        "cochin",
+        "alleppey",
+        "kumarakom",
+        "munnar"
+      ]
+    },
+    {
+      "day": 11,
+      "location": "Cochin",
+      "locationKey": "cochin",
+      "meta": "Munnar - Cochin airport",
+      "title": "Departure",
+      "narrative": "Drive down from Munnar to Cochin International Airport for your departure flight home.",
+      "details": {
+        "accommodation": "VIP Departure Lounge",
+        "experiences": "Airport departure transfer",
+        "dining": "Bungalow breakfast",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/cochin_airport.jpg",
+          "caption": "Farewell"
+        }
+      ],
+      "expertNote": "Buy some fresh cardamom and pepper from Munnar's spice markets to take home.",
+      "highlights": [
+        "VIP Airport Exit"
+      ],
+      "revealedRouteKeys": [
+        "mumbai",
+        "cochin",
+        "alleppey",
+        "kumarakom",
+        "munnar",
+        "cochin"
+      ]
+    }
+  ]
+},
   "kerala-culture-beach-13": {
     id: "kerala-culture-beach-13",
     title: "Malabar & Marari: Culture, Hills & Coast",
@@ -3203,5 +3367,7603 @@ export const JOURNEYS = {
         revealedRouteKeys: ["mumbai", "goa", "cochin", "kumarakom", "cochin"]
       }
     ]
-  }
+  },
+  "golden-triangle-classic": {
+    id: "golden-triangle-classic",
+    title: "Golden Triangle: The Imperial Heritage",
+    subtitle: "A journey through the iconic heritage landmarks of Delhi, Agra, and the pink city of Jaipur.",
+    duration: "9 Days / 8 Nights",
+    regionsVisited: "Delhi, Agra, Jaipur",
+    accommodations: "Legendary Heritage Suites & Luxury Palace Hotels",
+    transfer: "Private Luxury SUV",
+    heroImage: "/images/the-imperial-newdelhi.webp",
+    ctaBgImage: "/images/taj-mahal.webp",
+    markerKeys: ["delhi", "agra", "jaipur"],
+    routeCoords: [
+      LOCATIONS.delhi.coords,
+      LOCATIONS.agra.coords,
+      LOCATIONS.jaipur.coords,
+      LOCATIONS.delhi.coords
+    ],
+    accommodationsList: [
+      {
+        title: "The Imperial Delhi",
+        desc: "An iconic colonial-era masterpiece blending Art Deco style with royal heritage.",
+        image: "/images/the-imperial-newdelhi.webp"
+      },
+      {
+        title: "The Oberoi Amarvilas, Agra",
+        desc: "A stunning luxury hotel with direct, unobstructed views of the Taj Mahal from every suite.",
+        image: "/images/The Oberoi Amarvilas.jpg"
+      },
+      {
+        title: "Rambagh Palace, Jaipur",
+        desc: "The former residence of the Maharaja of Jaipur, offering unparalleled royal hospitality.",
+        image: "/images/Rambagh-Palace-jaipur.jpg"
+      }
+    ],
+    itinerary: [
+      {
+        day: 1,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Arrival & Welcome",
+        title: "Imperial Welcome",
+        narrative: "Arrive at New Delhi's international airport. Enjoy private tarmac assistance and transfer to your landmark heritage hotel.",
+        details: {
+          accommodation: "The Imperial Delhi (Grand Heritage Suite)",
+          experiences: "Private welcome orientation, historic garden walk",
+          dining: "Bespoke welcome dinner at Spice Route",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/the-imperial-newdelhi.webp", caption: "The grand entrance of The Imperial Delhi" }],
+        expertNote: "Delhi is a layered historic city. Settle into the calm elegance of your hotel.",
+        highlights: ["VIP Tarmac Greeting", "Colonial Heritage Suite", "Spice Route Dinner"],
+        revealedRouteKeys: ["delhi"]
+      },
+      {
+        day: 2,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Old & New Delhi Tour",
+        title: "Chronicles of Empires",
+        narrative: "Explore the historic contrasts of Delhi. Ride a private rickshaw through Chandni Chowk and stand before Humayun's Tomb.",
+        details: {
+          accommodation: "The Imperial Delhi",
+          experiences: "Curated history walk in Old Delhi, private museum access",
+          dining: "Royal Mughlai lunch, fine contemporary dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Historic architecture and Mughal monuments of Old Delhi.jpg", caption: "Mughal sights of Old Delhi" }],
+        expertNote: "Humayun's Tomb is the architectonic inspiration behind the Taj Mahal.",
+        highlights: ["Jama Masjid Rickshaw Ride", "Humayun's Tomb Tour", "Lutyens Delhi Driving Tour"],
+        revealedRouteKeys: ["delhi"]
+      },
+      {
+        day: 3,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Delhi Art & Sufism",
+        title: "Mystics & Modern Art",
+        narrative: "Spend the morning at private contemporary art galleries. In the evening, witness Qawwali devotional music at Nizamuddin Dargah.",
+        details: {
+          accommodation: "The Imperial Delhi",
+          experiences: "Private gallery viewing, evening Sufi devotional tour",
+          dining: "Artisan lunch, private garden dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Nizamuddin Dargah shrine.jpeg", caption: "Sufi shrine of Nizamuddin Dargah" }],
+        expertNote: "Devotional Qawwali music has been performed at this shrine for over seven centuries.",
+        highlights: ["Private Art Gallery Access", "Sufi Qawwali Experience", "National Gallery of Modern Art"],
+        revealedRouteKeys: ["delhi"]
+      },
+      {
+        day: 4,
+        location: "Agra",
+        locationKey: "agra",
+        meta: "Delhi to Agra Drive",
+        title: "The Monument of Love",
+        narrative: "Drive to Agra via the Yamuna Expressway. Check into your luxury suite. View the Taj Mahal at sunset as the marble glows golden.",
+        details: {
+          accommodation: "The Oberoi Amarvilas (Premier Taj View Suite)",
+          experiences: "Private sunset viewing of the Taj Mahal, marble inlay craft session",
+          dining: "Grand Awadhi feast at Esphahan",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/taj-mahal.webp", caption: "Taj Mahal reflecting the soft light of twilight" }],
+        expertNote: "We arrange a private balcony viewing away from the main tourist crowds.",
+        highlights: ["Taj Mahal Sunset View", "Premium Taj View Suite", "Fine Dining at Esphahan"],
+        revealedRouteKeys: ["delhi", "agra"]
+      },
+      {
+        day: 5,
+        location: "Agra",
+        locationKey: "agra",
+        meta: "Agra Heritage Tour",
+        title: "Courts of the Mughals",
+        narrative: "Visit the red sandstone Agra Fort, walking through royal chambers. Discover the delicate marble work of the Baby Taj.",
+        details: {
+          accommodation: "The Oberoi Amarvilas",
+          experiences: "Guided Agra Fort tour, Tomb of Itmad-ud-Daulah visit",
+          dining: "Fine Mughlai lunch, High Tea overlooking the Taj",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/agra-fort.jpeg", caption: "The impressive walls of Agra Fort" }],
+        expertNote: "Look out from the fort's towers—this is where Emperor Shah Jahan spent his final years gazing at the Taj Mahal.",
+        highlights: ["Agra Fort Royal Chambers", "Tomb of Itmad-ud-Daulah", "High Tea with Taj View"],
+        revealedRouteKeys: ["delhi", "agra"]
+      },
+      {
+        day: 6,
+        location: "Jaipur",
+        locationKey: "jaipur",
+        meta: "Agra to Jaipur",
+        title: "Into the Pink City",
+        narrative: "Drive to Jaipur, stopping at the abandoned Mughal capital of Fatehpur Sikri. Check into the legendary Rambagh Palace.",
+        details: {
+          accommodation: "Rambagh Palace (Historical Suite)",
+          experiences: "Fatehpur Sikri guided tour, traditional royal greeting",
+          dining: "Rajasthani thali in a gilded courtyard",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Rambagh-Palace-jaipur.jpg", caption: "The beautiful facade of Rambagh Palace" }],
+        expertNote: "Fatehpur Sikri is beautifully preserved, capturing the grandeur of Emperor Akbar's court.",
+        highlights: ["Fatehpur Sikri Tour", "Maharajah Royal Welcome", "Gilded Courtyard Dining"],
+        revealedRouteKeys: ["delhi", "agra", "jaipur"]
+      },
+      {
+        day: 7,
+        location: "Jaipur",
+        locationKey: "jaipur",
+        meta: "Jaipur Heritage Tour",
+        title: "Forts of Gold & Coral",
+        narrative: "Ascend the hillside Amber Fort. In the afternoon, visit the City Palace museum and see the pink facade of Hawa Mahal.",
+        details: {
+          accommodation: "Rambagh Palace",
+          experiences: "Amber Fort tour, exclusive City Palace archives access",
+          dining: "Palace lunch, cocktail at Polo Bar",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/city-palace-jaipur.webp", caption: "Courtyards inside Jaipur City Palace" }],
+        expertNote: "We arrange access to the private residential quarters of the royal family inside City Palace.",
+        highlights: ["Amber Fort Hill Climb", "City Palace Royal Archives", "Hawa Mahal Photography"],
+        revealedRouteKeys: ["delhi", "agra", "jaipur"]
+      },
+      {
+        day: 8,
+        location: "Jaipur",
+        locationKey: "jaipur",
+        meta: "Jaipur Craft & Culture",
+        title: "Artisans of the Guilds",
+        narrative: "Spend the day meeting master block-printers, gem-cutters, and painters. Discover the ancient guilds that shape local design.",
+        details: {
+          accommodation: "Rambagh Palace",
+          experiences: "Private block-printing class, gem market curation walk",
+          dining: "Bespoke estate garden lunch, royal banqueting dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Miniature painting workshops of Jaipur.webp", caption: "Block printing artisans of Jaipur" }],
+        expertNote: "Jaipur is the gemstone capital of India. Meet a heritage jeweller for a private viewing.",
+        highlights: ["Block Printing Workshop", "Gem Curation Tour", "Royal Falconry Session"],
+        revealedRouteKeys: ["delhi", "agra", "jaipur"]
+      },
+      {
+        day: 9,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Jaipur to Delhi Airport",
+        title: "Farewell Journey",
+        narrative: "Enjoy a final palace breakfast before being chauffeured back to Delhi International Airport for your departure flight.",
+        details: {
+          accommodation: "VIP Departure Lounge",
+          experiences: "Airport departure transfer",
+          dining: "Palace breakfast",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/airport.webp", caption: "Departure from Delhi Airport" }],
+        expertNote: "We recommend scheduling flights departing in the late afternoon or evening.",
+        highlights: ["VIP Airport Exit Assistance", "Scenic Highway Journey"],
+        revealedRouteKeys: ["delhi", "agra", "jaipur", "delhi"]
+      }
+    ]
+  },
+  "cultural-wildlife": {
+    id: "cultural-wildlife",
+    title: "Cultural & Wildlife Heritage",
+    subtitle: "A majestic fusion of Mughal architecture, royal palaces, and tiger tracking in Ranthambore.",
+    duration: "12 Days / 11 Nights",
+    regionsVisited: "Delhi, Agra, Ranthambore, Jaipur",
+    accommodations: "Heritage Palaces & Luxury Wilderness Lodges",
+    transfer: "Private SUV & 4x4 Safari Jeeps",
+    heroImage: "/images/tiger_safari_1776272603448.png",
+    ctaBgImage: "/images/wildlife.jpg",
+    markerKeys: ["delhi", "agra", "ranthambore", "jaipur"],
+    routeCoords: [
+      LOCATIONS.delhi.coords,
+      LOCATIONS.agra.coords,
+      LOCATIONS.ranthambore.coords,
+      LOCATIONS.jaipur.coords,
+      LOCATIONS.delhi.coords
+    ],
+    accommodationsList: [
+      {
+        title: "The Imperial Delhi",
+        desc: "Timeless colonial heritage combined with classical luxury.",
+        image: "/images/the-imperial-newdelhi.webp"
+      },
+      {
+        title: "The Oberoi Amarvilas, Agra",
+        desc: "Positioned right next to the Taj Mahal, with panoramic monument views.",
+        image: "/images/The Oberoi Amarvilas.jpg"
+      },
+      {
+        title: "The Oberoi Vanyavilas, Ranthambore",
+        desc: "A luxury jungle lodge featuring opulent tents, set next to the tiger sanctuary.",
+        image: "/images/tiger_safari_1776272603448.png"
+      },
+      {
+        title: "Rambagh Palace, Jaipur",
+        desc: "A glorious palace estate once home to Jaipur's royalty.",
+        image: "/images/Rambagh-Palace-jaipur.jpg"
+      }
+    ],
+    itinerary: [
+      {
+        day: 1,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Arrival & Welcome",
+        title: "Capital Arrival",
+        narrative: "Arrive in Delhi. Enjoy private airport transfer to your landmark heritage hotel in the heart of Lutyens' Delhi.",
+        details: {
+          accommodation: "The Imperial Delhi (Grand Heritage Suite)",
+          experiences: "Airport welcome greeting, private hotel orientation",
+          dining: "Heritage dining at Spice Route",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/the-imperial-newdelhi.webp", caption: "The historic Imperial Delhi" }],
+        expertNote: "Take this first evening to relax after your international flight.",
+        highlights: ["VIP Airport Fast-track", "Heritage Palace Suite"],
+        revealedRouteKeys: ["delhi"]
+      },
+      {
+        day: 2,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Old & New Delhi Tour",
+        title: "Dynasties of Delhi",
+        narrative: "Explore the ancient and modern capitals. Visit Chandni Chowk by rickshaw, then tour Humayun's Tomb and Qutub Minar.",
+        details: {
+          accommodation: "The Imperial Delhi",
+          experiences: "Guided heritage sights walk, museum access",
+          dining: "Classic Mughlai lunch, modern Indian dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Historic architecture and Mughal monuments of Old Delhi.jpg", caption: "Old Delhi Mughal structures" }],
+        expertNote: "Humayun's Tomb is a UNESCO World Heritage site showcasing Persian architectural influences.",
+        highlights: ["Chandni Chowk Rickshaw", "Humayun's Tomb", "Qutub Minar"],
+        revealedRouteKeys: ["delhi"]
+      },
+      {
+        day: 3,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Delhi Art & Sufism",
+        title: "Sufi Vocals & Art Scenes",
+        narrative: "Discover contemporary galleries in the morning. Witness soul-stirring live Qawwali vocals at Nizamuddin Dargah in the evening.",
+        details: {
+          accommodation: "The Imperial Delhi",
+          experiences: "Private art gallery tour, evening Sufi devotional walk",
+          dining: "Bespoke street-food lunch, garden estate dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Nizamuddin Dargah shrine.jpeg", caption: "Live Qawwali at Nizamuddin Dargah" }],
+        expertNote: "The devotional singing provides a deep window into Delhi's living spiritual tradition.",
+        highlights: ["Art Gallery Curation", "Sufi Devotional Music", "National Gallery of Modern Art"],
+        revealedRouteKeys: ["delhi"]
+      },
+      {
+        day: 4,
+        location: "Agra",
+        locationKey: "agra",
+        meta: "Delhi to Agra Drive",
+        title: "The Taj at Sunset",
+        narrative: "Drive to Agra. Check into Oberoi Amarvilas. Stand before the Taj Mahal at sunset, watching the white marble change color.",
+        details: {
+          accommodation: "The Oberoi Amarvilas (Premier Taj View Suite)",
+          experiences: "Private Taj Mahal sunset viewing, artisan marble workshop",
+          dining: "Awadhi thali dinner at Esphahan",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/taj-mahal.webp", caption: "The Taj Mahal glowing at sunset" }],
+        expertNote: "Twilight is the most beautiful time to see the Taj Mahal, when the crowds begin to fade.",
+        highlights: ["Taj Mahal Sunset Walk", "Oberoi Taj View Suite", "Inlaid Marble Craft Art"],
+        revealedRouteKeys: ["delhi", "agra"]
+      },
+      {
+        day: 5,
+        location: "Agra",
+        locationKey: "agra",
+        meta: "Agra Heritage Tour",
+        title: "Mughal Citadels",
+        narrative: "Visit Agra Fort and explore its grand palaces. In the afternoon, discover the delicate carvings of the Tomb of Itmad-ud-Daulah.",
+        details: {
+          accommodation: "The Oberoi Amarvilas",
+          experiences: "Agra Fort guided tour, Baby Taj visit",
+          dining: "Fine Mughlai lunch, palace high tea",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/agra-fort.jpeg", caption: "The red sandstone Agra Fort" }],
+        expertNote: "Look out from the fort's Jasmine Tower, where Emperor Shah Jahan gazed at the Taj Mahal.",
+        highlights: ["Agra Fort Palace Walk", "Tomb of Itmad-ud-Daulah", "High Tea over the Taj"],
+        revealedRouteKeys: ["delhi", "agra"]
+      },
+      {
+        day: 6,
+        location: "Ranthambore",
+        locationKey: "ranthambore",
+        meta: "Agra to Ranthambore",
+        title: "Into Tiger Country",
+        narrative: "Travel to Ranthambore, stopping at Fatehpur Sikri. Settle into your luxury jungle outpost tent at Oberoi Vanyavilas.",
+        details: {
+          accommodation: "The Oberoi Vanyavilas (Luxury Safari Tent)",
+          experiences: "Fatehpur Sikri tour, wilderness camp orientation",
+          dining: "Organic farm-to-table lunch, fireside dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/tiger_safari_1776272603448.png", caption: "Luxury tent at Oberoi Vanyavilas" }],
+        expertNote: "Ranthambore was the private hunting reserve of the Maharajah of Jaipur.",
+        highlights: ["Fatehpur Sikri Guided Tour", "Luxury Safari Tent Stay", "Jungle Campfire Dining"],
+        revealedRouteKeys: ["delhi", "agra", "ranthambore"]
+      },
+      {
+        day: 7,
+        location: "Ranthambore",
+        locationKey: "ranthambore",
+        meta: "Tiger Safaris",
+        title: "Track of the Bengal Tiger",
+        narrative: "Embark on dawn and afternoon 4x4 safaris. Track the Bengal Tiger, leopards, sloth bears, and rich birdlife in the forest.",
+        details: {
+          accommodation: "The Oberoi Vanyavilas",
+          experiences: "Morning & afternoon tiger tracking safaris",
+          dining: "Jungle breakfast picnic, gourmet lodge dinner",
+          transport: "Safari open 4x4 jeep"
+        },
+        images: [{ url: "/images/peacock-bandhavgarh.jpg", caption: "Forest wildlife of Ranthambore" }],
+        expertNote: "Look out for the alarm calls of langurs and spotted deer—they tell us a tiger is nearby.",
+        highlights: ["Dawn Tiger Safari", "Afternoon Forest Drive", "Lodge Spa Treatment"],
+        revealedRouteKeys: ["delhi", "agra", "ranthambore"]
+      },
+      {
+        day: 8,
+        location: "Ranthambore",
+        locationKey: "ranthambore",
+        meta: "Fortress Hike & Forest Safari",
+        title: "The Ruins of the Jungle Fort",
+        narrative: "Hike up to the 10th-century Ranthambore Fort overlooking the park. In the afternoon, enjoy another deep forest safari.",
+        details: {
+          accommodation: "The Oberoi Vanyavilas",
+          experiences: "Ranthambore Fort guided hike, afternoon jungle safari",
+          dining: "Fresh organic lodge lunch, lanterns bush dinner",
+          transport: "Private SUV & safari jeep"
+        },
+        images: [{ url: "/images/wildlife.jpg", caption: "Views from the historic Ranthambore Fort" }],
+        expertNote: "Ranthambore Fort offers spectacular, panoramic views of the entire jungle reserve below.",
+        highlights: ["Ranthambore Fort Hike", "Jungle Safari Expedition", "Bush Dining under Lanterns"],
+        revealedRouteKeys: ["delhi", "agra", "ranthambore"]
+      },
+      {
+        day: 9,
+        location: "Jaipur",
+        locationKey: "jaipur",
+        meta: "Ranthambore to Jaipur",
+        title: "Transition to Royal Palace",
+        narrative: "Drive to Jaipur. Settle into the legendary Rambagh Palace. Walk through its lawns and watch the peacock displays.",
+        details: {
+          accommodation: "Rambagh Palace (Historical Suite)",
+          experiences: "Palace heritage walk, royal welcome",
+          dining: "Traditional Rajasthani thali at Suvarna Mahal",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Rambagh-Palace-jaipur.jpg", caption: "Rambagh Palace gardens" }],
+        expertNote: "Suvarna Mahal sits inside the former royal ballroom under crystal chandeliers.",
+        highlights: ["Rambagh Palace Rest", "Royal Ballroom Feast", "Maharajah Palace Gardens"],
+        revealedRouteKeys: ["delhi", "agra", "ranthambore", "jaipur"]
+      },
+      {
+        day: 10,
+        location: "Jaipur",
+        locationKey: "jaipur",
+        meta: "Jaipur Sights Tour",
+        title: "The Royal Hill Forts",
+        narrative: "Ascend Amber Fort. Visit the Hawa Mahal, the City Palace museum, and the stone sundial of Jantar Mantar.",
+        details: {
+          accommodation: "Rambagh Palace",
+          experiences: "Amber Fort tour, City Palace private archives access",
+          dining: "Palace lunch, cocktail at Polo Bar",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/hawamahal.jpg", caption: "Hawa Mahal facade" }],
+        expertNote: "Our guests receive exclusive access to the royal family's private chambers.",
+        highlights: ["Amber Fort Private Access", "City Palace Tour", "Hawa Mahal Visit"],
+        revealedRouteKeys: ["delhi", "agra", "ranthambore", "jaipur"]
+      },
+      {
+        day: 11,
+        location: "Jaipur",
+        locationKey: "jaipur",
+        meta: "Jaipur Craft & Culture",
+        title: "Artisans of the Pink City",
+        narrative: "Meet block-printers, gem-cutters, and painters. Discover how the ancient guilds shape modern fashion.",
+        details: {
+          accommodation: "Rambagh Palace",
+          experiences: "Private block-printing workshop, gem market tour",
+          dining: "Bespoke garden lunch, royal banqueting dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Miniature painting workshops of Jaipur.webp", caption: "Traditional block-printing artisan" }],
+        expertNote: "Jaipur is the gemstone capital of the world. Meet a master cutter for a private demonstration.",
+        highlights: ["Block Printing Class", "Gem Market Curation", "Royal Falconry Session"],
+        revealedRouteKeys: ["delhi", "agra", "ranthambore", "jaipur"]
+      },
+      {
+        day: 12,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Jaipur to Delhi Airport",
+        title: "Departure",
+        narrative: "Enjoy your final palace breakfast. Transfer back to Delhi International Airport for your departure flight home.",
+        details: {
+          accommodation: "VIP Departure Lounge",
+          experiences: "Airport departure transfer",
+          dining: "Palace breakfast",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/airport.webp", caption: "Farewell to India" }],
+        expertNote: "Take a copy of your tiger sighting photographs to show your friends at home.",
+        highlights: ["VIP Airport Exit", "Scenic Countryside Drive"],
+        revealedRouteKeys: ["delhi", "agra", "ranthambore", "jaipur", "delhi"]
+      }
+    ]
+  },
+  "spiritual-culture": {
+    id: "spiritual-culture",
+    title: "Spiritual India: Ganges & Royal Palaces",
+    subtitle: "A profound journey combining the sacred river Ganges in Varanasi with the royal heritage of Jaipur and Agra.",
+    duration: "11 Days / 10 Nights",
+    regionsVisited: "Delhi, Varanasi, Jaipur, Agra",
+    accommodations: "Legendary Palaces & Luxury Taj-View Suites",
+    transfer: "Domestic Flights & Private Chauffeured SUV",
+    heroImage: "/images/varanasi_ghats_1776272579374.png",
+    ctaBgImage: "/images/boat-ride-varanasi.webp",
+    markerKeys: ["delhi", "varanasi", "jaipur", "agra"],
+    routeCoords: [
+      LOCATIONS.delhi.coords,
+      LOCATIONS.varanasi.coords,
+      LOCATIONS.jaipur.coords,
+      LOCATIONS.agra.coords,
+      LOCATIONS.delhi.coords
+    ],
+    accommodationsList: [
+      {
+        title: "The Imperial Delhi",
+        desc: "An elegant Victorian-style colonial heritage landmark in New Delhi.",
+        image: "/images/the-imperial-newdelhi.webp"
+      },
+      {
+        title: "Taj Nadesar Palace, Varanasi",
+        desc: "A boutique palace hotel set inside historic gardens, once hosting royal sovereigns.",
+        image: "/images/Taj_Nadesar_Palace.webp"
+      },
+      {
+        title: "Rambagh Palace, Jaipur",
+        desc: "The glorious heritage palace of the Maharaja of Jaipur.",
+        image: "/images/Rambagh-Palace-jaipur.jpg"
+      },
+      {
+        title: "The Oberoi Amarvilas, Agra",
+        desc: "Stunning luxury hotel featuring direct monument views from every room.",
+        image: "/images/The Oberoi Amarvilas.jpg"
+      }
+    ],
+    itinerary: [
+      {
+        day: 1,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Arrival & Welcome",
+        title: "Imperial Greeting",
+        narrative: "Arrive in Delhi. Enjoy private tarmac assistance and transfer to your landmark heritage hotel in the capital.",
+        details: {
+          accommodation: "The Imperial Delhi (Grand Heritage Suite)",
+          experiences: "VIP airport transfer, private welcome briefing",
+          dining: "Welcome dinner at Spice Route",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/the-imperial-newdelhi.webp", caption: "Arriving at The Imperial Delhi" }],
+        expertNote: "Rest well tonight before starting your spiritual and cultural journey.",
+        highlights: ["VIP Airport Fast-track", "Heritage Suite Stay", "Spice Route Dinner"],
+        revealedRouteKeys: ["delhi"]
+      },
+      {
+        day: 2,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Delhi Tour",
+        title: "Imperial Capitals",
+        narrative: "Explore the historical treasures of Delhi, from Chandni Chowk by rickshaw to Humayun's Tomb and Qutub Minar.",
+        details: {
+          accommodation: "The Imperial Delhi",
+          experiences: "Guided heritage sites walk, museum access",
+          dining: "Mughlai lunch thali, fine contemporary dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Historic architecture and Mughal monuments of Old Delhi.jpg", caption: "Mughal monuments of Delhi" }],
+        expertNote: "Humayun's Tomb is the architectonic precursor to the Taj Mahal.",
+        highlights: ["Old Delhi Rickshaw", "Humayun's Tomb Tour", "Lutyens Delhi Driving Tour"],
+        revealedRouteKeys: ["delhi"]
+      },
+      {
+        day: 3,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Delhi Art & Sufism",
+        title: "Devotional Sufi Vocals",
+        narrative: "Spend the day exploring private art galleries. In the evening, witness Qawwali devotional music at Nizamuddin Dargah.",
+        details: {
+          accommodation: "The Imperial Delhi",
+          experiences: "Private gallery viewing, evening Sufi devotional tour",
+          dining: "Artisan lunch, private garden dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Nizamuddin Dargah shrine.jpeg", caption: "Qawwali vocals at Nizamuddin" }],
+        expertNote: "Devotional Qawwali music has been performed at Nizamuddin for over 700 years.",
+        highlights: ["Private Art Gallery Curation", "Sufi Qawwali Experience", "National Gallery of Modern Art"],
+        revealedRouteKeys: ["delhi"]
+      },
+      {
+        day: 4,
+        location: "Varanasi",
+        locationKey: "varanasi",
+        meta: "Fly to Varanasi",
+        title: "The Holy River & Ganga Aarti",
+        narrative: "Board a domestic flight to Varanasi. Check into Taj Nadesar Palace. At dusk, witness the Ganga Aarti rituals from a private boat.",
+        details: {
+          accommodation: "Taj Nadesar Palace (Royal Suite)",
+          experiences: "Flight transition, private evening Ganga Aarti boat cruise",
+          dining: "Satvik temple dinner, heritage cuisine thali",
+          transport: "Private SUV & domestic flight"
+        },
+        images: [{ url: "/images/dashashwamedh-ghat-evening-ganga-aarti.jpg", caption: "Ganga Aarti prayers along the river" }],
+        expertNote: "The Ganga Aarti ceremony is a powerful ritual of fire and incense dedicated to the river Ganges.",
+        highlights: ["Ganga Aarti Boat Cruise", "Taj Nadesar Palace Stay", "Satvik Vegetarian Dining"],
+        revealedRouteKeys: ["delhi", "varanasi"]
+      },
+      {
+        day: 5,
+        location: "Varanasi",
+        locationKey: "varanasi",
+        meta: "Varanasi Tour",
+        title: "Dawn on the Ganges",
+        narrative: "Take a quiet dawn boat cruise on the Ganges, watching pilgrims bathe. Later, explore Sarnath and the city's ancient alleys.",
+        details: {
+          accommodation: "Taj Nadesar Palace",
+          experiences: "Dawn Ganges boat cruise, Sarnath Buddhist site tour, heritage walk",
+          dining: "Lakeside palace lunch, gourmet temple tasting dinner",
+          transport: "Private luxury SUV & boat"
+        },
+        images: [{ url: "/images/boat-ride-varanasi.webp", caption: "Dawn prayers on the holy river" }],
+        expertNote: "Sarnath is where Lord Buddha gave his first sermon after achieving enlightenment.",
+        highlights: ["Dawn Ganges Cruise", "Sarnath Stupa Tour", "Ancient Alleys Exploration"],
+        revealedRouteKeys: ["delhi", "varanasi"]
+      },
+      {
+        day: 6,
+        location: "Jaipur",
+        locationKey: "jaipur",
+        meta: "Fly to Jaipur",
+        title: "Into the Pink Palace",
+        narrative: "Fly from Varanasi to Jaipur. Settle into the legendary Rambagh Palace. Enjoy a royal carriage welcome.",
+        details: {
+          accommodation: "Rambagh Palace (Historical Suite)",
+          experiences: "Flight transition, royal horse carriage greeting",
+          dining: "Rajasthani palace thali",
+          transport: "Private SUV & flight"
+        },
+        images: [{ url: "/images/Rambagh-Palace-jaipur.jpg", caption: "Rambagh Palace facade" }],
+        expertNote: "Look out for the elegant peacocks that roam the palace grounds.",
+        highlights: ["Flight to Rajasthan", "Royal Carriage Greeting", "Rambagh Palace Rest"],
+        revealedRouteKeys: ["delhi", "varanasi", "jaipur"]
+      },
+      {
+        day: 7,
+        location: "Jaipur",
+        locationKey: "jaipur",
+        meta: "Jaipur Heritage Tour",
+        title: "Amber Fort & Royal Archives",
+        narrative: "Ascend Amber Fort in the morning. Visit the City Palace and marvel at the pink sandstone walls of Hawa Mahal.",
+        details: {
+          accommodation: "Rambagh Palace",
+          experiences: "Amber Fort private tour, exclusive City Palace archives access",
+          dining: "Palace courtyard lunch, fine dining dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/city-palace-jaipur.webp", caption: "Jaipur City Palace courtyards" }],
+        expertNote: "The Sheesh Mahal inside Amber Fort is covered in thousands of hand-cut mirrors.",
+        highlights: ["Amber Fort Hill Climb", "City Palace Royal Access", "Hawa Mahal Tour"],
+        revealedRouteKeys: ["delhi", "varanasi", "jaipur"]
+      },
+      {
+        day: 8,
+        location: "Jaipur",
+        locationKey: "jaipur",
+        meta: "Jaipur Craft & Culture",
+        title: "Artisans of the Guilds",
+        narrative: "Meet block-printers, gem-cutters, and painters. Discover how the ancient guilds shape modern fashion.",
+        details: {
+          accommodation: "Rambagh Palace",
+          experiences: "Private block-printing class, gem market tour",
+          dining: "Bespoke garden lunch, royal banqueting dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Miniature painting workshops of Jaipur.webp", caption: "Traditional block-printing artisan" }],
+        expertNote: "Jaipur is the gemstone capital of the world. Meet a master cutter for a private demonstration.",
+        highlights: ["Block Printing Class", "Gem Market Curation", "Royal Falconry Session"],
+        revealedRouteKeys: ["delhi", "varanasi", "jaipur"]
+      },
+      {
+        day: 9,
+        location: "Agra",
+        locationKey: "agra",
+        meta: "Jaipur to Agra Drive",
+        title: "The Yamuna & Taj at Sunset",
+        narrative: "Drive to Agra, stopping at Fatehpur Sikri. Check into Oberoi Amarvilas. Stand before the Taj Mahal at sunset.",
+        details: {
+          accommodation: "The Oberoi Amarvilas (Premier Taj View Suite)",
+          experiences: "Fatehpur Sikri guided tour, private Taj Mahal sunset tour",
+          dining: "Awadhi thali dinner at Esphahan",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/taj-mahal.webp", caption: "Taj Mahal view from the suite" }],
+        expertNote: "Twilight is the most beautiful time to see the Taj Mahal, when the crowds begin to fade.",
+        highlights: ["Fatehpur Sikri Guided Tour", "Taj Mahal Sunset Walk", "Oberoi Taj View Suite"],
+        revealedRouteKeys: ["delhi", "varanasi", "jaipur", "agra"]
+      },
+      {
+        day: 10,
+        location: "Agra",
+        locationKey: "agra",
+        meta: "Agra Heritage Tour",
+        title: "Mughal Forts & Baby Taj",
+        narrative: "Visit Agra Fort and explore its grand palaces. In the afternoon, discover the delicate carvings of the Tomb of Itmad-ud-Daulah.",
+        details: {
+          accommodation: "The Oberoi Amarvilas",
+          experiences: "Agra Fort guided tour, Baby Taj visit",
+          dining: "Fine Mughlai lunch, palace high tea",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/agra-fort.jpeg", caption: "The red sandstone Agra Fort" }],
+        expertNote: "Look out from the fort's Jasmine Tower, where Emperor Shah Jahan gazed at the Taj Mahal.",
+        highlights: ["Agra Fort Palace Walk", "Tomb of Itmad-ud-Daulah", "High Tea over the Taj"],
+        revealedRouteKeys: ["delhi", "varanasi", "jaipur", "agra"]
+      },
+      {
+        day: 11,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Agra to Delhi Airport",
+        title: "Departure",
+        narrative: "Enjoy your final palace breakfast. Transfer back to Delhi International Airport for your departure flight home.",
+        details: {
+          accommodation: "VIP Departure Lounge",
+          experiences: "Airport departure transfer",
+          dining: "Palace breakfast",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/airport.webp", caption: "Farewell to India" }],
+        expertNote: "Take a copy of your tiger sighting photographs to show your friends at home.",
+        highlights: ["VIP Airport Exit", "Scenic Countryside Drive"],
+        revealedRouteKeys: ["delhi", "varanasi", "jaipur", "agra", "delhi"]
+      }
+    ]
+  },
+  "palace-spiritual": {
+    id: "palace-spiritual",
+    title: "Monuments of Soul: Sacred Temples & Royal Palaces",
+    subtitle: "An immersive journey connecting the erotic carvings of Khajuraho, Varanasi's sacred river, and the royal heritage of Jaipur and Agra.",
+    duration: "13 Days / 12 Nights",
+    regionsVisited: "Delhi, Khajuraho, Varanasi, Jaipur, Agra",
+    accommodations: "Legendary Palace Hotels & Luxury Heritage Suites",
+    transfer: "Domestic Flights & Private Chauffeured SUV",
+    heroImage: "/images/Intricately carved spires of the Khajuraho temples.jpeg",
+    ctaBgImage: "/images/varanasi_ghats_1776272579374.png",
+    markerKeys: ["delhi", "khajuraho", "varanasi", "jaipur", "agra"],
+    routeCoords: [
+      LOCATIONS.delhi.coords,
+      LOCATIONS.khajuraho.coords,
+      LOCATIONS.varanasi.coords,
+      LOCATIONS.jaipur.coords,
+      LOCATIONS.agra.coords,
+      LOCATIONS.delhi.coords
+    ],
+    accommodationsList: [
+      {
+        title: "The Imperial Delhi",
+        desc: "An elegant Victorian-style colonial heritage landmark in New Delhi.",
+        image: "/images/the-imperial-newdelhi.webp"
+      },
+      {
+        title: "The Lalit Temple View, Khajuraho",
+        desc: "Overlooking the Western Group of temples, combining comfort with heritage.",
+        image: "/images/Intricately carved spires of the Khajuraho temples.jpeg"
+      },
+      {
+        title: "Taj Nadesar Palace, Varanasi",
+        desc: "A boutique palace hotel set inside historic gardens, once hosting royal sovereigns.",
+        image: "/images/Taj_Nadesar_Palace.webp"
+      },
+      {
+        title: "Rambagh Palace, Jaipur",
+        desc: "The glorious heritage palace of the Maharaja of Jaipur.",
+        image: "/images/Rambagh-Palace-jaipur.jpg"
+      },
+      {
+        title: "The Oberoi Amarvilas, Agra",
+        desc: "Stunning luxury hotel featuring direct monument views from every room.",
+        image: "/images/The Oberoi Amarvilas.jpg"
+      }
+    ],
+    itinerary: [
+      {
+        day: 1,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Arrival & Welcome",
+        title: "Imperial Greeting",
+        narrative: "Arrive in Delhi. Enjoy private tarmac assistance and transfer to your landmark heritage hotel in the capital.",
+        details: {
+          accommodation: "The Imperial Delhi (Grand Heritage Suite)",
+          experiences: "VIP airport transfer, private welcome briefing",
+          dining: "Welcome dinner at Spice Route",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/the-imperial-newdelhi.webp", caption: "Arriving at The Imperial Delhi" }],
+        expertNote: "Rest well tonight before starting your spiritual and cultural journey.",
+        highlights: ["VIP Airport Fast-track", "Heritage Suite Stay", "Spice Route Dinner"],
+        revealedRouteKeys: ["delhi"]
+      },
+      {
+        day: 2,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Delhi Tour",
+        title: "Imperial Capitals",
+        narrative: "Explore the historical treasures of Delhi, from Chandni Chowk by rickshaw to Humayun's Tomb and Qutub Minar.",
+        details: {
+          accommodation: "The Imperial Delhi",
+          experiences: "Guided heritage sites walk, museum access",
+          dining: "Mughlai lunch thali, fine contemporary dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Historic architecture and Mughal monuments of Old Delhi.jpg", caption: "Mughal monuments of Delhi" }],
+        expertNote: "Humayun's Tomb is the architectonic precursor to the Taj Mahal.",
+        highlights: ["Old Delhi Rickshaw", "Humayun's Tomb Tour", "Lutyens Delhi Driving Tour"],
+        revealedRouteKeys: ["delhi"]
+      },
+      {
+        day: 3,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Delhi Art & Sufism",
+        title: "Devotional Sufi Vocals",
+        narrative: "Spend the day exploring private art galleries. In the evening, witness Qawwali devotional music at Nizamuddin Dargah.",
+        details: {
+          accommodation: "The Imperial Delhi",
+          experiences: "Private gallery viewing, evening Sufi devotional tour",
+          dining: "Artisan lunch, private garden dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Nizamuddin Dargah shrine.jpeg", caption: "Qawwali vocals at Nizamuddin" }],
+        expertNote: "Devotional Qawwali music has been performed at Nizamuddin for over 700 years.",
+        highlights: ["Private Art Gallery Curation", "Sufi Qawwali Experience", "National Gallery of Modern Art"],
+        revealedRouteKeys: ["delhi"]
+      },
+      {
+        day: 4,
+        location: "Khajuraho",
+        locationKey: "khajuraho",
+        meta: "Fly to Khajuraho",
+        title: "Spires of the Temple Guilds",
+        narrative: "Fly to Khajuraho. Check into your hotel. Explore the famous Western Group of Temples, showcasing medieval stone carvings.",
+        details: {
+          accommodation: "The Lalit Temple View (Heritage Room)",
+          experiences: "Flight transition, guided Western Group of Temples tour",
+          dining: "Bundelkhandi specialty thali",
+          transport: "Private SUV & domestic flight"
+        },
+        images: [{ url: "/images/Intricately carved spires of the Khajuraho temples.jpeg", caption: "The spires of Khajuraho temples" }],
+        expertNote: "The carvings capture all aspects of 10th-century medieval Indian life, spiritual and sensual.",
+        highlights: ["Western Group Temples", "Bundelkhandi Heritage Dinner", "Temple View Room"],
+        revealedRouteKeys: ["delhi", "khajuraho"]
+      },
+      {
+        day: 5,
+        location: "Khajuraho",
+        locationKey: "khajuraho",
+        meta: "Khajuraho Rural Life",
+        title: "Village Life & Eastern Temples",
+        narrative: "Discover the Jain temples of the Eastern Group. Spend the afternoon visiting local rural farming communities around the temples.",
+        details: {
+          accommodation: "The Lalit Temple View",
+          experiences: "Eastern Group of Temples tour, rural village walking tour",
+          dining: "Organic farm lunch, garden dinner at hotel",
+          transport: "Private luxury SUV & walking"
+        },
+        images: [{ url: "/images/Khajuraho Rural Life.png", caption: "Artisans in rural Khajuraho" }],
+        expertNote: "Rural Bundelkhand has changed very little over the decades. The hospitality is warm and authentic.",
+        highlights: ["Jain Eastern Temples", "Rural Village Walk", "Organic Farm Lunch"],
+        revealedRouteKeys: ["delhi", "khajuraho"]
+      },
+      {
+        day: 6,
+        location: "Varanasi",
+        locationKey: "varanasi",
+        meta: "Fly to Varanasi",
+        title: "The Holy River & Ganga Aarti",
+        narrative: "Board a domestic flight to Varanasi. Check into Taj Nadesar Palace. At dusk, witness the Ganga Aarti rituals from a private boat.",
+        details: {
+          accommodation: "Taj Nadesar Palace (Royal Suite)",
+          experiences: "Flight transition, private evening Ganga Aarti boat cruise",
+          dining: "Satvik temple dinner, heritage cuisine thali",
+          transport: "Private SUV & domestic flight"
+        },
+        images: [{ url: "/images/dashashwamedh-ghat-evening-ganga-aarti.jpg", caption: "Ganga Aarti prayers along the river" }],
+        expertNote: "The Ganga Aarti ceremony is a powerful ritual of fire and incense dedicated to the river Ganges.",
+        highlights: ["Ganga Aarti Boat Cruise", "Taj Nadesar Palace Stay", "Satvik Vegetarian Dining"],
+        revealedRouteKeys: ["delhi", "khajuraho", "varanasi"]
+      },
+      {
+        day: 7,
+        location: "Varanasi",
+        locationKey: "varanasi",
+        meta: "Varanasi Tour",
+        title: "Dawn on the Ganges",
+        narrative: "Take a quiet dawn boat cruise on the Ganges, watching pilgrims bathe. Later, explore Sarnath and the city's ancient alleys.",
+        details: {
+          accommodation: "Taj Nadesar Palace",
+          experiences: "Dawn Ganges boat cruise, Sarnath Buddhist site tour, heritage walk",
+          dining: "Lakeside palace lunch, gourmet temple tasting dinner",
+          transport: "Private luxury SUV & boat"
+        },
+        images: [{ url: "/images/boat-ride-varanasi.webp", caption: "Dawn prayers on the holy river" }],
+        expertNote: "Sarnath is where Lord Buddha gave his first sermon after achieving enlightenment.",
+        highlights: ["Dawn Ganges Cruise", "Sarnath Stupa Tour", "Ancient Alleys Exploration"],
+        revealedRouteKeys: ["delhi", "khajuraho", "varanasi"]
+      },
+      {
+        day: 8,
+        location: "Jaipur",
+        locationKey: "jaipur",
+        meta: "Fly to Jaipur",
+        title: "Into the Pink Palace",
+        narrative: "Fly from Varanasi to Jaipur. Settle into the legendary Rambagh Palace. Enjoy a royal carriage welcome.",
+        details: {
+          accommodation: "Rambagh Palace (Historical Suite)",
+          experiences: "Flight transition, royal horse carriage greeting",
+          dining: "Rajasthani palace thali",
+          transport: "Private SUV & flight"
+        },
+        images: [{ url: "/images/Rambagh-Palace-jaipur.jpg", caption: "Rambagh Palace facade" }],
+        expertNote: "Look out for the elegant peacocks that roam the palace grounds.",
+        highlights: ["Flight to Rajasthan", "Royal Carriage Greeting", "Rambagh Palace Rest"],
+        revealedRouteKeys: ["delhi", "khajuraho", "varanasi", "jaipur"]
+      },
+      {
+        day: 9,
+        location: "Jaipur",
+        locationKey: "jaipur",
+        meta: "Jaipur Heritage Tour",
+        title: "Amber Fort & Royal Archives",
+        narrative: "Ascend Amber Fort in the morning. Visit the City Palace and marvel at the pink sandstone walls of Hawa Mahal.",
+        details: {
+          accommodation: "Rambagh Palace",
+          experiences: "Amber Fort private tour, exclusive City Palace archives access",
+          dining: "Palace courtyard lunch, fine dining dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/city-palace-jaipur.webp", caption: "Jaipur City Palace courtyards" }],
+        expertNote: "The Sheesh Mahal inside Amber Fort is covered in thousands of hand-cut mirrors.",
+        highlights: ["Amber Fort Hill Climb", "City Palace Royal Access", "Hawa Mahal Tour"],
+        revealedRouteKeys: ["delhi", "khajuraho", "varanasi", "jaipur"]
+      },
+      {
+        day: 10,
+        location: "Jaipur",
+        locationKey: "jaipur",
+        meta: "Jaipur Craft & Culture",
+        title: "Artisans of the Guilds",
+        narrative: "Meet block-printers, gem-cutters, and painters. Discover how the ancient guilds shape modern fashion.",
+        details: {
+          accommodation: "Rambagh Palace",
+          experiences: "Private block-printing class, gem market tour",
+          dining: "Bespoke garden lunch, royal banqueting dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Miniature painting workshops of Jaipur.webp", caption: "Traditional block-printing artisan" }],
+        expertNote: "Jaipur is the gemstone capital of the world. Meet a master cutter for a private demonstration.",
+        highlights: ["Block Printing Class", "Gem Market Curation", "Royal Falconry Session"],
+        revealedRouteKeys: ["delhi", "khajuraho", "varanasi", "jaipur"]
+      },
+      {
+        day: 11,
+        location: "Agra",
+        locationKey: "agra",
+        meta: "Jaipur to Agra Drive",
+        title: "The Yamuna & Taj at Sunset",
+        narrative: "Drive to Agra, stopping at Fatehpur Sikri. Check into Oberoi Amarvilas. Stand before the Taj Mahal at sunset.",
+        details: {
+          accommodation: "The Oberoi Amarvilas (Premier Taj View Suite)",
+          experiences: "Fatehpur Sikri guided tour, private Taj Mahal sunset tour",
+          dining: "Awadhi thali dinner at Esphahan",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/taj-mahal.webp", caption: "Taj Mahal view from the suite" }],
+        expertNote: "Twilight is the most beautiful time to see the Taj Mahal, when the crowds begin to fade.",
+        highlights: ["Fatehpur Sikri Guided Tour", "Taj Mahal Sunset Walk", "Oberoi Taj View Suite"],
+        revealedRouteKeys: ["delhi", "khajuraho", "varanasi", "jaipur", "agra"]
+      },
+      {
+        day: 12,
+        location: "Agra",
+        locationKey: "agra",
+        meta: "Agra Heritage Tour",
+        title: "Mughal Forts & Baby Taj",
+        narrative: "Visit Agra Fort and explore its grand palaces. In the afternoon, discover the delicate carvings of the Tomb of Itmad-ud-Daulah.",
+        details: {
+          accommodation: "The Oberoi Amarvilas",
+          experiences: "Agra Fort guided tour, Baby Taj visit",
+          dining: "Fine Mughlai lunch, palace high tea",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/agra-fort.jpeg", caption: "The red sandstone Agra Fort" }],
+        expertNote: "Look out from the fort's Jasmine Tower, where Emperor Shah Jahan gazed at the Taj Mahal.",
+        highlights: ["Agra Fort Palace Walk", "Tomb of Itmad-ud-Daulah", "High Tea over the Taj"],
+        revealedRouteKeys: ["delhi", "khajuraho", "varanasi", "jaipur", "agra"]
+      },
+      {
+        day: 13,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Agra to Delhi Airport",
+        title: "Departure",
+        narrative: "Enjoy your final palace breakfast. Transfer back to Delhi International Airport for your departure flight home.",
+        details: {
+          accommodation: "VIP Departure Lounge",
+          experiences: "Airport departure transfer",
+          dining: "Palace breakfast",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/airport.webp", caption: "Farewell to India" }],
+        expertNote: "Take a copy of your tiger sighting photographs to show your friends at home.",
+        highlights: ["VIP Airport Exit", "Scenic Countryside Drive"],
+        revealedRouteKeys: ["delhi", "khajuraho", "varanasi", "jaipur", "agra", "delhi"]
+      }
+    ]
+  },
+  "palace-culture": {
+    id: "palace-culture",
+    title: "Heritage & Horizons: Royal Estates & Lake Palaces",
+    subtitle: "A journey through the majestic palaces of Jaipur and Udaipur, stopping at the exclusive estate of Shahpura Bagh.",
+    duration: "13 Days / 12 Nights",
+    regionsVisited: "Delhi, Agra, Jaipur, Shahpura Bagh, Udaipur",
+    accommodations: "Legendary Heritage Suites & Luxury Palace Resorts",
+    transfer: "Private SUV & Domestic Flight",
+    heroImage: "/images/taj-lake-palace-udaipur.jpeg",
+    ctaBgImage: "/images/courtyards-udaipur-city-palace.jpg",
+    markerKeys: ["delhi", "agra", "jaipur", "shahpurabagh", "udaipur"],
+    routeCoords: [
+      LOCATIONS.delhi.coords,
+      LOCATIONS.agra.coords,
+      LOCATIONS.jaipur.coords,
+      LOCATIONS.shahpurabagh.coords,
+      LOCATIONS.udaipur.coords,
+      LOCATIONS.delhi.coords
+    ],
+    accommodationsList: [
+      {
+        title: "The Imperial Delhi",
+        desc: "An iconic colonial-era heritage hotel, offering unparalleled service and design.",
+        image: "/images/the-imperial-newdelhi.webp"
+      },
+      {
+        title: "The Oberoi Amarvilas, Agra",
+        desc: "A stunning luxury hotel with direct, unobstructed views of the Taj Mahal from every suite.",
+        image: "/images/The Oberoi Amarvilas.jpg"
+      },
+      {
+        title: "Rambagh Palace, Jaipur",
+        desc: "The former residence of the Maharaja of Jaipur, offering royal palace suites.",
+        image: "/images/Rambagh-Palace-jaipur.jpg"
+      },
+      {
+        title: "Shahpura Bagh Estate",
+        desc: "A stunning 45-acre heritage property with serene private lakes and luxury villas.",
+        image: "/images/rajasthan_palace_exterior_1776272664878.png"
+      },
+      {
+        title: "Taj Lake Palace, Udaipur",
+        desc: "A legendary white marble palace rising from the center of Lake Pichola.",
+        image: "/images/taj-lake-palace-udaipur.jpeg"
+      }
+    ],
+    itinerary: [
+      {
+        day: 1,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Arrival & Welcome",
+        title: "Imperial Beginnings",
+        narrative: "Arrive at New Delhi's international airport. Enjoy private tarmac assistance and transfer to your landmark heritage hotel.",
+        details: {
+          accommodation: "The Imperial Delhi (Grand Heritage Suite)",
+          experiences: "Private welcome orientation, historic garden walk",
+          dining: "Bespoke welcome dinner at Spice Route",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/the-imperial-newdelhi.webp", caption: "The grand entrance of The Imperial Delhi" }],
+        expertNote: "Delhi is a layered historic city. Settle into the calm elegance of your hotel.",
+        highlights: ["VIP Tarmac Greeting", "Colonial Heritage Suite", "Spice Route Dinner"],
+        revealedRouteKeys: ["delhi"]
+      },
+      {
+        day: 2,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Old & New Delhi Tour",
+        title: "Chronicles of Empires",
+        narrative: "Explore the historic contrasts of Delhi. Ride a private rickshaw through Chandni Chowk and stand before Humayun's Tomb.",
+        details: {
+          accommodation: "The Imperial Delhi",
+          experiences: "Curated history walk in Old Delhi, private museum access",
+          dining: "Royal Mughlai lunch, fine contemporary dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Historic architecture and Mughal monuments of Old Delhi.jpg", caption: "Mughal sights of Old Delhi" }],
+        expertNote: "Humayun's Tomb is the architectonic inspiration behind the Taj Mahal.",
+        highlights: ["Jama Masjid Rickshaw Ride", "Humayun's Tomb Tour", "Lutyens Delhi Driving Tour"],
+        revealedRouteKeys: ["delhi"]
+      },
+      {
+        day: 3,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Delhi Art & Sufism",
+        title: "Mystics & Modern Art",
+        narrative: "Spend the morning at private contemporary art galleries. In the evening, witness Qawwali devotional music at Nizamuddin Dargah.",
+        details: {
+          accommodation: "The Imperial Delhi",
+          experiences: "Private gallery viewing, evening Sufi devotional tour",
+          dining: "Artisan lunch, private garden dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Nizamuddin Dargah shrine.jpeg", caption: "Sufi shrine of Nizamuddin Dargah" }],
+        expertNote: "Devotional Qawwali music has been performed at this shrine for over seven centuries.",
+        highlights: ["Private Art Gallery Access", "Sufi Qawwali Experience", "National Gallery of Modern Art"],
+        revealedRouteKeys: ["delhi"]
+      },
+      {
+        day: 4,
+        location: "Agra",
+        locationKey: "agra",
+        meta: "Delhi to Agra Drive",
+        title: "The Monument of Love",
+        narrative: "Drive to Agra via the Yamuna Expressway. Check into your luxury suite. View the Taj Mahal at sunset as the marble glows golden.",
+        details: {
+          accommodation: "The Oberoi Amarvilas (Premier Taj View Suite)",
+          experiences: "Private sunset viewing of the Taj Mahal, marble inlay craft session",
+          dining: "Grand Awadhi feast at Esphahan",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/taj-mahal.webp", caption: "Taj Mahal reflecting the soft light of twilight" }],
+        expertNote: "We arrange a private balcony viewing away from the main tourist crowds.",
+        highlights: ["Taj Mahal Sunset View", "Premium Taj View Suite", "Fine Dining at Esphahan"],
+        revealedRouteKeys: ["delhi", "agra"]
+      },
+      {
+        day: 5,
+        location: "Agra",
+        locationKey: "agra",
+        meta: "Agra Heritage Tour",
+        title: "Courts of the Mughals",
+        narrative: "Visit the red sandstone Agra Fort, walking through royal chambers. Discover the delicate marble work of the Baby Taj.",
+        details: {
+          accommodation: "The Oberoi Amarvilas",
+          experiences: "Guided Agra Fort tour, Tomb of Itmad-ud-Daulah visit",
+          dining: "Fine Mughlai lunch, High Tea overlooking the Taj",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/agra-fort.jpeg", caption: "The impressive walls of Agra Fort" }],
+        expertNote: "Look out from the fort's towers—this is where Emperor Shah Jahan spent his final years gazing at the Taj Mahal.",
+        highlights: ["Agra Fort Royal Chambers", "Tomb of Itmad-ud-Daulah", "High Tea with Taj View"],
+        revealedRouteKeys: ["delhi", "agra"]
+      },
+      {
+        day: 6,
+        location: "Jaipur",
+        locationKey: "jaipur",
+        meta: "Agra to Jaipur",
+        title: "Into the Pink City",
+        narrative: "Drive to Jaipur, stopping at the abandoned Mughal capital of Fatehpur Sikri. Check into the legendary Rambagh Palace.",
+        details: {
+          accommodation: "Rambagh Palace (Historical Suite)",
+          experiences: "Fatehpur Sikri guided tour, traditional royal greeting",
+          dining: "Rajasthani thali in a gilded courtyard",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Rambagh-Palace-jaipur.jpg", caption: "The beautiful facade of Rambagh Palace" }],
+        expertNote: "Fatehpur Sikri is beautifully preserved, capturing the grandeur of Emperor Akbar's court.",
+        highlights: ["Fatehpur Sikri Tour", "Maharajah Royal Welcome", "Gilded Courtyard Dining"],
+        revealedRouteKeys: ["delhi", "agra", "jaipur"]
+      },
+      {
+        day: 7,
+        location: "Jaipur",
+        locationKey: "jaipur",
+        meta: "Jaipur Heritage Tour",
+        title: "Forts of Gold & Coral",
+        narrative: "Ascend the hillside Amber Fort. In the afternoon, visit the City Palace museum and see the pink facade of Hawa Mahal.",
+        details: {
+          accommodation: "Rambagh Palace",
+          experiences: "Amber Fort tour, exclusive City Palace archives access",
+          dining: "Palace lunch, cocktail at Polo Bar",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/city-palace-jaipur.webp", caption: "Courtyards inside Jaipur City Palace" }],
+        expertNote: "The Sheesh Mahal inside Amber Fort is covered in thousands of hand-cut mirrors.",
+        highlights: ["Amber Fort Hill Climb", "City Palace Royal Archives", "Hawa Mahal Photography"],
+        revealedRouteKeys: ["delhi", "agra", "jaipur"]
+      },
+      {
+        day: 8,
+        location: "Jaipur",
+        locationKey: "jaipur",
+        meta: "Jaipur Craft & Culture",
+        title: "Artisans of the Guilds",
+        narrative: "Spend the day meeting master block-printers, gem-cutters, and painters. Discover the ancient guilds that shape local design.",
+        details: {
+          accommodation: "Rambagh Palace",
+          experiences: "Private block-printing class, gem market curation walk",
+          dining: "Bespoke estate garden lunch, royal banqueting dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Miniature painting workshops of Jaipur.webp", caption: "Block printing artisans of Jaipur" }],
+        expertNote: "Jaipur is the gemstone capital of India. Meet a heritage jeweller for a private viewing.",
+        highlights: ["Block Printing Workshop", "Gem Curation Tour", "Royal Falconry Session"],
+        revealedRouteKeys: ["delhi", "agra", "jaipur"]
+      },
+      {
+        day: 9,
+        location: "Shahpura Bagh",
+        locationKey: "shahpurabagh",
+        meta: "Jaipur to Shahpura Bagh",
+        title: "The Heritage Oasis",
+        narrative: "Drive to Shahpura Bagh, a stunning 45-acre estate surrounded by private lakes. Check into your heritage suite and relax by the pool.",
+        details: {
+          accommodation: "Shahpura Bagh Estate (Royal Suite)",
+          experiences: "Estate historic walking tour, private lake sunset cruise",
+          dining: "Home-cooked traditional Rajasthani specialties",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/rajasthan_palace_exterior_1776272664878.png", caption: "The elegant estate of Shahpura Bagh" }],
+        expertNote: "This family estate is run by descendants of the former rulers, offering a highly personalized stay.",
+        highlights: ["Private Heritage Estate Stay", "Lakeside Sunset Cruise", "Traditional Rajasthani Home Cooking"],
+        revealedRouteKeys: ["delhi", "agra", "jaipur", "shahpurabagh"]
+      },
+      {
+        day: 10,
+        location: "Shahpura Bagh",
+        locationKey: "shahpurabagh",
+        meta: "Shahpura Bagh",
+        title: "Country Estates & Birdlife Lakes",
+        narrative: "Spend a quiet day exploring rural villages and watching local birdlife flocking to the surrounding private reservoirs.",
+        details: {
+          accommodation: "Shahpura Bagh Estate",
+          experiences: "Guided village walk, private lake bird-watching excursion",
+          dining: "Organic estate lunch, candlelit dinner in the orchard",
+          transport: "Private luxury SUV & walking"
+        },
+        images: [{ url: "/images/nimaj-village.jpg", caption: "Meeting villagers near the estate" }],
+        expertNote: "More than 250 species of birds visit the lakes around the property during this season.",
+        highlights: ["Rural Village Experience", "Waterbird Sanctuary Tour", "Orchard Candlelit Dinner"],
+        revealedRouteKeys: ["delhi", "agra", "jaipur", "shahpurabagh"]
+      },
+      {
+        day: 11,
+        location: "Udaipur",
+        locationKey: "shahpurabagh",
+        meta: "Shahpura Bagh to Udaipur",
+        title: "City of Lakes & White Palaces",
+        narrative: "Drive to Udaipur. Take a private motorboat to Taj Lake Palace, which floats elegantly in the middle of Lake Pichola.",
+        details: {
+          accommodation: "Taj Lake Palace Udaipur (Luxury Lake View Room)",
+          experiences: "Private boat transfer, evening sunset cruise on Lake Pichola",
+          dining: "Royal Mewari tasting menu at Neel Kamal",
+          transport: "Private luxury SUV & boat"
+        },
+        images: [{ url: "/images/taj-lake-palace-udaipur.jpeg", caption: "The floating Taj Lake Palace Udaipur" }],
+        expertNote: "Taj Lake Palace was built in 1746 as a summer pleasure palace for the Maharana of Udaipur.",
+        highlights: ["Floating Lake Palace Stay", "Lake Pichola Sunset Cruise", "Neel Kamal Dining"],
+        revealedRouteKeys: ["delhi", "agra", "jaipur", "shahpurabagh", "udaipur"]
+      },
+      {
+        day: 12,
+        location: "Udaipur",
+        locationKey: "udaipur",
+        meta: "Udaipur",
+        title: "Palaces of the Maharanas",
+        narrative: "Explore Udaipur's monumental City Palace. Visit Saheliyon-ki-Bari gardens and see the vintage car collection.",
+        details: {
+          accommodation: "Taj Lake Palace Udaipur",
+          experiences: "City Palace private tour, vintage car collection view, Saheliyon-ki-Bari walk",
+          dining: "Lakeside lunch, rooftop terrace dinner",
+          transport: "Private luxury SUV & boat"
+        },
+        images: [{ url: "/images/courtyards-udaipur-city-palace.jpg", caption: "Udaipur City Palace courtyards" }],
+        expertNote: "City Palace Udaipur is the largest palace complex in Rajasthan, built over 400 years.",
+        highlights: ["City Palace Private Tour", "Vintage Car Exhibition", "Lakeside Rooftop Dining"],
+        revealedRouteKeys: ["delhi", "agra", "jaipur", "shahpurabagh", "udaipur"]
+      },
+      {
+        day: 13,
+        location: "Delhi",
+        locationKey: "udaipur",
+        meta: "Udaipur to Delhi Airport",
+        title: "Himalayan Vistas Departure",
+        narrative: "Fly from Udaipur to Delhi International Airport for your departure flight home, carrying royal memories.",
+        details: {
+          accommodation: "VIP Departure Lounge",
+          experiences: "Airport departure transfer",
+          dining: "Palace breakfast",
+          transport: "Private SUV & domestic flight"
+        },
+        images: [{ url: "/images/airport.webp", caption: "Farewell to India" }],
+        expertNote: "Connect seamlessly to your evening international departure flight.",
+        highlights: ["VIP Airport Exit Assistance", "Lake Pichola Farewell View"],
+        revealedRouteKeys: ["delhi", "agra", "jaipur", "shahpurabagh", "udaipur", "delhi"]
+      }
+    ]
+  },
+  "palace-culture-19": {
+  "id": "palace-culture-19",
+  "title": "Grand Rajasthan: Royal Palaces & Desert Estates",
+  "subtitle": "An epic 19-day passage through the heritage landmarks, desert cities, and royal lake palaces of Rajasthan.",
+  "duration": "19 Days / 18 Nights",
+  "regionsVisited": "Delhi, Jaisalmer, Jodhpur, Mihirgarh, Udaipur, Shahpura Bagh, Jaipur, Agra",
+  "accommodations": "Legendary Heritage Suites & Luxury Desert Castles",
+  "transfer": "Private Luxury SUV & Domestic Flight",
+  "heroImage": "/images/rajasthan_palace_exterior_1776272664878.png",
+  "ctaBgImage": "/images/courtyards-udaipur-city-palace.jpg",
+  "markerKeys": [
+    "delhi",
+    "jaisalmer",
+    "jodhpur",
+    "mihirgarh",
+    "udaipur",
+    "shahpurabagh",
+    "jaipur",
+    "agra"
+  ],
+  "routeCoords": [
+    [
+      77.209,
+      28.6139
+    ],
+    [
+      70.9169,
+      26.9157
+    ],
+    [
+      73.0243,
+      26.2389
+    ],
+    [
+      73.0617,
+      26.0719
+    ],
+    [
+      73.7125,
+      24.5854
+    ],
+    [
+      74.9317,
+      25.6306
+    ],
+    [
+      75.7873,
+      26.9124
+    ],
+    [
+      78.0081,
+      27.1767
+    ],
+    [
+      77.209,
+      28.6139
+    ]
+  ],
+  "accommodationsList": [
+    {
+      "title": "The Imperial Delhi",
+      "desc": "An iconic colonial-era masterpiece blending Art Deco style with royal heritage.",
+      "image": "/images/the-imperial-newdelhi.webp"
+    },
+    {
+      "title": "Suryagarh Jaisalmer",
+      "desc": "A fortress hotel in the Thar desert combining rugged majesty with extreme luxury.",
+      "image": "/images/jaisalmer-fort.jpg"
+    },
+    {
+      "title": "Taj Umaid Bhawan Palace, Jodhpur",
+      "desc": "One of the largest private residences in the world, combining Art Deco and royal Mewar architecture.",
+      "image": "/images/jodhpur-mehrangarh.webp"
+    },
+    {
+      "title": "Mihir Garh Estate",
+      "desc": "An exclusive boutique sand castle rising from the Rajasthani desert scrub.",
+      "image": "/images/rajasthan_palace_exterior_1776272664878.png"
+    },
+    {
+      "title": "Taj Lake Palace, Udaipur",
+      "desc": "A legendary white marble palace rising from the center of Lake Pichola.",
+      "image": "/images/taj-lake-palace-udaipur.jpeg"
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Arrival & Welcome",
+      "title": "Imperial Welcome",
+      "narrative": "Arrive at New Delhi's international airport. Private transfer to your landmark heritage hotel.",
+      "details": {
+        "accommodation": "The Imperial Delhi (Grand Heritage Suite)",
+        "experiences": "Private welcome orientation, historic garden walk",
+        "dining": "Welcome dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/the-imperial-newdelhi.webp",
+          "caption": "The Imperial Delhi"
+        }
+      ],
+      "expertNote": "Settle into the calm elegance of your hotel before starting your desert expedition.",
+      "highlights": [
+        "VIP Airport Greeting",
+        "Colonial Heritage Suite"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 2,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Old & New Delhi Tour",
+      "title": "Chronicles of Empires",
+      "narrative": "Explore the historic contrasts of Delhi. Ride a private rickshaw through Chandni Chowk and stand before Humayun's Tomb.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Curated history walk in Old Delhi, private museum access",
+        "dining": "Royal Mughlai lunch, fine contemporary dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Historic architecture and Mughal monuments of Old Delhi.jpg",
+          "caption": "Old Delhi historic sights"
+        }
+      ],
+      "expertNote": "We arrange early entry to avoid the midday sun.",
+      "highlights": [
+        "Old Delhi Rickshaw",
+        "Humayun's Tomb Tour"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 3,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi Art & Sufism",
+      "title": "Mystics & Modern Art",
+      "narrative": "Spend the morning at private contemporary art galleries. In the evening, witness Qawwali devotional music at Nizamuddin Dargah.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Private gallery viewing, evening Sufi devotional tour",
+        "dining": "Artisan lunch, private garden dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Nizamuddin Dargah shrine.jpeg",
+          "caption": "Evening Sufi session at Nizamuddin"
+        }
+      ],
+      "expertNote": "Qawwali music represents a deep heritage legacy of Northern India.",
+      "highlights": [
+        "Art Gallery Access",
+        "Sufi Qawwali Experience"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 4,
+      "location": "Jaisalmer",
+      "locationKey": "jaisalmer",
+      "meta": "Fly to Jaisalmer",
+      "title": "The Golden Fortress",
+      "narrative": "Board a domestic flight to Jaisalmer. Settle into Suryagarh, a majestic resort built like a desert fort.",
+      "details": {
+        "accommodation": "Suryagarh Jaisalmer (Luxury Suite)",
+        "experiences": "Desert fortress arrival greeting, pool-side relaxation",
+        "dining": "Traditional desert-style barbecue thali",
+        "transport": "Private SUV & domestic flight"
+      },
+      "images": [
+        {
+          "url": "/images/jaisalmer-fort.jpg",
+          "caption": "Suryagarh Jaisalmer desert outpost"
+        }
+      ],
+      "expertNote": "Suryagarh offers pure desert isolation combined with modern palace hospitality.",
+      "highlights": [
+        "Flight to Thar Desert",
+        "Fortress Arrival Welcome"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "jaisalmer"
+      ]
+    },
+    {
+      "day": 5,
+      "location": "Jaisalmer",
+      "locationKey": "jaisalmer",
+      "meta": "Jaisalmer Dunes",
+      "title": "Thar Dunes & Fort Walk",
+      "narrative": "Walk through Jaisalmer's living fort. At sunset, ride camels into the Sam Sand Dunes, followed by desert folk music.",
+      "details": {
+        "accommodation": "Suryagarh Jaisalmer",
+        "experiences": "Living fort walking tour, camel dune safari",
+        "dining": "Suryagarh private dune dinner under starlight",
+        "transport": "Private 4x4 SUV & Camel"
+      },
+      "images": [
+        {
+          "url": "/images/jaisalmer-fort.jpg",
+          "caption": "Sunrise over Jaisalmer Fort"
+        }
+      ],
+      "expertNote": "The dunes look spectacular as the desert sands change colors at sunset.",
+      "highlights": [
+        "Living Fort Tour",
+        "Sunset Camel Dunes Safari",
+        "Dune Dinner under Stars"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "jaisalmer"
+      ]
+    },
+    {
+      "day": 6,
+      "location": "Jodhpur",
+      "locationKey": "jodhpur",
+      "meta": "Jaisalmer to Jodhpur",
+      "title": "The Blue Citadels",
+      "narrative": "Drive across the Thar Desert to Jodhpur. Check into Umaid Bhawan Palace, a stunning Art Deco architectural feat.",
+      "details": {
+        "accommodation": "Taj Umaid Bhawan Palace (Historical Suite)",
+        "experiences": "Scenic desert highway drive, palace heritage orientation",
+        "dining": "Fine Rajasthani dining at Risala",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/jodhpur-mehrangarh.webp",
+          "caption": "The imposing Umaid Bhawan Palace Jodhpur"
+        }
+      ],
+      "expertNote": "Umaid Bhawan is still the home of the Maharaja of Jodhpur.",
+      "highlights": [
+        "Desert Drive to Jodhpur",
+        "Umaid Bhawan Palace Check-in"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "jaisalmer",
+        "jodhpur"
+      ]
+    },
+    {
+      "day": 7,
+      "location": "Jodhpur",
+      "locationKey": "jodhpur",
+      "meta": "Jodhpur Sights",
+      "title": "Mehrangarh Fortress Walk",
+      "narrative": "Explore Mehrangarh Fort rising above the blue houses. Walk down the old streets and visit the royal cenotaph of Jaswant Thada.",
+      "details": {
+        "accommodation": "Taj Umaid Bhawan Palace",
+        "experiences": "Mehrangarh Fort private tour, blue city walks",
+        "dining": "Palace lunch, garden dinner overlooking the fort",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/jodhpur-mehrangarh.webp",
+          "caption": "Mehrangarh Fort rising over Jodhpur"
+        }
+      ],
+      "expertNote": "We arrange private curator access to the fort's museum collection.",
+      "highlights": [
+        "Mehrangarh Fort Curator Tour",
+        "Jaswant Thada Cenotaph",
+        "Blue City Photo Walk"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "jaisalmer",
+        "jodhpur"
+      ]
+    },
+    {
+      "day": 8,
+      "location": "Mihirgarh",
+      "locationKey": "mihirgarh",
+      "meta": "Jodhpur to Mihirgarh",
+      "title": "The Desert Sand Castle",
+      "narrative": "Drive to Mihir Garh, an exclusive fortress estate rising from the scrub. Enjoy peace by the pool.",
+      "details": {
+        "accommodation": "Mihir Garh Estate (Royal Suite)",
+        "experiences": "Heritage fort arrival, private pool rest",
+        "dining": "Traditional Mewari home cooking dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/rajasthan_palace_exterior_1776272664878.png",
+          "caption": "Mihir Garh Sand Castle"
+        }
+      ],
+      "expertNote": "Each suite has its own private pool or plunge bath.",
+      "highlights": [
+        "Mihir Garh Sand Castle Stay",
+        "Private Plunge Pool"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "jaisalmer",
+        "jodhpur",
+        "mihirgarh"
+      ]
+    },
+    {
+      "day": 9,
+      "location": "Mihirgarh",
+      "locationKey": "mihirgarh",
+      "meta": "Mihirgarh Safaris",
+      "title": "Equestrian & Village Safaris",
+      "narrative": "Ride purebred Marwari horses in the desert. Visit local Bishnoi villages, observing local nature conservation practices.",
+      "details": {
+        "accommodation": "Mihir Garh Estate",
+        "experiences": "Marwari horse safari, Bishnoi village tour",
+        "dining": "Desert picnic, fireside dinner",
+        "transport": "Equestrian & private 4x4 SUV"
+      },
+      "images": [
+        {
+          "url": "/images/nimaj-village.jpg",
+          "caption": "Visiting Bishnoi villages near Mihir Garh"
+        }
+      ],
+      "expertNote": "The Bishnoi are famous for their deep spiritual commitment to protecting trees and wildlife.",
+      "highlights": [
+        "Marwari Horse Riding",
+        "Bishnoi Conservation Tour"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "jaisalmer",
+        "jodhpur",
+        "mihirgarh"
+      ]
+    },
+    {
+      "day": 10,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Mihirgarh to Udaipur",
+      "title": "Ranakpur & Lake Pichola",
+      "narrative": "Drive to Udaipur, stopping at Ranakpur Temple, featuring 1,444 unique marble pillars. Board a boat to Taj Lake Palace.",
+      "details": {
+        "accommodation": "Taj Lake Palace Udaipur (Luxury Suite)",
+        "experiences": "Ranakpur Temple tour, private Lake Pichola boat transfer",
+        "dining": "Fine Mewari dining at Neel Kamal",
+        "transport": "Private luxury SUV & boat"
+      },
+      "images": [
+        {
+          "url": "/images/taj-lake-palace-udaipur.jpeg",
+          "caption": "Arriving at Taj Lake Palace Udaipur"
+        }
+      ],
+      "expertNote": "Ranakpur Jain temple is an absolute masterpiece of medieval stone carving.",
+      "highlights": [
+        "Ranakpur Marble Temple",
+        "Lake Pichola Boat Transfer",
+        "Taj Lake Palace Suite"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "jaisalmer",
+        "jodhpur",
+        "mihirgarh",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 11,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Udaipur Sights",
+      "title": "Mewar City Palace",
+      "narrative": "Tour Udaipur's grand City Palace complex, featuring mirrors, tiles, and courtyards. Browse the crystal gallery.",
+      "details": {
+        "accommodation": "Taj Lake Palace Udaipur",
+        "experiences": "City Palace tour, crystal gallery visit",
+        "dining": "Lakeside lunch, rooftop palace dinner",
+        "transport": "Private luxury SUV & boat"
+      },
+      "images": [
+        {
+          "url": "/images/courtyards-udaipur-city-palace.jpg",
+          "caption": "Udaipur City Palace courtyards"
+        }
+      ],
+      "expertNote": "This palace is the largest in Rajasthan, built by successive Maharanas over four centuries.",
+      "highlights": [
+        "City Palace Mewar Tour",
+        "Crystal Gallery Visit"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "jaisalmer",
+        "jodhpur",
+        "mihirgarh",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 12,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Udaipur Lakes",
+      "title": "Jag Mandir Island Sunset",
+      "narrative": "Explore the vintage car collection. In the late afternoon, take a private boat cruise to Jag Mandir island.",
+      "details": {
+        "accommodation": "Taj Lake Palace Udaipur",
+        "experiences": "Vintage car viewing, Jag Mandir island cruise",
+        "dining": "Island sunset drinks, Lake Palace dinner",
+        "transport": "Private SUV & boat"
+      },
+      "images": [
+        {
+          "url": "/images/taj-lake-palace-udaipur.jpeg",
+          "caption": "Sunset views over Lake Pichola"
+        }
+      ],
+      "expertNote": "Jag Mandir was used as a summer resort by the royal family and once housed prince Shah Jahan.",
+      "highlights": [
+        "Jag Mandir Island Cruise",
+        "Vintage Car Exhibition"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "jaisalmer",
+        "jodhpur",
+        "mihirgarh",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 13,
+      "location": "Shahpura Bagh",
+      "locationKey": "shahpurabagh",
+      "meta": "Udaipur to Shahpura Bagh",
+      "title": "The Country Estate",
+      "narrative": "Drive to Shahpura Bagh heritage estate. Relax in the 45-acre orchards and watch birds on the private lakes.",
+      "details": {
+        "accommodation": "Shahpura Bagh Estate (Royal Suite)",
+        "experiences": "Estate historic walking tour, lake sunset cruise",
+        "dining": "Traditional home-cooked Rajasthani specialties",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/rajasthan_palace_exterior_1776272664878.png",
+          "caption": "Shahpura Bagh gardens"
+        }
+      ],
+      "expertNote": "Enjoy a highly personalized stay hosted by the descendant family of the rulers.",
+      "highlights": [
+        "Country Estate Settle",
+        "Sunset Lake Cruise"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "jaisalmer",
+        "jodhpur",
+        "mihirgarh",
+        "udaipur",
+        "shahpurabagh"
+      ]
+    },
+    {
+      "day": 14,
+      "location": "Shahpura Bagh",
+      "locationKey": "shahpurabagh",
+      "meta": "Shahpura Bagh",
+      "title": "Rural Walks & Birdwatching",
+      "narrative": "Walk through local rural villages. Observe species of migratory birds nesting by the estate's private lakes.",
+      "details": {
+        "accommodation": "Shahpura Bagh Estate",
+        "experiences": "Guided village walk, private lake bird-watching tour",
+        "dining": "Orchard lunch, candlelit garden dinner",
+        "transport": "Private luxury SUV & walking"
+      },
+      "images": [
+        {
+          "url": "/images/nimaj-village.jpg",
+          "caption": "Rural village walks near Shahpura"
+        }
+      ],
+      "expertNote": "This area is an undiscovered gem for bird watchers.",
+      "highlights": [
+        "Village Craft Walks",
+        "Lakeside Birdwatching",
+        "Orchard Dinner"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "jaisalmer",
+        "jodhpur",
+        "mihirgarh",
+        "udaipur",
+        "shahpurabagh"
+      ]
+    },
+    {
+      "day": 15,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Shahpura Bagh to Jaipur",
+      "title": "The Palace Ballrooms",
+      "narrative": "Drive to Jaipur. Settle into Rambagh Palace. Stroll through the lawns and see the resident peacocks.",
+      "details": {
+        "accommodation": "Rambagh Palace (Historical Suite)",
+        "experiences": "Palace heritage walk, royal welcome greeting",
+        "dining": "Traditional Rajasthani thali at Suvarna Mahal",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Rambagh-Palace-jaipur.jpg",
+          "caption": "Rambagh Palace Jaipur"
+        }
+      ],
+      "expertNote": "The palace was the residence of Maharaja Sawai Man Singh II.",
+      "highlights": [
+        "Rambagh Palace Arrival",
+        "Ballroom Dining"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "jaisalmer",
+        "jodhpur",
+        "mihirgarh",
+        "udaipur",
+        "shahpurabagh",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 16,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Jaipur Sights",
+      "title": "Amber Fort & City Palace",
+      "narrative": "Ascend Amber Fort. Explore the City Palace and see the iconic Hawa Mahal facade.",
+      "details": {
+        "accommodation": "Rambagh Palace",
+        "experiences": "Amber Fort private tour, City Palace royal archives access",
+        "dining": "Palace lunch, cocktail at Polo Bar",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/city-palace-jaipur.webp",
+          "caption": "City Palace courtyards"
+        }
+      ],
+      "expertNote": "We arrange entry into the private royal library containing rare manuscripts.",
+      "highlights": [
+        "Amber Fort Private Tour",
+        "City Palace Library access",
+        "Hawa Mahal"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "jaisalmer",
+        "jodhpur",
+        "mihirgarh",
+        "udaipur",
+        "shahpurabagh",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 17,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Jaipur to Agra",
+      "title": "Fatehpur Sikri Capital",
+      "narrative": "Drive to Agra, stopping at the preserved capital of Fatehpur Sikri. Settle into Oberoi Amarvilas with Taj views.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas (Premier Taj View Suite)",
+        "experiences": "Fatehpur Sikri guided tour, sunset Taj Mahal suite view",
+        "dining": "Awadhi tasting dinner at Esphahan",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/taj-mahal.webp",
+          "caption": "Taj Mahal sunset view"
+        }
+      ],
+      "expertNote": "Your room features direct views of the Taj Mahal monument.",
+      "highlights": [
+        "Fatehpur Sikri Ruins",
+        "Taj View Suite Check-in"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "jaisalmer",
+        "jodhpur",
+        "mihirgarh",
+        "udaipur",
+        "shahpurabagh",
+        "jaipur",
+        "agra"
+      ]
+    },
+    {
+      "day": 18,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Agra Tour",
+      "title": "Sunrise Taj Mahal & Agra Fort",
+      "narrative": "Experience the sunrise over the Taj Mahal. Later, tour the historic sandstone palaces inside Agra Fort.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas",
+        "experiences": "Dawn Taj Mahal private tour, guided Agra Fort tour",
+        "dining": "Fine Mughlai lunch, palace high tea",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/agra-fort.jpeg",
+          "caption": "Sandstone walls of Agra Fort"
+        }
+      ],
+      "expertNote": "Sunrise is the quietest and most scenic time to visit the monument.",
+      "highlights": [
+        "Sunrise Taj Mahal Walk",
+        "Agra Fort Royal Palaces"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "jaisalmer",
+        "jodhpur",
+        "mihirgarh",
+        "udaipur",
+        "shahpurabagh",
+        "jaipur",
+        "agra"
+      ]
+    },
+    {
+      "day": 19,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Agra to Delhi Airport",
+      "title": "Departure Journey",
+      "narrative": "Drive back to Delhi International Airport for your departure flight home.",
+      "details": {
+        "accommodation": "VIP Departure Lounge",
+        "experiences": "Airport departure transfer",
+        "dining": "Palace breakfast",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/airport.webp",
+          "caption": "Farewell to India"
+        }
+      ],
+      "expertNote": "We recommend scheduling evening departure flights.",
+      "highlights": [
+        "VIP Airport Exit Assistance"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "jaisalmer",
+        "jodhpur",
+        "mihirgarh",
+        "udaipur",
+        "shahpurabagh",
+        "jaipur",
+        "agra",
+        "delhi"
+      ]
+    }
+  ]
+},
+  "palace-culture-16": {
+  "id": "palace-culture-16",
+  "title": "Palaces & Wilderness: Rajasthan Luxury Expedition",
+  "subtitle": "A 16-day royal passage through Delhi, Udaipur, Jawai leopards, Mihir Garh, Jodhpur, Jaipur, and Agra.",
+  "duration": "16 Days / 15 Nights",
+  "regionsVisited": "Delhi, Udaipur, Jawai, Mihirgarh, Jodhpur, Jaipur, Agra",
+  "accommodations": "Legendary Heritage Palaces & Luxury Safari Tents",
+  "transfer": "Private SUV & 4x4 Wilderness Jeeps",
+  "heroImage": "/images/hero_palace_lake_1776272480532.png",
+  "ctaBgImage": "/images/wildlife.jpg",
+  "markerKeys": [
+    "delhi",
+    "udaipur",
+    "jawai",
+    "mihirgarh",
+    "jodhpur",
+    "jaipur",
+    "agra"
+  ],
+  "routeCoords": [
+    [
+      77.209,
+      28.6139
+    ],
+    [
+      73.7125,
+      24.5854
+    ],
+    [
+      73.1678,
+      25.1058
+    ],
+    [
+      73.0617,
+      26.0719
+    ],
+    [
+      73.0243,
+      26.2389
+    ],
+    [
+      75.7873,
+      26.9124
+    ],
+    [
+      78.0081,
+      27.1767
+    ],
+    [
+      77.209,
+      28.6139
+    ]
+  ],
+  "accommodationsList": [
+    {
+      "title": "The Imperial Delhi",
+      "desc": "An elegant Victorian-style colonial heritage landmark in New Delhi.",
+      "image": "/images/the-imperial-newdelhi.webp"
+    },
+    {
+      "title": "Taj Lake Palace, Udaipur",
+      "desc": "A legendary white marble palace rising from the center of Lake Pichola.",
+      "image": "/images/taj-lake-palace-udaipur.jpeg"
+    },
+    {
+      "title": "Suján Jawai Camp",
+      "desc": "An ultra-luxury canvas outpost positioned amidst granite hills where leopards roam free.",
+      "image": "/images/wildlife.jpg"
+    },
+    {
+      "title": "Mihir Garh Estate",
+      "desc": "An exclusive boutique sand castle rising from the desert scrub.",
+      "image": "/images/rajasthan_palace_exterior_1776272664878.png"
+    },
+    {
+      "title": "Taj Umaid Bhawan Palace, Jodhpur",
+      "desc": "A stunning Art Deco palace once home to Jodhpur's Maharaja.",
+      "image": "/images/jodhpur-mehrangarh.webp"
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Arrival & Welcome",
+      "title": "Capital Greeting",
+      "narrative": "Arrive in Delhi. Tarmac assistance and private transfer to your heritage hotel.",
+      "details": {
+        "accommodation": "The Imperial Delhi (Grand Heritage Suite)",
+        "experiences": "VIP tarmac greeting, hotel history briefing",
+        "dining": "Spice Route dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/the-imperial-newdelhi.webp",
+          "caption": "The Imperial Delhi lobby"
+        }
+      ],
+      "expertNote": "Enjoy early rest before beginning your Rajasthan wilderness expedition.",
+      "highlights": [
+        "VIP Fast-track Access",
+        "Heritage Suite"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 2,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi Sights",
+      "title": "Imperial Sights",
+      "narrative": "Explore the historical treasures of Delhi, from Old Delhi's markets to Humayun's Tomb and Lutyens' capital avenues.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Guided Old Delhi walk, Humayun's Tomb tour",
+        "dining": "Mughlai thali, contemporary dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Historic architecture and Mughal monuments of Old Delhi.jpg",
+          "caption": "Humayun's Tomb gardens"
+        }
+      ],
+      "expertNote": "Humayun's Tomb is beautifully framed by formal Persian gardens.",
+      "highlights": [
+        "Old Delhi Rickshaw Tour",
+        "Humayun's Tomb Tour"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 3,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi Art & Sufism",
+      "title": "Art Galleries & Sufi Vocals",
+      "narrative": "Spend the day viewing contemporary art. In the evening, witness live Qawwali vocals at Nizamuddin Dargah.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Private art gallery tour, evening Sufi devotional walk",
+        "dining": "Artisan lunch, private garden dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Nizamuddin Dargah shrine.jpeg",
+          "caption": "Devotional vocals at Nizamuddin"
+        }
+      ],
+      "expertNote": "The shrine's music dates back to medieval saint Hazrat Nizamuddin.",
+      "highlights": [
+        "Private Art Curation",
+        "Sufi Music Performance"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 4,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Fly to Udaipur",
+      "title": "Lake Pichola Arrival",
+      "narrative": "Fly from Delhi to Udaipur. Board a private boat to Taj Lake Palace rising from Lake Pichola.",
+      "details": {
+        "accommodation": "Taj Lake Palace Udaipur (Luxury Suite)",
+        "experiences": "Flight transition, private lake boat welcome",
+        "dining": "Mewari dinner at Neel Kamal",
+        "transport": "Private SUV, domestic flight & boat"
+      },
+      "images": [
+        {
+          "url": "/images/taj-lake-palace-udaipur.jpeg",
+          "caption": "Taj Lake Palace Udaipur"
+        }
+      ],
+      "expertNote": "Enjoy views of the surrounding Aravalli hills from your room.",
+      "highlights": [
+        "Lake Pichola Boat Transfer",
+        "Taj Lake Palace Check-in"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 5,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Udaipur Sights",
+      "title": "Palaces of Udaipur",
+      "narrative": "Tour Udaipur's massive City Palace complex, vintage car display, and enjoy an afternoon private boat cruise.",
+      "details": {
+        "accommodation": "Taj Lake Palace Udaipur",
+        "experiences": "City Palace tour, vintage car collection visit, private sunset boat cruise",
+        "dining": "Lakeside lunch, rooftop Mewari banquet",
+        "transport": "Private SUV & boat"
+      },
+      "images": [
+        {
+          "url": "/images/courtyards-udaipur-city-palace.jpg",
+          "caption": "City Palace courtyards"
+        }
+      ],
+      "expertNote": "Look out for Mewar paintings inside the City Palace museum.",
+      "highlights": [
+        "City Palace Guided Tour",
+        "Sunset Lake Cruise"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 6,
+      "location": "Jawai",
+      "locationKey": "jawai",
+      "meta": "Udaipur to Jawai",
+      "title": "Granite Hills & Leopards",
+      "narrative": "Drive north to the Jawai conservation area. Settle into Suján Jawai, an ultra-luxury safari camp.",
+      "details": {
+        "accommodation": "Suján Jawai Camp (Luxury Tent)",
+        "experiences": "Wilderness welcome, evening leopard tracking safari",
+        "dining": "Gourmet campfire dining",
+        "transport": "Private SUV & open 4x4 safari jeep"
+      },
+      "images": [
+        {
+          "url": "/images/wildlife.jpg",
+          "caption": "Granite hills of Jawai leopard area"
+        }
+      ],
+      "expertNote": "Jawai represents a unique conservation model where leopards and local shepherds live in harmony.",
+      "highlights": [
+        "Suján Jawai Check-in",
+        "Sunset Leopard Safari"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "udaipur",
+        "jawai"
+      ]
+    },
+    {
+      "day": 7,
+      "location": "Jawai",
+      "locationKey": "jawai",
+      "meta": "Jawai Safaris",
+      "title": "Leopard Safaris & Shepherd Walks",
+      "narrative": "Embark on dawn and dusk 4x4 safaris. Walk through the granite hills with local Rabari shepherds in their traditional red robes.",
+      "details": {
+        "accommodation": "Suján Jawai Camp",
+        "experiences": "Morning & afternoon safaris, Rabari cultural walk",
+        "dining": "Bush breakfast, fireside lanterns dinner",
+        "transport": "Open 4x4 safari jeep"
+      },
+      "images": [
+        {
+          "url": "/images/nimaj-village.jpg",
+          "caption": "Rabari shepherds near Jawai"
+        }
+      ],
+      "expertNote": "The Rabari people have guided herds through these hills for centuries.",
+      "highlights": [
+        "Dawn Leopard Tracking",
+        "Rabari Guided Hill Walk"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "udaipur",
+        "jawai"
+      ]
+    },
+    {
+      "day": 8,
+      "location": "Mihirgarh",
+      "locationKey": "mihirgarh",
+      "meta": "Jawai to Mihirgarh",
+      "title": "Sand Castle Fort",
+      "narrative": "Drive north to Mihir Garh boutique estate. Spend a quiet afternoon on the roof deck.",
+      "details": {
+        "accommodation": "Mihir Garh Estate (Royal Suite)",
+        "experiences": "Desert welcome, rooftop orientation",
+        "dining": "Traditional Rajasthani home cooking dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/rajasthan_palace_exterior_1776272664878.png",
+          "caption": "Mihir Garh Sand Castle"
+        }
+      ],
+      "expertNote": "Mihir Garh is built as a tribute to desert fort design.",
+      "highlights": [
+        "Mihir Garh Suite",
+        "Desert Sunset Views"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "udaipur",
+        "jawai",
+        "mihirgarh"
+      ]
+    },
+    {
+      "day": 9,
+      "location": "Mihirgarh",
+      "locationKey": "mihirgarh",
+      "meta": "Mihirgarh equestrian",
+      "title": "Marwari Horse Safaris",
+      "narrative": "Enjoy a private horse-riding session on the estate's rare Marwari horses. Savor a gourmet picnic lunch.",
+      "details": {
+        "accommodation": "Mihir Garh Estate",
+        "experiences": "Equestrian session, desert village walk",
+        "dining": "Organic estate lunch, fireside dinner",
+        "transport": "Equestrian & private 4x4 SUV"
+      },
+      "images": [
+        {
+          "url": "/images/nimaj-village.jpg",
+          "caption": "Marwari horse riding at the estate"
+        }
+      ],
+      "expertNote": "The Marwari horses are famous for their curved, inward-pointing ears and stamina.",
+      "highlights": [
+        "Marwari Horse Riding",
+        "Fireside Desert Feast"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "udaipur",
+        "jawai",
+        "mihirgarh"
+      ]
+    },
+    {
+      "day": 10,
+      "location": "Jodhpur",
+      "locationKey": "jodhpur",
+      "meta": "Mihirgarh to Jodhpur",
+      "title": "Umaid Bhawan Art Deco Palace",
+      "narrative": "Drive to Jodhpur. Check into Umaid Bhawan Palace, a stunning golden sandstone palace set inside royal gardens.",
+      "details": {
+        "accommodation": "Taj Umaid Bhawan Palace (Historical Suite)",
+        "experiences": "Palace history walkthrough, garden stroll",
+        "dining": "Gourmet dining at Risala",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/jodhpur-mehrangarh.webp",
+          "caption": "Umaid Bhawan Palace grounds"
+        }
+      ],
+      "expertNote": "Umaid Bhawan contains a private museum featuring royal artifacts.",
+      "highlights": [
+        "Umaid Bhawan Check-in",
+        "Risala Fine Dining"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "udaipur",
+        "jawai",
+        "mihirgarh",
+        "jodhpur"
+      ]
+    },
+    {
+      "day": 11,
+      "location": "Jodhpur",
+      "locationKey": "jodhpur",
+      "meta": "Jodhpur Tour",
+      "title": "Mehrangarh Fort private tour",
+      "narrative": "Tour Mehrangarh Fort rising above the blue city. Explore the old stepwells and market streets of Jodhpur.",
+      "details": {
+        "accommodation": "Taj Umaid Bhawan Palace",
+        "experiences": "Mehrangarh Fort private tour, Toorji stepwell walk",
+        "dining": "Heritage lunch, terrace dining overlooking the fort",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/jodhpur-mehrangarh.webp",
+          "caption": "Mehrangarh Fort Jodhpur"
+        }
+      ],
+      "expertNote": "Toorji Ka Jhalra is an restored stepwell showing historical water architecture.",
+      "highlights": [
+        "Mehrangarh Fort Tour",
+        "Ancient Stepwell Walk"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "udaipur",
+        "jawai",
+        "mihirgarh",
+        "jodhpur"
+      ]
+    },
+    {
+      "day": 12,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Jodhpur to Jaipur",
+      "title": "Pink City Palace",
+      "narrative": "Drive to Jaipur. Settle into the Rambagh Palace, former home of Maharaja of Jaipur.",
+      "details": {
+        "accommodation": "Rambagh Palace (Historical Suite)",
+        "experiences": "Royal horse carriage welcome, palace gardens walk",
+        "dining": "Royal courtyard dinner at Suvarna Mahal",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Rambagh-Palace-jaipur.jpg",
+          "caption": "Rambagh Palace gardens"
+        }
+      ],
+      "expertNote": "Take an evening stroll through the palace's manicured gardens.",
+      "highlights": [
+        "Royal Carriage Greeting",
+        "Rambagh Palace gardens"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "udaipur",
+        "jawai",
+        "mihirgarh",
+        "jodhpur",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 13,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Jaipur Sights",
+      "title": "Amber Fort & City Palace",
+      "narrative": "Ascend Amber Fort, and explore the City Palace residential chambers, plus Jantar Mantar observatory.",
+      "details": {
+        "accommodation": "Rambagh Palace",
+        "experiences": "Amber Fort private tour, City Palace royal apartments access",
+        "dining": "Palace lunch, cocktail at Polo Bar",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/city-palace-jaipur.webp",
+          "caption": "City Palace entrance"
+        }
+      ],
+      "expertNote": "Jantar Mantar is a collection of nineteen architectural astronomical instruments.",
+      "highlights": [
+        "Amber Fort Private Tour",
+        "Royal Apartments Access"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "udaipur",
+        "jawai",
+        "mihirgarh",
+        "jodhpur",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 14,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Jaipur to Agra",
+      "title": "Yamuna & Taj view suite",
+      "narrative": "Drive to Agra, stopping at Fatehpur Sikri. Check into Oberoi Amarvilas with clear Taj view rooms.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas (Premier Taj View Suite)",
+        "experiences": "Fatehpur Sikri guided tour, Taj sunset view",
+        "dining": "Awadhi thali at Esphahan",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/taj-mahal.webp",
+          "caption": "Taj Mahal sunset"
+        }
+      ],
+      "expertNote": "Fatehpur Sikri's sandstone palaces show Emperor Akbar's design blend of Hindu and Persian styles.",
+      "highlights": [
+        "Fatehpur Sikri Ruins",
+        "Oberoi Taj View Suite"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "udaipur",
+        "jawai",
+        "mihirgarh",
+        "jodhpur",
+        "jaipur",
+        "agra"
+      ]
+    },
+    {
+      "day": 15,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Agra Sights",
+      "title": "Taj Mahal Dawn Walk",
+      "narrative": "Experience Taj Mahal at dawn. Later, explore the red sandstone palace pavilions inside Agra Fort.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas",
+        "experiences": "Dawn Taj Mahal private tour, Agra Fort private tour",
+        "dining": "Mughlai lunch, high tea overlooking the Taj",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/agra-fort.jpeg",
+          "caption": "Agra Fort walls"
+        }
+      ],
+      "expertNote": "Agra Fort contains beautiful white marble palaces built by Shah Jahan.",
+      "highlights": [
+        "Dawn Taj Mahal Walk",
+        "Agra Fort Palaces"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "udaipur",
+        "jawai",
+        "mihirgarh",
+        "jodhpur",
+        "jaipur",
+        "agra"
+      ]
+    },
+    {
+      "day": 16,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Agra to Delhi Airport",
+      "title": "Departure",
+      "narrative": "Drive back to Delhi International Airport for your departure flight home.",
+      "details": {
+        "accommodation": "VIP Departure Lounge",
+        "experiences": "Airport departure transfer",
+        "dining": "Palace breakfast",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/airport.webp",
+          "caption": "Farewell to India"
+        }
+      ],
+      "expertNote": "Enjoy lounge comforts before checking in for your long-haul flight.",
+      "highlights": [
+        "VIP Airport Exit Assistance"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "udaipur",
+        "jawai",
+        "mihirgarh",
+        "jodhpur",
+        "jaipur",
+        "agra",
+        "delhi"
+      ]
+    }
+  ]
+},
+  "palace-culture-12": {
+  "id": "palace-culture-12",
+  "title": "Classic Rajasthan & Pushkar Oasis",
+  "subtitle": "A refined 12-day journey from the Mughal wonders of Agra to the pink city of Jaipur, the sacred lake of Pushkar, and the romantic waters of Udaipur.",
+  "duration": "12 Days / 11 Nights",
+  "regionsVisited": "Delhi, Agra, Jaipur, Pushkar, Udaipur",
+  "accommodations": "Heritage Palaces & Luxury Lake Resorts",
+  "transfer": "Private Luxury SUV",
+  "heroImage": "/images/courtyards-udaipur-city-palace.jpg",
+  "ctaBgImage": "/images/taj-mahal.webp",
+  "markerKeys": [
+    "delhi",
+    "agra",
+    "jaipur",
+    "pushkar",
+    "udaipur"
+  ],
+  "routeCoords": [
+    [
+      77.209,
+      28.6139
+    ],
+    [
+      78.0081,
+      27.1767
+    ],
+    [
+      75.7873,
+      26.9124
+    ],
+    [
+      74.5554,
+      26.4892
+    ],
+    [
+      73.7125,
+      24.5854
+    ],
+    [
+      77.209,
+      28.6139
+    ]
+  ],
+  "accommodationsList": [
+    {
+      "title": "The Imperial Delhi",
+      "desc": "An elegant Victorian-style colonial heritage landmark in New Delhi.",
+      "image": "/images/the-imperial-newdelhi.webp"
+    },
+    {
+      "title": "The Oberoi Amarvilas, Agra",
+      "desc": "Stunning luxury hotel featuring direct monument views from every room.",
+      "image": "/images/The Oberoi Amarvilas.jpg"
+    },
+    {
+      "title": "Rambagh Palace, Jaipur",
+      "desc": "The glorious heritage palace of the Maharaja of Jaipur.",
+      "image": "/images/Rambagh-Palace-jaipur.jpg"
+    },
+    {
+      "title": "Pushkar Palace",
+      "desc": "A heritage property set directly on the banks of Pushkar's sacred lake.",
+      "image": "/images/Historic architecture and Mughal monuments of Old Delhi.jpg"
+    },
+    {
+      "title": "Taj Lake Palace, Udaipur",
+      "desc": "A legendary white marble palace rising from the center of Lake Pichola.",
+      "image": "/images/taj-lake-palace-udaipur.jpeg"
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Arrival & Welcome",
+      "title": "Imperial Greeting",
+      "narrative": "Arrive in Delhi. Enjoy private transfer to your landmark heritage hotel.",
+      "details": {
+        "accommodation": "The Imperial Delhi (Grand Heritage Suite)",
+        "experiences": "VIP airport transfer, private welcome briefing",
+        "dining": "Welcome dinner at Spice Route",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/the-imperial-newdelhi.webp",
+          "caption": "Arriving at The Imperial Delhi"
+        }
+      ],
+      "expertNote": "Relax tonight before starting your cultural route across Rajasthan.",
+      "highlights": [
+        "VIP Airport Fast-track",
+        "Heritage Suite Stay"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 2,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi Tour",
+      "title": "Dynasties of Delhi",
+      "narrative": "Explore the historical treasures of Delhi, from Old Delhi's bustling alleyways to Humayun's Tomb.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Guided heritage sites walk, museum access",
+        "dining": "Mughlai lunch, fine contemporary dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Historic architecture and Mughal monuments of Old Delhi.jpg",
+          "caption": "Historic sights of Old Delhi"
+        }
+      ],
+      "expertNote": "Humayun's Tomb is the precursor to the Taj Mahal.",
+      "highlights": [
+        "Old Delhi Rickshaw Tour",
+        "Humayun's Tomb Tour"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 3,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Delhi to Agra Drive",
+      "title": "Taj Mahal Sunset",
+      "narrative": "Drive to Agra. Check into Oberoi Amarvilas. Stand before the Taj Mahal at sunset, watching the white marble change color.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas (Premier Taj View Suite)",
+        "experiences": "Private Taj Mahal sunset viewing, artisan marble workshop",
+        "dining": "Awadhi thali dinner at Esphahan",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/taj-mahal.webp",
+          "caption": "The Taj Mahal glowing at sunset"
+        }
+      ],
+      "expertNote": "Twilight is the most beautiful time to see the Taj Mahal, when the crowds begin to fade.",
+      "highlights": [
+        "Taj Mahal Sunset Walk",
+        "Oberoi Taj View Suite"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra"
+      ]
+    },
+    {
+      "day": 4,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Agra Heritage Tour",
+      "title": "Mughal Citadels",
+      "narrative": "Visit Agra Fort and explore its grand palaces. Discover the delicate marble carvings of the Baby Taj.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas",
+        "experiences": "Agra Fort guided tour, Baby Taj visit",
+        "dining": "Fine Mughlai lunch, palace high tea",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/agra-fort.jpeg",
+          "caption": "Agra Fort sandstone walls"
+        }
+      ],
+      "expertNote": "Look out from the fort's Jasmine Tower, where Emperor Shah Jahan spent his final years.",
+      "highlights": [
+        "Agra Fort Palace Walk",
+        "Tomb of Itmad-ud-Daulah"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra"
+      ]
+    },
+    {
+      "day": 5,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Agra to Jaipur",
+      "title": "Fatehpur Sikri & Pink City",
+      "narrative": "Drive to Jaipur, stopping at the preserved capital of Fatehpur Sikri. Settle into the legendary Rambagh Palace.",
+      "details": {
+        "accommodation": "Rambagh Palace (Historical Suite)",
+        "experiences": "Fatehpur Sikri guided tour, traditional royal greeting",
+        "dining": "Rajasthani thali in a gilded courtyard",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Rambagh-Palace-jaipur.jpg",
+          "caption": "Rambagh Palace Jaipur"
+        }
+      ],
+      "expertNote": "Fatehpur Sikri is beautifully preserved, capturing the grandeur of Emperor Akbar's court.",
+      "highlights": [
+        "Fatehpur Sikri Tour",
+        "Maharajah Royal Welcome"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 6,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Jaipur Heritage Tour",
+      "title": "Amber Fort & City Palace",
+      "narrative": "Ascend Amber Fort. Visit the City Palace and marvel at the pink sandstone walls of Hawa Mahal.",
+      "details": {
+        "accommodation": "Rambagh Palace",
+        "experiences": "Amber Fort private tour, exclusive City Palace archives access",
+        "dining": "Palace courtyard lunch, fine dining dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/city-palace-jaipur.webp",
+          "caption": "Jaipur City Palace courtyards"
+        }
+      ],
+      "expertNote": "The Sheesh Mahal inside Amber Fort is covered in thousands of hand-cut mirrors.",
+      "highlights": [
+        "Amber Fort Hill Climb",
+        "City Palace Royal Access"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 7,
+      "location": "Pushkar",
+      "locationKey": "pushkar",
+      "meta": "Jaipur to Pushkar",
+      "title": "Sacred Lake Sunset",
+      "narrative": "Drive to Pushkar. Check into Pushkar Palace. Stroll around the sacred lake and watch the sunset prayers.",
+      "details": {
+        "accommodation": "Pushkar Palace (Heritage Room)",
+        "experiences": "Guided sacred lake walk, ghat sunset ceremony",
+        "dining": "Traditional Rajasthani vegetarian dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Historic architecture and Mughal monuments of Old Delhi.jpg",
+          "caption": "Sacred lake of Pushkar"
+        }
+      ],
+      "expertNote": "Pushkar is one of the oldest cities in India and holds the rare Brahma Temple.",
+      "highlights": [
+        "Sacred Lake Rituals",
+        "Pushkar Palace Settle"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "pushkar"
+      ]
+    },
+    {
+      "day": 8,
+      "location": "Pushkar",
+      "locationKey": "pushkar",
+      "meta": "Pushkar Sights",
+      "title": "Brahma Temple & Camel Safari",
+      "narrative": "Visit the Brahma Temple. Spend the afternoon taking a camel safari through the surrounding sand dunes.",
+      "details": {
+        "accommodation": "Pushkar Palace",
+        "experiences": "Brahma Temple tour, desert camel safari",
+        "dining": "Organic farm lunch, sunset dune barbecue",
+        "transport": "Private SUV & camel"
+      },
+      "images": [
+        {
+          "url": "/images/Historic architecture and Mughal monuments of Old Delhi.jpg",
+          "caption": "Desert dunes of Pushkar"
+        }
+      ],
+      "expertNote": "Pushkar is famous for its annual camel fair, attracting thousands of nomads.",
+      "highlights": [
+        "Brahma Temple Tour",
+        "Sunset Camel Dunes Safari"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "pushkar"
+      ]
+    },
+    {
+      "day": 9,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Pushkar to Udaipur",
+      "title": "Fly to Lake Pichola",
+      "narrative": "Drive to Udaipur. Board a private motorboat to Taj Lake Palace rising from Lake Pichola.",
+      "details": {
+        "accommodation": "Taj Lake Palace Udaipur (Luxury Suite)",
+        "experiences": "Lake Pichola boat transfer, evening sunset cruise",
+        "dining": "Mewari tasting menu at Neel Kamal",
+        "transport": "Private luxury SUV & boat"
+      },
+      "images": [
+        {
+          "url": "/images/taj-lake-palace-udaipur.jpeg",
+          "caption": "Floating Taj Lake Palace Udaipur"
+        }
+      ],
+      "expertNote": "Taj Lake Palace was built in 1746 as a royal summer pleasure palace.",
+      "highlights": [
+        "Lake Pichola Boat Transfer",
+        "Taj Lake Palace Settle"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "pushkar",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 10,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Udaipur Sights",
+      "title": "Palaces of Udaipur",
+      "narrative": "Explore Udaipur's City Palace, crystal gallery, and the peaceful gardens of Saheliyon-ki-Bari.",
+      "details": {
+        "accommodation": "Taj Lake Palace Udaipur",
+        "experiences": "City Palace private tour, vintage car collection view",
+        "dining": "Lakeside lunch, rooftop terrace dinner",
+        "transport": "Private luxury SUV & boat"
+      },
+      "images": [
+        {
+          "url": "/images/courtyards-udaipur-city-palace.jpg",
+          "caption": "Udaipur City Palace courtyards"
+        }
+      ],
+      "expertNote": "City Palace Udaipur is the largest palace complex in Rajasthan.",
+      "highlights": [
+        "City Palace Mewar Tour",
+        "Vintage Car Exhibition"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "pushkar",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 11,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Monsoon Palace Sunset",
+      "title": "Monsoon Palace Sunset view",
+      "narrative": "Visit the Sajjangarh Monsoon Palace perched on a hilltop, offering panoramic views of Udaipur's lakes and city lights.",
+      "details": {
+        "accommodation": "Taj Lake Palace Udaipur",
+        "experiences": "Sajjangarh Monsoon Palace sunset tour",
+        "dining": "Fine lakeside dining at Neel Kamal",
+        "transport": "Private luxury SUV & boat"
+      },
+      "images": [
+        {
+          "url": "/images/taj-lake-palace-udaipur.jpeg",
+          "caption": "Sajjangarh Monsoon Palace overlook"
+        }
+      ],
+      "expertNote": "Sajjangarh Fort was built to watch the monsoon clouds over the Aravalli hills.",
+      "highlights": [
+        "Monsoon Palace Sunset Tour",
+        "Lakeside Farewell Dinner"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "pushkar",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 12,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Udaipur Depart",
+      "title": "Departure",
+      "narrative": "Enjoy your final lake palace breakfast before transfer to Udaipur Airport for your departure flight.",
+      "details": {
+        "accommodation": "VIP Departure Lounge",
+        "experiences": "Airport departure transfer",
+        "dining": "Palace breakfast",
+        "transport": "Private luxury SUV & boat"
+      },
+      "images": [
+        {
+          "url": "/images/airport.webp",
+          "caption": "Farewell to Rajasthan"
+        }
+      ],
+      "expertNote": "Connect seamlessly to your domestic flight back to Delhi or Mumbai.",
+      "highlights": [
+        "Airport Transfer Assistance"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "pushkar",
+        "udaipur"
+      ]
+    }
+  ]
+},
+  "palace-culture-18": {
+  "id": "palace-culture-18",
+  "title": "The Royal Rajasthani Circuit: Lakes, Dunes & Fortresses",
+  "subtitle": "The ultimate 18-day odyssey crossing Delhi, Agra, Jaipur, Pushkar, Udaipur, Jawai leopards, Jodhpur, and Jaisalmer.",
+  "duration": "18 Days / 17 Nights",
+  "regionsVisited": "Delhi, Agra, Jaipur, Pushkar, Udaipur, Jawai, Jodhpur, Jaisalmer",
+  "accommodations": "Legendary Heritage Palaces & Luxury Safari Tents",
+  "transfer": "Private SUV & 4x4 Wilderness Jeeps",
+  "heroImage": "/images/Umaid Bhawan Palace Jodhpur.webp",
+  "ctaBgImage": "/images/wildlife.jpg",
+  "markerKeys": [
+    "delhi",
+    "agra",
+    "jaipur",
+    "pushkar",
+    "udaipur",
+    "jawai",
+    "jodhpur",
+    "jaisalmer"
+  ],
+  "routeCoords": [
+    [
+      77.209,
+      28.6139
+    ],
+    [
+      78.0081,
+      27.1767
+    ],
+    [
+      75.7873,
+      26.9124
+    ],
+    [
+      74.5554,
+      26.4892
+    ],
+    [
+      73.7125,
+      24.5854
+    ],
+    [
+      73.1678,
+      25.1058
+    ],
+    [
+      73.0243,
+      26.2389
+    ],
+    [
+      70.9169,
+      26.9157
+    ],
+    [
+      77.209,
+      28.6139
+    ]
+  ],
+  "accommodationsList": [
+    {
+      "title": "The Imperial Delhi",
+      "desc": "An elegant Victorian-style colonial heritage landmark in New Delhi.",
+      "image": "/images/the-imperial-newdelhi.webp"
+    },
+    {
+      "title": "The Oberoi Amarvilas, Agra",
+      "desc": "Stunning luxury hotel featuring direct monument views from every room.",
+      "image": "/images/The Oberoi Amarvilas.jpg"
+    },
+    {
+      "title": "Rambagh Palace, Jaipur",
+      "desc": "The glorious heritage palace of the Maharaja of Jaipur.",
+      "image": "/images/Rambagh-Palace-jaipur.jpg"
+    },
+    {
+      "title": "Pushkar Palace",
+      "desc": "A heritage property set directly on the banks of Pushkar's sacred lake.",
+      "image": "/images/Historic architecture and Mughal monuments of Old Delhi.jpg"
+    },
+    {
+      "title": "Taj Lake Palace, Udaipur",
+      "desc": "A legendary white marble palace rising from the center of Lake Pichola.",
+      "image": "/images/taj-lake-palace-udaipur.jpeg"
+    },
+    {
+      "title": "Suján Jawai Camp",
+      "desc": "An ultra-luxury canvas outpost positioned amidst granite hills where leopards roam free.",
+      "image": "/images/wildlife.jpg"
+    },
+    {
+      "title": "Taj Umaid Bhawan Palace, Jodhpur",
+      "desc": "A stunning Art Deco palace once home to Jodhpur's Maharaja.",
+      "image": "/images/jodhpur-mehrangarh.webp"
+    },
+    {
+      "title": "Suryagarh Jaisalmer",
+      "desc": "A fortress hotel in the Thar desert combining rugged majesty with extreme luxury.",
+      "image": "/images/jaisalmer-fort.jpg"
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Arrival & Welcome",
+      "title": "Imperial Greeting",
+      "narrative": "Arrive in Delhi. Enjoy private transfer to your landmark heritage hotel.",
+      "details": {
+        "accommodation": "The Imperial Delhi (Grand Heritage Suite)",
+        "experiences": "VIP airport transfer, private welcome briefing",
+        "dining": "Welcome dinner at Spice Route",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/the-imperial-newdelhi.webp",
+          "caption": "Arriving at The Imperial Delhi"
+        }
+      ],
+      "expertNote": "Relax tonight before starting your cultural route across Rajasthan.",
+      "highlights": [
+        "VIP Airport Fast-track",
+        "Heritage Suite Stay"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 2,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi Tour",
+      "title": "Dynasties of Delhi",
+      "narrative": "Explore the historical treasures of Delhi, from Old Delhi's bustling alleyways to Humayun's Tomb.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Guided heritage sites walk, museum access",
+        "dining": "Mughlai lunch, fine contemporary dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Historic architecture and Mughal monuments of Old Delhi.jpg",
+          "caption": "Historic sights of Old Delhi"
+        }
+      ],
+      "expertNote": "Humayun's Tomb is the precursor to the Taj Mahal.",
+      "highlights": [
+        "Old Delhi Rickshaw Tour",
+        "Humayun's Tomb Tour"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 3,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Delhi to Agra Drive",
+      "title": "Taj Mahal Sunset",
+      "narrative": "Drive to Agra. Check into Oberoi Amarvilas. Stand before the Taj Mahal at sunset, watching the white marble change color.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas (Premier Taj View Suite)",
+        "experiences": "Private Taj Mahal sunset viewing, artisan marble workshop",
+        "dining": "Awadhi thali dinner at Esphahan",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/taj-mahal.webp",
+          "caption": "The Taj Mahal glowing at sunset"
+        }
+      ],
+      "expertNote": "Twilight is the most beautiful time to see the Taj Mahal, when the crowds begin to fade.",
+      "highlights": [
+        "Taj Mahal Sunset Walk",
+        "Oberoi Taj View Suite"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra"
+      ]
+    },
+    {
+      "day": 4,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Agra Heritage Tour",
+      "title": "Mughal Citadels",
+      "narrative": "Visit Agra Fort and explore its grand palaces. Discover the delicate marble carvings of the Baby Taj.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas",
+        "experiences": "Agra Fort guided tour, Baby Taj visit",
+        "dining": "Fine Mughlai lunch, palace high tea",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/agra-fort.jpeg",
+          "caption": "Agra Fort sandstone walls"
+        }
+      ],
+      "expertNote": "Look out from the fort's Jasmine Tower, where Emperor Shah Jahan spent his final years.",
+      "highlights": [
+        "Agra Fort Palace Walk",
+        "Tomb of Itmad-ud-Daulah"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra"
+      ]
+    },
+    {
+      "day": 5,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Agra to Jaipur",
+      "title": "Fatehpur Sikri & Pink City",
+      "narrative": "Drive to Jaipur, stopping at the preserved capital of Fatehpur Sikri. Settle into the legendary Rambagh Palace.",
+      "details": {
+        "accommodation": "Rambagh Palace (Historical Suite)",
+        "experiences": "Fatehpur Sikri guided tour, traditional royal greeting",
+        "dining": "Rajasthani thali in a gilded courtyard",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Rambagh-Palace-jaipur.jpg",
+          "caption": "Rambagh Palace Jaipur"
+        }
+      ],
+      "expertNote": "Fatehpur Sikri is beautifully preserved, capturing the grandeur of Emperor Akbar's court.",
+      "highlights": [
+        "Fatehpur Sikri Tour",
+        "Maharajah Royal Welcome"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 6,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Jaipur Heritage Tour",
+      "title": "Amber Fort & City Palace",
+      "narrative": "Ascend Amber Fort. Visit the City Palace and marvel at the pink sandstone walls of Hawa Mahal.",
+      "details": {
+        "accommodation": "Rambagh Palace",
+        "experiences": "Amber Fort private tour, exclusive City Palace archives access",
+        "dining": "Palace courtyard lunch, fine dining dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/city-palace-jaipur.webp",
+          "caption": "Jaipur City Palace courtyards"
+        }
+      ],
+      "expertNote": "The Sheesh Mahal inside Amber Fort is covered in thousands of hand-cut mirrors.",
+      "highlights": [
+        "Amber Fort Hill Climb",
+        "City Palace Royal Access"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 7,
+      "location": "Pushkar",
+      "locationKey": "pushkar",
+      "meta": "Jaipur to Pushkar",
+      "title": "Sacred Lake Sunset",
+      "narrative": "Drive to Pushkar. Check into Pushkar Palace. Stroll around the sacred lake and watch the sunset prayers.",
+      "details": {
+        "accommodation": "Pushkar Palace (Heritage Room)",
+        "experiences": "Guided sacred lake walk, ghat sunset ceremony",
+        "dining": "Traditional Rajasthani vegetarian dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Historic architecture and Mughal monuments of Old Delhi.jpg",
+          "caption": "Sacred lake of Pushkar"
+        }
+      ],
+      "expertNote": "Pushkar is one of the oldest cities in India and holds the rare Brahma Temple.",
+      "highlights": [
+        "Sacred Lake Rituals",
+        "Pushkar Palace Settle"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "pushkar"
+      ]
+    },
+    {
+      "day": 8,
+      "location": "Pushkar",
+      "locationKey": "pushkar",
+      "meta": "Pushkar Sights",
+      "title": "Brahma Temple & Camel Safari",
+      "narrative": "Visit the Brahma Temple. Spend the afternoon taking a camel safari through the surrounding sand dunes.",
+      "details": {
+        "accommodation": "Pushkar Palace",
+        "experiences": "Brahma Temple tour, desert camel safari",
+        "dining": "Organic farm lunch, sunset dune barbecue",
+        "transport": "Private SUV & camel"
+      },
+      "images": [
+        {
+          "url": "/images/Historic architecture and Mughal monuments of Old Delhi.jpg",
+          "caption": "Desert dunes of Pushkar"
+        }
+      ],
+      "expertNote": "Pushkar is famous for its annual camel fair, attracting thousands of nomads.",
+      "highlights": [
+        "Brahma Temple Tour",
+        "Sunset Camel Dunes Safari"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "pushkar"
+      ]
+    },
+    {
+      "day": 9,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Pushkar to Udaipur",
+      "title": "Fly to Lake Pichola",
+      "narrative": "Drive to Udaipur. Board a private motorboat to Taj Lake Palace rising from Lake Pichola.",
+      "details": {
+        "accommodation": "Taj Lake Palace Udaipur (Luxury Suite)",
+        "experiences": "Lake Pichola boat transfer, evening sunset cruise",
+        "dining": "Mewari tasting menu at Neel Kamal",
+        "transport": "Private luxury SUV & boat"
+      },
+      "images": [
+        {
+          "url": "/images/taj-lake-palace-udaipur.jpeg",
+          "caption": "Floating Taj Lake Palace Udaipur"
+        }
+      ],
+      "expertNote": "Taj Lake Palace was built in 1746 as a royal summer pleasure palace.",
+      "highlights": [
+        "Lake Pichola Boat Transfer",
+        "Taj Lake Palace Settle"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "pushkar",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 10,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Udaipur Sights",
+      "title": "Palaces of Udaipur",
+      "narrative": "Explore Udaipur's City Palace, crystal gallery, and the peaceful gardens of Saheliyon-ki-Bari.",
+      "details": {
+        "accommodation": "Taj Lake Palace Udaipur",
+        "experiences": "City Palace private tour, vintage car collection view",
+        "dining": "Lakeside lunch, rooftop terrace dinner",
+        "transport": "Private luxury SUV & boat"
+      },
+      "images": [
+        {
+          "url": "/images/courtyards-udaipur-city-palace.jpg",
+          "caption": "Udaipur City Palace courtyards"
+        }
+      ],
+      "expertNote": "City Palace Udaipur is the largest palace complex in Rajasthan.",
+      "highlights": [
+        "City Palace Mewar Tour",
+        "Vintage Car Exhibition"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "pushkar",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 11,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Monsoon Palace Sunset",
+      "title": "Monsoon Palace Sunset view",
+      "narrative": "Visit the Sajjangarh Monsoon Palace perched on a hilltop, offering panoramic views of Udaipur's lakes and city lights.",
+      "details": {
+        "accommodation": "Taj Lake Palace Udaipur",
+        "experiences": "Sajjangarh Monsoon Palace sunset tour",
+        "dining": "Fine lakeside dining at Neel Kamal",
+        "transport": "Private luxury SUV & boat"
+      },
+      "images": [
+        {
+          "url": "/images/taj-lake-palace-udaipur.jpeg",
+          "caption": "Sajjangarh Monsoon Palace overlook"
+        }
+      ],
+      "expertNote": "Sajjangarh Fort was built to watch the monsoon clouds over the Aravalli hills.",
+      "highlights": [
+        "Monsoon Palace Sunset Tour",
+        "Lakeside Farewell Dinner"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "pushkar",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 12,
+      "location": "Jawai",
+      "locationKey": "jawai",
+      "meta": "Udaipur to Jawai",
+      "title": "Granite Hills & Leopards",
+      "narrative": "Drive north to the Jawai conservation area. Settle into Suján Jawai, an ultra-luxury safari camp.",
+      "details": {
+        "accommodation": "Suján Jawai Camp (Luxury Tent)",
+        "experiences": "Wilderness welcome, evening leopard tracking safari",
+        "dining": "Gourmet campfire dining",
+        "transport": "Private SUV & open 4x4 safari jeep"
+      },
+      "images": [
+        {
+          "url": "/images/wildlife.jpg",
+          "caption": "Granite hills of Jawai leopard area"
+        }
+      ],
+      "expertNote": "Jawai represents a unique conservation model where leopards and local shepherds live in harmony.",
+      "highlights": [
+        "Suján Jawai Check-in",
+        "Sunset Leopard Safari"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "pushkar",
+        "udaipur",
+        "jawai"
+      ]
+    },
+    {
+      "day": 13,
+      "location": "Jawai",
+      "locationKey": "jawai",
+      "meta": "Jawai Safaris",
+      "title": "Leopard Safaris & Shepherd Walks",
+      "narrative": "Embark on dawn and dusk 4x4 safaris. Walk through the granite hills with local Rabari shepherds in their traditional red robes.",
+      "details": {
+        "accommodation": "Suján Jawai Camp",
+        "experiences": "Morning & afternoon safaris, Rabari cultural walk",
+        "dining": "Bush breakfast, fireside lanterns dinner",
+        "transport": "Open 4x4 safari jeep"
+      },
+      "images": [
+        {
+          "url": "/images/nimaj-village.jpg",
+          "caption": "Rabari shepherds near Jawai"
+        }
+      ],
+      "expertNote": "The Rabari people have guided herds through these hills for centuries.",
+      "highlights": [
+        "Dawn Leopard Tracking",
+        "Rabari Guided Hill Walk"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "pushkar",
+        "udaipur",
+        "jawai"
+      ]
+    },
+    {
+      "day": 14,
+      "location": "Jodhpur",
+      "locationKey": "jodhpur",
+      "meta": "Jawai to Jodhpur",
+      "title": "Umaid Bhawan Art Deco Palace",
+      "narrative": "Drive to Jodhpur. Check into Umaid Bhawan Palace, a stunning golden sandstone palace set inside royal gardens.",
+      "details": {
+        "accommodation": "Taj Umaid Bhawan Palace (Historical Suite)",
+        "experiences": "Palace history walkthrough, garden stroll",
+        "dining": "Gourmet dining at Risala",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/jodhpur-mehrangarh.webp",
+          "caption": "Umaid Bhawan Palace grounds"
+        }
+      ],
+      "expertNote": "Umaid Bhawan contains a private museum featuring royal artifacts.",
+      "highlights": [
+        "Umaid Bhawan Check-in",
+        "Risala Fine Dining"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "pushkar",
+        "udaipur",
+        "jawai",
+        "jodhpur"
+      ]
+    },
+    {
+      "day": 15,
+      "location": "Jodhpur",
+      "locationKey": "jodhpur",
+      "meta": "Jodhpur Tour",
+      "title": "Mehrangarh Fort private tour",
+      "narrative": "Tour Mehrangarh Fort rising above the blue city. Explore the old stepwells and market streets of Jodhpur.",
+      "details": {
+        "accommodation": "Taj Umaid Bhawan Palace",
+        "experiences": "Mehrangarh Fort private tour, Toorji stepwell walk",
+        "dining": "Heritage lunch, terrace dining overlooking the fort",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/jodhpur-mehrangarh.webp",
+          "caption": "Mehrangarh Fort Jodhpur"
+        }
+      ],
+      "expertNote": "Toorji Ka Jhalra is an restored stepwell showing historical water architecture.",
+      "highlights": [
+        "Mehrangarh Fort Tour",
+        "Ancient Stepwell Walk"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "pushkar",
+        "udaipur",
+        "jawai",
+        "jodhpur"
+      ]
+    },
+    {
+      "day": 16,
+      "location": "Jaisalmer",
+      "locationKey": "jaisalmer",
+      "meta": "Jodhpur to Jaisalmer",
+      "title": "The Golden Fortress",
+      "narrative": "Board a domestic flight to Jaisalmer. Settle into Suryagarh, a majestic resort built like a desert fort.",
+      "details": {
+        "accommodation": "Suryagarh Jaisalmer (Luxury Suite)",
+        "experiences": "Desert fortress arrival greeting, pool-side relaxation",
+        "dining": "Traditional desert-style barbecue thali",
+        "transport": "Private SUV & domestic flight"
+      },
+      "images": [
+        {
+          "url": "/images/jaisalmer-fort.jpg",
+          "caption": "Suryagarh Jaisalmer desert outpost"
+        }
+      ],
+      "expertNote": "Suryagarh offers pure desert isolation combined with modern palace hospitality.",
+      "highlights": [
+        "Flight to Thar Desert",
+        "Fortress Arrival Welcome"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "pushkar",
+        "udaipur",
+        "jawai",
+        "jodhpur",
+        "jaisalmer"
+      ]
+    },
+    {
+      "day": 17,
+      "location": "Jaisalmer",
+      "locationKey": "jaisalmer",
+      "meta": "Jaisalmer Dunes",
+      "title": "Thar Dunes & Fort Walk",
+      "narrative": "Walk through Jaisalmer's living fort. At sunset, ride camels into the Sam Sand Dunes, followed by desert folk music.",
+      "details": {
+        "accommodation": "Suryagarh Jaisalmer",
+        "experiences": "Living fort walking tour, camel dune safari",
+        "dining": "Suryagarh private dune dinner under starlight",
+        "transport": "Private 4x4 SUV & Camel"
+      },
+      "images": [
+        {
+          "url": "/images/jaisalmer-fort.jpg",
+          "caption": "Sunrise over Jaisalmer Fort"
+        }
+      ],
+      "expertNote": "The dunes look spectacular as the desert sands change colors at sunset.",
+      "highlights": [
+        "Living Fort Tour",
+        "Sunset Camel Dunes Safari",
+        "Dune Dinner under Stars"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "pushkar",
+        "udaipur",
+        "jawai",
+        "jodhpur",
+        "jaisalmer"
+      ]
+    },
+    {
+      "day": 18,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Jaisalmer to Delhi",
+      "title": "Departure",
+      "narrative": "Fly back to Delhi International Airport for your departure flight home.",
+      "details": {
+        "accommodation": "VIP Departure Lounge",
+        "experiences": "Airport departure transfer",
+        "dining": "Palace breakfast",
+        "transport": "Private SUV & flight"
+      },
+      "images": [
+        {
+          "url": "/images/airport.webp",
+          "caption": "Farewell to India"
+        }
+      ],
+      "expertNote": "Ensure seamless baggage check-in for your international connection.",
+      "highlights": [
+        "Airport Transfer Assistance"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "pushkar",
+        "udaipur",
+        "jawai",
+        "jodhpur",
+        "jaisalmer",
+        "delhi"
+      ]
+    }
+  ]
+},
+  "palace-wildlife-13": {
+    id: "palace-wildlife-13",
+    title: "Palaces & Wildlife: Sacred Sanctuaries & Royal Estates",
+    subtitle: "A pristine 13-day fusion of Delhi, Agra's Taj Mahal, the peaceful valley of Amanbagh, Ranthambore tigers, and Jaipur.",
+    duration: "13 Days / 12 Nights",
+    regionsVisited: "Delhi, Agra, Amanbagh, Ranthambore, Jaipur",
+    accommodations: "Legendary Palaces & Private Valley Outposts",
+    transfer: "Private Luxury SUV & 4x4 Safari Jeeps",
+    heroImage: "/images/kanha-tiger-reserve.jpg",
+    ctaBgImage: "/images/wildlife.jpg",
+    markerKeys: ["delhi", "agra", "amanbagh", "ranthambore", "jaipur"],
+    routeCoords: [
+      LOCATIONS.delhi.coords,
+      LOCATIONS.agra.coords,
+      LOCATIONS.amanbagh.coords,
+      LOCATIONS.ranthambore.coords,
+      LOCATIONS.jaipur.coords,
+      LOCATIONS.delhi.coords
+    ],
+    accommodationsList: [
+      {
+        title: "The Imperial Delhi",
+        desc: "An elegant Victorian-style colonial heritage landmark in New Delhi.",
+        image: "/images/the-imperial-newdelhi.webp"
+      },
+      {
+        title: "The Oberoi Amarvilas, Agra",
+        desc: "Stunning luxury hotel featuring direct monument views from every room.",
+        image: "/images/The Oberoi Amarvilas.jpg"
+      },
+      {
+        title: "Amanbagh Estate, Ajabgarh",
+        desc: "A sanctuary modeled on Mughal palaces, set in a peaceful valley inside the Aravalli hills.",
+        image: "/images/rajasthan_palace_exterior_1776272664878.png"
+      },
+      {
+        title: "The Oberoi Vanyavilas, Ranthambore",
+        desc: "Luxury safari tents set in Ranthambore tiger reserve.",
+        image: "/images/tiger_safari_1776272603448.png"
+      },
+      {
+        title: "Rambagh Palace, Jaipur",
+        desc: "The glorious heritage palace of the Maharaja of Jaipur.",
+        image: "/images/Rambagh-Palace-jaipur.jpg"
+      }
+    ],
+    itinerary: [
+      {
+        day: 1,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Arrival & Welcome",
+        title: "Imperial Greeting",
+        narrative: "Arrive in Delhi. Enjoy private transfer to your landmark heritage hotel.",
+        details: {
+          accommodation: "The Imperial Delhi (Grand Heritage Suite)",
+          experiences: "VIP airport transfer, private welcome briefing",
+          dining: "Welcome dinner at Spice Route",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/the-imperial-newdelhi.webp", caption: "Arriving at The Imperial Delhi" }],
+        expertNote: "Relax tonight before starting your cultural route across Rajasthan.",
+        highlights: ["VIP Airport Fast-track", "Heritage Suite Stay"],
+        revealedRouteKeys: ["delhi"]
+      },
+      {
+        day: 2,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Delhi Tour",
+        title: "Dynasties of Delhi",
+        narrative: "Explore the historical treasures of Delhi, from Old Delhi's bustling alleyways to Humayun's Tomb.",
+        details: {
+          accommodation: "The Imperial Delhi",
+          experiences: "Guided heritage sights walk, museum access",
+          dining: "Mughlai lunch, fine contemporary dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Historic architecture and Mughal monuments of Old Delhi.jpg", caption: "Historic sights of Old Delhi" }],
+        expertNote: "Humayun's Tomb is the precursor to the Taj Mahal.",
+        highlights: ["Old Delhi Rickshaw Tour", "Humayun's Tomb Tour"],
+        revealedRouteKeys: ["delhi"]
+      },
+      {
+        day: 3,
+        location: "Agra",
+        locationKey: "agra",
+        meta: "Delhi to Agra Drive",
+        title: "Taj Mahal Sunset",
+        narrative: "Drive to Agra. Check into Oberoi Amarvilas. Stand before the Taj Mahal at sunset, watching the white marble change color.",
+        details: {
+          accommodation: "The Oberoi Amarvilas (Premier Taj View Suite)",
+          experiences: "Private Taj Mahal sunset viewing, artisan marble workshop",
+          dining: "Awadhi thali dinner at Esphahan",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/taj-mahal.webp", caption: "The Taj Mahal glowing at sunset" }],
+        expertNote: "Twilight is the most beautiful time to see the Taj Mahal, when the crowds begin to fade.",
+        highlights: ["Taj Mahal Sunset Walk", "Oberoi Taj View Suite"],
+        revealedRouteKeys: ["delhi", "agra"]
+      },
+      {
+        day: 4,
+        location: "Agra",
+        locationKey: "agra",
+        meta: "Agra Heritage Tour",
+        title: "Mughal Citadels",
+        narrative: "Visit Agra Fort and explore its grand palaces. Discover the delicate marble carvings of the Baby Taj.",
+        details: {
+          accommodation: "The Oberoi Amarvilas",
+          experiences: "Agra Fort guided tour, Baby Taj visit",
+          dining: "Fine Mughlai lunch, palace high tea",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/agra-fort.jpeg", caption: "Agra Fort sandstone walls" }],
+        expertNote: "Look out from the fort's Jasmine Tower, where Emperor Shah Jahan spent his final years.",
+        highlights: ["Agra Fort Palace Walk", "Tomb of Itmad-ud-Daulah"],
+        revealedRouteKeys: ["delhi", "agra"]
+      },
+      {
+        day: 5,
+        location: "Amanbagh",
+        locationKey: "amanbagh",
+        meta: "Agra to Amanbagh",
+        title: "The Oasis of Ajabgarh",
+        narrative: "Drive to the stunning Amanbagh Estate, set inside a peaceful valley inside the Aravalli hills.",
+        details: {
+          accommodation: "Amanbagh Estate (Courtyard Haveli Suite)",
+          experiences: "Rural estate welcome, valley walks",
+          dining: "Organic farm-to-table lunch & dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/rajasthan_palace_exterior_1776272664878.png", caption: "The serene grounds of Amanbagh" }],
+        expertNote: "Amanbagh is a quiet sanctuary modeled on historical royal Mughal camps.",
+        highlights: ["Amanbagh Haveli Settle", "Sunset Valley Walk"],
+        revealedRouteKeys: ["delhi", "agra", "amanbagh"]
+      },
+      {
+        day: 6,
+        location: "Amanbagh",
+        locationKey: "amanbagh",
+        meta: "Amanbagh Valley",
+        title: "Temples & Cow Dust Tours",
+        narrative: "Explore the ruins of Bhangarh Fort. Take a private 'Cow Dust' tour visiting local rural villages.",
+        details: {
+          accommodation: "Amanbagh Estate",
+          experiences: "Bhangarh ruins tour, cow dust rural village tour",
+          dining: "Orchard lunch, poolside traditional music dinner",
+          transport: "Private SUV & open safari jeep"
+        },
+        images: [{ url: "/images/nimaj-village.jpg", caption: "Rural villages around Amanbagh" }],
+        expertNote: "The evening 'cow dust' hour is when shepherds bring their livestock back to the villages under golden dust.",
+        highlights: ["Bhangarh Fort Ruins Tour", "Cow Dust Village Safari"],
+        revealedRouteKeys: ["delhi", "agra", "amanbagh"]
+      },
+      {
+        day: 7,
+        location: "Ranthambore",
+        locationKey: "ranthambore",
+        meta: "Amanbagh to Ranthambore",
+        title: "Wilderness outpost",
+        narrative: "Drive to Ranthambore Tiger Reserve. Settle into the luxury safari outpost tents of Oberoi Vanyavilas.",
+        details: {
+          accommodation: "The Oberoi Vanyavilas (Luxury Safari Tent)",
+          experiences: "Camp orientation, campfire twilight drinks",
+          dining: "Organic lodge dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/tiger_safari_1776272603448.png", caption: "Oberoi Vanyavilas Ranthambore" }],
+        expertNote: "Ranthambore was the private hunting preserve of the Maharaja of Jaipur.",
+        highlights: ["Luxury Safari Tent Settle", "Campfire Twilight Session"],
+        revealedRouteKeys: ["delhi", "agra", "amanbagh", "ranthambore"]
+      },
+      {
+        day: 8,
+        location: "Ranthambore",
+        locationKey: "ranthambore",
+        meta: "Ranthambore Tiger Safaris",
+        title: "Track of the Bengal Tiger",
+        narrative: "Embark on dawn and dusk 4x4 safaris inside the reserve. Track Bengal Tigers, leopards, and marsh crocodiles.",
+        details: {
+          accommodation: "The Oberoi Vanyavilas",
+          experiences: "Morning & afternoon tiger tracking safaris",
+          dining: "Jungle breakfast picnic, gourmet lodge dinner",
+          transport: "Safari open 4x4 jeep"
+        },
+        images: [{ url: "/images/peacock-bandhavgarh.jpg", caption: "Wild tigers of Ranthambore" }],
+        expertNote: "Keep a look out for tigers near the historic lakeside ruins inside the park.",
+        highlights: ["Dawn Tiger Tracking", "Dusk Wildlife Safari"],
+        revealedRouteKeys: ["delhi", "agra", "amanbagh", "ranthambore"]
+      },
+      {
+        day: 9,
+        location: "Ranthambore",
+        locationKey: "ranthambore",
+        meta: "Jungle Fort Hike",
+        title: "The Fortress in the Jungle",
+        narrative: "Hike up to the 10th-century Ranthambore Fort overlooking the entire park. Afternoon jungle safari.",
+        details: {
+          accommodation: "The Oberoi Vanyavilas",
+          experiences: "Ranthambore Fort guided tour, afternoon safari",
+          dining: "Gourmet organic lunch, candlelit forest dinner",
+          transport: "Private SUV & safari jeep"
+        },
+        images: [{ url: "/images/wildlife.jpg", caption: "Views from Ranthambore Fort" }],
+        expertNote: "The fort is a UNESCO World Heritage site and sits right inside the forest park.",
+        highlights: ["Ranthambore Fort Hike", "Afternoon Tiger Safari"],
+        revealedRouteKeys: ["delhi", "agra", "amanbagh", "ranthambore"]
+      },
+      {
+        day: 10,
+        location: "Jaipur",
+        locationKey: "jaipur",
+        meta: "Ranthambore to Jaipur",
+        title: "Maharajah Palace Settle",
+        narrative: "Drive to Jaipur. Check into the glorious Rambagh Palace, featuring manicured lawns and resident peacocks.",
+        details: {
+          accommodation: "Rambagh Palace (Historical Suite)",
+          experiences: "Royal horse carriage welcome, palace gardens walk",
+          dining: "Royal Mewari feast at Suvarna Mahal",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Rambagh-Palace-jaipur.jpg", caption: "Rambagh Palace Jaipur" }],
+        expertNote: "Rambagh was home to Maharaja Sawai Man Singh II.",
+        highlights: ["Royal Carriage Welcome", "Suvarna Mahal Ballroom dining"],
+        revealedRouteKeys: ["delhi", "agra", "amanbagh", "ranthambore", "jaipur"]
+      },
+      {
+        day: 11,
+        location: "Jaipur",
+        locationKey: "jaipur",
+        meta: "Jaipur Heritage Tour",
+        title: "Amber Fort & City Palace",
+        narrative: "Ascend Amber Fort. Visit the City Palace and marvel at the pink sandstone walls of Hawa Mahal.",
+        details: {
+          accommodation: "Rambagh Palace",
+          experiences: "Amber Fort private tour, exclusive City Palace archives access",
+          dining: "Palace courtyard lunch, fine dining dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/city-palace-jaipur.webp", caption: "Jaipur City Palace courtyards" }],
+        expertNote: "The Sheesh Mahal inside Amber Fort is covered in thousands of hand-cut mirrors.",
+        highlights: ["Amber Fort Hill Climb", "City Palace Royal Access"],
+        revealedRouteKeys: ["delhi", "agra", "amanbagh", "ranthambore", "jaipur"]
+      },
+      {
+        day: 12,
+        location: "Jaipur",
+        locationKey: "jaipur",
+        meta: "Jaipur Craft & Culture",
+        title: "Artisans of the Guilds",
+        narrative: "Meet block-printers, gem-cutters, and painters. Discover how the ancient guilds shape modern fashion.",
+        details: {
+          accommodation: "Rambagh Palace",
+          experiences: "Private block-printing class, gem market tour",
+          dining: "Bespoke garden lunch, royal banqueting dinner",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/Miniature painting workshops of Jaipur.webp", caption: "Traditional block-printing artisan" }],
+        expertNote: "Jaipur is the gemstone capital of the world. Meet a master cutter for a private demonstration.",
+        highlights: ["Block Printing Class", "Gem Market Curation", "Royal Falconry Session"],
+        revealedRouteKeys: ["delhi", "agra", "amanbagh", "ranthambore", "jaipur"]
+      },
+      {
+        day: 13,
+        location: "Delhi",
+        locationKey: "delhi",
+        meta: "Jaipur to Delhi Airport",
+        title: "Departure",
+        narrative: "Enjoy your final palace breakfast. Transfer back to Delhi International Airport for your departure flight home.",
+        details: {
+          accommodation: "VIP Departure Lounge",
+          experiences: "Airport departure transfer",
+          dining: "Palace breakfast",
+          transport: "Private luxury SUV"
+        },
+        images: [{ url: "/images/airport.webp", caption: "Farewell to India" }],
+        expertNote: "Enjoy airport VIP exit assistance.",
+        highlights: ["VIP Airport Exit", "Scenic Countryside Drive"],
+        revealedRouteKeys: ["delhi", "agra", "amanbagh", "ranthambore", "jaipur", "delhi"]
+      }
+    ]
+  },
+  "culture-beach-14": {
+  "id": "culture-beach-14",
+  "title": "Culture & Beach: Golden Sands and Royal Heritage",
+  "subtitle": "A 14-day journey connecting Delhi's monuments, Agra's Taj Mahal, Jaipur's pink palaces, Mumbai's colonial lanes, and Goa's sunny beaches.",
+  "regionsVisited": "Delhi, Agra, Jaipur, Mumbai, Goa",
+  "heroImage": "/images/fontainhas-goa.png",
+  "ctaBgImage": "/images/goa.jpeg",
+  "markerKeys": [
+    "delhi",
+    "agra",
+    "jaipur",
+    "mumbai",
+    "goa"
+  ],
+  "routeCoords": [
+    [
+      77.209,
+      28.6139
+    ],
+    [
+      78.0081,
+      27.1767
+    ],
+    [
+      75.7873,
+      26.9124
+    ],
+    [
+      72.8777,
+      19.076
+    ],
+    [
+      73.8278,
+      15.2993
+    ]
+  ],
+  "accommodations": "Palace Suites, Beach Villas, and Sea-Facing Luxury Lodges",
+  "itinerary": [
+    {
+      "day": 1,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi Arrival",
+      "title": "Arrive in Delhi",
+      "narrative": "Arrive at Delhi's Indira Gandhi International Airport. Meet your private representative and transfer to your luxury hotel. Spend the rest of the day relaxing or exploring the local area.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Private airport reception",
+        "dining": "Welcome dinner at Spice Route",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/the-imperial-newdelhi.webp",
+          "caption": "The historic avenues of New Delhi"
+        }
+      ],
+      "expertNote": "The Imperial offers a wonderful introduction to Delhi's colonial history and architecture.",
+      "highlights": [
+        "Bespoke Airport Transfer",
+        "Signature Welcome Dinner"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 2,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi",
+      "title": "Exploring Imperial Delhi",
+      "narrative": "Explore New Delhi's grand monuments, including Humayun's Tomb, Qutub Minar, and a drive past India Gate and the President's House.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Guided historical tour",
+        "dining": "Curated North Indian lunch, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/qutub minar.webp",
+          "caption": "The ancient Qutub Minar complex"
+        }
+      ],
+      "expertNote": "Humayun's Tomb is the precursor to the Taj Mahal and looks spectacular in the late morning light.",
+      "highlights": [
+        "Humayun's Tomb Curation",
+        "Qutub Minar Exploration"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 3,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi",
+      "title": "Historic Old Delhi Lanes",
+      "narrative": "Dive into Old Delhi. Visit the grand Jama Masjid, take a private rickshaw ride through the narrow lanes of Chandni Chowk, and view the imposing Red Fort.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Old Delhi rickshaw ride",
+        "dining": "Traditional Mughlai lunch, dinner at a restored haveli",
+        "transport": "Private luxury SUV & Rickshaw"
+      },
+      "images": [
+        {
+          "url": "/images/Historic architecture and Mughal monuments of Old Delhi.jpg",
+          "caption": "Jama Masjid, India's largest mosque"
+        }
+      ],
+      "expertNote": "The spices and smells of Khari Baoli market are intense but offer a truly authentic sensory experience.",
+      "highlights": [
+        "Chandni Chowk Rickshaw Ride",
+        "Jama Masjid Exploration"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 4,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Delhi to Agra",
+      "title": "Agra Fort & Taj Sunset",
+      "narrative": "Drive to Agra via the Yamuna Expressway. Check into your luxury hotel. In the afternoon, visit the magnificent Agra Fort, then witness the Taj Mahal at sunset from across the Yamuna River at Mehtab Bagh.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas",
+        "experiences": "Agra Fort guided tour",
+        "dining": "Mughal tasting menu at hotel",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/The Oberoi Amarvilas.jpg",
+          "caption": "Agra Fort, a red sandstone masterpiece"
+        }
+      ],
+      "expertNote": "Every room at Amarvilas offers an uninterrupted view of the Taj Mahal.",
+      "highlights": [
+        "Agra Fort Exploration",
+        "Sunset at Mehtab Bagh"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra"
+      ]
+    },
+    {
+      "day": 5,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Agra",
+      "title": "Taj Mahal Sunrise",
+      "narrative": "Witness the magical sunrise at the Taj Mahal. Return to the hotel for breakfast. Spend the afternoon exploring Agra's marble inlay artisans or relaxing at the spa.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas",
+        "experiences": "Private sunrise visit to Taj Mahal",
+        "dining": "Palace breakfast, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/taj-mahal.webp",
+          "caption": "The Taj Mahal at sunrise"
+        }
+      ],
+      "expertNote": "Entering the Taj Mahal at dawn allows you to experience the changing colors of the marble in quiet contemplation.",
+      "highlights": [
+        "Taj Mahal Sunrise Tour",
+        "Marble Inlay Artistry Visit"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra"
+      ]
+    },
+    {
+      "day": 6,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Agra to Jaipur",
+      "title": "Agra to Jaipur via Fatehpur Sikri",
+      "narrative": "Drive to Jaipur. En route, stop at the abandoned Mughal city of Fatehpur Sikri and the spectacular stepwell at Abhaneri. Arrive in the Pink City of Jaipur by evening.",
+      "details": {
+        "accommodation": "Rambagh Palace",
+        "experiences": "Fatehpur Sikri & Abhaneri Stepwell tours",
+        "dining": "Lunch at heritage retreat, dinner at hotel",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Rambagh-Palace-jaipur.jpg",
+          "caption": "The grand gateway of Fatehpur Sikri"
+        }
+      ],
+      "expertNote": "The Chand Baori stepwell in Abhaneri is a geometric marvel dating back to the 8th century.",
+      "highlights": [
+        "Fatehpur Sikri Guided Walk",
+        "Abhaneri Stepwell Curation"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 7,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Jaipur",
+      "title": "Amer Fort & Hawa Mahal",
+      "narrative": "Visit the stunning Amer Fort, perched on a hilltop. Drive past the iconic Hawa Mahal (Palace of Winds) and visit the tranquil Jal Mahal.",
+      "details": {
+        "accommodation": "Rambagh Palace",
+        "experiences": "Amer Fort private tour",
+        "dining": "Traditional Rajasthani thali, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/amber-fort.jpg",
+          "caption": "Amer Fort's yellow sandstone battlements"
+        }
+      ],
+      "expertNote": "Visit the Sheesh Mahal (Mirror Palace) inside Amer Fort, where a single match can illuminate the entire hall.",
+      "highlights": [
+        "Amer Fort Hilltop Tour",
+        "Hawa Mahal Photography"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 8,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Jaipur",
+      "title": "City Palace & Local Markets",
+      "narrative": "Explore the City Palace and the Jantar Mantar observatory. In the afternoon, browse the colorful local bazaar for textiles, jewelry, and pottery.",
+      "details": {
+        "accommodation": "Rambagh Palace",
+        "experiences": "City Palace private rooms visit",
+        "dining": "Bespoke lunch, dinner at heritage venue",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/city-palace-jaipur.webp",
+          "caption": "The Royal courtyards of City Palace"
+        }
+      ],
+      "expertNote": "Enjoy exclusive entry to the private residential quarters of the royal family in City Palace.",
+      "highlights": [
+        "City Palace Private Tour",
+        "Jantar Mantar Astronomical Site"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 9,
+      "location": "Mumbai",
+      "locationKey": "mumbai",
+      "meta": "Jaipur to Mumbai",
+      "title": "Flight to Mumbai",
+      "narrative": "Fly to Mumbai. Transfer to your luxury hotel overlooking the Gateway of India. Stroll along the seaside promenade and witness the bustling energy of the financial capital.",
+      "details": {
+        "accommodation": "The Taj Mahal Palace, Mumbai",
+        "experiences": "Domestic flight transfer",
+        "dining": "Coastal cuisine dinner",
+        "transport": "Private luxury SUV & Flight"
+      },
+      "images": [
+        {
+          "url": "/images/taj-mahal-palace-mumbai.jpg",
+          "caption": "The iconic Taj Mahal Palace, Mumbai"
+        }
+      ],
+      "expertNote": "The Harbor Bar at the Taj was the first licensed bar in India and is perfect for a historic nightcap.",
+      "highlights": [
+        "Arabian Sea Sunset",
+        "Gateway of India Walk"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "mumbai"
+      ]
+    },
+    {
+      "day": 10,
+      "location": "Mumbai",
+      "locationKey": "mumbai",
+      "meta": "Mumbai",
+      "title": "Elephanta Caves & Mumbai Heritage",
+      "narrative": "Take a private boat to Elephanta Caves. In the afternoon, embark on a heritage city tour covering Victoria Terminus, Mani Bhavan, and Dhobi Ghat.",
+      "details": {
+        "accommodation": "The Taj Mahal Palace, Mumbai",
+        "experiences": "Private boat charter to Elephanta Caves",
+        "dining": "Mumbai street food curation, dinner at hotel",
+        "transport": "Private luxury SUV & Boat"
+      },
+      "images": [
+        {
+          "url": "/images/The Taj Mahal Palace Hotel overlooking Mumbai Harbor.jpg",
+          "caption": "The Gateway of India monument"
+        }
+      ],
+      "expertNote": "Elephanta's 3-headed Shiva sculpture is a masterwork of 6th-century rock-cut art.",
+      "highlights": [
+        "Elephanta Caves Boat Charter",
+        "Mumbai Colonial Heritage Walk"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "mumbai"
+      ]
+    },
+    {
+      "day": 11,
+      "location": "Goa",
+      "locationKey": "goa",
+      "meta": "Mumbai to Goa",
+      "title": "Flight to Sunny Goa",
+      "narrative": "Fly to Goa. Check into your Mediterranean-style beachside villa. Spend the rest of the day relaxing on the soft sands of Benaulim Beach.",
+      "details": {
+        "accommodation": "Taj Exotica Resort & Spa, Goa",
+        "experiences": "Domestic flight transfer",
+        "dining": "Beachfront seafood dinner",
+        "transport": "Private luxury SUV & Flight"
+      },
+      "images": [
+        {
+          "url": "/images/goa.jpeg",
+          "caption": "Beautiful beaches of Goa"
+        }
+      ],
+      "expertNote": "Taj Exotica has an excellent spa and direct private access to a clean, serene stretch of beach.",
+      "highlights": [
+        "Beachfront Sunset",
+        "Goan Seafood Curation"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "mumbai",
+        "goa"
+      ]
+    },
+    {
+      "day": 12,
+      "location": "Goa",
+      "locationKey": "goa",
+      "meta": "Goa",
+      "title": "Churches of Old Goa",
+      "narrative": "Visit the UNESCO World Heritage sites of Old Goa, including the Basilica of Bom Jesus, which houses the mortal remains of St. Francis Xavier, and the grand Se Cathedral.",
+      "details": {
+        "accommodation": "Taj Exotica Resort & Spa, Goa",
+        "experiences": "UNESCO World Heritage churches tour",
+        "dining": "Portuguese-Goan heritage lunch, dinner at resort",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/basilica-bom-jesus.png",
+          "caption": "Basilica of Bom Jesus"
+        }
+      ],
+      "expertNote": "Se Cathedral is the largest church in Asia and has a famous Golden Bell.",
+      "highlights": [
+        "Old Goa Heritage Walk",
+        "Basilica of Bom Jesus Tour"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "mumbai",
+        "goa"
+      ]
+    },
+    {
+      "day": 13,
+      "location": "Goa",
+      "locationKey": "goa",
+      "meta": "Goa",
+      "title": "Fontainhas Latin Quarter & Beach Leisure",
+      "narrative": "Stroll through the colorful lanes of Fontainhas, the Latin Quarter of Panaji. Return to your resort for a relaxing afternoon under the coconut palms.",
+      "details": {
+        "accommodation": "Taj Exotica Resort & Spa, Goa",
+        "experiences": "Fontainhas heritage walking tour",
+        "dining": "Authentic lunch at a heritage Goan home, beachside farewell dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/fontainhas-goa.png",
+          "caption": "Fontainhas Latin Quarter lanes"
+        }
+      ],
+      "expertNote": "Keep an eye out for beautiful hand-painted ceramic tiles (azulejos) on the house facades.",
+      "highlights": [
+        "Fontainhas Latin Quarter Walk",
+        "Beachside Farewell Dinner"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "mumbai",
+        "goa"
+      ]
+    },
+    {
+      "day": 14,
+      "location": "Goa",
+      "locationKey": "goa",
+      "meta": "Goa Departure",
+      "title": "Goa Departure",
+      "narrative": "Transfer to Goa International Airport for your departure flight home or to Delhi/Mumbai to connect to your international flight.",
+      "details": {
+        "accommodation": "VIP Departure Lounge",
+        "experiences": "Airport departure transfer",
+        "dining": "Resort breakfast",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/airport.webp",
+          "caption": "Farewell to India"
+        }
+      ],
+      "expertNote": "Ensure your luggage is packed securely with any fragile souvenirs from Goa.",
+      "highlights": [
+        "Airport Departure Transfer",
+        "VIP Lounge Access"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "mumbai",
+        "goa"
+      ]
+    }
+  ],
+  "duration": "14 Days / 13 Nights",
+  "transfer": "Private Luxury SUV, Domestic Flight, and Chauffeur Transfers"
+},
+  "palace-spiritual-beach-15": {
+  "id": "palace-spiritual-beach-15",
+  "title": "Palaces, Temples & Golden Sands: The Grand Northern & Beach Odyssey",
+  "subtitle": "A 15-day luxury journey connecting Delhi's historical center, the Golden Temple of Amritsar, Rajasthan's royal forts, and Goa's serene beaches.",
+  "regionsVisited": "Delhi, Amritsar, Jaipur, Udaipur, Goa",
+  "heroImage": "/images/destinations_hero_1776334796479.png",
+  "ctaBgImage": "/images/destinations_hero_1776334796479.png",
+  "markerKeys": [
+    "delhi",
+    "amritsar",
+    "jaipur",
+    "udaipur",
+    "goa"
+  ],
+  "routeCoords": [
+    [
+      77.209,
+      28.6139
+    ],
+    [
+      74.8723,
+      31.634
+    ],
+    [
+      75.7873,
+      26.9124
+    ],
+    [
+      73.7125,
+      24.5854
+    ],
+    [
+      73.8278,
+      15.2993
+    ]
+  ],
+  "accommodations": "Luxury Heritage Hotels, Lake Palaces, and Beach Villas",
+  "itinerary": [
+    {
+      "day": 1,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi Arrival",
+      "title": "Arrive in Delhi",
+      "narrative": "Arrive in New Delhi. Transfer to your luxury hotel. Rest after your flight.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "VIP airport reception",
+        "dining": "Dinner at hotel",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/the-imperial-newdelhi.webp",
+          "caption": "The historic capital of India"
+        }
+      ],
+      "expertNote": "Relax at the hotel's award-winning spa to get over jet lag.",
+      "highlights": [
+        "Bespoke Airport Transfer",
+        "Signature Welcome Dinner"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 2,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi",
+      "title": "Delhi Sightseeing",
+      "narrative": "Explore New Delhi's monuments including Qutub Minar, Humayun's Tomb, and a drive past the government buildings.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Guided historical tour",
+        "dining": "North Indian lunch, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/qutub minar.webp",
+          "caption": "The ancient Qutub Minar complex"
+        }
+      ],
+      "expertNote": "Witness the magnificent stone carvings at Qutub Minar.",
+      "highlights": [
+        "Humayun's Tomb Curation",
+        "Qutub Minar Exploration"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 3,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi",
+      "title": "Old Delhi Lanes",
+      "narrative": "Visit the Jama Masjid, take a rickshaw ride through the narrow lanes of Chandni Chowk, and view the Red Fort.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Rickshaw ride in Chandni Chowk",
+        "dining": "Mughlai lunch, dinner at leisure",
+        "transport": "Private luxury SUV & Rickshaw"
+      },
+      "images": [
+        {
+          "url": "/images/Historic architecture and Mughal monuments of Old Delhi.jpg",
+          "caption": "Jama Masjid mosque"
+        }
+      ],
+      "expertNote": "Experience the vibrant energy and spices of Old Delhi.",
+      "highlights": [
+        "Chandni Chowk Rickshaw Ride",
+        "Jama Masjid Exploration"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 4,
+      "location": "Amritsar",
+      "locationKey": "amritsar",
+      "meta": "Delhi to Amritsar",
+      "title": "Flight to Amritsar & Golden Temple Night Ceremony",
+      "narrative": "Take a domestic flight to Amritsar. Check into your luxury hotel. In the evening, witness the spiritual Palki Sahib ceremony at the spectacular Golden Temple.",
+      "details": {
+        "accommodation": "Taj Swarna, Amritsar",
+        "experiences": "Palki Sahib ceremony curation",
+        "dining": "Traditional Punjabi dinner",
+        "transport": "Private luxury SUV & Flight"
+      },
+      "images": [
+        {
+          "url": "/images/destinations_hero_1776334796479.png",
+          "caption": "The glittering Golden Temple at night"
+        }
+      ],
+      "expertNote": "The night ceremony is a highly emotional and serene ritual where the holy book is carried to its resting room.",
+      "highlights": [
+        "Golden Temple Night Visit",
+        "Palki Sahib Ceremony"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "amritsar"
+      ]
+    },
+    {
+      "day": 5,
+      "location": "Amritsar",
+      "locationKey": "amritsar",
+      "meta": "Amritsar",
+      "title": "Golden Temple & Wagah Border Ceremony",
+      "narrative": "Visit the Golden Temple during the day to see the community kitchen (Langar). In the afternoon, drive to the Wagah Border to experience the high-spirited border closing ceremony between India and Pakistan.",
+      "details": {
+        "accommodation": "Taj Swarna, Amritsar",
+        "experiences": "Community kitchen volunteer visit & Wagah border VIP seats",
+        "dining": "Traditional local lunch, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/destinations_hero_1776334796479.png",
+          "caption": "The massive community kitchen (Langar) of Golden Temple"
+        }
+      ],
+      "expertNote": "The Langar serves over 100,000 people daily, completely free, run entirely by volunteers.",
+      "highlights": [
+        "Langar Kitchen Experience",
+        "Wagah Border Border Ceremony"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "amritsar"
+      ]
+    },
+    {
+      "day": 6,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Amritsar to Jaipur",
+      "title": "Flight to Jaipur",
+      "narrative": "Fly from Amritsar to the Pink City of Jaipur. Check into your royal palace suite. Relax at leisure in the afternoon.",
+      "details": {
+        "accommodation": "Rambagh Palace",
+        "experiences": "Domestic flight transfer",
+        "dining": "Heritage dining room dinner",
+        "transport": "Private luxury SUV & Flight"
+      },
+      "images": [
+        {
+          "url": "/images/Rambagh-Palace-jaipur.jpg",
+          "caption": "Rambagh Palace gardens"
+        }
+      ],
+      "expertNote": "Take a stroll through the manicured palace lawns where peacocks roam freely.",
+      "highlights": [
+        "Royal Palace Check-in",
+        "Manicured Palace Lawns Walk"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "amritsar",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 7,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Jaipur",
+      "title": "Amer Fort & Hawa Mahal",
+      "narrative": "Visit the hilltop Amer Fort, photograph the iconic Hawa Mahal, and visit the serene Jal Mahal.",
+      "details": {
+        "accommodation": "Rambagh Palace",
+        "experiences": "Amer Fort private tour",
+        "dining": "Heritage thali lunch, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/amber-fort.jpg",
+          "caption": "Amer Fort sandstone battlements"
+        }
+      ],
+      "expertNote": "The Sheesh Mahal inside Amer Fort is globally renowned for its exquisite mirror mosaic work.",
+      "highlights": [
+        "Amer Fort Hilltop Tour",
+        "Hawa Mahal Photography"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "amritsar",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 8,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Jaipur",
+      "title": "City Palace & Bazaars",
+      "narrative": "Explore the City Palace and the Jantar Mantar observatory. In the afternoon, browse the colorful local bazaar.",
+      "details": {
+        "accommodation": "Rambagh Palace",
+        "experiences": "City Palace private rooms visit",
+        "dining": "Bespoke lunch, dinner at heritage venue",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/city-palace-jaipur.webp",
+          "caption": "City Palace courtyards"
+        }
+      ],
+      "expertNote": "Enjoy exclusive entry to the private residential quarters of the royal family in City Palace.",
+      "highlights": [
+        "City Palace Private Tour",
+        "Jantar Mantar Astronomical Site"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "amritsar",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 9,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Jaipur to Udaipur",
+      "title": "Travel to Udaipur & Sunset Cruise",
+      "narrative": "Drive or fly to Udaipur. In the evening, take a private boat cruise on the placid waters of Lake Pichola, watching the sun set behind the Aravali hills.",
+      "details": {
+        "accommodation": "Taj Lake Palace, Udaipur",
+        "experiences": "Lake Pichola boat cruise",
+        "dining": "Lakeside dining at hotel",
+        "transport": "Private luxury SUV & Boat"
+      },
+      "images": [
+        {
+          "url": "/images/taj-lake-palace-udaipur.jpeg",
+          "caption": "Lake Pichola's white marble palaces"
+        }
+      ],
+      "expertNote": "The Taj Lake Palace appears to float on the water and looks spectacular during sunset.",
+      "highlights": [
+        "Lake Pichola Private Cruise",
+        "Floating Palace Arrival"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "amritsar",
+        "jaipur",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 10,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Udaipur",
+      "title": "City Palace & Jagdish Temple",
+      "narrative": "Explore the massive City Palace complex, the largest in Rajasthan. Visit the 17th-century Jagdish Temple and take a stroll in Saheliyon-ki-Bari.",
+      "details": {
+        "accommodation": "Taj Lake Palace, Udaipur",
+        "experiences": "City Palace guided walk",
+        "dining": "Traditional Mewari lunch, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/courtyards-udaipur-city-palace.jpg",
+          "caption": "Udaipur City Palace overlooking the lake"
+        }
+      ],
+      "expertNote": "The crystal gallery inside City Palace houses a massive royal collection of crystal ordered from Birmingham in 1877.",
+      "highlights": [
+        "City Palace Museum Walk",
+        "Jagdish Temple Visit"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "amritsar",
+        "jaipur",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 11,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Udaipur",
+      "title": "Udaipur Leisure & Monsoon Palace Views",
+      "narrative": "Spend the morning relaxing at the floating palace. In the late afternoon, drive up to the hilltop Monsoon Palace (Sajjangarh) for panoramic views of the lakes and surrounding countryside.",
+      "details": {
+        "accommodation": "Taj Lake Palace, Udaipur",
+        "experiences": "Monsoon Palace sunset tour",
+        "dining": "Bespoke dinner at the palace courtyard",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/hero_palace_lake_1776272480532.png",
+          "caption": "Monsoon Palace overlooking Udaipur"
+        }
+      ],
+      "expertNote": "The Monsoon Palace was originally built to watch the progress of monsoon clouds.",
+      "highlights": [
+        "Monsoon Palace Sunset Tour",
+        "Palace Courtyard Dining"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "amritsar",
+        "jaipur",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 12,
+      "location": "Goa",
+      "locationKey": "goa",
+      "meta": "Udaipur to Goa",
+      "title": "Flight to Sunny Goa",
+      "narrative": "Fly to Goa. Check into your Mediterranean-style beachside villa. Spend the rest of the day relaxing on the beach.",
+      "details": {
+        "accommodation": "Taj Exotica Resort & Spa, Goa",
+        "experiences": "Domestic flight transfer",
+        "dining": "Beachfront seafood dinner",
+        "transport": "Private luxury SUV & Flight"
+      },
+      "images": [
+        {
+          "url": "/images/goa.jpeg",
+          "caption": "Serene Goan beaches"
+        }
+      ],
+      "expertNote": "Enjoy a relaxing evening on the soft sands.",
+      "highlights": [
+        "Beachfront Sunset",
+        "Goan Seafood Curation"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "amritsar",
+        "jaipur",
+        "udaipur",
+        "goa"
+      ]
+    },
+    {
+      "day": 13,
+      "location": "Goa",
+      "locationKey": "goa",
+      "meta": "Goa",
+      "title": "Churches of Old Goa",
+      "narrative": "Visit the UNESCO World Heritage sites of Old Goa, including the Basilica of Bom Jesus and Se Cathedral.",
+      "details": {
+        "accommodation": "Taj Exotica Resort & Spa, Goa",
+        "experiences": "UNESCO World Heritage churches tour",
+        "dining": "Portuguese-Goan lunch, dinner at resort",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/basilica-bom-jesus.png",
+          "caption": "Basilica of Bom Jesus"
+        }
+      ],
+      "expertNote": "Se Cathedral has a famous Golden Bell, the largest in Goa.",
+      "highlights": [
+        "Old Goa Heritage Walk",
+        "Basilica of Bom Jesus Tour"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "amritsar",
+        "jaipur",
+        "udaipur",
+        "goa"
+      ]
+    },
+    {
+      "day": 14,
+      "location": "Goa",
+      "locationKey": "goa",
+      "meta": "Goa",
+      "title": "Fontainhas Latin Quarter",
+      "narrative": "Stroll through the colorful lanes of Fontainhas, the Latin Quarter of Panaji. Return to your resort for a relaxing afternoon.",
+      "details": {
+        "accommodation": "Taj Exotica Resort & Spa, Goa",
+        "experiences": "Fontainhas heritage walking tour",
+        "dining": "Lunch at heritage Goan home, beachside farewell dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/fontainhas-goa.png",
+          "caption": "Fontainhas Latin Quarter"
+        }
+      ],
+      "expertNote": "Witness the bright yellow, red, and blue Portuguese-style houses.",
+      "highlights": [
+        "Fontainhas Latin Quarter Walk",
+        "Beachside Farewell Dinner"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "amritsar",
+        "jaipur",
+        "udaipur",
+        "goa"
+      ]
+    },
+    {
+      "day": 15,
+      "location": "Goa",
+      "locationKey": "goa",
+      "meta": "Goa Departure",
+      "title": "Goa Departure",
+      "narrative": "Transfer to Goa International Airport for your departure flight home.",
+      "details": {
+        "accommodation": "VIP Departure Lounge",
+        "experiences": "Airport departure transfer",
+        "dining": "Resort breakfast",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/airport.webp",
+          "caption": "Farewell to India"
+        }
+      ],
+      "expertNote": "Enjoy VIP departure assistance at the airport.",
+      "highlights": [
+        "Airport Departure Transfer",
+        "VIP Lounge Access"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "amritsar",
+        "jaipur",
+        "udaipur",
+        "goa"
+      ]
+    }
+  ],
+  "duration": "15 Days / 14 Nights",
+  "transfer": "Private Luxury SUV, Flights, and Chauffeur Services"
+},
+  "north-south-culture-16": {
+  "id": "north-south-culture-16",
+  "title": "North & South Culture: Grand Imperial Cities & Kerala Backwaters",
+  "subtitle": "A 16-day luxury journey linking Delhi, Agra, and Jaipur in the North with Cochin, Munnar hills, and Kumarakom backwaters in the South.",
+  "regionsVisited": "Delhi, Agra, Jaipur, Cochin, Munnar, Kumarakom",
+  "heroImage": "/images/kumarakom-lake-resort.jpg",
+  "ctaBgImage": "/images/kumarakom-lake-resort.jpg",
+  "markerKeys": [
+    "delhi",
+    "agra",
+    "jaipur",
+    "cochin",
+    "munnar",
+    "kumarakom"
+  ],
+  "routeCoords": [
+    [
+      77.209,
+      28.6139
+    ],
+    [
+      78.0081,
+      27.1767
+    ],
+    [
+      75.7873,
+      26.9124
+    ],
+    [
+      76.2673,
+      9.9312
+    ],
+    [
+      77.0595,
+      10.0889
+    ],
+    [
+      76.4312,
+      9.5936
+    ]
+  ],
+  "accommodations": "Historic Palaces, Tea Plantation Bungalows, and Luxury Houseboats",
+  "itinerary": [
+    {
+      "day": 1,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi Arrival",
+      "title": "Arrive in Delhi",
+      "narrative": "Arrive at Delhi's international airport. Transfer to your luxury hotel. Rest at leisure.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "VIP airport reception",
+        "dining": "Dinner at hotel",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/the-imperial-newdelhi.webp",
+          "caption": "Delhi's historic avenues"
+        }
+      ],
+      "expertNote": "The Imperial offers a peaceful escape in the heart of Delhi.",
+      "highlights": [
+        "Bespoke Airport Transfer",
+        "Signature Welcome Dinner"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 2,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi",
+      "title": "Imperial Delhi Tour",
+      "narrative": "Explore New Delhi's grand landmarks, including Humayun's Tomb, Qutub Minar, and the central administrative structures.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Guided historical tour",
+        "dining": "North Indian lunch, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/qutub minar.webp",
+          "caption": "Qutub Minar"
+        }
+      ],
+      "expertNote": "Enjoy historical curations from our expert guides.",
+      "highlights": [
+        "Humayun's Tomb Curation",
+        "Qutub Minar Exploration"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 3,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi",
+      "title": "Old Delhi Rickshaw Curation",
+      "narrative": "Explore Old Delhi, featuring the historic Jama Masjid, Chandni Chowk markets, and a view of the Red Fort.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Rickshaw ride in Old Delhi",
+        "dining": "Mughlai lunch, dinner at leisure",
+        "transport": "Private luxury SUV & Rickshaw"
+      },
+      "images": [
+        {
+          "url": "/images/Historic architecture and Mughal monuments of Old Delhi.jpg",
+          "caption": "Jama Masjid"
+        }
+      ],
+      "expertNote": "Sample traditional Old Delhi street delicacies with your guide.",
+      "highlights": [
+        "Chandni Chowk Rickshaw Ride",
+        "Jama Masjid Exploration"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 4,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Delhi to Agra",
+      "title": "Agra Fort & Sunset Taj Mahal",
+      "narrative": "Drive to Agra. Check into your hotel. Visit the grand Agra Fort and see the Taj Mahal at sunset from Mehtab Bagh.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas",
+        "experiences": "Agra Fort guided tour",
+        "dining": "Mughal tasting menu at hotel",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/The Oberoi Amarvilas.jpg",
+          "caption": "Agra Fort red sandstone structures"
+        }
+      ],
+      "expertNote": "Mehtab Bagh offers a peaceful sunset view away from the daytime crowds.",
+      "highlights": [
+        "Agra Fort Exploration",
+        "Sunset at Mehtab Bagh"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra"
+      ]
+    },
+    {
+      "day": 5,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Agra",
+      "title": "Taj Mahal Sunrise",
+      "narrative": "Witness the magnificent Taj Mahal at sunrise. Return to the hotel for breakfast. Afternoon free for relaxation.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas",
+        "experiences": "Sunrise Taj Mahal visit",
+        "dining": "Palace breakfast, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/taj-mahal.webp",
+          "caption": "Taj Mahal"
+        }
+      ],
+      "expertNote": "Entering early ensures a quieter and cooler experience.",
+      "highlights": [
+        "Taj Mahal Sunrise Tour",
+        "Marble Inlay Artistry Visit"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra"
+      ]
+    },
+    {
+      "day": 6,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Agra to Jaipur",
+      "title": "Agra to Jaipur via Fatehpur Sikri",
+      "narrative": "Drive to Jaipur, stopping at the historic city of Fatehpur Sikri and the Abhaneri stepwell.",
+      "details": {
+        "accommodation": "Rambagh Palace",
+        "experiences": "Fatehpur Sikri & Abhaneri tours",
+        "dining": "Heritage lunch, dinner at hotel",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Rambagh-Palace-jaipur.jpg",
+          "caption": "Fatehpur Sikri gate"
+        }
+      ],
+      "expertNote": "Fatehpur Sikri is remarkably preserved and boasts beautiful sandstone carvings.",
+      "highlights": [
+        "Fatehpur Sikri Guided Walk",
+        "Abhaneri Stepwell Curation"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 7,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Jaipur",
+      "title": "Amer Fort & Hawa Mahal",
+      "narrative": "Explore the Amer Fort, stop at the iconic Hawa Mahal, and view the Jal Mahal.",
+      "details": {
+        "accommodation": "Rambagh Palace",
+        "experiences": "Amer Fort private tour",
+        "dining": "Rajasthani thali, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/amber-fort.jpg",
+          "caption": "Amer Fort"
+        }
+      ],
+      "expertNote": "The Sheesh Mahal inside Amer Fort is a mirror masterpiece.",
+      "highlights": [
+        "Amer Fort Hilltop Tour",
+        "Hawa Mahal Photography"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 8,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Jaipur",
+      "title": "City Palace & Bazaars",
+      "narrative": "Explore the City Palace and Jantar Mantar. Spend the afternoon browsing local bazaars.",
+      "details": {
+        "accommodation": "Rambagh Palace",
+        "experiences": "City Palace private rooms visit",
+        "dining": "Bespoke lunch, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/city-palace-jaipur.webp",
+          "caption": "City Palace"
+        }
+      ],
+      "expertNote": "Jaipur's jewelry markets are globally famous for colored gemstones.",
+      "highlights": [
+        "City Palace Private Tour",
+        "Jantar Mantar Astronomical Site"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 9,
+      "location": "Cochin",
+      "locationKey": "cochin",
+      "meta": "Jaipur to Cochin",
+      "title": "Flight to Cochin",
+      "narrative": "Fly from Jaipur to Cochin (Kochi) in Kerala. Check into your heritage harbor-front hotel and attend a Kathakali classical dance performance in the evening.",
+      "details": {
+        "accommodation": "Brunton Boatyard, Cochin",
+        "experiences": "Domestic flight transfer & Kathakali dance show",
+        "dining": "Keralan seafood dinner",
+        "transport": "Private luxury SUV, Flight & Chauffeur"
+      },
+      "images": [
+        {
+          "url": "/images/cochin.jpg",
+          "caption": "Cochin harbor front"
+        }
+      ],
+      "expertNote": "Kathakali dancers spend hours applying elaborate makeup before the performance.",
+      "highlights": [
+        "Kathakali Dance Performance",
+        "Fort Cochin Harbor Views"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "cochin"
+      ]
+    },
+    {
+      "day": 10,
+      "location": "Cochin",
+      "locationKey": "cochin",
+      "meta": "Cochin",
+      "title": "Fort Cochin & Chinese Fishing Nets",
+      "narrative": "Explore Fort Cochin, including the historic Chinese Fishing Nets, St. Francis Church, Santa Cruz Basilica, and the Jewish Synagogue in Jew Town.",
+      "details": {
+        "accommodation": "Brunton Boatyard, Cochin",
+        "experiences": "Guided Fort Cochin heritage walk",
+        "dining": "Traditional Keralan lunch on banana leaves, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Chinese-Fishing-Nets-in-Kochi.avif",
+          "caption": "Chinese Fishing Nets at Fort Cochin"
+        }
+      ],
+      "expertNote": "St. Francis Church is the oldest European church in India and was the original burial place of Vasco da Gama.",
+      "highlights": [
+        "Chinese Fishing Nets Walk",
+        "Jew Town Synagogue Visit"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "cochin"
+      ]
+    },
+    {
+      "day": 11,
+      "location": "Munnar",
+      "locationKey": "munnar",
+      "meta": "Cochin to Munnar",
+      "title": "Drive to Tea Hills of Munnar",
+      "narrative": "Drive through winding hills and waterfalls to the tea-growing region of Munnar. Check into your luxury plantation bungalow.",
+      "details": {
+        "accommodation": "Windermere Estate, Munnar",
+        "experiences": "Scenic hillside drive",
+        "dining": "Estate plantation dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/munnar.jpeg",
+          "caption": "Lush tea hills of Munnar"
+        }
+      ],
+      "expertNote": "Munnar sits at 1,600 meters above sea level and has a cool, refreshing climate.",
+      "highlights": [
+        "Scenic Hillside Drive",
+        "Tea Plantation Stay"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "cochin",
+        "munnar"
+      ]
+    },
+    {
+      "day": 12,
+      "location": "Munnar",
+      "locationKey": "munnar",
+      "meta": "Munnar",
+      "title": "Tea Museum & Eravikulam National Park",
+      "narrative": "Visit the Tata Tea Museum to learn about tea processing, and take a morning walk in Eravikulam National Park to spot the rare Nilgiri Tahr mountain goat.",
+      "details": {
+        "accommodation": "Windermere Estate, Munnar",
+        "experiences": "Tea museum curation & Eravikulam national park tour",
+        "dining": "Bungalow lunch, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Nilgiri-tahr-2.jpg",
+          "caption": "Nilgiri Tahr mountain goat"
+        }
+      ],
+      "expertNote": "The Anamudi peak inside the park is the highest peak in South India.",
+      "highlights": [
+        "Tata Tea Museum Curation",
+        "Eravikulam National Park Spotting"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "cochin",
+        "munnar"
+      ]
+    },
+    {
+      "day": 13,
+      "location": "Kumarakom",
+      "locationKey": "kumarakom",
+      "meta": "Munnar to Kumarakom",
+      "title": "Drive to Kumarakom Backwaters",
+      "narrative": "Drive down from the hills to the serene backwaters of Kumarakom. Check into your luxury lakeside resort.",
+      "details": {
+        "accommodation": "Kumarakom Lake Resort",
+        "experiences": "Hill to lake transfer",
+        "dining": "Traditional backwater lunch, dinner at resort",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/kumarakom-lake-resort.jpg",
+          "caption": "Kumarakom Lake Resort"
+        }
+      ],
+      "expertNote": "Kumarakom Lake Resort features traditional Kettuvalam villas restored to heritage perfection.",
+      "highlights": [
+        "Backwater Lakeside Stay",
+        "Sunset Lake Views"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "cochin",
+        "munnar",
+        "kumarakom"
+      ]
+    },
+    {
+      "day": 14,
+      "location": "Kumarakom",
+      "locationKey": "kumarakom",
+      "meta": "Kumarakom Houseboat Cruise",
+      "title": "Private Kettuvalam Houseboat Day Cruise",
+      "narrative": "Embark on a private day-long cruise on a traditional Kettuvalam houseboat through the winding canals and backwaters of Vembanad Lake.",
+      "details": {
+        "accommodation": "Kumarakom Lake Resort",
+        "experiences": "Private houseboat charter",
+        "dining": "Freshly prepared Karimeen (pearl spot fish) lunch on board",
+        "transport": "Private luxury Houseboat"
+      },
+      "images": [
+        {
+          "url": "/images/kerala_backwaters_1776272518771.png",
+          "caption": "Traditional Keralan Houseboat"
+        }
+      ],
+      "expertNote": "A cruise along the backwaters offers a window into local village life on the canal banks.",
+      "highlights": [
+        "Private Houseboat Charter",
+        "Vembanad Lake Backwater Cruise"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "cochin",
+        "munnar",
+        "kumarakom"
+      ]
+    },
+    {
+      "day": 15,
+      "location": "Kumarakom",
+      "locationKey": "kumarakom",
+      "meta": "Kumarakom Leisure",
+      "title": "Kumarakom Bird Sanctuary & Ayurvedic Rejuvenation",
+      "narrative": "Take an early morning walking tour of the Kumarakom Bird Sanctuary. Spend the afternoon experiencing an authentic Ayurvedic wellness treatment.",
+      "details": {
+        "accommodation": "Kumarakom Lake Resort",
+        "experiences": "Bird sanctuary walk & Ayurvedic spa session",
+        "dining": "Ayurvedic dining curation, farewell dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/ayurveda_wellness_1776272638098.png",
+          "caption": "Ayurvedic oil treatment session"
+        }
+      ],
+      "expertNote": "Ayurveda is native to Kerala and uses traditional herbal oils for detox and healing.",
+      "highlights": [
+        "Bird Sanctuary Spotting",
+        "Ayurvedic Treatment Curation"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "cochin",
+        "munnar",
+        "kumarakom"
+      ]
+    },
+    {
+      "day": 16,
+      "location": "Cochin",
+      "locationKey": "cochin",
+      "meta": "Kumarakom to Cochin Airport",
+      "title": "Cochin Departure",
+      "narrative": "Drive back to Cochin International Airport for your departure flight home.",
+      "details": {
+        "accommodation": "VIP Departure Lounge",
+        "experiences": "Airport departure transfer",
+        "dining": "Resort breakfast",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/airport.webp",
+          "caption": "Farewell to India"
+        }
+      ],
+      "expertNote": "Ensure your travel documents are ready for airport exit check-in.",
+      "highlights": [
+        "Airport Departure Transfer",
+        "VIP Lounge Access"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "cochin",
+        "munnar",
+        "kumarakom",
+        "cochin"
+      ]
+    }
+  ],
+  "duration": "16 Days / 15 Nights",
+  "transfer": "Private Luxury SUV, Domestic Flight, and Chauffeur Services"
+},
+  "palace-tour-17": {
+  "id": "palace-tour-17",
+  "title": "The Royal Fortresses & Estates: A 17-Day Palace Expedition",
+  "subtitle": "An immersive 17-day journey through Rajasthan's finest heritage properties, including Nimaj, Jodhpur, Mihirgarh, Jawai, and Udaipur.",
+  "regionsVisited": "Delhi, Agra, Jaipur, Nimaj, Jodhpur, Mihirgarh, Jawai, Udaipur",
+  "heroImage": "/images/desert_camp_night_1776272499120.png",
+  "ctaBgImage": "/images/desert_camp_night_1776272499120.png",
+  "markerKeys": [
+    "delhi",
+    "agra",
+    "jaipur",
+    "nimaj",
+    "jodhpur",
+    "mihirgarh",
+    "jawai",
+    "udaipur"
+  ],
+  "routeCoords": [
+    [
+      77.209,
+      28.6139
+    ],
+    [
+      78.0081,
+      27.1767
+    ],
+    [
+      75.7873,
+      26.9124
+    ],
+    [
+      74.0768,
+      26.3023
+    ],
+    [
+      73.0243,
+      26.2389
+    ],
+    [
+      73.0617,
+      26.0719
+    ],
+    [
+      73.1678,
+      25.1058
+    ],
+    [
+      73.7125,
+      24.5854
+    ]
+  ],
+  "accommodations": "Royal Forts, Desert Glamping, Lake Palaces, and Heritage Estates",
+  "itinerary": [
+    {
+      "day": 1,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi Arrival",
+      "title": "Arrive in Delhi",
+      "narrative": "Arrive in Delhi. Private check-in at hotel.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "VIP airport reception",
+        "dining": "Dinner at hotel",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/the-imperial-newdelhi.webp",
+          "caption": "Delhi lanes"
+        }
+      ],
+      "expertNote": "Get a good night's rest before the big palace tour.",
+      "highlights": [
+        "Bespoke Airport Transfer",
+        "Signature Welcome Dinner"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 2,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi",
+      "title": "Delhi Sightseeing",
+      "narrative": "Explore New Delhi and Old Delhi historical monuments.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Guided historical tour",
+        "dining": "North Indian lunch, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/qutub minar.webp",
+          "caption": "Qutub Minar"
+        }
+      ],
+      "expertNote": "Enjoy historical curations from our expert guides.",
+      "highlights": [
+        "Humayun's Tomb Curation",
+        "Qutub Minar Exploration"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 3,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Delhi to Agra",
+      "title": "Agra Fort & Sunset Taj Mahal",
+      "narrative": "Drive to Agra. Check into hotel and visit Agra Fort. View the Taj Mahal at sunset from Mehtab Bagh.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas",
+        "experiences": "Agra Fort guided tour",
+        "dining": "Mughal tasting menu at hotel",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/The Oberoi Amarvilas.jpg",
+          "caption": "Agra Fort"
+        }
+      ],
+      "expertNote": "Mehtab Bagh offers a peaceful sunset view.",
+      "highlights": [
+        "Agra Fort Exploration",
+        "Sunset at Mehtab Bagh"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra"
+      ]
+    },
+    {
+      "day": 4,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Agra",
+      "title": "Taj Mahal Sunrise",
+      "narrative": "Witness the magnificent Taj Mahal at sunrise. Return to the hotel for breakfast. Afternoon free.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas",
+        "experiences": "Sunrise Taj Mahal visit",
+        "dining": "Palace breakfast, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/taj-mahal.webp",
+          "caption": "Taj Mahal"
+        }
+      ],
+      "expertNote": "Entering early ensures a quieter and cooler experience.",
+      "highlights": [
+        "Taj Mahal Sunrise Tour",
+        "Marble Inlay Artistry Visit"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra"
+      ]
+    },
+    {
+      "day": 5,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Agra to Jaipur",
+      "title": "Agra to Jaipur via Fatehpur Sikri",
+      "narrative": "Drive to Jaipur, stopping at the historic city of Fatehpur Sikri and the Abhaneri stepwell.",
+      "details": {
+        "accommodation": "Rambagh Palace",
+        "experiences": "Fatehpur Sikri & Abhaneri tours",
+        "dining": "Heritage lunch, dinner at hotel",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Rambagh-Palace-jaipur.jpg",
+          "caption": "Fatehpur Sikri gate"
+        }
+      ],
+      "expertNote": "Fatehpur Sikri is remarkably preserved.",
+      "highlights": [
+        "Fatehpur Sikri Guided Walk",
+        "Abhaneri Stepwell Curation"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 6,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Jaipur",
+      "title": "Amer Fort & City Palace",
+      "narrative": "Explore the hilltop Amer Fort, stop at the iconic Hawa Mahal, and view the Jal Mahal and City Palace.",
+      "details": {
+        "accommodation": "Rambagh Palace",
+        "experiences": "Amer Fort & City Palace private tours",
+        "dining": "Rajasthani thali, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/amber-fort.jpg",
+          "caption": "Amer Fort"
+        }
+      ],
+      "expertNote": "The Sheesh Mahal inside Amer Fort is a mirror masterpiece.",
+      "highlights": [
+        "Amer Fort Hilltop Tour",
+        "Hawa Mahal Photography"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 7,
+      "location": "Nimaj",
+      "locationKey": "nimaj",
+      "meta": "Jaipur to Nimaj",
+      "title": "Drive to Chhatra Sagar in Nimaj",
+      "narrative": "Drive to Nimaj. Check into the luxury hand-stitched tents overlooking the lake at Chhatra Sagar.",
+      "details": {
+        "accommodation": "Raas Chhatra Sagar, Nimaj",
+        "experiences": "Scenic countryside drive & lakeside welcome",
+        "dining": "Campfire dinner under the stars",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/nimaj-village.jpg",
+          "caption": "Luxury lakeside tents at Chhatra Sagar"
+        }
+      ],
+      "expertNote": "Chhatra Sagar was created by a local noble in the 19th century to store rainwater.",
+      "highlights": [
+        "Lakeside Luxury Glamping",
+        "Campfire Stargazing Dinner"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "nimaj"
+      ]
+    },
+    {
+      "day": 8,
+      "location": "Nimaj",
+      "locationKey": "nimaj",
+      "meta": "Nimaj",
+      "title": "Nimaj Nature & Bird Watching",
+      "narrative": "Embark on an early morning bird-watching walk along the dam. In the afternoon, visit a local village to learn about traditional farming practices.",
+      "details": {
+        "accommodation": "Raas Chhatra Sagar, Nimaj",
+        "experiences": "Guided bird watching walk & village visit",
+        "dining": "Farm-to-table lunch, dinner at camp",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/wildlife.jpg",
+          "caption": "Migratory birds at Chhatra Sagar lake"
+        }
+      ],
+      "expertNote": "The area attracts over 200 species of migratory birds during the winter.",
+      "highlights": [
+        "Guided Bird Watching Dam Walk",
+        "Authentic Village Safari Curation"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "nimaj"
+      ]
+    },
+    {
+      "day": 9,
+      "location": "Jodhpur",
+      "locationKey": "jodhpur",
+      "meta": "Nimaj to Jodhpur",
+      "title": "Drive to Jodhpur & Mehrangarh Fort",
+      "narrative": "Drive to the Blue City of Jodhpur. Check into your heritage hotel. Visit the massive Mehrangarh Fort which dominates the city skyline.",
+      "details": {
+        "accommodation": "Raas Jodhpur",
+        "experiences": "Mehrangarh Fort private tour",
+        "dining": "Rooftop dining overlooking the fort",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/mehrangarh-fort-jodhpur.jpeg",
+          "caption": "Mehrangarh Fort dominating Jodhpur"
+        }
+      ],
+      "expertNote": "Mehrangarh Fort's thick walls still bear the marks of historic cannonball hits.",
+      "highlights": [
+        "Mehrangarh Fort Museum Tour",
+        "Jodhpur Blue City Views"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "nimaj",
+        "jodhpur"
+      ]
+    },
+    {
+      "day": 10,
+      "location": "Jodhpur",
+      "locationKey": "jodhpur",
+      "meta": "Jodhpur",
+      "title": "Jaswant Thada & Umaid Bhawan Palace",
+      "narrative": "Visit Jaswant Thada, a royal white marble cenotaph, and the museum at Umaid Bhawan Palace, one of the world's largest private residences.",
+      "details": {
+        "accommodation": "Raas Jodhpur",
+        "experiences": "Jaswant Thada & Umaid Bhawan tours",
+        "dining": "Heritage lunch, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Umaid Bhawan Palace Jodhpur.webp",
+          "caption": "Jaswant Thada white marble memorial"
+        }
+      ],
+      "expertNote": "Jaswant Thada is built from highly polished sheets of marble that glow warmly in the sun.",
+      "highlights": [
+        "Jaswant Thada Royal Cenotaph",
+        "Umaid Bhawan Palace Curation"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "nimaj",
+        "jodhpur"
+      ]
+    },
+    {
+      "day": 11,
+      "location": "Mihirgarh",
+      "locationKey": "mihirgarh",
+      "meta": "Jodhpur to Mihirgarh",
+      "title": "Drive to Mihir Garh Desert Castle",
+      "narrative": "Drive to the desert castle of Mihir Garh. Check into your opulent suite featuring a private plunge pool. In the evening, enjoy a sunset horse ride.",
+      "details": {
+        "accommodation": "Mihir Garh, Jodhpur",
+        "experiences": "Desert horse ride on Marwari horses",
+        "dining": "Royal Rajasthani dinner",
+        "transport": "Private luxury SUV & Horse"
+      },
+      "images": [
+        {
+          "url": "/images/desert_camp_night_1776272499120.png",
+          "caption": "Mihir Garh desert castle"
+        }
+      ],
+      "expertNote": "Mihir Garh features beautiful hand-made plaster fireplaces crafted by local women.",
+      "highlights": [
+        "Boutique Desert Castle Check-in",
+        "Sunset Marwari Horse Riding"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "nimaj",
+        "jodhpur",
+        "mihirgarh"
+      ]
+    },
+    {
+      "day": 12,
+      "location": "Mihirgarh",
+      "locationKey": "mihirgarh",
+      "meta": "Mihirgarh",
+      "title": "Mihirgarh Desert Village Safari",
+      "narrative": "Embark on a signature village safari to meet the local Bishnoi community. In the evening, enjoy a private picnic dinner in the middle of the desert dunes.",
+      "details": {
+        "accommodation": "Mihir Garh, Jodhpur",
+        "experiences": "Bishnoi village safari & private dunes picnic",
+        "dining": "Royal desert safari picnic lunch, dunes dinner",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/desert_camp_night_1776272499120.png",
+          "caption": "Sunset picnic in the Thar desert dunes"
+        }
+      ],
+      "expertNote": "The Bishnois are passionate protectors of nature and wildlife, especially the blackbuck antelope.",
+      "highlights": [
+        "Bishnoi Wildlife & Village Safari",
+        "Private Desert Dunes Dining"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "nimaj",
+        "jodhpur",
+        "mihirgarh"
+      ]
+    },
+    {
+      "day": 13,
+      "location": "Jawai",
+      "locationKey": "jawai",
+      "meta": "Mihirgarh to Jawai",
+      "title": "Drive to Jawai Leopard Camps",
+      "narrative": "Drive through the rocky wilderness to Jawai. Check into your luxury wilderness camp and go on an afternoon leopard tracking safari.",
+      "details": {
+        "accommodation": "Suján Jawai Camp",
+        "experiences": "4x4 private leopard safari",
+        "dining": "Campfire dinner at the wilderness camp",
+        "transport": "Private luxury SUV & 4x4 Jeep"
+      },
+      "images": [
+        {
+          "url": "/images/Indian Leopard.jpg",
+          "caption": "Leopard in the rocky terrain of Jawai"
+        }
+      ],
+      "expertNote": "Jawai is famous for the harmonious relationship between the leopards and the local Rabari herdsmen.",
+      "highlights": [
+        "Bespoke Wilderness Glamping",
+        "Afternoon Leopard Safari Curation"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "nimaj",
+        "jodhpur",
+        "mihirgarh",
+        "jawai"
+      ]
+    },
+    {
+      "day": 14,
+      "location": "Jawai",
+      "locationKey": "jawai",
+      "meta": "Jawai",
+      "title": "Jawai Wilderness & Rabari Walks",
+      "narrative": "Enjoy early morning and late afternoon safaris. Take a guided walk with a local Rabari herdsman to learn about their ancient lifestyle and culture.",
+      "details": {
+        "accommodation": "Suján Jawai Camp",
+        "experiences": "Morning and afternoon safaris & Rabari culture walk",
+        "dining": "Bush lunch, campfire dinner",
+        "transport": "Private 4x4 Jeep & Walk"
+      },
+      "images": [
+        {
+          "url": "/images/Khajuraho Rural Life.png",
+          "caption": "Traditional Rabari herdsman in red turban"
+        }
+      ],
+      "expertNote": "The Rabari people wear distinctive red turbans and lead herds of sheep and goats.",
+      "highlights": [
+        "Rabari Guided Culture Walk",
+        "Morning Leopard Safari Tracker"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "nimaj",
+        "jodhpur",
+        "mihirgarh",
+        "jawai"
+      ]
+    },
+    {
+      "day": 15,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Jawai to Udaipur",
+      "title": "Drive to Udaipur via Ranakpur Temple",
+      "narrative": "Drive to Udaipur. En route, tour the spectacular 15th-century Ranakpur Jain Temple, famous for its 1,444 uniquely carved marble pillars.",
+      "details": {
+        "accommodation": "Taj Lake Palace, Udaipur",
+        "experiences": "Guided Ranakpur Jain Temple tour",
+        "dining": "Vegetarian temple lunch, dinner at resort",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Intricately carved spires of the Khajuraho temples.jpeg",
+          "caption": "Intricately carved marble pillars of Ranakpur"
+        }
+      ],
+      "expertNote": "No two marble pillars inside Ranakpur Temple are carved the same.",
+      "highlights": [
+        "Ranakpur Jain Temple Curation",
+        "Lake Pichola Arrival"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "nimaj",
+        "jodhpur",
+        "mihirgarh",
+        "jawai",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 16,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Udaipur",
+      "title": "Udaipur City Palace & Lake Cruise",
+      "narrative": "Explore Udaipur's massive City Palace museum and enjoy a private sunset boat cruise on Lake Pichola.",
+      "details": {
+        "accommodation": "Taj Lake Palace, Udaipur",
+        "experiences": "City Palace private tour & sunset boat cruise",
+        "dining": "Lakeside Mewari dinner",
+        "transport": "Private luxury SUV & Boat"
+      },
+      "images": [
+        {
+          "url": "/images/taj-lake-palace-udaipur.jpeg",
+          "caption": "Sunset over Lake Pichola"
+        }
+      ],
+      "expertNote": "Enjoy a traditional folk dance show at Bagore-ki-Haveli in the evening.",
+      "highlights": [
+        "City Palace Museum Walk",
+        "Sunset Lake Pichola Cruise"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "nimaj",
+        "jodhpur",
+        "mihirgarh",
+        "jawai",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 17,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Udaipur Departure",
+      "title": "Udaipur Departure",
+      "narrative": "Transfer to Udaipur Airport for your departure flight.",
+      "details": {
+        "accommodation": "VIP Departure Lounge",
+        "experiences": "Airport departure transfer",
+        "dining": "Resort breakfast",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/airport.webp",
+          "caption": "Farewell to India"
+        }
+      ],
+      "expertNote": "Make sure to coordinate your flights back home from Delhi/Mumbai.",
+      "highlights": [
+        "Airport Departure Transfer",
+        "VIP Lounge Access"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "nimaj",
+        "jodhpur",
+        "mihirgarh",
+        "jawai",
+        "udaipur"
+      ]
+    }
+  ],
+  "duration": "17 Days / 16 Nights",
+  "transfer": "Private Luxury SUV and Chauffeur Services"
+},
+  "palace-tour-13": {
+  "id": "palace-tour-13",
+  "title": "Palaces & Forts: The Heritage Path of Rajasthan",
+  "subtitle": "A 13-day classic journey through the historic Golden Triangle, the heritage fort at Deogarh, and the romantic lake city of Udaipur.",
+  "regionsVisited": "Delhi, Agra, Jaipur, Deogarh, Udaipur",
+  "heroImage": "/images/deogarh-mahal.webp",
+  "ctaBgImage": "/images/deogarh-mahal.webp",
+  "markerKeys": [
+    "delhi",
+    "agra",
+    "jaipur",
+    "deogarh",
+    "udaipur"
+  ],
+  "routeCoords": [
+    [
+      77.209,
+      28.6139
+    ],
+    [
+      78.0081,
+      27.1767
+    ],
+    [
+      75.7873,
+      26.9124
+    ],
+    [
+      73.9056,
+      25.5342
+    ],
+    [
+      73.7125,
+      24.5854
+    ]
+  ],
+  "accommodations": "Palace Suites and Heritage Castles",
+  "itinerary": [
+    {
+      "day": 1,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi Arrival",
+      "title": "Arrive in Delhi",
+      "narrative": "Arrive in Delhi and transfer to hotel.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "VIP airport reception",
+        "dining": "Dinner at hotel",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/the-imperial-newdelhi.webp",
+          "caption": "Delhi street scene"
+        }
+      ],
+      "expertNote": "Rest at your leisure.",
+      "highlights": [
+        "Bespoke Airport Transfer",
+        "Signature Welcome Dinner"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 2,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi",
+      "title": "Imperial Delhi Landmarks",
+      "narrative": "Guided visit to Humayun's Tomb, Qutub Minar, and central monuments.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Guided historical tour",
+        "dining": "North Indian lunch, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/qutub minar.webp",
+          "caption": "Qutub Minar"
+        }
+      ],
+      "expertNote": "Humayun's Tomb looks best in late morning light.",
+      "highlights": [
+        "Humayun's Tomb Curation",
+        "Qutub Minar Exploration"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 3,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi",
+      "title": "Old Delhi Rickshaw Tour",
+      "narrative": "Explore Jama Masjid, rickshaw ride in Chandni Chowk, and Red Fort.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Rickshaw ride in Old Delhi",
+        "dining": "Mughlai lunch, dinner at leisure",
+        "transport": "Private luxury SUV & Rickshaw"
+      },
+      "images": [
+        {
+          "url": "/images/Historic architecture and Mughal monuments of Old Delhi.jpg",
+          "caption": "Jama Masjid"
+        }
+      ],
+      "expertNote": "Experience the bustling heart of Delhi.",
+      "highlights": [
+        "Chandni Chowk Rickshaw Ride",
+        "Jama Masjid Exploration"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 4,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Delhi to Agra",
+      "title": "Agra Fort & Sunset Taj Mahal",
+      "narrative": "Drive to Agra. Check into hotel and visit Agra Fort. View the Taj Mahal at sunset from Mehtab Bagh.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas",
+        "experiences": "Agra Fort guided tour",
+        "dining": "Mughal tasting menu at hotel",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/The Oberoi Amarvilas.jpg",
+          "caption": "Agra Fort"
+        }
+      ],
+      "expertNote": "Amarvilas offers spectacular sunset views.",
+      "highlights": [
+        "Agra Fort Exploration",
+        "Sunset at Mehtab Bagh"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra"
+      ]
+    },
+    {
+      "day": 5,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Agra",
+      "title": "Taj Mahal Sunrise",
+      "narrative": "Witness the magnificent Taj Mahal at sunrise. Return to the hotel for breakfast. Afternoon free.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas",
+        "experiences": "Sunrise Taj Mahal visit",
+        "dining": "Palace breakfast, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/taj-mahal.webp",
+          "caption": "Taj Mahal"
+        }
+      ],
+      "expertNote": "Dawn is the best time for photography.",
+      "highlights": [
+        "Taj Mahal Sunrise Tour",
+        "Marble Inlay Artistry Visit"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra"
+      ]
+    },
+    {
+      "day": 6,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Agra to Jaipur",
+      "title": "Agra to Jaipur via Fatehpur Sikri",
+      "narrative": "Drive to Jaipur, stopping at the historic city of Fatehpur Sikri and the Abhaneri stepwell.",
+      "details": {
+        "accommodation": "Rambagh Palace",
+        "experiences": "Fatehpur Sikri & Abhaneri tours",
+        "dining": "Heritage lunch, dinner at hotel",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Rambagh-Palace-jaipur.jpg",
+          "caption": "Fatehpur Sikri gate"
+        }
+      ],
+      "expertNote": "Fatehpur Sikri was once a grand capital city.",
+      "highlights": [
+        "Fatehpur Sikri Guided Walk",
+        "Abhaneri Stepwell Curation"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 7,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Jaipur",
+      "title": "Amer Fort & City Palace Curation",
+      "narrative": "Explore the hilltop Amer Fort, stop at the iconic Hawa Mahal, and view the City Palace.",
+      "details": {
+        "accommodation": "Rambagh Palace",
+        "experiences": "Amer Fort & City Palace private tours",
+        "dining": "Rajasthani thali, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/amber-fort.jpg",
+          "caption": "Amer Fort"
+        }
+      ],
+      "expertNote": "The Sheesh Mahal inside Amer Fort is a mirror masterpiece.",
+      "highlights": [
+        "Amer Fort Hilltop Tour",
+        "Hawa Mahal Photography"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 8,
+      "location": "Deogarh",
+      "locationKey": "deogarh",
+      "meta": "Jaipur to Deogarh",
+      "title": "Drive to Deogarh Mahal",
+      "narrative": "Drive to Deogarh in the Aravali hills. Check into the magnificent Deogarh Mahal castle and take an evening walk in the village.",
+      "details": {
+        "accommodation": "Deogarh Mahal, Deogarh",
+        "experiences": "Guided Deogarh village walk",
+        "dining": "Traditional Mewari dinner at the castle",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/deogarh-mahal.webp",
+          "caption": "The grand facade of Deogarh Mahal"
+        }
+      ],
+      "expertNote": "Deogarh Mahal is run by the original royal family who are excellent hosts.",
+      "highlights": [
+        "Deogarh Mahal Castle Stay",
+        "Evening Village Walk Curation"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "deogarh"
+      ]
+    },
+    {
+      "day": 9,
+      "location": "Deogarh",
+      "locationKey": "deogarh",
+      "meta": "Deogarh",
+      "title": "Rural Train Ride & Village Exploration",
+      "narrative": "Take a delightful ride on a local rural train through a scenic mountain pass. In the afternoon, explore the local lakes and countryside in open jeeps.",
+      "details": {
+        "accommodation": "Deogarh Mahal, Deogarh",
+        "experiences": "Local rural rail ride & 4x4 countryside jeep safari",
+        "dining": "Lakeside picnic lunch, dinner at heritage courtyard",
+        "transport": "Rural Train & 4x4 Jeep"
+      },
+      "images": [
+        {
+          "url": "/images/rail-journey-rajasthan.jpg",
+          "caption": "Rural train ride through the Aravali pass"
+        }
+      ],
+      "expertNote": "The train runs on a meter-gauge line built by the British and is still used by locals.",
+      "highlights": [
+        "Scenic Rural Train Ride",
+        "Open Jeep Countryside Safari"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "deogarh"
+      ]
+    },
+    {
+      "day": 10,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Deogarh to Udaipur",
+      "title": "Drive to Udaipur via Ranakpur Temple",
+      "narrative": "Drive to Udaipur, visiting the famous 15th-century Ranakpur Jain Temple on the way. Check into your floating lake palace hotel.",
+      "details": {
+        "accommodation": "Taj Lake Palace, Udaipur",
+        "experiences": "Guided Ranakpur Jain Temple tour",
+        "dining": "Temple lunch, dinner at hotel",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Intricately carved spires of the Khajuraho temples.jpeg",
+          "caption": "Carved marble ceiling of Ranakpur Temple"
+        }
+      ],
+      "expertNote": "Ranakpur Temple is a masterwork of marble sculpture.",
+      "highlights": [
+        "Ranakpur Jain Temple Curation",
+        "Lake Pichola Arrival"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "deogarh",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 11,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Udaipur",
+      "title": "Udaipur City Palace & Jagdish Temple",
+      "narrative": "Explore Udaipur's grand City Palace museum, visit Jagdish Temple, and stroll through Saheliyon-ki-Bari gardens.",
+      "details": {
+        "accommodation": "Taj Lake Palace, Udaipur",
+        "experiences": "Udaipur City Palace guided walk",
+        "dining": "Lakeside Mewari lunch, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/courtyards-udaipur-city-palace.jpg",
+          "caption": "City Palace museum overlooking Lake Pichola"
+        }
+      ],
+      "expertNote": "Take in the beautiful miniature painting collections inside the museum.",
+      "highlights": [
+        "City Palace Museum Walk",
+        "Jagdish Temple Visit"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "deogarh",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 12,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Udaipur",
+      "title": "Lake Pichola Cruise & Crafts Village",
+      "narrative": "Enjoy a private boat cruise on Lake Pichola in the morning. In the afternoon, visit Shilpgram, a traditional crafts village near the city.",
+      "details": {
+        "accommodation": "Taj Lake Palace, Udaipur",
+        "experiences": "Private boat cruise & Shilpgram village visit",
+        "dining": "Lakeside farewell dinner",
+        "transport": "Private boat & Luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/taj-lake-palace-udaipur.jpeg",
+          "caption": "Sunset on Lake Pichola"
+        }
+      ],
+      "expertNote": "Shilpgram shows rural lifestyle and arts from diverse regions of West India.",
+      "highlights": [
+        "Lake Pichola Private Cruise",
+        "Shilpgram Crafts Village Curation"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "deogarh",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 13,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Udaipur to Delhi Airport",
+      "title": "Udaipur to Delhi & Departure",
+      "narrative": "Take a flight from Udaipur to Delhi. Transfer to the international terminal for your onward flight home.",
+      "details": {
+        "accommodation": "VIP Departure Lounge",
+        "experiences": "Airport departure transfer & domestic flight",
+        "dining": "Palace breakfast",
+        "transport": "Private luxury SUV & Flight"
+      },
+      "images": [
+        {
+          "url": "/images/airport.webp",
+          "caption": "Farewell to India"
+        }
+      ],
+      "expertNote": "Have your boarding passes and passport ready for transit.",
+      "highlights": [
+        "Domestic Flight to Delhi",
+        "VIP Airport Exit Assist"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "deogarh",
+        "udaipur",
+        "delhi"
+      ]
+    }
+  ],
+  "duration": "13 Days / 12 Nights",
+  "transfer": "Private Luxury SUV, Domestic Flight, and Chauffeur Services"
+},
+  "palace-culture-goa-16": {
+  "id": "palace-culture-goa-16",
+  "title": "Royal Palaces & Golden Sands: The Grand Rajasthan & Goa Odyssey",
+  "subtitle": "A 16-day luxury journey through Delhi's heritage, Agra's Taj Mahal, the pink city of Jaipur, the serene oasis of Nimaj, Jodhpur's blue fortresses, and Goa's colonial beaches.",
+  "regionsVisited": "Delhi, Agra, Jaipur, Nimaj, Jodhpur, Goa",
+  "heroImage": "/images/goa_heritage_1776272683299.png",
+  "ctaBgImage": "/images/goa.jpeg",
+  "markerKeys": [
+    "delhi",
+    "agra",
+    "jaipur",
+    "nimaj",
+    "jodhpur",
+    "goa"
+  ],
+  "routeCoords": [
+    [
+      77.209,
+      28.6139
+    ],
+    [
+      78.0081,
+      27.1767
+    ],
+    [
+      75.7873,
+      26.9124
+    ],
+    [
+      74.0768,
+      26.3023
+    ],
+    [
+      73.0243,
+      26.2389
+    ],
+    [
+      73.8278,
+      15.2993
+    ]
+  ],
+  "accommodations": "Heritage Havelis, Luxury Tented Camps, and Beachfront Villas",
+  "itinerary": [
+    {
+      "day": 1,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi Arrival",
+      "title": "Arrive in the Capital",
+      "narrative": "Arrive at Delhi's Indira Gandhi International Airport. Meet your private representative and transfer to your luxury hotel. Relax and recover from your journey in the opulent surroundings of The Imperial.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Private airport reception",
+        "dining": "Welcome dinner at the hotel",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/the-imperial-newdelhi.webp",
+          "caption": "The historic facade of The Imperial Delhi"
+        }
+      ],
+      "expertNote": "The Imperial offers a perfect blend of Victorian style and modern Indian luxury.",
+      "highlights": [
+        "Bespoke Airport Transfer",
+        "Signature Welcome Dinner"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 2,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi",
+      "title": "Exploring Imperial Delhi",
+      "narrative": "Begin your exploration of New Delhi. Visit the spectacular Humayun's Tomb, the precursor to the Taj Mahal, and the ancient Qutub Minar complex. Drive through the grand avenues of Lutyens' Delhi.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Guided architectural tour",
+        "dining": "Bespoke lunch at a local specialty restaurant",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Humayun's_Tomb.avif",
+          "caption": "Humayun's Tomb, a Mughal masterpiece"
+        }
+      ],
+      "expertNote": "Humayun's Tomb is best visited in the early morning to capture the soft light on the red sandstone.",
+      "highlights": [
+        "Humayun's Tomb Visit",
+        "Qutub Minar Curation"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 3,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi",
+      "title": "Historic Old Delhi Lanes",
+      "narrative": "Immerse yourself in the bustling energy of Old Delhi. Visit Jama Masjid, the largest mosque in India, and take a private rickshaw ride through the narrow, vibrant spice markets of Chandni Chowk.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Old Delhi rickshaw ride",
+        "dining": "Mughlai feast at a restored haveli",
+        "transport": "Private luxury SUV & Rickshaw"
+      },
+      "images": [
+        {
+          "url": "/images/Historic architecture and Mughal monuments of Old Delhi.jpg",
+          "caption": "The imposing Red Fort seen from Old Delhi"
+        }
+      ],
+      "expertNote": "The spice market at Khari Baoli is a sensory explosion. Be prepared for the rich, intense aromas of cardamom and chili.",
+      "highlights": [
+        "Jama Masjid Curation",
+        "Chandni Chowk Rickshaw Ride"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 4,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Delhi to Agra",
+      "title": "Agra Fort & Sunset View",
+      "narrative": "Drive to Agra via the Yamuna Expressway. Check into your luxury hotel with an uninterrupted view of the Taj Mahal. In the afternoon, explore the majestic Agra Fort, a red sandstone fortress of the Mughal Emperors.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas",
+        "experiences": "Agra Fort guided tour",
+        "dining": "Mughal tasting menu at hotel",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/agra-fort.jpeg",
+          "caption": "The red sandstone walls of Agra Fort"
+        }
+      ],
+      "expertNote": "Every room at the Oberoi Amarvilas offers a direct, clear view of the Taj Mahal.",
+      "highlights": [
+        "Agra Fort Tour",
+        "Mehtab Bagh Sunset"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra"
+      ]
+    },
+    {
+      "day": 5,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Agra",
+      "title": "Sunrise at the Taj Mahal",
+      "narrative": "Witness the ultimate monument to love, the Taj Mahal, bathed in the soft golden light of sunrise. Return to the hotel for breakfast, and spend the afternoon at leisure, enjoying the pool or spa.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas",
+        "experiences": "Taj Mahal sunrise visit",
+        "dining": "Breakfast and dinner at leisure at hotel",
+        "transport": "Private golf cart & SUV"
+      },
+      "images": [
+        {
+          "url": "/images/The Oberoi Amarvilas.jpg",
+          "caption": "The stunning Taj Mahal view from Oberoi Amarvilas"
+        }
+      ],
+      "expertNote": "Visiting at sunrise is key to avoiding crowds and seeing the marble shift from pale pink to pure white.",
+      "highlights": [
+        "Sunrise Taj Mahal Visit",
+        "Afternoon Spa Ritual"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra"
+      ]
+    },
+    {
+      "day": 6,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Agra to Jaipur",
+      "title": "Fatehpur Sikri & The Pink City",
+      "narrative": "Drive to Jaipur, stopping en route at Fatehpur Sikri, the short-lived capital of Emperor Akbar. Continue to Jaipur and check into the grand Rambagh Palace, the former residence of the Maharaja.",
+      "details": {
+        "accommodation": "The Rambagh Palace, Jaipur",
+        "experiences": "Fatehpur Sikri excursion",
+        "dining": "Traditional Rajasthani thali at Rambagh Palace",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Rambagh-Palace-jaipur.jpg",
+          "caption": "The regal Rambagh Palace in Jaipur"
+        }
+      ],
+      "expertNote": "Fatehpur Sikri is beautifully preserved and displays a wonderful synthesis of Hindu and Islamic architecture.",
+      "highlights": [
+        "Fatehpur Sikri Exploration",
+        "Royal Palace Check-in"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 7,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Jaipur",
+      "title": "Fortresses & Palaces of Jaipur",
+      "narrative": "Explore the dramatic Amber Fort, rising high above Maota Lake. Visit the iconic Hawa Mahal (Palace of Winds), the City Palace, and the ancient astronomical observatory, Jantar Mantar.",
+      "details": {
+        "accommodation": "The Rambagh Palace, Jaipur",
+        "experiences": "Full-day guided Jaipur tour",
+        "dining": "Lunch at City Palace cafe, dinner at 1135 AD",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/amber-fort.jpg",
+          "caption": "The majestic Amber Fort on the outskirts of Jaipur"
+        }
+      ],
+      "expertNote": "Dining at 1135 AD inside Amer Fort offers a truly royal atmosphere surrounded by gold-leaf walls.",
+      "highlights": [
+        "Amber Fort Curation",
+        "City Palace Museum"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 8,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Jaipur",
+      "title": "Artisans & Jewelers of Jaipur",
+      "narrative": "Spend the day diving into Jaipur's world-famous artisanal scene. Take a private tour of gem-cutting workshops and block-printing studios, witnessing how centuries-old techniques are kept alive.",
+      "details": {
+        "accommodation": "The Rambagh Palace, Jaipur",
+        "experiences": "Bespoke artisan tour",
+        "dining": "Curated lunch, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Miniature painting workshops of Jaipur.webp",
+          "caption": "Jaipur's famous miniature painting workshops"
+        }
+      ],
+      "expertNote": "Jaipur is the gemstone capital of the world; look for certified jewelers for any purchases.",
+      "highlights": [
+        "Gem-Cutting Curation",
+        "Block-Printing Workshop"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 9,
+      "location": "Nimaj",
+      "locationKey": "nimaj",
+      "meta": "Jaipur to Nimaj",
+      "title": "Journey to Nimaj Oasis",
+      "narrative": "Drive west into the rural heart of Rajasthan to the serene village of Nimaj. Check into Chhatra Sagar, a luxury tented camp situated on a historic dam, surrounded by rich wildlife and quiet fields.",
+      "details": {
+        "accommodation": "Chhatra Sagar, Nimaj",
+        "experiences": "Rural estate walk",
+        "dining": "Farm-to-table lunch and dinner at camp",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/nimaj-village.jpg",
+          "caption": "The tranquil setting of Chhatra Sagar in Nimaj"
+        }
+      ],
+      "expertNote": "Chhatra Sagar is a paradise for bird lovers, with over 200 species nesting around the reservoir.",
+      "highlights": [
+        "Rural Estate Transition",
+        "Sunset Lake Views"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "nimaj"
+      ]
+    },
+    {
+      "day": 10,
+      "location": "Nimaj",
+      "locationKey": "nimaj",
+      "meta": "Nimaj",
+      "title": "Rural Walks & Wildlife",
+      "narrative": "Take a morning birdwatching tour around the dam. In the afternoon, embark on a village walk to meet local farmers and artisans, experiencing authentic Rajasthani hospitality in a timeless rural setting.",
+      "details": {
+        "accommodation": "Chhatra Sagar, Nimaj",
+        "experiences": "Guided birdwatching & village walk",
+        "dining": "All meals included at camp",
+        "transport": "Walking tour & local open jeep"
+      },
+      "images": [
+        {
+          "url": "/images/wildlife.jpg",
+          "caption": "Migratory birds gathered at Chhatra Sagar"
+        }
+      ],
+      "expertNote": "The local farmers are incredibly warm. Enjoy a cup of masala chai in one of their homes.",
+      "highlights": [
+        "Guided Birding Walk",
+        "Authentic Village Interaction"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "nimaj"
+      ]
+    },
+    {
+      "day": 11,
+      "location": "Jodhpur",
+      "locationKey": "jodhpur",
+      "meta": "Nimaj to Jodhpur",
+      "title": "Drive to the Blue City",
+      "narrative": "Drive to Jodhpur, the historic walled city of the Thar Desert. Check into Raas Jodhpur, a boutique heritage property in the old city. In the afternoon, take a walking tour of the blue-painted lanes.",
+      "details": {
+        "accommodation": "Raas Jodhpur",
+        "experiences": "Blue City heritage walk",
+        "dining": "Dinner overlooking the illuminated Mehrangarh Fort",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/mehrangarh-fort-jodhpur.jpeg",
+          "caption": "Jodhpur's iconic blue houses under Mehrangarh Fort"
+        }
+      ],
+      "expertNote": "The old city is best explored on foot. Watch out for the vibrant blue-painted walls of Brahmin houses.",
+      "highlights": [
+        "Thar Desert Transition",
+        "Blue City Heritage Walk"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "nimaj",
+        "jodhpur"
+      ]
+    },
+    {
+      "day": 12,
+      "location": "Jodhpur",
+      "locationKey": "jodhpur",
+      "meta": "Jodhpur",
+      "title": "Fortress of the Sun",
+      "narrative": "Explore the colossal Mehrangarh Fort, which towers 400 feet above the city. Tour its magnificent palaces, and visit Jaswant Thada, a royal white marble cenotaph set beside a quiet lake.",
+      "details": {
+        "accommodation": "Raas Jodhpur",
+        "experiences": "Mehrangarh Fort curation",
+        "dining": "Lunch at the fort cafe, dinner at Darikhana",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Umaid Bhawan Palace Jodhpur.webp",
+          "caption": "Jaswant Thada, the marble cenotaph of Jodhpur"
+        }
+      ],
+      "expertNote": "The view of Jodhpur from the battlements of Mehrangarh is breathtaking and highlights the distinction between the old and new city.",
+      "highlights": [
+        "Mehrangarh Fort Tour",
+        "Jaswant Thada Curation"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "nimaj",
+        "jodhpur"
+      ]
+    },
+    {
+      "day": 13,
+      "location": "Goa",
+      "locationKey": "goa",
+      "meta": "Jodhpur to Goa",
+      "title": "Fly to the Beach",
+      "narrative": "Transfer to Jodhpur Airport for your flight to Goa (via Mumbai). Arrive in Goa and check into Taj Exotica, a luxurious beachfront resort on the Arabian Sea. Spend the evening relaxing on the beach.",
+      "details": {
+        "accommodation": "Taj Exotica Resort & Spa, Goa",
+        "experiences": "Flight transition to coastal India",
+        "dining": "Seafood dinner on the beach",
+        "transport": "Private SUV & Domestic Flight"
+      },
+      "images": [
+        {
+          "url": "/images/goa.jpeg",
+          "caption": "The sandy beaches and palms of South Goa"
+        }
+      ],
+      "expertNote": "South Goa is much quieter and cleaner than the north, perfect for an upscale, tranquil beach stay.",
+      "highlights": [
+        "Coastal Air Travel",
+        "Beachfront Sunset Dinner"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "nimaj",
+        "jodhpur",
+        "goa"
+      ]
+    },
+    {
+      "day": 14,
+      "location": "Goa",
+      "locationKey": "goa",
+      "meta": "Goa",
+      "title": "Colonial Old Goa & Spices",
+      "narrative": "Explore Goa's Portuguese heritage. Visit the Basilica of Bom Jesus, housing the remains of St. Francis Xavier, and the grand Se Cathedral. In the afternoon, tour a private spice plantation and enjoy a traditional lunch.",
+      "details": {
+        "accommodation": "Taj Exotica Resort & Spa, Goa",
+        "experiences": "Old Goa heritage & Spice tour",
+        "dining": "Traditional Goan lunch at plantation",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/basilica-bom-jesus.png",
+          "caption": "The historic Basilica of Bom Jesus in Old Goa"
+        }
+      ],
+      "expertNote": "Se Cathedral is the largest church in Asia and has a famous golden bell.",
+      "highlights": [
+        "Portuguese Heritage Tour",
+        "Spice Plantation Feast"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "nimaj",
+        "jodhpur",
+        "goa"
+      ]
+    },
+    {
+      "day": 15,
+      "location": "Goa",
+      "locationKey": "goa",
+      "meta": "Goa",
+      "title": "Leisure on the Coast",
+      "narrative": "Enjoy a day at complete leisure. Relax on the sandy beaches of Benaulim, swim in the warm Arabian Sea, or treat yourself to a signature wellness ritual at the resort's Ayurvedic spa.",
+      "details": {
+        "accommodation": "Taj Exotica Resort & Spa, Goa",
+        "experiences": "Beach leisure or spa day",
+        "dining": "Bespoke dinner at the resort's signature restaurant",
+        "transport": "None (at resort)"
+      },
+      "images": [
+        {
+          "url": "/images/goa_heritage_1776272683299.png",
+          "caption": "The luxury amenities of Taj Exotica Goa"
+        }
+      ],
+      "expertNote": "Try the traditional Goan fish curry at the beach shack; it's a perfect blend of coconut and local spices.",
+      "highlights": [
+        "Ayurvedic Spa Session",
+        "Private Beach Access"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "nimaj",
+        "jodhpur",
+        "goa"
+      ]
+    },
+    {
+      "day": 16,
+      "location": "Goa",
+      "locationKey": "goa",
+      "meta": "Goa Departure",
+      "title": "Farewell to India",
+      "narrative": "Transfer to Goa's Dabolim Airport for your departure flight home, carrying the memories of Rajasthan's palaces and Goa's golden shores.",
+      "details": {
+        "accommodation": "None",
+        "experiences": "Private airport departure transfer",
+        "dining": "Breakfast at hotel",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/airport.webp",
+          "caption": "Goa Airport departure hall"
+        }
+      ],
+      "expertNote": "Ensure you check out early to allow ample time for the transfer, especially during peak tourist season.",
+      "highlights": [
+        "Private Airport Transfer",
+        "Bespoke Farewell Amenities"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "nimaj",
+        "jodhpur",
+        "goa"
+      ]
+    }
+  ],
+  "duration": "16 Days / 15 Nights",
+  "transfer": "Private Chauffeur SUV, Domestic Flight, and Private Transfers"
+},
+  "palace-culture-beach-18": {
+  "id": "palace-culture-beach-18",
+  "title": "Imperial Odyssey: Royal Palaces, Mumbai Metro & Kovalam Shores",
+  "subtitle": "An immersive 18-day exploration connecting the historic Golden Triangle, Udaipur's romantic lakes, Mumbai's colonial vibe, and the tropical paradise of Kovalam Beach.",
+  "regionsVisited": "Delhi, Agra, Jaipur, Udaipur, Mumbai, Kovalam",
+  "heroImage": "/images/ayurveda_wellness_1776272638098.png",
+  "ctaBgImage": "/images/taj-lake-palace-udaipur.jpeg",
+  "markerKeys": [
+    "delhi",
+    "agra",
+    "jaipur",
+    "udaipur",
+    "mumbai",
+    "kovalam"
+  ],
+  "routeCoords": [
+    [
+      77.209,
+      28.6139
+    ],
+    [
+      78.0081,
+      27.1767
+    ],
+    [
+      75.7873,
+      26.9124
+    ],
+    [
+      73.7125,
+      24.5854
+    ],
+    [
+      72.8777,
+      19.076
+    ],
+    [
+      76.9906,
+      8.402
+    ]
+  ],
+  "accommodations": "Palace Hotels, Luxury Metropolitan Lodges, and Tropical Beach Resorts",
+  "itinerary": [
+    {
+      "day": 1,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi Arrival",
+      "title": "Arrive in Delhi",
+      "narrative": "Arrive at Delhi's Indira Gandhi International Airport. Meet your private representative and transfer to your luxury hotel. Spend the rest of the day relaxing in the colonial splendour of The Imperial.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Private airport reception",
+        "dining": "Welcome dinner at Spice Route",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/the-imperial-newdelhi.webp",
+          "caption": "The historic facade of The Imperial Delhi"
+        }
+      ],
+      "expertNote": "The Imperial offers a peaceful sanctuary in the heart of Delhi.",
+      "highlights": [
+        "Bespoke Airport Transfer",
+        "Signature Welcome Dinner"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 2,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi",
+      "title": "Exploring Imperial Delhi",
+      "narrative": "Explore New Delhi's grand monuments, including Humayun's Tomb, Qutub Minar, and a drive past India Gate and the President's House.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Guided historical tour",
+        "dining": "Curated North Indian lunch, dinner at leisure",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Humayun's_Tomb.avif",
+          "caption": "The ancient Humayun's Tomb complex"
+        }
+      ],
+      "expertNote": "Humayun's Tomb is the precursor to the Taj Mahal and looks spectacular in the late morning light.",
+      "highlights": [
+        "Humayun's Tomb Curation",
+        "Qutub Minar Exploration"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 3,
+      "location": "Delhi",
+      "locationKey": "delhi",
+      "meta": "Delhi",
+      "title": "Historic Old Delhi Lanes",
+      "narrative": "Dive into Old Delhi. Visit the grand Jama Masjid, take a private rickshaw ride through the narrow lanes of Chandni Chowk, and view the imposing Red Fort.",
+      "details": {
+        "accommodation": "The Imperial Delhi",
+        "experiences": "Old Delhi rickshaw ride",
+        "dining": "Traditional Mughlai lunch, dinner at a restored haveli",
+        "transport": "Private luxury SUV & Rickshaw"
+      },
+      "images": [
+        {
+          "url": "/images/Historic architecture and Mughal monuments of Old Delhi.jpg",
+          "caption": "Jama Masjid, India's largest mosque"
+        }
+      ],
+      "expertNote": "The spices and smells of Khari Baoli market are intense but offer a truly authentic sensory experience.",
+      "highlights": [
+        "Chandni Chowk Rickshaw Ride",
+        "Jama Masjid Exploration"
+      ],
+      "revealedRouteKeys": [
+        "delhi"
+      ]
+    },
+    {
+      "day": 4,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Delhi to Agra",
+      "title": "Agra Fort & Taj Sunset",
+      "narrative": "Drive to Agra via the Yamuna Expressway. Check into your luxury hotel. In the afternoon, visit the magnificent Agra Fort, then witness the Taj Mahal at sunset from across the Yamuna River at Mehtab Bagh.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas",
+        "experiences": "Agra Fort guided tour",
+        "dining": "Mughal tasting menu at hotel",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/agra-fort.jpeg",
+          "caption": "Agra Fort, a red sandstone masterpiece"
+        }
+      ],
+      "expertNote": "Every room at Amarvilas offers an uninterrupted view of the Taj Mahal.",
+      "highlights": [
+        "Agra Fort Tour",
+        "Mehtab Bagh Sunset"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra"
+      ]
+    },
+    {
+      "day": 5,
+      "location": "Agra",
+      "locationKey": "agra",
+      "meta": "Agra",
+      "title": "The Sublime Taj Mahal",
+      "narrative": "Witness the sunrise over the Taj Mahal, a breathtaking monument to eternal love. Spend the afternoon at leisure, enjoying the luxury facilities of your hotel.",
+      "details": {
+        "accommodation": "The Oberoi Amarvilas",
+        "experiences": "Sunrise Taj Mahal visit",
+        "dining": "Breakfast and dinner at the hotel",
+        "transport": "Private golf cart"
+      },
+      "images": [
+        {
+          "url": "/images/The Oberoi Amarvilas.jpg",
+          "caption": "The Taj Mahal viewed from your hotel window"
+        }
+      ],
+      "expertNote": "The early morning light gives the white marble a soft, ethereal glow that is missed later in the day.",
+      "highlights": [
+        "Taj Mahal Sunrise Visit",
+        "Oberoi Luxury Leisure"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra"
+      ]
+    },
+    {
+      "day": 6,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Agra to Jaipur",
+      "title": "Fatehpur Sikri & Rambagh",
+      "narrative": "Drive to Jaipur, stopping at Fatehpur Sikri, the abandoned Mughal city. Arrive in Jaipur and check into the legendary Rambagh Palace, a royal heritage hotel.",
+      "details": {
+        "accommodation": "The Rambagh Palace, Jaipur",
+        "experiences": "Fatehpur Sikri tour",
+        "dining": "Traditional Rajasthani thali at Suvarna Mahal",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Rambagh-Palace-jaipur.jpg",
+          "caption": "The palace hotel of the Jaipur Royals"
+        }
+      ],
+      "expertNote": "The Rambagh Palace was the principal residence of Maharaja Sawai Man Singh II.",
+      "highlights": [
+        "Fatehpur Sikri Visit",
+        "Royal Palace Arrival"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 7,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Jaipur",
+      "title": "Amber Fort & City Palace",
+      "narrative": "Explore the majestic Amber Fort, the historic seat of Jaipur's rulers. In the afternoon, visit the Hawa Mahal, the City Palace, and the celestial Jantar Mantar observatory.",
+      "details": {
+        "accommodation": "The Rambagh Palace, Jaipur",
+        "experiences": "Full-day Jaipur tour",
+        "dining": "Lunch at Baradari, dinner at Rambagh Palace",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/amber-fort.jpg",
+          "caption": "The walls of Amber Fort winding along the hills"
+        }
+      ],
+      "expertNote": "City Palace remains home to the titular Jaipur royal family; part of it is a superb museum.",
+      "highlights": [
+        "Amber Fort Guided Tour",
+        "Hawa Mahal & City Palace Curation"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 8,
+      "location": "Jaipur",
+      "locationKey": "jaipur",
+      "meta": "Jaipur",
+      "title": "Jaipur's Artisan Quarter",
+      "narrative": "Spend a day exploring Jaipur's famous arts and crafts. Visit local block-printers, gem-cutters, and carpet-weavers, experiencing the city's rich living traditions firsthand.",
+      "details": {
+        "accommodation": "The Rambagh Palace, Jaipur",
+        "experiences": "Curated artisans tour",
+        "dining": "Lunch and dinner at leisure in Jaipur",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Miniature painting workshops of Jaipur.webp",
+          "caption": "Local artists painting traditional miniatures"
+        }
+      ],
+      "expertNote": "Jaipur's blue pottery is another unique local craft that makes for excellent souvenirs.",
+      "highlights": [
+        "Private Block-Printing Lesson",
+        "Gem Market Exploration"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur"
+      ]
+    },
+    {
+      "day": 9,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Jaipur to Udaipur",
+      "title": "Fly to Lake Pichola",
+      "narrative": "Fly from Jaipur to Udaipur. Arrive in the romantic City of Lakes and check into the floating white marble Taj Lake Palace. In the evening, enjoy a sunset boat cruise on Lake Pichola.",
+      "details": {
+        "accommodation": "Taj Lake Palace, Udaipur",
+        "experiences": "Flight transition & Sunset boat cruise",
+        "dining": "Royal Mewari dinner at Neel Kamal",
+        "transport": "Private SUV & Domestic Flight"
+      },
+      "images": [
+        {
+          "url": "/images/taj-lake-palace-udaipur.jpeg",
+          "caption": "Taj Lake Palace floating on Lake Pichola"
+        }
+      ],
+      "expertNote": "Taj Lake Palace is one of the most romantic hotels in the world, once used as a summer palace by Mewar kings.",
+      "highlights": [
+        "Lake Pichola Sunset Cruise",
+        "Royal Mewari Dining"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 10,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Udaipur",
+      "title": "City Palace & Lake Gardens",
+      "narrative": "Tour Udaipur's majestic City Palace, the largest palace complex in Rajasthan. Visit the Jagdish Temple and Saheliyon-ki-Bari, the historic Garden of the Maidens.",
+      "details": {
+        "accommodation": "Taj Lake Palace, Udaipur",
+        "experiences": "City Palace guided tour",
+        "dining": "Lunch overlooking the lake, dinner at leisure",
+        "transport": "Private luxury SUV & Boat"
+      },
+      "images": [
+        {
+          "url": "/images/courtyards-udaipur-city-palace.jpg",
+          "caption": "The ornate courtyards of Udaipur's City Palace"
+        }
+      ],
+      "expertNote": "The crystal gallery inside the palace exhibits a spectacular, unique collection of royal crystal furniture.",
+      "highlights": [
+        "City Palace Exploration",
+        "Saheliyon-ki-Bari Walk"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 11,
+      "location": "Udaipur",
+      "locationKey": "udaipur",
+      "meta": "Udaipur",
+      "title": "Sacred Temple Excursion",
+      "narrative": "Take a day excursion to the ancient temples of Eklingji and Nagda. Return to Udaipur for an afternoon of relaxation at the palace spa or leisure shopping in the old town markets.",
+      "details": {
+        "accommodation": "Taj Lake Palace, Udaipur",
+        "experiences": "Eklingji & Nagda temple tour",
+        "dining": "Bespoke lunch, dinner at Jharokha",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Intricately carved spires of the Khajuraho temples.jpeg",
+          "caption": "The historic temples near Udaipur"
+        }
+      ],
+      "expertNote": "Eklingji has 108 temples enclosed by high walls, dedicated to the family deity of the Mewar rulers.",
+      "highlights": [
+        "Eklingji Temple Heritage",
+        "Nagda ruins exploration"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "udaipur"
+      ]
+    },
+    {
+      "day": 12,
+      "location": "Mumbai",
+      "locationKey": "mumbai",
+      "meta": "Udaipur to Mumbai",
+      "title": "Fly to the Gateway of India",
+      "narrative": "Fly from Udaipur to Mumbai. Check into the legendary Taj Mahal Palace, overlooking Mumbai Harbor. In the evening, take a leisurely stroll along the historic Marine Drive.",
+      "details": {
+        "accommodation": "The Taj Mahal Palace, Mumbai",
+        "experiences": "Flight transition & Marine Drive walk",
+        "dining": "Dinner at Wasabi by Morimoto",
+        "transport": "Private SUV & Domestic Flight"
+      },
+      "images": [
+        {
+          "url": "/images/The Taj Mahal Palace Hotel overlooking Mumbai Harbor.jpg",
+          "caption": "The Taj Mahal Palace Hotel in Mumbai"
+        }
+      ],
+      "expertNote": "Wasabi offers exceptional Japanese cuisine, often ranked among Asia's best restaurants.",
+      "highlights": [
+        "Gateway of India View",
+        "Wasabi Dining Experience"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "udaipur",
+        "mumbai"
+      ]
+    },
+    {
+      "day": 13,
+      "location": "Mumbai",
+      "locationKey": "mumbai",
+      "meta": "Mumbai",
+      "title": "Elephanta Caves & Heritage Walk",
+      "narrative": "Take a private boat to Elephanta Island to explore the 6th-century rock-cut temples. Return to the city for a walking tour of Mumbai's splendid Victorian Gothic and Art Deco architecture.",
+      "details": {
+        "accommodation": "The Taj Mahal Palace, Mumbai",
+        "experiences": "Elephanta Caves boat tour & Heritage walk",
+        "dining": "Lunch at Britannia & Co., dinner at leisure",
+        "transport": "Private speed boat & SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Elephanta_Caves_Trimurti.jpg",
+          "caption": "The famous Trimurti sculpture at Elephanta Caves"
+        }
+      ],
+      "expertNote": "Britannia & Co. is a legendary Parsi cafe famous for its berry pulav and historic atmosphere.",
+      "highlights": [
+        "Elephanta Island Sculptures",
+        "Colonial Bombay Heritage Walk"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "udaipur",
+        "mumbai"
+      ]
+    },
+    {
+      "day": 14,
+      "location": "Mumbai",
+      "locationKey": "mumbai",
+      "meta": "Mumbai",
+      "title": "Bazaars & Modern Mumbai",
+      "narrative": "Explore the bustling markets of Mumbai. Visit Crawford Market and Chor Bazaar, and drive past Dhobi Ghat, the city's massive open-air laundromat.",
+      "details": {
+        "accommodation": "The Taj Mahal Palace, Mumbai",
+        "experiences": "Mumbai local culture tour",
+        "dining": "Lunch at a seafood specialty restaurant, dinner at Souk",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/Mumbai-colonial-Crawford_Market.jpg",
+          "caption": "Crawford Market's colonial era building"
+        }
+      ],
+      "expertNote": "Dhobi Ghat is best viewed from the flyover bridge for a panoramic perspective of the laundry bays.",
+      "highlights": [
+        "Crawford Market Curation",
+        "Dhobi Ghat View"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "udaipur",
+        "mumbai"
+      ]
+    },
+    {
+      "day": 15,
+      "location": "Kovalam",
+      "locationKey": "kovalam",
+      "meta": "Mumbai to Kovalam",
+      "title": "Fly to Tropical Kerala",
+      "narrative": "Fly from Mumbai to Trivandrum. Arrive and transfer to Kovalam beach. Check into Niraamaya Retreats Surya Samudra, a cliffside wellness resort. Relax on the secluded beach.",
+      "details": {
+        "accommodation": "Niraamaya Retreats Surya Samudra, Kovalam",
+        "experiences": "Flight transition to tropical South India",
+        "dining": "Traditional Keralan dinner overlooking the sea",
+        "transport": "Private SUV & Domestic Flight"
+      },
+      "images": [
+        {
+          "url": "/images/ayurveda_wellness_1776272638098.png",
+          "caption": "Niraamaya Retreats Surya Samudra in Kovalam"
+        }
+      ],
+      "expertNote": "Kovalam has a unique coastline with black sand beaches and high cliffs.",
+      "highlights": [
+        "Tropical Air Travel",
+        "Cliffside Sea-View Dining"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "udaipur",
+        "mumbai",
+        "kovalam"
+      ]
+    },
+    {
+      "day": 16,
+      "location": "Kovalam",
+      "locationKey": "kovalam",
+      "meta": "Kovalam",
+      "title": "Ayurvedic Spa & Beach relaxation",
+      "narrative": "Experience a signature Ayurvedic wellness ritual at the resort's award-winning spa. Spend the afternoon relaxing on the beach or by the cliffside pool.",
+      "details": {
+        "accommodation": "Niraamaya Retreats Surya Samudra, Kovalam",
+        "experiences": "Ayurvedic wellness consultation & massage",
+        "dining": "All meals at leisure at the resort",
+        "transport": "None (at resort)"
+      },
+      "images": [
+        {
+          "url": "/images/marari.webp",
+          "caption": "The beautiful beaches of coastal Kovalam"
+        }
+      ],
+      "expertNote": "Ayurveda is native to Kerala. The doctors at Niraamaya are experts in custom heritage therapies.",
+      "highlights": [
+        "Signature Ayurvedic Therapy",
+        "Secluded Beach Access"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "udaipur",
+        "mumbai",
+        "kovalam"
+      ]
+    },
+    {
+      "day": 17,
+      "location": "Kovalam",
+      "locationKey": "kovalam",
+      "meta": "Kovalam",
+      "title": "Trivandrum Heritage Excursion",
+      "narrative": "Take a day excursion to Trivandrum. Visit the Padmanabhaswamy Temple, the Napier Museum, and the Sri Chitra Art Gallery. Return to the resort for your farewell beach dinner.",
+      "details": {
+        "accommodation": "Niraamaya Retreats Surya Samudra, Kovalam",
+        "experiences": "Trivandrum city heritage tour",
+        "dining": "Farewell seafood dinner by the sea",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/periyar-spice-plantation.png",
+          "caption": "Traditional Kerala heritage architecture"
+        }
+      ],
+      "expertNote": "Padmanabhaswamy Temple is famous for its intricate carvings and immense treasure vault.",
+      "highlights": [
+        "Trivandrum Temple Curation",
+        "Bespoke Farewell Dinner"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "udaipur",
+        "mumbai",
+        "kovalam"
+      ]
+    },
+    {
+      "day": 18,
+      "location": "Kovalam",
+      "locationKey": "kovalam",
+      "meta": "Kovalam Departure",
+      "title": "Departure",
+      "narrative": "Transfer to Trivandrum International Airport for your departure flight home.",
+      "details": {
+        "accommodation": "None",
+        "experiences": "Private airport departure transfer",
+        "dining": "Breakfast at hotel",
+        "transport": "Private luxury SUV"
+      },
+      "images": [
+        {
+          "url": "/images/airport.webp",
+          "caption": "Trivandrum airport departure lounge"
+        }
+      ],
+      "expertNote": "Allow 45 minutes for the transfer from the resort to the airport.",
+      "highlights": [
+        "Private Airport Transfer",
+        "Bespoke Farewell Amenities"
+      ],
+      "revealedRouteKeys": [
+        "delhi",
+        "agra",
+        "jaipur",
+        "udaipur",
+        "mumbai",
+        "kovalam"
+      ]
+    }
+  ],
+  "duration": "18 Days / 17 Nights",
+  "transfer": "Private Chauffeur SUV, Domestic Flights, and Airport Transfers"
+}
 };
+
+
+
